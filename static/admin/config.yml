@@ -1,11 +1,67 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: betagouv/datagir-site
 
 media_folder: content/assets
 public_folder: ../assets
 
 collections:
+  - name: applications
+    label: Simulateurs
+    folder: content/applications
+    create: true
+    fields:
+      - { name: title, label: Titre }
+      - { name: color, label: Couleur, widget: color }
+      - { name: body, label: Description, widget: text }
+      - { name: script, label: Script }
+      - name: 'sector'
+        label: 'Secteur'
+        widget: 'select'
+        default: 'all'
+        options:
+          - { label: 'Tous', value: 'all' }
+          - { label: 'Alimentation', value: 'alimentation' }
+          - { label: 'Transport', value: 'transport' }
+          - { label: 'Logement', value: 'logement' }
+      - name: liens
+        label: Liens
+        widget: 'list'
+        fields:
+          - { name: label, label: Label }
+          - { name: lien, label: Lien }
+      - label: 'Jeux de données'
+        name: 'databases'
+        widget: 'relation'
+        collection: 'databases'
+        search_fields: ['title']
+        value_field: 'title'
+
+  - name: databases
+    label: Jeux de données
+    folder: content/databases
+    create: true
+    fields:
+      - { name: title, label: Titre }
+      - { name: color, label: Couleur, widget: color }
+      - { name: body, label: Description, widget: text }
+      - name: 'sector'
+        label: 'Secteur'
+        widget: 'select'
+        default: 'all'
+        options:
+          - { label: 'Tous', value: 'all' }
+          - { label: 'Alimentation', value: 'alimentation' }
+          - { label: 'Transport', value: 'transport' }
+          - { label: 'Logement', value: 'logement' }
+      - name: liens
+        label: Liens
+        widget: 'list'
+        fields:
+          - { name: label, label: Label }
+          - { name: lien, label: Lien }
+      - { name: content, label: Texte, widget: markdown }
+
   - name: blog
     label: Blog
     folder: content/blog

@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Datagir`,
+    author: `Datagir`,
+    description: `Datagir`,
+    siteUrl: `https://datagir.ademe.fr`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `ecolab_betagouv`,
     },
   },
   plugins: [
@@ -16,14 +16,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-use-query-params',
     {
-      resolve: "gatsby-plugin-local-search",
+      resolve: 'gatsby-plugin-local-search',
       options: {
-        name: "blog",
-        engine: "flexsearch",
+        name: 'blog',
+        engine: 'flexsearch',
         engineOptions: {
-          encode: "icase",
-          tokenize: "forward",
+          encode: 'icase',
+          tokenize: 'forward',
           async: false,
         },
         query: `
@@ -43,11 +44,11 @@ module.exports = {
             }
           }
         `,
-        ref: "id",
-        index: ["title", "rawBody"],
-        store: ["id", "slug", "date", "title", "excerpt", "description"],
+        ref: 'id',
+        index: ['title', 'rawBody'],
+        store: ['id', 'slug', 'date', 'title', 'excerpt', 'description'],
         normalizer: ({ data }) =>
-          data.allMdx.nodes.map(node => ({
+          data.allMdx.nodes.map((node) => ({
             id: node.id,
             slug: node.fields.slug,
             rawBody: node.rawBody,
@@ -77,7 +78,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -125,9 +126,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        fonts: [`josefin sans\:700&text=datgir`],
+        display: 'auto',
       },
     },
   ],
