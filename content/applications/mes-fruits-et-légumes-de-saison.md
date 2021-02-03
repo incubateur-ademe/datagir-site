@@ -1,6 +1,6 @@
 ---
 title: Mes Fruits et Légumes de Saison
-color: '#ffd80f'
+color: "#ffd80f"
 script: <script id="datagir-fruits-et-legumes"
   src="https://mesfruitsetlegumesdesaison.fr/iframe.js" data-search=""></script>
 sector: alimentation
@@ -9,7 +9,7 @@ liens:
     lien: https://mesfruitsetlegumesdesaison.fr
   - label: Voir le code
     lien: https://github.com/betagouv/ecolab-calculateur-fruits-et-legumes-de-saison
-image: ../assets/mes-fruits-et-legumes-de-saison.png
+image: ../assets/mes-fruits-et-legumes-de-saison.jpg
 order: 3
 ---
 
