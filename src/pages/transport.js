@@ -15,8 +15,8 @@ export default function Transport() {
       <Landing sector='transport' />
       <Presentation sector='transport' />
       <Applications sector='transport' />
-      <Users sector='transport' />
       <Databases sector='transport' />
+      <Users sector='transport' />
       <Contact sector='transport' />
     </Web>
   )

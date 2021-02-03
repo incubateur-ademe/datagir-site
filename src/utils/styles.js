@@ -37,7 +37,6 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-family: ${(props) => props.theme.fonts};
-    scroll-behavior: smooth;
   }
 
   body {

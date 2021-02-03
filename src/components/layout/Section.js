@@ -6,4 +6,8 @@ const Section = styled.section`
 
 Section.Title = styled.h2``
 
+Section.Sector = styled.span`
+  color: ${(props) => props.theme.colors[props.color]};
+`
+
 export default Section

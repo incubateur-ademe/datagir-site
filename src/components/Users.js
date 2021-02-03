@@ -4,10 +4,17 @@ import styled from 'styled-components'
 import Section from 'src/components/layout/Section'
 
 const Wrapper = styled.div``
-export default function Users() {
+export default function Users(props) {
   return (
     <Section>
-      <Section.Title>Nos Réutilisateurs</Section.Title>
+      <Section.Title>
+        Nos Réutilisateurs{' '}
+        {props.sector && (
+          <Section.Sector color={props.sector}>
+            {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
+          </Section.Sector>
+        )}
+      </Section.Title>
       <Wrapper>Réutilisateurs</Wrapper>
     </Section>
   )
