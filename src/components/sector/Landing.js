@@ -6,7 +6,7 @@ import Title from './landing/Title'
 
 const Wrapper = styled.div`
   position: relative;
-  margin-bottom: 6em;
+  margin-bottom: 6rem;
 `
 const Background = styled.div`
   position: absolute;

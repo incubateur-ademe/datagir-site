@@ -30,12 +30,21 @@ collections:
         fields:
           - { name: label, label: Label }
           - { name: lien, label: Lien }
+      - name: 'image'
+        label: 'Image'
+        widget: 'image'
+        allow_multiple: false
       - label: 'Jeux de données'
         name: 'databases'
         widget: 'relation'
+        required: false
         collection: 'databases'
         search_fields: ['title']
         value_field: 'title'
+      - name: order
+        label: Ordre
+        widget: 'number'
+        value_type: 'int'
 
   - name: databases
     label: Jeux de données

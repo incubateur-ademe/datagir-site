@@ -10,13 +10,11 @@ export default function Databases() {
       <Tile.Wrapper>
         <Tile
           title={'Base Carbone'}
-          image={'https://fakeimg.pl/250x100/'}
           link={'/simulateurs/monimpacttransport'}
           margin
         />
         <Tile
           title={'Agribalyse'}
-          image={'https://fakeimg.pl/250x100/'}
           link={'/simulateurs/monimpacttransport'}
           color={'alimentation'}
           margin

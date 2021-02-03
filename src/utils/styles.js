@@ -54,11 +54,13 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-weight: 800;
+    line-height: 1.2;
     color: ${(props) => props.theme.colors.title};
   }
 
   h1 {
-    font-size: 5.5em;
+    font-size: 3em;
+    margin-bottom: 0.5em;
   }
   h2 {
     font-size: 2.5em;

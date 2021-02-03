@@ -68,7 +68,7 @@ export default function Dropdown(props) {
       <Menu>
         {props.options.map((option) => (
           <Option key={option.to} to={option.to}>
-            {option.label.replaceAll(/ /g, '\u00a0')}
+            {option.label.replace(/ /g, '\u00a0')}
           </Option>
         ))}
       </Menu>

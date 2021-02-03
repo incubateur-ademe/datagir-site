@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.h1`
   position: relative;
   margin: 0 0 0 ${(props) => props.margin}rem;
+  font-size: 5.5rem;
   line-height: 1.2;
 `
 const Color = styled.span`

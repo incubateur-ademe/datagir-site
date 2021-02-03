@@ -10,15 +10,22 @@ const Wrapper = styled(Link)`
   font-weight: bold;
   color: ${(props) =>
     props.hollow
-      ? props.theme.colors[props.color] || props.theme.colors.main
+      ? props.theme.colors[props.color] ||
+        props.color ||
+        props.theme.colors.main
       : 'white'};
   text-decoration: none;
   background-color: ${(props) =>
     props.hollow
       ? 'white'
-      : props.theme.colors[props.color] || props.theme.colors.main};
+      : props.theme.colors[props.color] ||
+        props.color ||
+        props.theme.colors.main};
   border: 1px solid
-    ${(props) => props.theme.colors[props.color] || props.theme.colors.main};
+    ${(props) =>
+      props.theme.colors[props.color] ||
+      props.color ||
+      props.theme.colors.main};
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   pointer-events: ${(props) => (props.disabled ? 'none' : 'inherit')};
   cursor: pointer;
@@ -27,12 +34,16 @@ const Wrapper = styled(Link)`
   &:hover {
     background-color: ${(props) =>
       props.hollow
-        ? props.theme.colors[props.color] || props.theme.colors.main
+        ? props.theme.colors[props.color] ||
+          props.color ||
+          props.theme.colors.main
         : 'transparent'};
     color: ${(props) =>
       props.hollow
         ? 'white'
-        : props.theme.colors[props.color] || props.theme.colors.main};
+        : props.theme.colors[props.color] ||
+          props.color ||
+          props.theme.colors.main};
   }
 
   &:focus {

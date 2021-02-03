@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 import ButtonLink from 'src/components/base/ButtonLink'
 
@@ -26,7 +27,7 @@ const Content = styled.div`
 `
 const Top = styled.div``
 const Bottom = styled.div``
-const Image = styled.img`
+const Image = styled.div`
   width: ${(props) => (props.margin ? '100%' : 'calc(100% + 3rem)')};
   margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
 `
@@ -40,7 +41,15 @@ export default function Tile(props) {
   return (
     <Content color={props.color}>
       <Top>
-        {props.image && <Image src={props.image} margin={props.margin} />}
+        {props.image && (
+          <Image>
+            <Img
+              fluid={props.image.childrenImageSharp[0].fluid}
+              alt={props.title}
+              margin={props.margin}
+            />
+          </Image>
+        )}
         {props.title && <Title>{props.title}</Title>}
         {props.text && <Text>{props.text}</Text>}
       </Top>
