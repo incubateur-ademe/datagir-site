@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Tile from 'src/components/layout/tile'
+import Tile from 'src/components/layout/Tile'
 import Section from 'src/components/layout/Section'
 import Sector from './sectors/Sector'
 

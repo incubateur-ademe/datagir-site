@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Section from 'src/components/layout/Section'
-import Tile from 'src/components/layout/tile'
+import Tile from 'src/components/layout/Tile'
 
 export default function Databases(props) {
   return (
