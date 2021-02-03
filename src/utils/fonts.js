@@ -1,55 +1,49 @@
 export default `
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/Marianne-Thin.woff2') format('woff2'),
-    url('../fonts/Marianne-Thin.woff') format('woff');
+  src: url('../../static/fonts/Marianne-Thin.woff2') format('woff2'),
+    url('../../static/fonts/Marianne-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/Marianne-Bold.woff2') format('woff2'),
-    url('../fonts/Marianne-Bold.woff') format('woff');
+  src: url('../../static/fonts/Marianne-Bold.woff2') format('woff2'),
+    url('../../static/fonts/Marianne-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/Marianne-Light.woff2') format('woff2'),
-    url('../fonts/Marianne-Light.woff') format('woff');
+  src: url('../../static/fonts/Marianne-Light.woff2') format('woff2'),
+    url('../../static/fonts/Marianne-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/Marianne-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Marianne-ExtraBold.woff') format('woff');
+  src: url('../../static/fonts/Marianne-ExtraBold.woff2') format('woff2'),
+    url('../../static/fonts/Marianne-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/Marianne-Regular.woff2') format('woff2'),
-    url('../fonts/Marianne-Regular.woff') format('woff');
+  src: url('../../static/fonts/Marianne-Regular.woff2') format('woff2'),
+    url('../../static/fonts/Marianne-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marianne';
-  src: url('../fonts/Marianne-Medium.woff2') format('woff2'),
-    url('../fonts/Marianne-Medium.woff') format('woff');
+  src: url('../../static/fonts/Marianne-Medium.woff2') format('woff2'),
+    url('../../static/fonts/Marianne-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 `
