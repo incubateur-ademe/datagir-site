@@ -1,6 +1,6 @@
 ---
 title: Mon Convertisseur CO2
-color: '#379683'
+color: "#379683"
 script: <script id="datagir-mon-convertisseur-co2"
   src="https://monconvertisseurco2.fr/iframe.js" data-search=""></script>
 sector: all
@@ -9,7 +9,7 @@ liens:
     lien: https://monconvertisseurco2.fr
   - label: Voir le code
     lien: https://github.com/betagouv/ecolab-calculateurco2inverse
-image: ../assets/screenshot-2021-01-29-at-14.22.11.png
+image: ../assets/mon-convertisseur-co2.jpg
 order: 4
 ---
 
