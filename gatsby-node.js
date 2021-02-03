@@ -29,7 +29,10 @@ exports.createPages = ({ graphql, actions }) => {
         path: `apps${application.node.fields.slug}`,
         component: Application,
         context: {
-          slug: application.node.fields.slug.replace(/\//g, ''),
+          slug: application.node.fields.slug
+            .replace(/\//g, '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, ''),
         },
       })
     })

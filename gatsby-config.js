@@ -17,48 +17,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-use-query-params',
-    {
-      resolve: 'gatsby-plugin-local-search',
-      options: {
-        name: 'blog',
-        engine: 'flexsearch',
-        engineOptions: {
-          encode: 'icase',
-          tokenize: 'forward',
-          async: false,
-        },
-        query: `
-          {
-            allMdx {
-              nodes {
-                id
-                fields { slug }
-                excerpt
-                rawBody
-                frontmatter {
-                  title
-                  description
-                  date(formatString: "MMMM DD, YYYY")
-                }
-              }
-            }
-          }
-        `,
-        ref: 'id',
-        index: ['title', 'rawBody'],
-        store: ['id', 'slug', 'date', 'title', 'excerpt', 'description'],
-        normalizer: ({ data }) =>
-          data.allMdx.nodes.map((node) => ({
-            id: node.id,
-            slug: node.fields.slug,
-            rawBody: node.rawBody,
-            excerpt: node.excerpt,
-            title: node.frontmatter.title,
-            description: node.frontmatter.description,
-            date: node.frontmatter.date,
-          })),
-      },
-    },
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-root-import`,
     {
@@ -122,14 +80,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Datagir`,
+        short_name: `Datagir`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#1FC58E`,
         display: `minimal-ui`,
+        icon: `content/assets/favicon.png`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
       },
     },
     {

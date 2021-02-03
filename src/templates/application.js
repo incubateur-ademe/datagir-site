@@ -9,7 +9,7 @@ export default function Application(props) {
   return (
     <Web>
       <Landing {...props.data.mdx} />
-      <Embed embed={props.data.mdx.frontmatter.script} />
+      {props.data.mdx && <Embed embed={props.data.mdx.frontmatter.script} />}
     </Web>
   )
 }
