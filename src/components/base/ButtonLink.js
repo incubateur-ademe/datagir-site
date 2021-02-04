@@ -56,7 +56,7 @@ export default function ButtonLink(props) {
       theme={props.theme}
       to={props.to}
       disabled={props.disabled}
-      hollow={props.hollow}
+      hollow={props.hollow ? 1 : 0}
       color={props.color}
     >
       {props.children}

@@ -8,9 +8,9 @@ export const themes = {
     name: 'Défaut',
     colors: {
       main: '#1FC58E',
-      alimentation: '#FF6A3D',
-      transport: '#361999',
-      logement: '#FF4C82',
+      alimentation: '#FF825C',
+      transport: '#3F1DAF',
+      logement: '#FF709B',
       background: '#fff',
       tile: '#F9F8F6',
       input: '#F0F0F0',

@@ -1,15 +1,14 @@
 ---
 title: Nos GEStes Climat
-color: "#46479f"
+introduction: Aider vos utilisateurs à visualiser leur impact GES (Gaz à effet de serre) et à agir pour le réduire.
+color: '#46479f'
 script: <script id="ecolab-climat" src="https://nosgestesclimat.fr/iframe.js"></script>
 sector: all
-liens:
+buttons:
   - label: Voir le site
-    lien: https://nosgestesclimat.fr
+    link: https://nosgestesclimat.fr
   - label: Voir le code
-    lien: https://github.com/betagouv/ecolab-climat
+    link: https://github.com/betagouv/ecolab-climat
 image: ../assets/nos-gestes-climat.jpg
 order: 1
 ---
-
-Aider vos utilisateurs à visualiser leur impact GES (Gaz à effet de serre) et à agir pour le réduire.

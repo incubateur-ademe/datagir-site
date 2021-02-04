@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Dropdown from './menu/Dropdown'
 import Item from './menu/Item'
@@ -9,6 +10,27 @@ const Wrapper = styled.div`
   font-size: 0.875em;
 `
 export default function Menu() {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        applications: allMdx(
+          sort: { fields: frontmatter___order }
+          filter: { fileAbsolutePath: { regex: "/applications/" } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
+      }
+    `
+  )
   return (
     <Wrapper>
       <Dropdown
@@ -21,12 +43,10 @@ export default function Menu() {
       />
       <Dropdown
         title={'Simulateurs'}
-        options={[
-          { label: 'Nos Gestes Climat', to: '/alimentation' },
-          { label: 'Mon Impact Transport', to: '/transport' },
-          { label: 'Mes Fruits et Légumes de Saison', to: '/logement' },
-          { label: 'Mon Convertisseur CO2', to: '/convertisseur' },
-        ]}
+        options={data.applications.edges.map((application) => ({
+          label: application.node.frontmatter.title,
+          to: `/apps${application.node.fields.slug}`,
+        }))}
       />
       <Dropdown
         title={'Jeux de données'}

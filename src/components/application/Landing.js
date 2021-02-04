@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import ButtonLink from 'src/components/base/ButtonLink'
 
@@ -22,6 +21,7 @@ const Content = styled.div``
 const Title = styled.h1`
   color: ${(props) => props.color};
 `
+const Text = styled.p``
 const ButtonWrapper = styled.div`
   display: flex;
   margin: 0 -0.5rem;
@@ -31,14 +31,20 @@ const ButtonWrapper = styled.div`
   }
 `
 export default function Landing(props) {
+  console.log(props.frontmatter)
   return (
     <Wrapper color={props.frontmatter.color}>
       <Content>
         <Title color={props.frontmatter.color}>{props.frontmatter.title}</Title>
-        <MDXRenderer>{props.body}</MDXRenderer>
+        <Text>{props.frontmatter.introduction}</Text>
         <ButtonWrapper>
-          {props.frontmatter.liens.map((button) => (
-            <ButtonLink hollow color={props.frontmatter.color} to={button.lien}>
+          {props.frontmatter.buttons.map((button) => (
+            <ButtonLink
+              key={button.label}
+              hollow
+              color={props.frontmatter.color}
+              to={button.link}
+            >
               {button.label}
             </ButtonLink>
           ))}
