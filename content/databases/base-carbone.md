@@ -5,6 +5,9 @@ introduction: La Base Carbone® est une base de données publique de facteurs
   effet de serre (GES) et plus généralement tout exercice de comptabilité
   carbone.
 sector: all
+buttons:
+  - label: Voir le site
+    links: https://www.bilans-ges.ademe.fr/fr/accueil/contenu/index/page/presentation/siGras/0
 image: ../assets/basecarbone.jpg
 ---
 Elle est la base de données de référence de l'article 75 de la loi Grenelle II, relatif à l’obligation de réalisation d’un Bilan GES pour les entreprises de plus de 500 salariés, les établissements publics de plus de 250 agents et les collectivités de plus de 50 000 habitants. Administrée par l'ADEME, sa gouvernance est multi acteurs : 14 membres la composent tels que le Ministère de la Transition écologique et solidaire (MTES), le Mouvement des entreprises de France (MEDEF), le Réseau Action Climat (RAC), l’Association des Professionnels en Conseil Climat (APCC), etc. Son enrichissement est ouvert à tous via la possibilité de contributions externes.
