@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { GlobalStyle } from 'src/utils/styles'
 import StyleProvider from 'src/components/providers/StyleProvider'
 
-import SEO from 'src/components/misc/SEO'
+import SEO from './web/SEO'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -17,7 +17,7 @@ const Content = styled.div`
 export default function Web(props) {
   return (
     <Wrapper>
-      <SEO title='Datagir' keywords={['test', 'test2']} />
+      <SEO title={props.title} keywords={['test', 'test2']} />
       <StyleProvider>
         <GlobalStyle />
         <Header />

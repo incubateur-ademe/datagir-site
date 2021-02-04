@@ -8,7 +8,7 @@ import Content from 'src/components/page/Content'
 
 export default function Application(props) {
   return (
-    <Web>
+    <Web title={props.data.mdx.frontmatter.title}>
       <Landing {...props.data.mdx} />
       {props.data.mdx.frontmatter.script && (
         <Embed embed={props.data.mdx.frontmatter.script} />

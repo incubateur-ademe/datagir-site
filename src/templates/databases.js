@@ -7,7 +7,7 @@ import Content from 'src/components/page/Content'
 
 export default function Databases(props) {
   return (
-    <Web>
+    <Web title={props.data.mdx.frontmatter.title}>
       <Landing {...props.data.mdx} />
       <Content>{props.data.mdx.body}</Content>
     </Web>

@@ -20,7 +20,7 @@ export default function Applications(props) {
               frontmatter {
                 image {
                   childrenImageSharp {
-                    fluid {
+                    fluid(maxWidth: 384) {
                       ...GatsbyImageSharpFluid
                     }
                   }

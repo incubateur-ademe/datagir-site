@@ -1,7 +1,8 @@
 import React from 'react'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import Web from 'src/components/layout/Web'
-
 import Section from 'src/components/layout/Section'
 import Block from 'src/components/layout/Block'
 import ButtonLink from 'src/components/base/ButtonLink'
@@ -11,9 +12,9 @@ import Users from 'src/components/Users'
 import Databases from 'src/components/Databases'
 import Contact from 'src/components/Contact'
 
-export default function Alimentation() {
+export default function Alimentation(props) {
   return (
-    <Web>
+    <Web title={'Alimentation'}>
       <Landing
         sector='alimentation'
         subtitle={`Des données ouvertes pour une alimentation moins émettrice en CO2.`}
@@ -27,7 +28,12 @@ export default function Alimentation() {
       />
       <Section>
         <Block>
-          <Block.Image src='https://fakeimg.pl/684x385/ff0000/' />
+          <Block.Image>
+            <Img
+              fluid={props.data.image1.childrenImageSharp[0].fluid}
+              alt={props.title}
+            />
+          </Block.Image>
           <Block.Content color={'alimentation'}>
             <Block.Title>
               Présent dans les applications préférées des français
@@ -45,8 +51,13 @@ export default function Alimentation() {
           </Block.Content>
         </Block>
         <Block left>
-          <Block.Image src='https://fakeimg.pl/684x385/ffff00/' />
-          <Block.Content color={'alimentation'}>
+          <Block.Image>
+            <Img
+              fluid={props.data.image2.childrenImageSharp[0].fluid}
+              alt={props.title}
+            />
+          </Block.Image>
+          <Block.Content left color={'alimentation'}>
             <Block.Title>Un guide pour les développeurs</Block.Title>
             <Block.Text>
               Format CSV, API, retrouvez toutes les informations techniques sur
@@ -67,3 +78,21 @@ export default function Alimentation() {
     </Web>
   )
 }
+export const pageQuery = graphql`
+  query alimentationPage {
+    image1: file(relativePath: { eq: "alimentation1.jpg" }) {
+      childrenImageSharp {
+        fluid(maxWidth: 684) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image2: file(relativePath: { eq: "alimentation2.jpg" }) {
+      childrenImageSharp {
+        fluid(maxWidth: 684) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
