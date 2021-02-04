@@ -5,10 +5,24 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const Application = path.resolve(`./src/templates/application.js`)
+  const Databases = path.resolve(`./src/templates/databases.js`)
   return graphql(
     `
       {
-        allMdx(filter: { fileAbsolutePath: { regex: "/applications/" } }) {
+        apps: allMdx(
+          filter: { fileAbsolutePath: { regex: "/applications/" } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        databases: allMdx(
+          filter: { fileAbsolutePath: { regex: "/databases/" } }
+        ) {
           edges {
             node {
               fields {
@@ -24,12 +38,24 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    result.data.allMdx.edges.forEach((application) => {
+    result.data.apps.edges.forEach((page) => {
       createPage({
-        path: `apps${application.node.fields.slug}`,
+        path: `apps${page.node.fields.slug}`,
         component: Application,
         context: {
-          slug: application.node.fields.slug
+          slug: page.node.fields.slug
+            .replace(/\//g, '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, ''),
+        },
+      })
+    })
+    result.data.databases.edges.forEach((page) => {
+      createPage({
+        path: `databases${page.node.fields.slug}`,
+        component: Databases,
+        context: {
+          slug: page.node.fields.slug
             .replace(/\//g, '')
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ''),

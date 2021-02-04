@@ -28,6 +28,7 @@ export default function Select(props) {
     <Wrapper>
       {props.label && <Label htmlFor={props.name}>{props.label}</Label>}
       <Input
+        id={props.name}
         name={props.name}
         value={props.value}
         onChange={(e) => {

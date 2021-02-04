@@ -25,9 +25,17 @@ const Content = styled.div`
       props.theme.colors[props.color] || props.theme.colors.main};
   }
 `
-const Top = styled.div``
+const Top = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+`
 const Bottom = styled.div``
 const Image = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: ${(props) => (props.margin ? '100%' : 'calc(100% + 3rem)')};
   margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
 `
@@ -42,11 +50,10 @@ export default function Tile(props) {
     <Content color={props.color}>
       <Top>
         {props.image && (
-          <Image>
+          <Image margin={props.margin}>
             <Img
               fluid={props.image.childrenImageSharp[0].fluid}
               alt={props.title}
-              margin={props.margin}
             />
           </Image>
         )}

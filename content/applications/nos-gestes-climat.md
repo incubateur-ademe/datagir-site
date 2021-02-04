@@ -2,7 +2,7 @@
 title: Nos GEStes Climat
 introduction: Aider vos utilisateurs à visualiser leur impact GES (Gaz à effet de serre) et à agir pour le réduire.
 color: '#46479f'
-script: <script id="ecolab-climat" src="https://nosgestesclimat.fr/iframe.js"></script>
+script: https://nosgestesclimat.fr
 sector: all
 buttons:
   - label: Voir le site

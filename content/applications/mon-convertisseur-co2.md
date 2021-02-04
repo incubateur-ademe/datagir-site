@@ -2,8 +2,7 @@
 title: Mon Convertisseur CO2
 introduction: On parle de plus en plus de CO2, mais concrètement quelles sont les émissions pour fabriquer et consommer les objets qui nous entourent ?
 color: '#379683'
-script: <script id="datagir-mon-convertisseur-co2"
-  src="https://monconvertisseurco2.fr/iframe.js" data-search=""></script>
+script: https://monconvertisseurco2.fr/embed
 sector: all
 buttons:
   - label: Voir le site

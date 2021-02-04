@@ -8,14 +8,15 @@ export const themes = {
     name: 'Défaut',
     colors: {
       main: '#1FC58E',
-      alimentation: '#FF825C',
-      transport: '#3F1DAF',
-      logement: '#FF709B',
+      alimentation: '#FA7538',
+      transport: '#451FC1',
+      logement: '#FF709D',
       background: '#fff',
       tile: '#F9F8F6',
       input: '#F0F0F0',
       title: '#1E1E1E',
       text: '#383838',
+      404: '#1FC58E',
     },
     fonts: '"Marianne", Arial, sans-serif',
     mq: {

@@ -45,31 +45,6 @@ const ButtonWrapper = styled.div`
   }
 `
 export default function Landing(props) {
-  const sectors = {
-    alimentation: {
-      subtitle: `Des données ouvertes pour une alimentation moins émettrice en CO2.`,
-      text: `Utilisez les données d'impact de plus de 2500 aliments dans vos
-            produits et services. Disponibles en OpenData, elles sont libres, en
-            simple consultation, ou pour être réutilisées dans votre service`,
-      buttons: [
-        { label: `Voir la documentation`, to: `` },
-        { label: `Voir les simulateurs`, to: `` },
-      ],
-    },
-    transport: {
-      subtitle: `Des données ouvertes pour une mobilité moins émettrice en CO2`,
-      text: `Sed in enim ac odio consequat pellentesque at et mi. Donec sed finibus lacus, sed pretium nunc. Sed sit amet vestibulum turpis. Curabitur nec interdum dui. Phasellus blandit.`,
-      buttons: [
-        { label: `Voir la documentation`, to: `` },
-        { label: `Voir les jeux de données`, to: `` },
-      ],
-    },
-    logement: {
-      subtitle: `Faciliter par les données, la rénovation et la décarbonation du secteur du bâtiment`,
-      text: `Sed in enim ac odio consequat pellentesque at et mi. Donec sed finibus lacus, sed pretium nunc. Sed sit amet vestibulum turpis. Curabitur nec interdum dui. Phasellus blandit auctor cursus. Sed sit amet vestibulum turpis.`,
-      buttons: [{ label: `Voir la documentation`, to: `` }],
-    },
-  }
   return (
     <Wrapper>
       <Background color={props.sector} />
@@ -77,11 +52,11 @@ export default function Landing(props) {
         {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
       </Title>
       <Flex>
-        <Subtitle>{sectors[props.sector].subtitle}</Subtitle>
+        <Subtitle>{props.subtitle}</Subtitle>
         <Content>
-          <Text>{sectors[props.sector].text}</Text>
+          <Text>{props.text}</Text>
           <ButtonWrapper>
-            {sectors[props.sector].buttons.map((button) => (
+            {props.buttons.map((button) => (
               <ButtonLink hollow color={props.sector} to={button.to}>
                 {button.label}
               </ButtonLink>

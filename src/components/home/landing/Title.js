@@ -9,7 +9,7 @@ const Wrapper = styled.h1`
   padding: 7.5rem 0 0;
   font-size: 6.25em;
   font-family: 'Josefin Sans', sans-serif;
-  line-height: 1.2;
+  line-height: 1.16;
 `
 const White = styled.span`
   width: calc(24rem - 0.39em);

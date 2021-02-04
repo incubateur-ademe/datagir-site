@@ -29,7 +29,9 @@ export default function Title(props) {
       ? 9.75
       : props.sector === 'transport'
       ? 10.75
-      : 8.9375
+      : props.sector === 'logement'
+      ? 8.9375
+      : 18.9375
   return (
     <Wrapper margin={margin}>
       <Color color={props.sector}>{props.children}</Color>

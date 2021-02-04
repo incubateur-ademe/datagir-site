@@ -14,7 +14,17 @@ import Contact from 'src/components/Contact'
 export default function Alimentation() {
   return (
     <Web>
-      <Landing sector='alimentation' />
+      <Landing
+        sector='alimentation'
+        subtitle={`Des données ouvertes pour une alimentation moins émettrice en CO2.`}
+        text={`Utilisez les données d'impact de plus de 2500 aliments dans vos
+            produits et services. Disponibles en OpenData, elles sont libres, en
+            simple consultation, ou pour être réutilisées dans votre service`}
+        buttons={[
+          { label: `Voir la documentation`, to: `` },
+          { label: `Voir les simulateurs`, to: `` },
+        ]}
+      />
       <Section>
         <Block>
           <Block.Image src='https://fakeimg.pl/684x385/ff0000/' />

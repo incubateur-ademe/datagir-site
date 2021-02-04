@@ -28,6 +28,20 @@ export default function Menu() {
             }
           }
         }
+        databases: allMdx(
+          filter: { fileAbsolutePath: { regex: "/databases/" } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
       }
     `
   )
@@ -43,19 +57,19 @@ export default function Menu() {
       />
       <Dropdown
         title={'Simulateurs'}
-        options={data.applications.edges.map((application) => ({
-          label: application.node.frontmatter.title,
-          to: `/apps${application.node.fields.slug}`,
+        options={data.applications.edges.map((page) => ({
+          label: page.node.frontmatter.title,
+          to: `/apps${page.node.fields.slug}`,
         }))}
       />
       <Dropdown
         title={'Jeux de données'}
-        options={[
-          { label: 'Base Carbone', to: '/databases/basecarbone' },
-          { label: 'Agribalyse', to: '/databases/agribalyse' },
-        ]}
+        options={data.databases.edges.map((page) => ({
+          label: page.node.frontmatter.title,
+          to: `/databases${page.node.fields.slug}`,
+        }))}
       />
-      <Item to={'/about'}>Datagir</Item>
+      <Item to={'/qui-sommes-nous'}>Qui sommes nous</Item>
       <Item to={'/blog'}>Blog</Item>
       <Item to='documentation'>Documentation</Item>
     </Wrapper>

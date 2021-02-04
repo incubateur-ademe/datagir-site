@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Button from 'src/components/base/Button'
+import ButtonLink from 'src/components/base/ButtonLink'
 import Title from './landing/Title'
 
 const Wrapper = styled.div`
   position: relative;
+  min-height: 24rem;
   margin-bottom: 6em;
 `
 const Background = styled.div`
@@ -31,11 +32,14 @@ const Subtitle = styled.div`
 const Content = styled.div`
   width: 30.25rem;
   margin: 0.25em 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `
 const Text = styled.p`
   font-weight: 300;
 `
-export default function Landing() {
+export default function Landing(props) {
   return (
     <Wrapper>
       <Background />
@@ -47,10 +51,15 @@ export default function Landing() {
         <Content>
           <Text>
             Datagir accompagne les entreprises, associations ou collectifs dans
-            la compréhension et l’intégration des données environnementales de
-            l’ADEME afin de créer de nouvelles fonctionnalités ou applications.
+            la compréhension et l’intégration des données ouvertes
+            environnementales de l’ADEME afin de créer de nouvelles
+            fonctionnalités ou applications.
           </Text>
-          <Button hollow>En savoir +</Button>
+          {!props.noButton && (
+            <ButtonLink hollow to={'/qui-sommes-nous'}>
+              En savoir +
+            </ButtonLink>
+          )}
         </Content>
       </Flex>
     </Wrapper>

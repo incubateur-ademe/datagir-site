@@ -14,10 +14,15 @@ const Wrapper = styled.div`
     content: '';
     width: 5.25rem;
     margin-right: 1rem;
-    background-color: ${(props) => props.color};
+    background-color: ${(props) =>
+      props.color ||
+      props.theme.colors[props.sector] ||
+      props.theme.colors.main};
   }
 `
-const Content = styled.div``
+const Content = styled.div`
+  flex: 1;
+`
 const Title = styled.h1`
   color: ${(props) => props.color};
 `
@@ -33,7 +38,7 @@ const ButtonWrapper = styled.div`
 export default function Landing(props) {
   console.log(props.frontmatter)
   return (
-    <Wrapper color={props.frontmatter.color}>
+    <Wrapper color={props.frontmatter.color} sector={props.frontmatter.sector}>
       <Content>
         <Title color={props.frontmatter.color}>{props.frontmatter.title}</Title>
         <Text>{props.frontmatter.introduction}</Text>
@@ -42,7 +47,12 @@ export default function Landing(props) {
             <ButtonLink
               key={button.label}
               hollow
-              color={props.frontmatter.color}
+              color={
+                props.frontmatter.color ||
+                (props.frontmatter.sector === 'all'
+                  ? 'main'
+                  : props.frontmatter.sector)
+              }
               to={button.link}
             >
               {button.label}

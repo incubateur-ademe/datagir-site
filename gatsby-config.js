@@ -3,8 +3,9 @@ module.exports = {
     // edit below
     title: `Datagir`,
     author: `Datagir`,
-    description: `Datagir`,
-    siteUrl: `https://datagir.ademe.fr`,
+    description: `Vous accompagner dans la compréhension et l’intégration des données ouvertes environnementales de l’ADEME afin de créer de nouvelles fonctionnalités ou applications.`,
+    siteUrl: `http://datagir.netlify.app`,
+    keywords: ['datagir', 'ademe', 'agribalyse'],
     social: {
       twitter: `ecolab_betagouv`,
     },
@@ -29,8 +30,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/applications`,
         name: `applications`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/databases`,
+        name: `databases`,
       },
     },
     {
@@ -87,7 +102,6 @@ module.exports = {
         theme_color: `#1FC58E`,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,
-        // edit below
       },
     },
     {
