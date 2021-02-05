@@ -26,11 +26,11 @@ export default function Blog() {
             <h2>Informations légales</h2>
             <p>
               Ecolab est un service créé par l'
-              <a href='https://www.ademe.fr' target='_blank'>
+              <a href='https://www.ademe.fr' target='_blank' rel='noreferrer'>
                 ADEME
               </a>{' '}
               en partenariat avec{' '}
-              <a href='https://beta.gouv.fr/' target='_blank'>
+              <a href='https://beta.gouv.fr/' target='_blank' rel='noreferrer'>
                 Beta.gouv.fr
               </a>
               .
