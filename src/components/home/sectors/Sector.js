@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+
+import MagicLink from 'src/components/base/MagicLink'
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,6 +17,7 @@ const Wrapper = styled.div`
   }
 `
 const Content = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,13 +45,37 @@ const Subtitle = styled.p`
 const Text = styled.p`
   margin-bottom: 1.5rem;
 `
-const StyledLink = styled(Link)`
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`
+const StyledLink = styled(MagicLink)`
+  position: relative;
+  display: block;
+  overflow: hidden;
   font-size: 2em;
   font-weight: 800;
   text-align: right;
   color: white;
   line-height: 1;
   text-decoration: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: translateX(-100%);
+    background-color: ${(props) => props.theme.colors.background};
+  }
+  &:hover {
+    &:before {
+      transform: translateX(100%);
+      transition: transform 300ms ease-out;
+    }
+  }
 
   ${(props) => props.theme.mq.medium} {
     font-size: 1.25em;
@@ -64,7 +90,9 @@ export default function Sector(props) {
           <Subtitle>{props.subtitle}</Subtitle>
           <Text>{props.text}</Text>
         </Top>
-        <StyledLink to={`/${props.slug}`}>En savoir +</StyledLink>
+        <LinkWrapper>
+          <StyledLink to={`/${props.slug}`}>En savoir +</StyledLink>
+        </LinkWrapper>
       </Content>
     </Wrapper>
   )

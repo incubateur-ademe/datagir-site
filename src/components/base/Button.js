@@ -32,7 +32,6 @@ const Wrapper = styled(MagicLink)`
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   pointer-events: ${(props) => (props.disabled ? 'none' : 'inherit')};
   cursor: pointer;
-  transition: all 200ms ease-out;
 
   &:before {
     content: '';
@@ -41,26 +40,19 @@ const Wrapper = styled(MagicLink)`
     left: 0;
     width: 100%;
     height: 100%;
-    transform: scaleX(0);
-    transform-origin: ${(props) => (props.hollow ? 'left' : 'right')};
+    transform: translateX(-100%) rotate(-45deg);
     background-color: ${(props) =>
       props.hollow
         ? props.theme.colors[props.color] ||
           props.color ||
           props.theme.colors.main
         : props.theme.colors.background};
-    transition: transform 200ms ease-out;
+    opacity: 0.4;
   }
   &:hover {
-    color: ${(props) =>
-      props.hollow
-        ? 'white'
-        : props.theme.colors[props.color] ||
-          props.color ||
-          props.theme.colors.main};
-
     &:before {
-      transform: scaleX(1);
+      transform: translateX(100%) rotate(-45deg);
+      transition: transform ${(props) => props.animationSpeed}ms ease-out;
     }
   }
 
@@ -81,6 +73,9 @@ export default function Button(props) {
       disabled={props.disabled}
       hollow={props.hollow ? 1 : 0}
       color={props.color}
+      animationSpeed={
+        props.children.length * 20 > 350 ? props.children.length * 25 : 350
+      }
     >
       <span>{props.children}</span>
     </Wrapper>
