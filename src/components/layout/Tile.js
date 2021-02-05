@@ -5,9 +5,9 @@ import Img from 'gatsby-image'
 import Button from 'src/components/base/Button'
 
 const TileWrapper = styled.div`
+  width: 25rem;
   margin-bottom: 1rem;
   padding: 0 0.5rem;
-  width: 25rem;
 
   ${(props) => props.theme.mq.medium} {
     width: 33.3333vw;
@@ -33,6 +33,10 @@ const Content = styled.div`
     background-color: ${(props) =>
       props.theme.colors[props.color] || props.theme.colors.main};
   }
+
+  ${(props) => props.theme.mq.medium} {
+    padding: 2vw 2vw calc(2vw + 0.3125rem);
+  }
 `
 const Top = styled.div`
   display: flex;
@@ -47,6 +51,11 @@ const Image = styled.div`
   justify-content: ${(props) => (props.margin ? 'center' : 'flex-start')};
   width: ${(props) => (props.margin ? '100%' : 'calc(100% + 3rem)')};
   margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
+
+  ${(props) => props.theme.mq.medium} {
+    width: ${(props) => (props.margin ? '100%' : 'calc(100% + 3rem)')};
+    margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
+  }
 `
 const Title = styled.h3`
   flex: ${(props) => (props.margin ? 'initial' : 1)};

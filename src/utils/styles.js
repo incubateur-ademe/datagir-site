@@ -17,6 +17,7 @@ export const themes = {
       title: '#1E1E1E',
       text: '#383838',
       404: '#1FC58E',
+      footer: '#6a6a6a',
     },
     fonts: '"Marianne", Arial, sans-serif',
     mq: {

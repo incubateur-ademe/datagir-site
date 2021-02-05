@@ -11,6 +11,7 @@ import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
 import Databases from 'src/components/Databases'
 import Contact from 'src/components/Contact'
+import Newsletter from '../components/Newsletter'
 
 export default function Transport(props) {
   return (
@@ -83,6 +84,7 @@ export default function Transport(props) {
       <Databases sector='transport' />
       <Users sector='transport' />
       <Contact sector='transport' />
+      <Newsletter sector='transport' />
     </Web>
   )
 }

@@ -6,15 +6,23 @@ const Wrapper = styled.h1`
   display: flex;
   align-items: flex-start;
   margin: 0;
-  padding: 7.5rem 0 0;
+  padding-top: 7.5rem;
   font-size: 6.25em;
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.16;
+
+  ${(props) => props.theme.mq.medium} {
+    padding-top: 7vw;
+  }
 `
 const White = styled.span`
   width: calc(24rem - 0.39em);
   color: ${(props) => props.theme.colors.background};
   text-align: right;
+
+  ${(props) => props.theme.mq.medium} {
+    width: calc(41.6666667vw - 0.39em);
+  }
 `
 const Arrow = styled.svg`
   width: 0.78em;

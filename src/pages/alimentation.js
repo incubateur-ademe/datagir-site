@@ -11,6 +11,7 @@ import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
 import Databases from 'src/components/Databases'
 import Contact from 'src/components/Contact'
+import Newsletter from 'src/components/Newsletter'
 
 export default function Alimentation(props) {
   return (
@@ -45,7 +46,7 @@ export default function Alimentation(props) {
             <Block.Text>
               Que ce soit dans Yuka, Marmiton, Open Food Facts ou FoodChéri, ces
               données sont directement mises à disposition de leurs utilisateurs
-              par exemple via l'Eco-score.
+              via par exemple l'Eco-score.
             </Block.Text>
             <Block.Buttons>
               <Button
@@ -87,6 +88,7 @@ export default function Alimentation(props) {
       <Databases sector='alimentation' />
       <Users sector='alimentation' />
       <Contact sector='alimentation' />
+      <Newsletter sector='alimentation' />
     </Web>
   )
 }

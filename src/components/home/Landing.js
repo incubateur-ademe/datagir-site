@@ -8,6 +8,10 @@ const Wrapper = styled.div`
   position: relative;
   min-height: 24rem;
   margin-bottom: 6em;
+
+  ${(props) => props.theme.mq.medium} {
+    min-height: 41.6666667vw;
+  }
 `
 const Background = styled.div`
   position: absolute;
@@ -16,6 +20,11 @@ const Background = styled.div`
   width: 24rem;
   height: 24rem;
   background-color: ${(props) => props.theme.colors.main};
+
+  ${(props) => props.theme.mq.medium} {
+    width: 41.6666667vw;
+    height: 41.6666667vw;
+  }
 `
 const Flex = styled.div`
   display: flex;
@@ -28,13 +37,24 @@ const Subtitle = styled.div`
   font-weight: 700;
   text-align: right;
   color: ${(props) => props.theme.colors.background};
+
+  ${(props) => props.theme.mq.medium} {
+    width: 41.6666667vw;
+    padding: 0 1.33333333vw 0;
+  }
 `
 const Content = styled.div`
-  width: 30.25rem;
-  margin: 0.25em 0 0 1rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 30.25rem;
+  margin: 0.25em 0 0 1rem;
+
+  ${(props) => props.theme.mq.medium} {
+    width: auto;
+    margin: 0.25em 0 0 1.33333333vw;
+  }
 `
 const Text = styled.p`
   font-weight: 300;
