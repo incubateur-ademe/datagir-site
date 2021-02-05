@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import Web from 'src/components/layout/Web'
 import Section from 'src/components/layout/Section'
 import Block from 'src/components/layout/Block'
-import ButtonLink from 'src/components/base/ButtonLink'
+import Button from 'src/components/base/Button'
 import Landing from 'src/components/sector/Landing'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
@@ -20,8 +20,11 @@ export default function Transport(props) {
         subtitle={`Des données ouvertes pour une mobilité moins émettrice en CO2`}
         text={`Sed in enim ac odio consequat pellentesque at et mi. Donec sed finibus lacus, sed pretium nunc. Sed sit amet vestibulum turpis. Curabitur nec interdum dui. Phasellus blandit.`}
         buttons={[
-          { label: `Voir la documentation`, to: `` },
-          { label: `Voir les jeux de données`, to: `` },
+          {
+            label: `Voir la documentation`,
+            to: `https://datagir.gitbook.io/documentation/se-deplacer-quelques-cas-dusage-des-donnees`,
+          },
+          { label: `Voir les simulateurs`, to: `/transport#applications` },
         ]}
       />
       <Section>
@@ -38,16 +41,16 @@ export default function Transport(props) {
             </Block.Title>
             <Block.Text>
               Intégrez notre module de calcul chez vous, par exemple rendre un
-              article de blog plus intéractif pour le lecteur,
+              article de blog plus intéractif pour le lecteur.
             </Block.Text>
             <Block.Buttons>
-              <ButtonLink
+              <Button
                 to='/apps/mon-impact-transport'
                 hollow
                 color={'transport'}
               >
                 Voir le simulateur
-              </ButtonLink>
+              </Button>
             </Block.Buttons>
           </Block.Content>
         </Block>
@@ -62,12 +65,16 @@ export default function Transport(props) {
             <Block.Title>Un guide pour les développeurs</Block.Title>
             <Block.Text>
               Format CSV, API, retrouvez toutes les informations techniques sur
-              les méthodes d’intégrations dans notre documentation
+              les méthodes d’intégrations dans notre documentation.
             </Block.Text>
             <Block.Buttons>
-              <ButtonLink to='' hollow color={'transport'}>
+              <Button
+                to='https://datagir.gitbook.io/documentation/se-deplacer-quelques-cas-dusage-des-donnees'
+                hollow
+                color={'transport'}
+              >
                 Voir la documentation
-              </ButtonLink>
+              </Button>
             </Block.Buttons>
           </Block.Content>
         </Block>

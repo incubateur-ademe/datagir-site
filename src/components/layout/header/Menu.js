@@ -8,6 +8,10 @@ import Item from './menu/Item'
 const Wrapper = styled.div`
   display: flex;
   font-size: 0.875em;
+
+  ${(props) => props.theme.mq.medium} {
+    display: none;
+  }
 `
 export default function Menu() {
   const data = useStaticQuery(
@@ -71,7 +75,9 @@ export default function Menu() {
       />
       <Item to={'/qui-sommes-nous'}>Qui sommes nous</Item>
       <Item to={'/blog'}>Blog</Item>
-      <Item to='documentation'>Documentation</Item>
+      <Item to={'https://datagir.gitbook.io/documentation/'}>
+        Documentation
+      </Item>
     </Wrapper>
   )
 }

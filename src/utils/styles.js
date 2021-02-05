@@ -21,7 +21,7 @@ export const themes = {
     fonts: '"Marianne", Arial, sans-serif',
     mq: {
       small: `@media screen and (max-width: ${730}px)`,
-      medium: `@media screen and (max-width: ${1260}px)`,
+      medium: `@media screen and (max-width: ${1200}px)`,
       mediumLandscape: `@media screen and (orientation: landscape) and (max-width: ${1260}px)`,
       mediumPortrait: `@media screen and (orientation: portrait) and (max-width: ${1260}px)`,
       large: `@media screen and (min-width: ${1800}px)`,

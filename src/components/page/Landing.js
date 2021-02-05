@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ButtonLink from 'src/components/base/ButtonLink'
+import Button from 'src/components/base/Button'
 
 const Wrapper = styled.div`
   position: relative;
@@ -31,7 +31,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   margin: 0 -0.5rem;
 
-  a {
+  > * {
     margin: 0 0.5rem;
   }
 `
@@ -41,10 +41,14 @@ export default function Landing(props) {
     <Wrapper color={props.frontmatter.color} sector={props.frontmatter.sector}>
       <Content>
         <Title color={props.frontmatter.color}>{props.frontmatter.title}</Title>
-        <Text>{props.frontmatter.introduction}</Text>
+        <Text
+          dangerouslySetInnerHTML={{
+            __html: props.frontmatter.introduction,
+          }}
+        />
         <ButtonWrapper>
           {props.frontmatter.buttons.map((button) => (
-            <ButtonLink
+            <Button
               key={button.label}
               hollow
               color={
@@ -56,7 +60,7 @@ export default function Landing(props) {
               to={button.link}
             >
               {button.label}
-            </ButtonLink>
+            </Button>
           ))}
         </ButtonWrapper>
       </Content>

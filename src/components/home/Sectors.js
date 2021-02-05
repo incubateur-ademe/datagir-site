@@ -13,7 +13,7 @@ export default function Sectors() {
           subtitle={
             'Aidez vos utilisateurs à découvrir l’impact environnemental de leur assiette.'
           }
-          text={`Utilisez les données d'impact de plus de 2500 aliments dans vos produits et services. Disponibles en OpenData, elles sont libres, en simple consultation, ou pour être réutilisées dans votre service`}
+          text={`Utilisez les données d'impact de plus de 2500 aliments dans vos produits et services. Accessibles en OpenData, elles sont disponibles en simple consultation ou peuvent être réutilisées dans vos applications ou services !`}
           color={'alimentation'}
           slug={'alimentation'}
         />

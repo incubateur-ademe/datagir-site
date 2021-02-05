@@ -17,7 +17,7 @@ export default function Contact() {
     message: '',
   })
   return (
-    <Section>
+    <Section id='contact'>
       <Section.Title>Nous Contacter</Section.Title>
       <Form>
         <TextInput

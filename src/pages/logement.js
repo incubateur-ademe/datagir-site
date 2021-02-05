@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Web from 'src/components/layout/Web'
 import Section from 'src/components/layout/Section'
 import Block from 'src/components/layout/Block'
-import ButtonLink from 'src/components/base/ButtonLink'
 import Landing from 'src/components/sector/Landing'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
@@ -19,7 +18,12 @@ export default function Transport(props) {
         sector='logement'
         subtitle={`Faciliter par les données, la rénovation et la décarbonation du secteur du bâtiment`}
         text={`Sed in enim ac odio consequat pellentesque at et mi. Donec sed finibus lacus, sed pretium nunc. Sed sit amet vestibulum turpis. Curabitur nec interdum dui. Phasellus blandit auctor cursus. Sed sit amet vestibulum turpis.`}
-        buttons={[{ label: `Voir la documentation`, to: `` }]}
+        buttons={[
+          {
+            label: `Voir la documentation`,
+            to: `https://datagir.gitbook.io/documentation/`,
+          },
+        ]}
       />
       <Section>
         <Block>
@@ -41,11 +45,6 @@ export default function Transport(props) {
               la date de réalisation du DPE et aujourd’hui, des travaux
               d’amélioration ont pu être réalisés.
             </Block.Text>
-            <Block.Buttons>
-              <ButtonLink to='' hollow color={'logement'}>
-                En savoir +
-              </ButtonLink>
-            </Block.Buttons>
           </Block.Content>
         </Block>
       </Section>

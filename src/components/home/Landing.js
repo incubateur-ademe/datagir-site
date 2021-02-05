@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ButtonLink from 'src/components/base/ButtonLink'
+import Button from 'src/components/base/Button'
 import Title from './landing/Title'
 
 const Wrapper = styled.div`
@@ -56,9 +56,9 @@ export default function Landing(props) {
             fonctionnalités ou applications.
           </Text>
           {!props.noButton && (
-            <ButtonLink hollow to={'/qui-sommes-nous'}>
+            <Button hollow to={'/qui-sommes-nous'}>
               En savoir +
-            </ButtonLink>
+            </Button>
           )}
         </Content>
       </Flex>

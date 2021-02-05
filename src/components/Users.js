@@ -6,7 +6,7 @@ import Section from 'src/components/layout/Section'
 const Wrapper = styled.div``
 export default function Users(props) {
   return (
-    <Section>
+    <Section id='users'>
       <Section.Title>
         Nos Réutilisateurs{' '}
         {props.sector && (
@@ -15,7 +15,7 @@ export default function Users(props) {
           </Section.Sector>
         )}
       </Section.Title>
-      <Wrapper>Réutilisateurs</Wrapper>
+      <Wrapper>En cours de développement</Wrapper>
     </Section>
   )
 }

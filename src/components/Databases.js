@@ -32,7 +32,7 @@ export default function Databases(props) {
     `
   )
   return (
-    <Section>
+    <Section id='databases'>
       <Section.Title>
         Nos Jeux de Données{' '}
         {props.sector && (

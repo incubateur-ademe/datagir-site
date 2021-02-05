@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ButtonLink from 'src/components/base/ButtonLink'
+import Button from 'src/components/base/Button'
 import Title from './landing/Title'
 
 const Wrapper = styled.div`
@@ -40,7 +40,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   margin: 0 -0.5rem;
 
-  a {
+  > * {
     margin: 0 0.5rem;
   }
 `
@@ -57,9 +57,14 @@ export default function Landing(props) {
           <Text>{props.text}</Text>
           <ButtonWrapper>
             {props.buttons.map((button) => (
-              <ButtonLink hollow color={props.sector} to={button.to}>
+              <Button
+                key={button.label}
+                hollow
+                color={props.sector}
+                to={button.to}
+              >
                 {button.label}
-              </ButtonLink>
+              </Button>
             ))}
           </ButtonWrapper>
         </Content>

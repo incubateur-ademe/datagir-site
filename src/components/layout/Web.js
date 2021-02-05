@@ -13,6 +13,10 @@ const Content = styled.div`
   max-width: 75em;
   margin: 0 auto 2em;
   padding: 0 0.5em;
+
+  ${(props) => props.theme.mq.medium} {
+    padding: 0 0.6666666666666667vw;
+  }
 `
 export default function Web(props) {
   return (

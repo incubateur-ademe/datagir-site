@@ -36,7 +36,7 @@ export default function Applications(props) {
   )
 
   return (
-    <Section>
+    <Section id='applications'>
       <Section.Title>
         Nos Simulateurs{' '}
         {props.sector && (
