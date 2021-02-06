@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const Wrapper = styled.div`
-  max-width: 49rem;
+  max-width: 36.5rem;
   margin: 0 auto 5.5rem;
 
   img {
-    max-width: 100%;
+    width: 49rem;
   }
 `
 export default function Content(props) {

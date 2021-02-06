@@ -70,10 +70,9 @@ export default function Landing(props) {
         </Subtitle>
         <Content>
           <Text>
-            Datagir accompagne les entreprises, associations ou collectifs dans
-            la compréhension et l’intégration des données ouvertes
-            environnementales de l’ADEME afin de créer de nouvelles
-            fonctionnalités ou applications.
+            Datagir vous accompagne dans la compréhension et l’intégration des
+            données ouvertes environnementales de l’ADEME afin de vous aider à
+            créer de nouvelles fonctionnalités et applications.
           </Text>
           {!props.noButton && (
             <Button hollow to={'/qui-sommes-nous'}>

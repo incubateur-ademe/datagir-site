@@ -1,9 +1,7 @@
 ---
 title: (Ré)Concilier défi planétaire et vie quotidienne
-introduction: Année après année, les français se déclarent de plus en plus nombreux à vouloir agir en faveur de l'environnement, et le placent même pour la première fois en <a href="https://presse.ademe.fr/2019/12/barometre-les-francais-placent-lenvironnement-pour-la-premiere-fois-en-haut-de-la-liste-de-leurs-preoccupations.html" target="_blank">haut de la liste de leurs préoccupations</a>.
+introduction: Année après année, les français se déclarent de plus en plus nombreux à vouloir agir en faveur de l'environnement, et le placent même pour la première fois en haut de la <a href="https://presse.ademe.fr/2019/12/barometre-les-francais-placent-lenvironnement-pour-la-premiere-fois-en-haut-de-la-liste-de-leurs-preoccupations.html" target="_blank">liste de leurs préoccupations</a>. Mais l'enjeu est de taille passer d'une empreinte de <a href="https://www.insee.fr/fr/statistiques/3281683?sommaire=3281778">11,2 tonnes</a>  d'équivalent CO2 / an actuellement à <a href="http://temis.documentation.developpement-durable.gouv.fr/docs/Temis/0085/Temis-0085717/22640.pdf">moins de 2 tonnes</a> pour contenir le réchauffement climatique à moins de 2 °C.
 ---
-
-Mais l'enjeu est de taille : passer d'une empreinte de [11,2 tonnes](https://www.insee.fr/fr/statistiques/3281683?sommaire=3281778) d'équivalent CO2 / an actuellement à [moins de 2 tonnes](http://temis.documentation.developpement-durable.gouv.fr/docs/Temis/0085/Temis-0085717/22640.pdf) pour contenir le réchauffement climatique à moins de 2 °C.
 
 Faire correspondre ces enjeux globaux avec les actions à l'échelle individuelle et collective n'est évident pour personne. Et pris dans nos habitudes et nos routines quotidiennes, **il est difficile de savoir que faire**.
 
@@ -25,7 +23,7 @@ Pour faciliter et accélérer le passage à l’acte vers de nouveaux modes de v
 
 > _Exemple 1_ : Notre [calculateur transport](https://Datagir.ademe.fr/transport) permet de quantifier et comparer l’impact CO2 de différents moyens de transport pour une distance donnée.
 
-> _Exemple 2_ : Le [simulateur d’empreinte carbone personnel Nos Gestes Climat](http://nosgestesclimat.fr/) interroge l’utilisateur sur ses habitudes quotidiennes (déplacements, alimentation, logement, etc) afin de lui indiquer son impact carbone et de le mettre en parallèle avec la moyenne française et l’objectif à atteindre pour respecter les Accords de Paris. Sont ensuites proposées des fiches personnalisés à l’utilisateur afin de lui permettre d’identifier les actions qu’il peut mettre en place pour réduire son impact carbone.
+> _Exemple 2_ : Le simulateur d’empreinte carbone personnel [Nos Gestes Climat](http://nosgestesclimat.fr/) interroge l’utilisateur sur ses habitudes quotidiennes (déplacements, alimentation, logement, etc) afin de lui indiquer son impact carbone et de le mettre en parallèle avec la moyenne française et l’objectif à atteindre pour respecter les Accords de Paris. Sont ensuites proposées des fiches personnalisés à l’utilisateur afin de lui permettre d’identifier les actions qu’il peut mettre en place pour réduire son impact carbone.
 
 - Par ailleurs, tout au long de l’année, Datagir propose de bénéficier de l’expertise des membres de l’ADEME et de son équipe, notamment constituée de développeurs, via l’organisation d’**ateliers en petits groupes pour répondre aux questions et besoins des participants, ou de webinaires plus large** rassemblant jusqu'à plusieurs centaines d’intéressés.
 

@@ -4,17 +4,23 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   position: relative;
   display: flex;
-  flex-direction: ${(props) => (props.left ? 'row-reverse' : 'row')};
+  flex-direction: ${(props) =>
+    props.top ? 'column-reverse' : props.left ? 'row-reverse' : 'row'};
   align-items: center;
   margin-bottom: 1.5rem;
 `
 
 export default function Block(props) {
-  return <Wrapper left={props.left}>{props.children}</Wrapper>
+  return (
+    <Wrapper top={props.top} left={props.left}>
+      {props.children}
+    </Wrapper>
+  )
 }
 
 Block.Image = styled.div`
-  width: 42.75rem;
+  width: ${(props) => (props.top ? '49rem' : '42.75rem;')};
+  margin: ${(props) => (props.top ? '-6rem 0 0 0' : '0')};
 `
 Block.Title = styled.h3``
 Block.Text = styled.p``
@@ -23,8 +29,9 @@ Block.Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 30.25rem;
-  margin: ${(props) => (props.left ? '0 -11.5rem 0 0' : '0 0 0 -11.5rem')};
+  width: ${(props) => (props.top ? '36.5rem' : '30.25rem')};
+  margin: ${(props) =>
+    props.top ? '0 0 0 0' : props.left ? '0 -11.5rem 0 0' : '0 0 0 -11.5rem'};
   padding: 1.5rem 1.5rem 1.8125rem;
   background-color: ${(props) => props.theme.colors.background};
 
