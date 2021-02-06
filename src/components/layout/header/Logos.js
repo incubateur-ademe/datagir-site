@@ -12,9 +12,6 @@ const Wrapper = styled.div`
 const StyledLink = styled(Link)`
   margin-left: 1rem;
 `
-const Svg = styled.svg`
-  display: block;
-`
 export default function Logos() {
   const data = useStaticQuery(
     graphql`
