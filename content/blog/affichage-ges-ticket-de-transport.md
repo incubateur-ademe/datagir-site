@@ -1,8 +1,9 @@
 ---
+date: 2020-07-28T22:00:00.000Z
 title: L'affichage des GES sur les titres de transport
-date:
-image:
-description: Petit état des lieux de l'affichage des gaz à effet de serre (GES) sur les sites de mobilité et les justificatifs de transport…
+description: Petit état des lieux de l'affichage des gaz à effet de serre (GES)
+  sur les sites de mobilité et les justificatifs de transport…
+image: ../assets/transport.jpeg
 ---
 
 Poursuivant l'objectif de mieux **rendre visible et compréhensible l'impact environnemental dans les gestes du quotidien**, voici un état des lieux de l'affichage de gaz à effet de serre (GES) dans le secteur des transports. A ce titre, nous interrogeons un expert de l'ADEME, Marc Cottignies, sur la [réglementation en vigueur](https://www.ecologique-solidaire.gouv.fr/information-ges-des-prestations-transport) et nous verrons son application concrète pour les citoyens et citoyennes au travers de quelques services de mobilité.
