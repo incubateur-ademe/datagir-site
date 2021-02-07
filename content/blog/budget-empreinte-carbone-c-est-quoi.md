@@ -1,8 +1,11 @@
 ---
+date: 2020-05-15T22:00:00.000Z
 title: Le budget et l'empreinte carbone, c'est quoi ?
-date:
-image:
-decription: Une explication pas à pas des objectifs climat, de l'échelle de la Terre à celle de l'individu.
+description: Une explication pas à pas des objectifs climat, de l'échelle de la
+  Terre à celle de l'individu.
+image: ../assets/budget-empreinte-carbone-c-est-quoi-1.jpg
+decription: Une explication pas à pas des objectifs climat, de l'échelle de la
+  Terre à celle de l'individu.
 ---
 
 Le climat est partout. Même en pleine crise du coronavirus, de nombreux articles nous rappelent que le dérèglement du climat prendra le relais des mauvaises nouvelles. Preuve que le sujet inquiète.
