@@ -14,3 +14,19 @@ export default function Blog() {
     </Web>
   )
 }
+
+export const pageQuery = graphql`
+  query {
+    allMdx(filter: { fileAbsolutePath: { regex: "/applications/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            image
+            description
+          }
+        }
+      }
+    }
+  }
+`

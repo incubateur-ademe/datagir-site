@@ -84,4 +84,8 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
+      - name: 'image'
+        label: 'Image'
+        widget: 'image'
+        allow_multiple: false
       - { name: body, label: Body, widget: markdown }

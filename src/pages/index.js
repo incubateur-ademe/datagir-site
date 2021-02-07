@@ -11,7 +11,6 @@ import Contact from 'src/components/Contact'
 import Newsletter from '../components/Newsletter'
 
 export default function Index() {
-  console.log('test')
   return (
     <Web title={'Accueil'}>
       <Landing />
