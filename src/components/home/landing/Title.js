@@ -30,7 +30,7 @@ const White = styled.span`
 const Arrow = styled.svg`
   width: 0.78em;
   height: auto;
-  margin-top: -0.06em;
+  margin-top: -0.08em;
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: opacity 1000ms 1050ms;
 `

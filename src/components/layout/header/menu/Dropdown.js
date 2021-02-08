@@ -59,7 +59,7 @@ const Menu = styled.nav`
     transform: scaleY(0);
     transform-origin: top;
     background-color: ${(props) => props.theme.colors.main};
-    transition: transform 400ms ease-out;
+    transition: transform ${(props) => props.length * 75}ms ease-out;
   }
 `
 const Option = styled(Link)`
@@ -71,8 +71,7 @@ const Option = styled(Link)`
   word-break: keep-all;
   opacity: 0;
   transform: translateX(-2em);
-  transition: opacity 500ms ${(props) => props.index * 100}ms,
-    transform 500ms ${(props) => props.index * 100}ms;
+  transition: opacity 400ms ${(props) => props.index * 75}ms;
 
   &:hover {
     color: ${(props) => props.theme.colors.main};
@@ -83,7 +82,7 @@ export default function Dropdown(props) {
   return (
     <Wrapper>
       <Title to={props.to}>{props.title}</Title>
-      <Menu>
+      <Menu length={props.options.length}>
         {props.options.map((option, index) => (
           <Option key={option.to} to={option.to} index={index}>
             {option.label.replace(/ /g, '\u00a0')}
