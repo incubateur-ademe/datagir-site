@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import styledNormalize from 'styled-normalize'
 
-import fonts from './fonts'
-
 export const themes = {
   default: {
     name: 'Défaut',
@@ -33,8 +31,6 @@ export const themes = {
 
 export const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
-
-  ${fonts}
 
   html {
     box-sizing: border-box;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Web from 'src/components/layout/Web'
 import Section from 'src/components/layout/Section'
