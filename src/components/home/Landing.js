@@ -55,7 +55,7 @@ const Content = styled.div`
   max-width: 30.25rem;
   margin: 0.25em 0 0 1rem;
   opacity: ${(props) => (props.mounted ? 1 : 0)};
-  transition: opacity 1400ms 1800ms;
+  transition: opacity 1400ms 1650ms;
 
   ${(props) => props.theme.mq.medium} {
     width: auto;

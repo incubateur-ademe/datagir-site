@@ -25,7 +25,7 @@ export default function Datagir(props) {
         </Block.Image>
         <Block.Content top>
           <StyledLogo />
-          <Block.Title>{props.data.mdx.frontmatter.title}</Block.Title>
+          <Block.MainTitle>{props.data.mdx.frontmatter.title}</Block.MainTitle>
           <Block.Text
             dangerouslySetInnerHTML={{
               __html: props.data.mdx.frontmatter.introduction,

@@ -36,7 +36,7 @@ const Arrow = styled.svg`
 `
 const Color = styled.span`
   color: ${(props) => props.theme.colors.main};
-  transform: translateX(${(props) => (props.mounted ? '0' : '-50%')});
+  transform: translateX(${(props) => (props.mounted ? '0' : '-100%')});
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: transform 1000ms 300ms, opacity 1000ms 300ms;
 `

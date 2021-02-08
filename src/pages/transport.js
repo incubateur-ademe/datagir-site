@@ -19,7 +19,7 @@ export default function Transport(props) {
       <Landing
         sector='transport'
         subtitle={`Des données ouvertes pour une mobilité moins émettrice en CO2`}
-        text={`Sed in enim ac odio consequat pellentesque at et mi. Donec sed finibus lacus, sed pretium nunc. Sed sit amet vestibulum turpis. Curabitur nec interdum dui. Phasellus blandit.`}
+        text={`Utilisez des données ouvertes pour comparer les principaux modes de transport et encourager une mobilité moins émettrice de CO2 !`}
         buttons={[
           {
             label: `Voir la documentation`,
