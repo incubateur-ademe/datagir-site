@@ -10,6 +10,15 @@ const Wrapper = styled.div`
   &:hover > nav {
     opacity: 1;
     pointer-events: inherit;
+
+    &:before {
+      transform: scaleY(1);
+    }
+
+    a {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 `
 const Title = styled(Link)`
@@ -31,22 +40,26 @@ const Title = styled(Link)`
 `
 const Menu = styled.nav`
   position: absolute;
+  overflow: hidden;
   top: 100%;
   left: 0;
   padding-left: 0.3125rem;
   background-color: white;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 300ms;
 
   &:before {
     content: '';
     position: absolute;
+    z-index: 5;
     top: 0;
     bottom: 0;
     left: 0;
     width: 0.3125rem;
+    transform: scaleY(0);
+    transform-origin: top;
     background-color: ${(props) => props.theme.colors.main};
+    transition: transform 400ms ease-out;
   }
 `
 const Option = styled(Link)`
@@ -56,6 +69,10 @@ const Option = styled(Link)`
   text-decoration: none;
   transition: all 200ms ease-out;
   word-break: keep-all;
+  opacity: 0;
+  transform: translateX(-2em);
+  transition: opacity 500ms ${(props) => props.index * 100}ms,
+    transform 500ms ${(props) => props.index * 100}ms;
 
   &:hover {
     color: ${(props) => props.theme.colors.main};
@@ -67,8 +84,8 @@ export default function Dropdown(props) {
     <Wrapper>
       <Title to={props.to}>{props.title}</Title>
       <Menu>
-        {props.options.map((option) => (
-          <Option key={option.to} to={option.to}>
+        {props.options.map((option, index) => (
+          <Option key={option.to} to={option.to} index={index}>
             {option.label.replace(/ /g, '\u00a0')}
           </Option>
         ))}
