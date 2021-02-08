@@ -18,7 +18,7 @@ export default function Transport(props) {
       <Landing
         sector='logement'
         subtitle={`Faciliter par les données, la rénovation et la décarbonation du secteur du bâtiment`}
-        text={`Sed in enim ac odio consequat pellentesque at et mi. Donec sed finibus lacus, sed pretium nunc. Sed sit amet vestibulum turpis. Curabitur nec interdum dui. Phasellus blandit auctor cursus. Sed sit amet vestibulum turpis.`}
+        text={`Utilisez les données des diagnostics de performance énergétique (DPE) pour apporter de nouvelles informations à vos utilisateurs !`}
         buttons={[
           {
             label: `Voir la documentation`,

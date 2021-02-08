@@ -31,7 +31,7 @@ export default function Sectors() {
           subtitle={
             'Aidez vos utilisateurs à découvrir l’impact environnemental de leur assiette.'
           }
-          text={`Utilisez les données d'impact de plus de 2500 aliments dans vos produits et services. Disponibles en OpenData, elles sont libres, en simple consultation, ou pour être réutilisées dans votre service`}
+          text={`Utilisez les données des diagnostics de performance énergétique (DPE) pour apporter de nouvelles informations à vos utilisateurs !`}
           color={'logement'}
           slug={'logement'}
         />

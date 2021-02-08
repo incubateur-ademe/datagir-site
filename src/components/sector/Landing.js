@@ -23,6 +23,7 @@ const Flex = styled.div`
 const Subtitle = styled.div`
   position: relative;
   width: 24rem;
+  margin-bottom: 1rem;
   padding: 0 1rem 0 2rem;
   font-size: 1.5em;
   font-weight: 700;
