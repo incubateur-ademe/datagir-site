@@ -7,19 +7,20 @@ const Wrapper = styled.div`
   margin: 0 0.5rem;
   padding: 0.5rem 0;
 
-  &:hover > div {
-    color: ${(props) => props.theme.colors.main};
-  }
-
   &:hover > nav {
     opacity: 1;
     pointer-events: inherit;
   }
 `
-const Title = styled.div`
-  cursor: default;
+const Title = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.text};
+  cursor: s-resize;
   transition: color 200ms ease-out;
 
+  &:hover {
+    color: ${(props) => props.theme.colors.main};
+  }
   &:after {
     content: 'ˇ';
     position: relative;
@@ -64,7 +65,7 @@ const Option = styled(Link)`
 export default function Dropdown(props) {
   return (
     <Wrapper>
-      <Title>{props.title}</Title>
+      <Title to={props.to}>{props.title}</Title>
       <Menu>
         {props.options.map((option) => (
           <Option key={option.to} to={option.to}>

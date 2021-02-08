@@ -6,7 +6,7 @@ import Sector from './sectors/Sector'
 
 export default function Sectors() {
   return (
-    <Section>
+    <Section id='sectors'>
       <Tile.Wrapper>
         <Sector
           title={'Alimentation'}

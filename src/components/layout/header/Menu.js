@@ -53,6 +53,7 @@ export default function Menu() {
     <Wrapper>
       <Dropdown
         title={'Secteurs'}
+        to={'/#sectors'}
         options={[
           { label: 'Alimentation', to: '/alimentation' },
           { label: 'Transport', to: '/transport' },
@@ -61,6 +62,7 @@ export default function Menu() {
       />
       <Dropdown
         title={'Simulateurs'}
+        to={'/#applications'}
         options={data.applications.edges.map((page) => ({
           label: page.node.frontmatter.title,
           to: `/apps${page.node.fields.slug}`,
@@ -68,6 +70,7 @@ export default function Menu() {
       />
       <Dropdown
         title={'Jeux de données'}
+        to={'/#databases'}
         options={data.databases.edges.map((page) => ({
           label: page.node.frontmatter.title,
           to: `/databases${page.node.fields.slug}`,
