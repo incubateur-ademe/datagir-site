@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import useMounted from 'src/hooks/useMounted'
+
 import Button from 'src/components/base/Button'
 import Title from './landing/Title'
 
@@ -37,6 +39,8 @@ const Subtitle = styled.div`
   font-weight: 700;
   text-align: right;
   color: ${(props) => props.theme.colors.background};
+  opacity: ${(props) => (props.mounted ? 1 : 0)};
+  transition: opacity 1400ms 1400ms;
 
   ${(props) => props.theme.mq.medium} {
     width: 41.6666667vw;
@@ -50,6 +54,8 @@ const Content = styled.div`
   align-items: flex-start;
   max-width: 30.25rem;
   margin: 0.25em 0 0 1rem;
+  opacity: ${(props) => (props.mounted ? 1 : 0)};
+  transition: opacity 1400ms 1800ms;
 
   ${(props) => props.theme.mq.medium} {
     width: auto;
@@ -60,25 +66,24 @@ const Text = styled.p`
   font-weight: 300;
 `
 export default function Landing(props) {
+  const mounted = useMounted()
   return (
     <Wrapper>
       <Background />
-      <Title />
+      <Title mounted={mounted} />
       <Flex>
-        <Subtitle>
+        <Subtitle mounted={mounted}>
           Apporter l'information environnementale au plus près des citoyens
         </Subtitle>
-        <Content>
+        <Content mounted={mounted}>
           <Text>
             Datagir vous accompagne dans la compréhension et l’intégration des
             données ouvertes environnementales de l’ADEME afin de vous aider à
             créer de nouvelles fonctionnalités et applications.
           </Text>
-          {!props.noButton && (
-            <Button hollow to={'/qui-sommes-nous'}>
-              En savoir +
-            </Button>
-          )}
+          <Button hollow to={'/qui-sommes-nous'}>
+            En savoir +
+          </Button>
         </Content>
       </Flex>
     </Wrapper>

@@ -22,7 +22,9 @@ export default function Blog(props) {
                 key={post.node.fields.slug}
                 title={post.node.frontmatter.title}
                 image={post.node.frontmatter.image}
+                text={post.node.frontmatter.description}
                 link={`/blog${post.node.fields.slug}`}
+                linkLabel={'Lire la suite'}
               />
             ))}
         </Tile.Wrapper>
@@ -33,7 +35,10 @@ export default function Blog(props) {
 
 export const pageQuery = graphql`
   query {
-    allMdx(filter: { fileAbsolutePath: { regex: "/blog/" } }) {
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       edges {
         node {
           fields {
