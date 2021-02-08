@@ -46,23 +46,25 @@ export default function Landing(props) {
             __html: props.frontmatter.introduction,
           }}
         />
-        <ButtonWrapper>
-          {props.frontmatter.buttons.map((button) => (
-            <Button
-              key={button.label}
-              hollow
-              color={
-                props.frontmatter.color ||
-                (props.frontmatter.sector === 'all'
-                  ? 'main'
-                  : props.frontmatter.sector)
-              }
-              to={button.link}
-            >
-              {button.label}
-            </Button>
-          ))}
-        </ButtonWrapper>
+        {props.frontmatter.buttons && (
+          <ButtonWrapper>
+            {props.frontmatter.buttons.map((button) => (
+              <Button
+                key={button.label}
+                hollow
+                color={
+                  props.frontmatter.color ||
+                  (props.frontmatter.sector === 'all'
+                    ? 'main'
+                    : props.frontmatter.sector)
+                }
+                to={button.link}
+              >
+                {button.label}
+              </Button>
+            ))}
+          </ButtonWrapper>
+        )}
       </Content>
     </Wrapper>
   )

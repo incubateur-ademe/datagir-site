@@ -7,7 +7,13 @@ const Wrapper = styled.div`
   margin: 0 auto 5.5rem;
 
   img {
-    width: 49rem;
+    max-width: 100%;
+  }
+
+  blockquote {
+    margin-left: 0;
+    padding-left: 0.5rem;
+    border-left: solid 2rem ${(props) => props.theme.colors.main};
   }
 `
 export default function Content(props) {

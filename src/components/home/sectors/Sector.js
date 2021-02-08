@@ -33,6 +33,7 @@ const Content = styled.div`
 const Top = styled.div``
 const Title = styled.h2`
   margin-bottom: 0.675em;
+  font-size: 2.5em;
   color: white;
 
   ${(props) => props.theme.mq.medium} {

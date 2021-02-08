@@ -64,7 +64,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 0.5em;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 0.8em;
   }
   h3 {
@@ -76,31 +76,6 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.main};
   }
 
-  p a  {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    text-decoration: none;
-    vertical-align: bottom;
-
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      transform: translateX(-100%);
-      background-color: ${(props) => props.theme.colors.main};
-    }
-    &:hover {
-      &:before {
-        transform: translateX(100%);
-        transition: transform 300ms ease-out;
-      }
-    }
-  }
-  
   input, select, textarea {
     color: ${(props) => props.theme.colors.text};
   }

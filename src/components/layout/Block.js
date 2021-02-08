@@ -23,6 +23,14 @@ Block.Image = styled.div`
   margin: ${(props) => (props.top ? '-6rem 0 0 0' : '0')};
 `
 Block.Title = styled.h3``
+Block.MainTitle = styled.h1`
+  font-size: 2rem;
+`
+Block.Date = styled.div`
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+`
 Block.Text = styled.p``
 Block.Content = styled.div`
   position: relative;
