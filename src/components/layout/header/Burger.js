@@ -5,12 +5,17 @@ const Wrapper = styled.div`
   position: fixed;
   z-index: 120;
   overflow: hidden;
+  display: none;
   top: 0.6666666666666667vw;
   right: 0.6666666666666667vw;
   width: 2rem;
   height: 2rem;
   background-color: ${(props) => props.theme.colors.main};
   cursor: pointer;
+
+  ${(props) => props.theme.mq.medium} {
+    display: block;
+  }
 `
 const Bar = styled.div`
   position: absolute;
