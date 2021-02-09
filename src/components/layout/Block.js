@@ -8,6 +8,10 @@ const Wrapper = styled.div`
     props.top ? 'column-reverse' : props.left ? 'row-reverse' : 'row'};
   align-items: center;
   margin-bottom: 1.5rem;
+
+  ${(props) => props.theme.mq.small} {
+    flex-direction: column-reverse;
+  }
 `
 
 export default function Block(props) {
@@ -19,8 +23,17 @@ export default function Block(props) {
 }
 
 Block.Image = styled.div`
-  width: ${(props) => (props.top ? '49rem' : '42.75rem;')};
+  width: ${(props) => (props.top ? '49rem' : '42.75rem')};
   margin: ${(props) => (props.top ? '-6rem 0 0 0' : '0')};
+
+  ${(props) => props.theme.mq.medium} {
+    width: ${(props) => (props.top ? '100vw' : '42.75rem')};
+  }
+
+  ${(props) => props.theme.mq.small} {
+    width: 100vw;
+    margin-top: -2rem;
+  }
 `
 Block.Title = styled.h3``
 Block.MainTitle = styled.h1`
@@ -42,6 +55,11 @@ Block.Content = styled.div`
     props.top ? '0 0 0 0' : props.left ? '0 -11.5rem 0 0' : '0 0 0 -11.5rem'};
   padding: 1.5rem 1.5rem 1.8125rem;
   background-color: ${(props) => props.theme.colors.background};
+
+  ${(props) => props.theme.mq.small} {
+    width: 90vw;
+    margin: 0 auto;
+  }
 
   &:before {
     content: '';

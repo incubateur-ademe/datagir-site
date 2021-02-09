@@ -27,9 +27,17 @@ const Background = styled.div`
     width: 41.6666667vw;
     height: 41.6666667vw;
   }
+  ${(props) => props.theme.mq.small} {
+    width: calc(50vw - 0.6666666666666667vw);
+    height: calc(50vw - 0.6666666666666667vw);
+  }
 `
 const Flex = styled.div`
   display: flex;
+
+  ${(props) => props.theme.mq.small} {
+    flex-direction: column;
+  }
 `
 const Subtitle = styled.div`
   position: relative;
@@ -46,6 +54,12 @@ const Subtitle = styled.div`
     width: 41.6666667vw;
     padding: 0 1.33333333vw 0;
   }
+
+  ${(props) => props.theme.mq.small} {
+    width: auto;
+    color: ${(props) => props.theme.colors.text};
+    text-align: left;
+  }
 `
 const Content = styled.div`
   flex: 1;
@@ -60,6 +74,9 @@ const Content = styled.div`
   ${(props) => props.theme.mq.medium} {
     width: auto;
     margin: 0.25em 0 0 1.33333333vw;
+  }
+  ${(props) => props.theme.mq.small} {
+    align-items: center;
   }
 `
 const Text = styled.p`

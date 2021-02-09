@@ -14,6 +14,10 @@ const Wrapper = styled.h1`
   ${(props) => props.theme.mq.medium} {
     padding-top: 7vw;
   }
+  ${(props) => props.theme.mq.small} {
+    font-size: 20vw;
+    padding: 16vw 0;
+  }
 `
 const White = styled.span`
   width: calc(24rem - 0.39em);
@@ -25,6 +29,9 @@ const White = styled.span`
 
   ${(props) => props.theme.mq.medium} {
     width: calc(41.6666667vw - 0.39em);
+  }
+  ${(props) => props.theme.mq.small} {
+    width: calc(49.3333333vw - 0.39em);
   }
 `
 const Arrow = styled.svg`

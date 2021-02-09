@@ -15,10 +15,23 @@ const Background = styled.div`
   width: 24rem;
   height: 100%;
   background-color: ${(props) => props.theme.colors[props.color]};
+
+  ${(props) => props.theme.mq.medium} {
+    width: 41.6666667vw;
+  }
+
+  ${(props) => props.theme.mq.small} {
+    width: calc(50vw - 0.6666666666666667vw);
+    height: calc(50vw - 0.6666666666666667vw);
+  }
 `
 
 const Flex = styled.div`
   display: flex;
+
+  ${(props) => props.theme.mq.small} {
+    flex-direction: column;
+  }
 `
 const Subtitle = styled.div`
   position: relative;
@@ -29,10 +42,26 @@ const Subtitle = styled.div`
   font-weight: 700;
   text-align: right;
   color: ${(props) => props.theme.colors.background};
+
+  ${(props) => props.theme.mq.medium} {
+    width: 41.6666667vw;
+    padding: 0 1.33333333vw 0;
+  }
+
+  ${(props) => props.theme.mq.small} {
+    width: auto;
+    color: ${(props) => props.theme.colors.text};
+    text-align: left;
+  }
 `
 const Content = styled.div`
-  width: 30.25rem;
+  flex: 1;
+  max-width: 30.25rem;
   margin: 0.25em 0 0 1rem;
+
+  ${(props) => props.theme.mq.small} {
+    align-items: center;
+  }
 `
 const Text = styled.p`
   font-weight: 300;
@@ -43,6 +72,19 @@ const ButtonWrapper = styled.div`
 
   > * {
     margin: 0 0.5rem;
+  }
+
+  ${(props) => props.theme.mq.medium} {
+    flex-direction: column;
+    align-items: flex-start;
+
+    > * {
+      margin: 0 0 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 `
 export default function Landing(props) {

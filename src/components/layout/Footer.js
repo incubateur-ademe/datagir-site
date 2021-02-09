@@ -9,6 +9,10 @@ const Wrapper = styled.header`
   position: relative;
   border-top: 2px solid ${(props) => props.theme.colors.main};
   padding-top: 2rem;
+
+  ${(props) => props.theme.mq.small} {
+    display: none;
+  }
 `
 const Content = styled.div`
   display: flex;

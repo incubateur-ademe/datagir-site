@@ -13,6 +13,10 @@ const TileWrapper = styled.div`
     width: 33.3333vw;
     padding: 0 0.6666666666666667vw;
   }
+
+  ${(props) => props.theme.mq.small} {
+    width: 100%;
+  }
 `
 const Content = styled.div`
   position: relative;
@@ -53,8 +57,8 @@ const Image = styled.div`
   margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
 
   ${(props) => props.theme.mq.medium} {
-    width: ${(props) => (props.margin ? '100%' : 'calc(100% + 3rem)')};
-    margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
+    width: ${(props) => (props.margin ? '100%' : 'calc(100% + 4vw)')};
+    margin: ${(props) => (props.margin ? '0 0' : '-2vw -2vw')} 2vw;
   }
 `
 const Title = styled.h3`

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import Dropdown from './menu/Dropdown'
 import Item from './menu/Item'
@@ -13,42 +12,7 @@ const Wrapper = styled.div`
     display: none;
   }
 `
-export default function Menu() {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        applications: allMdx(
-          sort: { fields: frontmatter___order }
-          filter: { fileAbsolutePath: { regex: "/applications/" } }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-            }
-          }
-        }
-        databases: allMdx(
-          filter: { fileAbsolutePath: { regex: "/databases/" } }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-            }
-          }
-        }
-      }
-    `
-  )
+export default function Menu(props) {
   return (
     <Wrapper>
       <Dropdown
@@ -63,7 +27,7 @@ export default function Menu() {
       <Dropdown
         title={'Simulateurs'}
         to={'/#applications'}
-        options={data.applications.edges.map((page) => ({
+        options={props.data.applications.edges.map((page) => ({
           label: page.node.frontmatter.title,
           to: `/apps${page.node.fields.slug}`,
         }))}
@@ -71,7 +35,7 @@ export default function Menu() {
       <Dropdown
         title={'Jeux de données'}
         to={'/#databases'}
-        options={data.databases.edges.map((page) => ({
+        options={props.data.databases.edges.map((page) => ({
           label: page.node.frontmatter.title,
           to: `/databases${page.node.fields.slug}`,
         }))}

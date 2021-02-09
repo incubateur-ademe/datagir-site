@@ -11,7 +11,7 @@ import Content from 'src/components/page/Content'
 const StyledLogo = styled(Logo)`
   width: 17.75em;
   height: auto;
-  margin-bottom: 1.5em;
+  margin: 0 auto 1.5em;
 `
 export default function Datagir(props) {
   return (

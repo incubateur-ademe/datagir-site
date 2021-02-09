@@ -13,6 +13,9 @@ const Wrapper = styled.div`
 
   ${(props) => props.theme.mq.medium} {
     width: 33.3333vw;
+  }
+  ${(props) => props.theme.mq.small} {
+    width: 100%;
     padding: 0 0.6666666666666667vw;
   }
 `
