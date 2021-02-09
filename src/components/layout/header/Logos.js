@@ -37,11 +37,9 @@ export default function Logos() {
     <Wrapper>
       <Img fixed={data.repu.childImageSharp.fixed} alt='République Française' />
       <Img fixed={data.ademe.childImageSharp.fixed} alt='ADEME' />
-      {typeof window !== `undefined` && window.location.pathname !== '/' && (
-        <StyledLink to='/'>
-          <Logo />
-        </StyledLink>
-      )}
+      <StyledLink to='/'>
+        <Logo />
+      </StyledLink>
     </Wrapper>
   )
 }
