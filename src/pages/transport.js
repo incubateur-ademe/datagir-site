@@ -38,10 +38,10 @@ export default function Transport(props) {
           </Block.Image>
           <Block.Content color={'transport'}>
             <Block.Title>
-              Intégrez notre simulateur transport directement sur votre site
+              Intégrez Mon Impact Transport directement sur votre site
             </Block.Title>
             <Block.Text>
-              Intégrez notre module de calcul chez vous, par exemple rendre un
+              Intégrez ce simulateur chez vous, par exemple rendre un
               article de blog plus intéractif pour le lecteur.
             </Block.Text>
             <Block.Buttons>
@@ -50,7 +50,7 @@ export default function Transport(props) {
                 hollow
                 color={'transport'}
               >
-                Voir le simulateur
+                Découvrir Mon Impact Transport
               </Button>
             </Block.Buttons>
           </Block.Content>
