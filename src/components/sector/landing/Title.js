@@ -28,16 +28,15 @@ const Wrapper = styled.h1`
           : 18.9375}vw;
   }
 
-  ${(props) => props.theme.mq.medium} {
-    font-size: 11.5vw;
+  ${(props) => props.theme.mq.small} {
     margin: 0 0 0
       ${(props) =>
         props.sector === 'alimentation'
-          ? 11.9
+          ? 19.7
           : props.sector === 'transport'
-          ? 14
+          ? 21.6
           : props.sector === 'logement'
-          ? 10.29
+          ? 18
           : 18.9375}vw;
   }
 `
@@ -48,6 +47,10 @@ const Color = styled.span`
   left: 0;
   padding-top: 6.25rem;
   color: ${(props) => props.theme.colors[props.color]};
+
+  ${(props) => props.theme.mq.small} {
+    padding: 19vw 0;
+  }
 `
 const White = styled.span`
   position: relative;
@@ -66,6 +69,21 @@ const White = styled.span`
   );
   color: ${(props) => props.theme.colors.background};
   overflow: hidden;
+
+  ${(props) => props.theme.mq.small} {
+    padding: 19vw 0;
+    width: calc(
+      49.3333333vw -
+        ${(props) =>
+          props.sector === 'alimentation'
+            ? 19.7
+            : props.sector === 'transport'
+            ? 21.6
+            : props.sector === 'logement'
+            ? 18
+            : 18.9375}vw
+    );
+  }
 `
 export default function Title(props) {
   return (

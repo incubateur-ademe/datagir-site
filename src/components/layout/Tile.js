@@ -15,7 +15,7 @@ const TileWrapper = styled.div`
   }
 
   ${(props) => props.theme.mq.small} {
-    width: 100%;
+    width: 50vw;
   }
 `
 const Content = styled.div`

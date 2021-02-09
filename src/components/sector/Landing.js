@@ -59,6 +59,10 @@ const Content = styled.div`
   max-width: 30.25rem;
   margin: 0.25em 0 0 1rem;
 
+  ${(props) => props.theme.mq.medium} {
+    width: auto;
+    margin: 0.25em 1.33333333vw 0 1.33333333vw;
+  }
   ${(props) => props.theme.mq.small} {
     align-items: center;
   }
@@ -77,6 +81,7 @@ const ButtonWrapper = styled.div`
   ${(props) => props.theme.mq.medium} {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
 
     > * {
       margin: 0 0 1rem;

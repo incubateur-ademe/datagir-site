@@ -10,7 +10,7 @@ const Wrapper = styled.header`
   border-top: 2px solid ${(props) => props.theme.colors.main};
   padding-top: 2rem;
 
-  ${(props) => props.theme.mq.small} {
+  ${(props) => props.theme.mq.medium} {
     display: none;
   }
 `

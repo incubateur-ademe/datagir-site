@@ -27,12 +27,12 @@ Block.Image = styled.div`
   margin: ${(props) => (props.top ? '-6rem 0 0 0' : '0')};
 
   ${(props) => props.theme.mq.medium} {
-    width: ${(props) => (props.top ? '100vw' : '42.75rem')};
+    width: ${(props) => (props.top ? '100vw' : '75%')};
   }
 
   ${(props) => props.theme.mq.small} {
     width: 100vw;
-    margin-top: -2rem;
+    margin-top: -3rem;
   }
 `
 Block.Title = styled.h3``
@@ -55,6 +55,12 @@ Block.Content = styled.div`
     props.top ? '0 0 0 0' : props.left ? '0 -11.5rem 0 0' : '0 0 0 -11.5rem'};
   padding: 1.5rem 1.5rem 1.8125rem;
   background-color: ${(props) => props.theme.colors.background};
+
+  ${(props) => props.theme.mq.medium} {
+    width: ${(props) => (props.top ? '75%' : '50%')};
+    margin: ${(props) =>
+      props.top ? '0 0 0 0' : props.left ? '0 -25% 0 0' : '0 0 0 -25%'};
+  }
 
   ${(props) => props.theme.mq.small} {
     width: 90vw;

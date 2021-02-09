@@ -22,6 +22,10 @@ const Content = styled.div`
       props.color ||
       props.theme.colors[props.sector] ||
       props.theme.colors.main};
+
+    ${(props) => props.theme.mq.small}  {
+      display: none;
+    }
   }
 `
 const ButtonWrapper = styled.div`

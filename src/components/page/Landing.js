@@ -34,6 +34,20 @@ const ButtonWrapper = styled.div`
   > * {
     margin: 0 0.5rem;
   }
+
+  ${(props) => props.theme.mq.small} {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+
+    > * {
+      margin: 0 0 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 `
 export default function Landing(props) {
   console.log(props.frontmatter)

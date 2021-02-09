@@ -35,12 +35,18 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-family: ${(props) => props.theme.fonts};
+
+    
   }
 
   body {
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     line-height: 1.4;
+
+    ${(props) => props.theme.mq.small} {
+      font-size: 0.825rem;
+    }
   } 
 
   *, *:before, *:after {
