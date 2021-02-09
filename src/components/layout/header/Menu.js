@@ -6,7 +6,7 @@ import Item from './menu/Item'
 
 const Wrapper = styled.div`
   display: flex;
-  font-size: 0.875em;
+  font-size: 0.9375em;
 
   ${(props) => props.theme.mq.medium} {
     display: none;

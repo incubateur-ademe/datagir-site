@@ -8,7 +8,6 @@ const Wrapper = styled(MagicLink)`
   display: block;
   overflow: hidden;
   margin-bottom: 2vw;
-  font-weight: 300;
   color: ${(props) => props.theme.colors.main};
   text-decoration: none;
 
