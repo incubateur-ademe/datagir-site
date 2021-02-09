@@ -73,16 +73,13 @@ export default function Header() {
           </Description>
           <Social />
           <Menu>
-            <MenuItem to='https://www.legifrance.gouv.fr/'>
-              legifrance.gouv.fr
+            <MenuItem to='https://www.ademe.fr/'>
+              ademe.fr
             </MenuItem>
-            <MenuItem to='https://www.gouvernement.fr/'>
-              gouvernement.fr
+            <MenuItem to='https://beta.gouv.fr/'>
+              beta.gouv.fr
             </MenuItem>
-            <MenuItem to='https://www.service-public.fr/'>
-              service-public.fr
-            </MenuItem>
-            <MenuItem to='https://www.data.gouv.fr/'>data.gouv.fr</MenuItem>
+            <MenuItem to='https://data.ademe.fr/'>data.ademe.fr</MenuItem>
           </Menu>
         </Right>
       </Content>
