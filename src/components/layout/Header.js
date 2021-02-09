@@ -57,7 +57,8 @@ export default function Header() {
   )
 
   const [open, setOpen] = useState(false)
-  const pathname = window ? window.location.pathname : null
+  const pathname =
+    typeof window !== `undefined` ? window.location.pathname : null
   useEffect(() => {
     setOpen(false)
   }, [pathname])
