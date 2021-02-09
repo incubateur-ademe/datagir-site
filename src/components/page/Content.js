@@ -4,7 +4,11 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const Wrapper = styled.div`
   max-width: 36.5rem;
-  margin: 0 1.33333333vw 5.5rem;
+
+  margin: 0 auto 5.5rem;
+  ${(props) => props.theme.mq.medium} {
+    margin: 0 1.33333333vw 5.5rem;
+  }
 
   img {
     max-width: 100%;
