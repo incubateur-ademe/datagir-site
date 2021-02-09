@@ -7,7 +7,7 @@ const Wrapper = styled.svg`
 const Color = styled.path`
   fill: ${(props) =>
     props.hover ? props.theme.colors.background : props.theme.colors.main};
-  transition: fill 100ms;
+  transition: fill 30ms ${(props) => (props.hover ? '75ms' : 0)};
 `
 const Square = styled.path`
   fill: ${(props) => props.theme.colors.main};
@@ -17,7 +17,7 @@ const Square = styled.path`
 const White = styled.path`
   fill: ${(props) =>
     props.hover ? props.theme.colors.main : props.theme.colors.background};
-  transition: fill 100ms;
+  transition: fill 30ms ${(props) => (props.hover ? 0 : '75ms')};
 `
 export default function Logo(props) {
   const [hover, setHover] = useState(false)
