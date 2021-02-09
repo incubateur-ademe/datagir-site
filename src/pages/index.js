@@ -16,8 +16,8 @@ export default function Index() {
       <Landing />
       <Sectors />
       <Applications />
-      <Users />
       <Databases />
+      <Users />
       <Contact />
       <Newsletter />
     </Web>

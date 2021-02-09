@@ -20,7 +20,7 @@ export default function Sectors() {
         <Sector
           title={'Transport'}
           subtitle={
-            'Aidez vos utilisateurs à découvrir l’impact environnemental de leur assiette.'
+            'Aidez vos utilisateurs à découvrir l’impact environnemental de leurs déplacements.'
           }
           text={`Utilisez des données ouvertes pour comparer les principaux modes de transport et encourager une mobilité moins émettrice de CO2 !`}
           color={'transport'}
@@ -29,7 +29,7 @@ export default function Sectors() {
         <Sector
           title={'Logement'}
           subtitle={
-            'Aidez vos utilisateurs à découvrir l’impact environnemental de leur assiette.'
+            'Aidez vos utilisateurs à découvrir l’impact environnemental de leur logement et sa consommation énergétique.'
           }
           text={`Utilisez les données des diagnostics de performance énergétique (DPE) pour apporter de nouvelles informations à vos utilisateurs !`}
           color={'logement'}
