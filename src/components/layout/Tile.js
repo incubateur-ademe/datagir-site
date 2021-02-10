@@ -11,11 +11,11 @@ const TileWrapper = styled.div`
 
   ${(props) => props.theme.mq.medium} {
     width: 33.3333vw;
-    padding: 0 0.6666666666666667vw;
+    padding: 0 0.5rem;
   }
 
   ${(props) => props.theme.mq.small} {
-    width: 50vw;
+    width: 50%;
   }
 `
 const Content = styled.div`
@@ -39,7 +39,7 @@ const Content = styled.div`
   }
 
   ${(props) => props.theme.mq.medium} {
-    padding: 2vw 2vw calc(2vw + 0.3125rem);
+    padding: 1rem 1rem calc(1rem + 0.3125rem);
   }
 `
 const Top = styled.div`
@@ -57,8 +57,8 @@ const Image = styled.div`
   margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
 
   ${(props) => props.theme.mq.medium} {
-    width: ${(props) => (props.margin ? '100%' : 'calc(100% + 4vw)')};
-    margin: ${(props) => (props.margin ? '0 0' : '-2vw -2vw')} 2vw;
+    width: ${(props) => (props.margin ? '100%' : 'calc(100% + 2rem)')};
+    margin: ${(props) => (props.margin ? '0 0' : '-1rem -1rem')} 1rem;
   }
 `
 const Title = styled.h3`
@@ -68,6 +68,10 @@ const Text = styled.p``
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+
+  ${(props) => props.theme.mq.small} {
+    font-size: 0.875em;
+  }
 `
 export default function Tile(props) {
   return (
@@ -105,6 +109,6 @@ Tile.Wrapper = styled.div`
   margin: 0 -0.5rem;
 
   ${(props) => props.theme.mq.medium} {
-    margin: 0 -0.6666666666666667vw;
+    margin: 0 -0.5rem;
   }
 `

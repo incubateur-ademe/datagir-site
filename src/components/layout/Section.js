@@ -6,6 +6,10 @@ const Section = styled.section`
 
 Section.Title = styled.h2`
   font-size: 2.5em;
+
+  ${(props) => props.theme.mq.small}  {
+    font-size: 1.75em;
+  }
 `
 Section.Sector = styled.span`
   color: ${(props) => props.theme.colors[props.color]};

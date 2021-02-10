@@ -2,12 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  position: fixed;
-  z-index: 120;
+  position: relative;
+  z-index: 121;
   overflow: hidden;
   display: none;
-  top: 0.6666666666666667vw;
-  right: 0.6666666666666667vw;
   width: 32px;
   height: 32px;
   background-color: ${(props) => props.theme.colors.main};

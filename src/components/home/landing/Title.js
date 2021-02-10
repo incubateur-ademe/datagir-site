@@ -31,7 +31,7 @@ const White = styled.span`
     width: calc(41.6666667vw - 0.39em);
   }
   ${(props) => props.theme.mq.small} {
-    width: calc(49.3333333vw - 0.39em);
+    width: calc(50vw - 0.39em - 0.5rem);
   }
 `
 const Arrow = styled.svg`

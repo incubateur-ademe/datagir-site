@@ -13,10 +13,10 @@ const Wrapper = styled.div`
 
   ${(props) => props.theme.mq.medium} {
     width: 33.3333vw;
+    padding: 0 0.5rem;
   }
   ${(props) => props.theme.mq.small} {
     width: 100%;
-    padding: 0 0.6666666666666667vw;
   }
 `
 const Content = styled.div`
@@ -30,7 +30,7 @@ const Content = styled.div`
   background-color: ${(props) => props.theme.colors[props.color]};
 
   ${(props) => props.theme.mq.medium} {
-    padding: 2vw;
+    padding: 1rem;
   }
 `
 const Top = styled.div``

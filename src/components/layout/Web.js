@@ -16,7 +16,7 @@ const Content = styled.div`
   padding: 0 0.5em;
 
   ${(props) => props.theme.mq.medium} {
-    padding: 0 0.6666666666666667vw;
+    padding: 0 0.5rem;
   }
 `
 export default function Web(props) {

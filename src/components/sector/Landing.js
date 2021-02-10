@@ -21,8 +21,8 @@ const Background = styled.div`
   }
 
   ${(props) => props.theme.mq.small} {
-    width: calc(50vw - 0.6666666666666667vw);
-    height: calc(50vw - 0.6666666666666667vw);
+    width: calc(50vw - 0.5rem);
+    height: calc(50vw - 0.5rem);
   }
 `
 
@@ -50,13 +50,15 @@ const Subtitle = styled.div`
 
   ${(props) => props.theme.mq.small} {
     width: auto;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
     color: ${(props) => props.theme.colors.text};
     text-align: left;
   }
 `
 const Content = styled.div`
   flex: 1;
-  max-width: 30.25rem;
+  max-width: 30.5rem;
   margin: 0.25em 0 0 1rem;
 
   ${(props) => props.theme.mq.medium} {

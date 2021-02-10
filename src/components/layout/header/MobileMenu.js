@@ -41,23 +41,23 @@ const Content = styled.div`
   position: absolute;
   z-index: 5;
   top: 25%;
-  right: calc(34vw + 2vw);
+  right: calc(34vw + 1rem);
   opacity: ${(props) => (props.open ? 1 : 0)};
   transition: opacity 0ms 400ms;
 
   ${(props) => props.theme.mq.small} {
-    right: calc(40vw + 2vw);
+    right: calc(40vw + 1rem);
   }
 `
 const Secondary = styled.div`
   position: absolute;
   top: 65%;
-  left: calc(66vw + 2vw);
+  left: calc(66vw + 1rem);
   opacity: ${(props) => (props.open ? 1 : 0)};
   transition: opacity 0ms 650ms;
 
   ${(props) => props.theme.mq.small} {
-    left: calc(60vw + 2vw);
+    left: calc(60vw + 1rem);
   }
 `
 export default function MobileMenu(props) {

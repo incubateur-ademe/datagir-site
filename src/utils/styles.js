@@ -35,8 +35,6 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-family: ${(props) => props.theme.fonts};
-
-    
   }
 
   body {
@@ -44,9 +42,13 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.text};
     line-height: 1.4;
 
-    ${(props) => props.theme.mq.small} {
-      font-size: 0.825rem;
+    ${(props) => props.theme.mq.medium} {
+      padding-top: 10em;
     }
+    ${(props) => props.theme.mq.small} {
+      padding-top: 5.5em;
+    }
+  
   } 
 
   *, *:before, *:after {
@@ -64,14 +66,26 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
+
+    ${(props) => props.theme.mq.small} {
+      font-size: 1.75em;
+    }
   }
   h2 {
     font-size: 2em;
     margin-bottom: 0.8em;
+
+    ${(props) => props.theme.mq.small} {
+      font-size: 1.5em;
+    }
   }
   h3 {
     font-size: 1.5em;
     margin-bottom: 1em;
+
+    ${(props) => props.theme.mq.small} {
+      font-size: 1.125em;
+    }
   }
 
   a {

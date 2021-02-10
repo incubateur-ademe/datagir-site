@@ -26,7 +26,7 @@ const Title = styled.div`
   }
 `
 const Menu = styled.nav`
-  margin-bottom: 2vw;
+  margin-bottom: 1rem;
 `
 const Option = styled(Link)`
   display: block;

@@ -9,8 +9,36 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
 `
+const StyledRepu = styled(Img)`
+  width: 6.1875rem;
+  height: 5.625rem;
+
+  ${(props) => props.theme.mq.small} {
+    width: 3.09375rem;
+    height: 2.8125rem;
+  }
+`
+const StyledADEME = styled(Img)`
+  width: 4.9375rem;
+  height: 5.625rem;
+
+  ${(props) => props.theme.mq.small} {
+    width: 2.46875rem;
+    height: 2.8125rem;
+  }
+`
 const StyledLink = styled(Link)`
   margin-left: 1rem;
+
+  ${(props) => props.theme.mq.small} {
+    margin-left: 0.5rem;
+  }
+`
+const StyledLogo = styled(Logo)`
+  ${(props) => props.theme.mq.small} {
+    width: 4rem;
+    height: auto;
+  }
 `
 export default function Logos() {
   const data = useStaticQuery(
@@ -18,15 +46,15 @@ export default function Logos() {
       query {
         repu: file(relativePath: { eq: "logos/repufrancaise.jpg" }) {
           childImageSharp {
-            fixed(height: 90, width: 99, quality: 100) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 99, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         ademe: file(relativePath: { eq: "logos/ademe.jpg" }) {
           childImageSharp {
-            fixed(height: 90, width: 79, quality: 100) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 79, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -35,10 +63,14 @@ export default function Logos() {
   )
   return (
     <Wrapper>
-      <Img fixed={data.repu.childImageSharp.fixed} alt='République Française' />
-      <Img fixed={data.ademe.childImageSharp.fixed} alt='ADEME' />
+      <StyledRepu
+        fluid={data.repu.childImageSharp.fluid}
+        alt='République Française'
+      />
+
+      <StyledADEME fluid={data.ademe.childImageSharp.fluid} alt='ADEME' />
       <StyledLink to='/'>
-        <Logo link />
+        <StyledLogo link />
       </StyledLink>
     </Wrapper>
   )
