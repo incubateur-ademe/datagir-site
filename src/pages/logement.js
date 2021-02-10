@@ -62,7 +62,7 @@ export const pageQuery = graphql`
   query logementPage {
     image1: file(relativePath: { eq: "logement1.jpg" }) {
       childrenImageSharp {
-        fluid(maxWidth: 684) {
+        fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }

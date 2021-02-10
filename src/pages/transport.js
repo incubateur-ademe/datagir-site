@@ -41,8 +41,8 @@ export default function Transport(props) {
               Intégrez Mon Impact Transport directement sur votre site
             </Block.Title>
             <Block.Text>
-              Intégrez ce simulateur chez vous, par exemple rendre un
-              article de blog plus intéractif pour le lecteur.
+              Intégrez ce simulateur chez vous, par exemple rendre un article de
+              blog plus intéractif pour le lecteur.
             </Block.Text>
             <Block.Buttons>
               <Button
@@ -92,14 +92,14 @@ export const pageQuery = graphql`
   query transportPage {
     image1: file(relativePath: { eq: "transport1.jpg" }) {
       childrenImageSharp {
-        fluid(maxWidth: 684) {
+        fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image2: file(relativePath: { eq: "transport2.jpg" }) {
       childrenImageSharp {
-        fluid(maxWidth: 684) {
+        fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }

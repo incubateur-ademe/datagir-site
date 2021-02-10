@@ -18,14 +18,14 @@ export default function Logos() {
       query {
         repu: file(relativePath: { eq: "logos/repufrancaise.jpg" }) {
           childImageSharp {
-            fixed(height: 90) {
+            fixed(height: 90, width: 99, quality: 100) {
               ...GatsbyImageSharpFixed
             }
           }
         }
         ademe: file(relativePath: { eq: "logos/ademe.jpg" }) {
           childImageSharp {
-            fixed(height: 90) {
+            fixed(height: 90, width: 79, quality: 100) {
               ...GatsbyImageSharpFixed
             }
           }

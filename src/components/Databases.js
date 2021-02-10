@@ -17,7 +17,7 @@ export default function Databases(props) {
               frontmatter {
                 image {
                   childrenImageSharp {
-                    fluid {
+                    fluid(quality: 90) {
                       ...GatsbyImageSharpFluid
                     }
                   }

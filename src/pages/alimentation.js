@@ -96,14 +96,14 @@ export const pageQuery = graphql`
   query alimentationPage {
     image1: file(relativePath: { eq: "alimentation1.jpg" }) {
       childrenImageSharp {
-        fluid(maxWidth: 684) {
+        fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image2: file(relativePath: { eq: "alimentation2.jpg" }) {
       childrenImageSharp {
-        fluid(maxWidth: 684) {
+        fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }
