@@ -8,9 +8,10 @@ const Wrapper = styled.div`
 `
 const ItemWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   max-width: 75em;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
 `
 const Item = styled(MagicLink)`
   display: block;
@@ -24,6 +25,11 @@ const Item = styled(MagicLink)`
   &:last-child {
     margin: 0;
     padding: 0;
+    border: none;
+  }
+
+  ${(props) => props.theme.mq.small} {
+    margin: 0 0 1rem;
     border: none;
   }
 `

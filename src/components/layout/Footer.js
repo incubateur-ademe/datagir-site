@@ -11,10 +11,6 @@ const Wrapper = styled.footer`
   position: relative;
   border-top: 2px solid ${(props) => props.theme.colors.main};
   padding-top: 2rem;
-
-  ${(props) => props.theme.mq.medium} {
-    display: none;
-  }
 `
 const Content = styled.div`
   display: flex;
@@ -23,11 +19,19 @@ const Content = styled.div`
   max-width: 75em;
   margin: 0 auto 2rem;
   padding: 0 0.5em;
+
+  ${(props) => props.theme.mq.medium} {
+    flex-direction: column;
+  }
 `
 const Right = styled.div`
   max-width: 42.75rem;
 `
-const Description = styled.p``
+const Description = styled.p`
+  ${(props) => props.theme.mq.medium} {
+    margin-top: 1rem;
+  }
+`
 
 export default function Header() {
   const data = useStaticQuery(

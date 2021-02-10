@@ -12,14 +12,18 @@ const Wrapper = styled.div`
   padding: 0 0.5rem 2rem;
   font-size: 0.875rem;
 
-  ${(props) => props.theme.mq.medium} {
-    display: none;
+  ${(props) => props.theme.mq.small} {
+    flex-direction: column;
   }
 `
 const Column = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  ${(props) => props.theme.mq.small} {
+    margin-bottom: 1rem;
+  }
 `
 const Title = styled(MagicLink)`
   position: relative;
@@ -102,6 +106,7 @@ export default function Menu(props) {
         ))}
       </Column>
       <Column>
+        <Title to={'/'}>Datagir</Title>
         <Item to={'/qui-sommes-nous'}>Qui sommes nous</Item>
         <Item to={'/blog'}>Blog</Item>
         <Item to={'https://datagir.gitbook.io/documentation/'}>

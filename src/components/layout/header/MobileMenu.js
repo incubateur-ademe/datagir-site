@@ -43,8 +43,7 @@ const Content = styled.div`
   top: 25%;
   right: calc(34vw + 1rem);
   opacity: ${(props) => (props.open ? 1 : 0)};
-  transition: opacity 0ms 400ms;
-
+  transition: ${(props) => (props.open ? 'opacity 0ms 400ms' : 'none')};
   ${(props) => props.theme.mq.small} {
     right: calc(40vw + 1rem);
   }
@@ -54,7 +53,7 @@ const Secondary = styled.div`
   top: 65%;
   left: calc(66vw + 1rem);
   opacity: ${(props) => (props.open ? 1 : 0)};
-  transition: opacity 0ms 650ms;
+  transition: ${(props) => (props.open ? 'opacity 0ms 650ms' : 'none')};
 
   ${(props) => props.theme.mq.small} {
     left: calc(60vw + 1rem);
