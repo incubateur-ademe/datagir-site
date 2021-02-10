@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
     transition: ${(props) =>
       props.open
-        ? 'width 250ms ease-in-out 400ms, transform 250ms ease-in-out 650ms'
+        ? 'width 350ms ease-in-out 300ms, transform 350ms ease-in-out 650ms'
         : 'none'};
 
     ${(props) => props.theme.mq.small} {
@@ -43,7 +43,7 @@ const Content = styled.div`
   top: 25%;
   right: calc(34vw + 1rem);
   opacity: ${(props) => (props.open ? 1 : 0)};
-  transition: ${(props) => (props.open ? 'opacity 0ms 400ms' : 'none')};
+  transition: ${(props) => (props.open ? 'opacity 0ms 300ms' : 'none')};
   ${(props) => props.theme.mq.small} {
     right: calc(40vw + 1rem);
   }
