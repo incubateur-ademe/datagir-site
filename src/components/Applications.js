@@ -54,6 +54,13 @@ export default function Applications(props) {
                   application.node.frontmatter.sector
                 )
           )
+          .sort((a) =>
+            !props.sector
+              ? 1
+              : a.node.frontmatter.sector === props.sector
+              ? -1
+              : 1
+          )
           .map((application) => (
             <Tile
               key={application.node.fields.slug}
