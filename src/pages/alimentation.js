@@ -19,15 +19,15 @@ export default function Alimentation(props) {
       <Landing
         sector='alimentation'
         subtitle={`Des données ouvertes pour une alimentation moins émettrice en CO2.`}
-        text={`Utilisez les données d'impact de plus de 2500 aliments dans vos produits et services. Accessibles en OpenData, elles sont disponibles en simple consultation ou peuvent être réutilisées dans vos applications ou services !`}
+        text={`Utilisez les données d'impact de plus de 2 500 aliments dans vos produits et services. Accessibles en OpenData, les données de la base Agribalyse sont disponibles en simple consultation ou peuvent être réutilisées dans vos applications ou services !`}
         buttons={[
           {
-            label: `Voir la documentation`,
-            to: `https://datagir.gitbook.io/documentation/se-nourrir/se-nourrir-reutiliser-les-donnees`,
+            label: `Découvrir Agribalyse`,
+            to: `databases/agribalyse/`,
           },
           {
-            label: `Voir la base de donnée`,
-            to: `https://agribalyse.ademe.fr/`,
+            label: `Voir les simulateurs`,
+            to: `alimentation#applications`,
           },
         ]}
       />
