@@ -9,22 +9,16 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
 `
-const StyledRepu = styled(Img)`
-  width: 6.1875rem;
-  height: 5.625rem;
-
+const Small = styled(Img)`
+  display: none !important;
   ${(props) => props.theme.mq.small} {
-    width: 3.09375rem;
-    height: 2.8125rem;
+    display: block !important;
   }
 `
-const StyledADEME = styled(Img)`
-  width: 4.9375rem;
-  height: 5.625rem;
-
+const Large = styled(Img)`
+  display: block !important;
   ${(props) => props.theme.mq.small} {
-    width: 2.46875rem;
-    height: 2.8125rem;
+    display: none !important;
   }
 `
 const StyledLink = styled(Link)`
@@ -44,17 +38,31 @@ export default function Logos() {
   const data = useStaticQuery(
     graphql`
       query {
+        repusmall: file(relativePath: { eq: "logos/repufrancaise.jpg" }) {
+          childImageSharp {
+            fixed(height: 50, quality: 100) {
+              ...GatsbyImageSharpFixed_noBase64
+            }
+          }
+        }
         repu: file(relativePath: { eq: "logos/repufrancaise.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 99, quality: 100) {
-              ...GatsbyImageSharpFluid
+            fixed(height: 90, quality: 100) {
+              ...GatsbyImageSharpFixed_noBase64
+            }
+          }
+        }
+        ademesmall: file(relativePath: { eq: "logos/ademe.jpg" }) {
+          childImageSharp {
+            fixed(height: 50, quality: 100) {
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
         ademe: file(relativePath: { eq: "logos/ademe.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 79, quality: 100) {
-              ...GatsbyImageSharpFluid
+            fixed(height: 90, quality: 100) {
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
@@ -63,12 +71,16 @@ export default function Logos() {
   )
   return (
     <Wrapper>
-      <StyledRepu
-        fluid={data.repu.childImageSharp.fluid}
+      <Large
+        fixed={data.repu.childImageSharp.fixed}
         alt='République Française'
       />
-
-      <StyledADEME fluid={data.ademe.childImageSharp.fluid} alt='ADEME' />
+      <Large fixed={data.ademe.childImageSharp.fixed} alt='ADEME' />
+      <Small
+        fixed={data.repusmall.childImageSharp.fixed}
+        alt='République Française'
+      />
+      <Small fixed={data.ademesmall.childImageSharp.fixed} alt='ADEME' />
       <StyledLink to='/'>
         <StyledLogo link />
       </StyledLink>
