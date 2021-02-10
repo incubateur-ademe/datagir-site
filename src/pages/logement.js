@@ -24,6 +24,7 @@ export default function Transport(props) {
             label: `Voir la documentation`,
             to: `https://datagir.gitbook.io/documentation/`,
           },
+          { label: `Voir les simulateurs`, to: `/logement#applications` },
         ]}
       />
       <Section>
