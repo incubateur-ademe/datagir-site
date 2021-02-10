@@ -15,10 +15,9 @@ const Item = styled(MagicLink)`
 export default function MainLinks() {
   return (
     <Wrapper>
-      <Item to='https://www.legifrance.gouv.fr/'>legifrance.gouv.fr</Item>
-      <Item to='https://www.gouvernement.fr/'>gouvernement.fr</Item>
-      <Item to='https://www.service-public.fr/'>service-public.fr</Item>
-      <Item to='https://www.data.gouv.fr/'>data.gouv.fr</Item>
+      <Item to='https://www.ademe.fr/'>ademe.fr</Item>
+      <Item to='https://beta.gouv.fr/'>beta.gouv.fr</Item>
+      <Item to='https://data.ademe.fr/'>data.ademe.fr</Item>
     </Wrapper>
   )
 }
