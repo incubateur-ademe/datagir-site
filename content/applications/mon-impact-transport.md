@@ -1,6 +1,6 @@
 ---
 title: Mon Impact Transport
-introduction: Encourager le report modal en chiffrant et comparant l’ensemble des modes de transport
+introduction: Découvrez l'impact de vos déplacements sur le climat ! Des données ouvertes pour une mobilité moins émettrice en CO2.
 color: '#800080'
 script: https://datagir.ademe.fr/apps/transport
 sector: transport
