@@ -36,9 +36,12 @@ export default function Databases(props) {
       <Section.Title>
         Nos Jeux de Données{' '}
         {props.sector && (
-          <Section.Sector color={props.sector}>
-            {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
-          </Section.Sector>
+          <>
+            liés {props.sector === 'alimentation' ? "à l'" : 'au '}
+            <Section.Sector color={props.sector}>
+              {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
+            </Section.Sector>
+          </>
         )}
       </Section.Title>
       <Tile.Wrapper>

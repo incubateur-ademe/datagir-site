@@ -10,9 +10,12 @@ export default function Users(props) {
       <Section.Title>
         Nos Réutilisateurs{' '}
         {props.sector && (
-          <Section.Sector color={props.sector}>
-            {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
-          </Section.Sector>
+          <>
+            liés {props.sector === 'alimentation' ? "à l'" : 'au '}
+            <Section.Sector color={props.sector}>
+              {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
+            </Section.Sector>
+          </>
         )}
       </Section.Title>
       <Wrapper>En cours de développement</Wrapper>
