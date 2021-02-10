@@ -22,7 +22,6 @@ const Wrapper = styled.div`
   }
 `
 const Title = styled(Link)`
-  font-weight: 500;
   text-decoration: none;
   color: ${(props) => props.theme.colors.text};
   cursor: s-resize;

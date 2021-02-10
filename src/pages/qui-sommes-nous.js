@@ -4,14 +4,22 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 import Logo from 'src/components/misc/Logo'
+import Social from 'src/components/misc/Social'
 import Web from 'src/components/layout/Web'
 import Block from 'src/components/layout/Block'
 import Content from 'src/components/page/Content'
 
+const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 16rem;
+  margin: 0 auto;
+`
 const StyledLogo = styled(Logo)`
-  width: 17.75em;
+  width: 100%;
   height: auto;
-  margin: 0 auto 1.5em;
+  margin: 0 0 1em;
 `
 export default function Datagir(props) {
   return (
@@ -24,7 +32,10 @@ export default function Datagir(props) {
           />
         </Block.Image>
         <Block.Content top>
-          <StyledLogo />
+          <LogoWrapper>
+            <StyledLogo />
+            <Social />
+          </LogoWrapper>
           <Block.MainTitle>{props.data.mdx.frontmatter.title}</Block.MainTitle>
           <Block.Text
             dangerouslySetInnerHTML={{
