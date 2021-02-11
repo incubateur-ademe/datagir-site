@@ -5,24 +5,12 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const Application = path.resolve(`./src/templates/application.js`)
-  const Databases = path.resolve(`./src/templates/databases.js`)
   const Post = path.resolve(`./src/templates/post.js`)
   return graphql(
     `
       {
         apps: allMdx(
           filter: { fileAbsolutePath: { regex: "/applications/" } }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        databases: allMdx(
-          filter: { fileAbsolutePath: { regex: "/databases/" } }
         ) {
           edges {
             node {
@@ -52,18 +40,6 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: `apps${page.node.fields.slug}`,
         component: Application,
-        context: {
-          slug: page.node.fields.slug
-            .replace(/\//g, '')
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, ''),
-        },
-      })
-    })
-    result.data.databases.edges.forEach((page) => {
-      createPage({
-        path: `databases${page.node.fields.slug}`,
-        component: Databases,
         context: {
           slug: page.node.fields.slug
             .replace(/\//g, '')

@@ -9,7 +9,6 @@ import Button from 'src/components/base/Button'
 import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
-import Databases from 'src/components/Databases'
 import Contact from 'src/components/Contact'
 import Newsletter from 'src/components/Newsletter'
 
@@ -83,7 +82,6 @@ export default function Alimentation(props) {
         </Block>
       </Section>
       <Applications sector='alimentation' />
-      <Databases sector='alimentation' />
       <Users sector='alimentation' />
       <Contact sector='alimentation' />
       <Newsletter sector='alimentation' />

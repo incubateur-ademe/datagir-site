@@ -9,7 +9,6 @@ import Button from 'src/components/base/Button'
 import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
-import Databases from 'src/components/Databases'
 import Contact from 'src/components/Contact'
 import Newsletter from '../components/Newsletter'
 
@@ -82,7 +81,6 @@ export default function Transport(props) {
         </Block>
       </Section>
       <Applications sector='transport' />
-      <Databases sector='transport' />
       <Users sector='transport' />
       <Contact sector='transport' />
       <Newsletter sector='transport' />
