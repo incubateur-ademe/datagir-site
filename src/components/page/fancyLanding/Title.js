@@ -13,7 +13,7 @@ const Wrapper = styled.h1`
         ? 8.9375
         : props.title === 'Jeux de données'
         ? 7.3
-        : 18.9375}rem;
+        : 18.95}rem;
   font-size: 5.5rem;
   line-height: 1.2;
 
@@ -29,7 +29,7 @@ const Wrapper = styled.h1`
           ? 9.7
           : props.title === 'Jeux de données'
           ? 7
-          : 18.9375}vw;
+          : 30}vw;
   }
 
   ${(props) => props.theme.mq.small} {
@@ -64,7 +64,7 @@ const White = styled.span`
           ? 8.9375
           : props.title === 'Jeux de données'
           ? 7.3
-          : 18.9375}rem
+          : 18.95}rem
   );
   color: ${(props) => props.theme.colors.background};
   overflow: hidden;
@@ -81,7 +81,7 @@ const White = styled.span`
             ? 9.7
             : props.title === 'Jeux de données'
             ? 7
-            : 18.9375}vw
+            : 30}vw
     );
   }
   ${(props) => props.theme.mq.small} {

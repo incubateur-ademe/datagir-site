@@ -1,38 +1,42 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import Section from 'src/components/layout/Section'
 import TextInput from 'src/components/base/TextInput'
 import Button from 'src/components/base/Button'
 import Alert from 'src/components/base/Alert'
+import Section from 'src/components/layout/Section'
 
-const Form = styled.form`
-  max-width: 36.5rem;
-`
-const Content = styled.div`
+const Wrapper = styled.div`
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 36.5rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 1.8125rem;
+  background-color: ${(props) => props.theme.colors.tile};
 
   &:before {
     content: '';
-    position: relative;
-    width: 11.5rem;
-    margin-right: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.3125rem;
     background-color: ${(props) =>
-      props.color ||
-      props.theme.colors[props.sector] ||
-      props.theme.colors.main};
+      props.theme.colors[props.color] || props.theme.colors.main};
+  }
 
-    ${(props) => props.theme.mq.small}  {
-      display: none;
-    }
+  ${(props) => props.theme.mq.medium} {
+    padding: 1rem 1rem calc(1rem + 0.3125rem);
   }
 `
+const Form = styled.form``
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 `
 const Introduction = styled.p`
-  max-width: 36.5rem;
   font-weight: 700;
 `
 export default function Contact(props) {
@@ -43,9 +47,9 @@ export default function Contact(props) {
   const [code, setCode] = useState(null)
 
   return (
-    <Section id='contact'>
-      <Section.Title>Notre newsletter</Section.Title>
-      <Content sector={props.sector}>
+    <Section>
+      <Wrapper sector={props.sector}>
+        <Section.Title>Notre Newsletter</Section.Title>
         <Form
           method='post'
           netlify-honeypot='bot-field'
@@ -90,7 +94,7 @@ export default function Contact(props) {
             }
           />
           <ButtonWrapper>
-            <Button>Envoyer mon message</Button>
+            <Button>M'abonner</Button>
           </ButtonWrapper>
           {code && (
             <Alert error={code !== 'success'}>
@@ -104,7 +108,7 @@ export default function Contact(props) {
             </Alert>
           )}
         </Form>
-      </Content>
+      </Wrapper>
     </Section>
   )
 }

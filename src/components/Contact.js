@@ -7,33 +7,21 @@ import Select from 'src/components/base/Select'
 import TextArea from 'src/components/base/TextArea'
 import Button from 'src/components/base/Button'
 
-const Form = styled.form`
+const StyledSection = styled(Section)`
   max-width: 36.5rem;
+  margin-left: auto;
+  margin-right: auto;
 `
+const Form = styled.form``
 const Content = styled.div`
   display: flex;
-
-  &:before {
-    content: '';
-    position: relative;
-    width: 11.5rem;
-    margin-right: 1rem;
-    background-color: ${(props) =>
-      props.color ||
-      props.theme.colors[props.sector] ||
-      props.theme.colors.main};
-
-    ${(props) => props.theme.mq.small}  {
-      display: none;
-    }
-  }
+  align-items: flex-start;
 `
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 `
 const Introduction = styled.p`
-  max-width: 36.5rem;
   font-weight: 700;
 `
 export default function Contact(props) {
@@ -44,7 +32,7 @@ export default function Contact(props) {
     message: '',
   })
   return (
-    <Section id='contact'>
+    <StyledSection id='contact'>
       <Section.Title>Nous Contacter</Section.Title>
       <Content sector={props.sector}>
         <Form
@@ -101,6 +89,6 @@ export default function Contact(props) {
           </ButtonWrapper>
         </Form>
       </Content>
-    </Section>
+    </StyledSection>
   )
 }

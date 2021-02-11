@@ -7,6 +7,11 @@ import Title from './fancyLanding/Title'
 const Wrapper = styled.div`
   position: relative;
   margin-bottom: 6rem;
+  min-height: ${(props) => (props.square ? '24rem' : 'none')};
+
+  ${(props) => props.theme.mq.medium} {
+    min-height: ${(props) => (props.square ? '40vw' : 'none')};
+  }
 `
 const Background = styled.div`
   position: absolute;
@@ -96,7 +101,7 @@ const ButtonWrapper = styled.div`
 `
 export default function FancyLanding(props) {
   return (
-    <Wrapper>
+    <Wrapper square={props.square}>
       <Background color={props.color} />
       <Title color={props.color} title={props.title}>
         {props.title}
@@ -105,18 +110,20 @@ export default function FancyLanding(props) {
         <Subtitle>{props.subtitle}</Subtitle>
         <Content>
           <Text>{props.text}</Text>
-          <ButtonWrapper>
-            {props.buttons.map((button) => (
-              <Button
-                key={button.label}
-                hollow
-                color={props.color}
-                to={button.to}
-              >
-                {button.label}
-              </Button>
-            ))}
-          </ButtonWrapper>
+          {props.buttons && (
+            <ButtonWrapper>
+              {props.buttons.map((button) => (
+                <Button
+                  key={button.label}
+                  hollow
+                  color={props.color}
+                  to={button.to}
+                >
+                  {button.label}
+                </Button>
+              ))}
+            </ButtonWrapper>
+          )}
         </Content>
       </Flex>
     </Wrapper>

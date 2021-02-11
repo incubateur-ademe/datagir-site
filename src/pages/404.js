@@ -13,6 +13,7 @@ export default function Index() {
         subtitle={`Oups...`}
         text={`Cette page n'existe pas (ou plus).`}
         buttons={[{ label: `Revenir à l'accueil`, to: `/` }]}
+        square
       />
     </Web>
   )

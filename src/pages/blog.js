@@ -10,7 +10,7 @@ export default function Blog(props) {
   return (
     <Web title={'Blog'}>
       <Section>
-        <Section.Title>Notre Blog</Section.Title>
+        <Section.Title>Blog</Section.Title>
         <Tile.Wrapper>
           {props.data.allMdx.edges
             .filter((post) =>
