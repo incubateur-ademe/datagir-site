@@ -78,4 +78,25 @@ Block.Content = styled.div`
       props.theme.colors[props.color] || props.theme.colors.main};
   }
 `
-Block.Buttons = styled.div``
+Block.Buttons = styled.div`
+  display: flex;
+  margin: 0 -0.5rem;
+
+  > * {
+    margin: 0 0.5rem;
+  }
+
+  ${(props) => props.theme.mq.medium} {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+
+    > * {
+      margin: 0 0 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+`

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Button from 'src/components/base/Button'
-import Title from './landing/Title'
+import Title from './fancyLanding/Title'
 
 const Wrapper = styled.div`
   position: relative;
@@ -17,7 +17,7 @@ const Background = styled.div`
   background-color: ${(props) => props.theme.colors[props.color]};
 
   ${(props) => props.theme.mq.medium} {
-    width: 41.6666667vw;
+    width: 40vw;
   }
 
   ${(props) => props.theme.mq.small} {
@@ -44,8 +44,8 @@ const Subtitle = styled.div`
   color: ${(props) => props.theme.colors.background};
 
   ${(props) => props.theme.mq.medium} {
-    width: 41.6666667vw;
-    padding: 0 1.33333333vw 0;
+    width: 40vw;
+    padding: 0 1rem 0;
   }
 
   ${(props) => props.theme.mq.small} {
@@ -63,7 +63,7 @@ const Content = styled.div`
 
   ${(props) => props.theme.mq.medium} {
     width: auto;
-    margin: 0.25em 1.33333333vw 0 1.33333333vw;
+    margin: 0.25rem 1rem 0 1rem;
   }
   ${(props) => props.theme.mq.small} {
     align-items: center;
@@ -94,12 +94,12 @@ const ButtonWrapper = styled.div`
     }
   }
 `
-export default function Landing(props) {
+export default function FancyLanding(props) {
   return (
     <Wrapper>
-      <Background color={props.sector} />
-      <Title sector={props.sector}>
-        {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
+      <Background color={props.color} />
+      <Title color={props.color} title={props.title}>
+        {props.title}
       </Title>
       <Flex>
         <Subtitle>{props.subtitle}</Subtitle>
@@ -110,7 +110,7 @@ export default function Landing(props) {
               <Button
                 key={button.label}
                 hollow
-                color={props.sector}
+                color={props.color}
                 to={button.to}
               >
                 {button.label}

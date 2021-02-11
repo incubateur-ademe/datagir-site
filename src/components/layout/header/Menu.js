@@ -32,14 +32,7 @@ export default function Menu(props) {
           to: `/apps${page.node.fields.slug}`,
         }))}
       />
-      <Dropdown
-        title={'Jeux de données'}
-        to={'/#databases'}
-        options={props.data.databases.edges.map((page) => ({
-          label: page.node.frontmatter.title,
-          to: `/databases${page.node.fields.slug}`,
-        }))}
-      />
+      <Item to={'/jeux-de-donnees'}>Jeux de données</Item>
       <Item to={'/qui-sommes-nous'}>Qui sommes nous</Item>
       <Item to={'/blog'}>Blog</Item>
       <Item to={'https://datagir.gitbook.io/documentation/'}>

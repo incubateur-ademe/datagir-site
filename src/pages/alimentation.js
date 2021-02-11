@@ -6,7 +6,7 @@ import Web from 'src/components/layout/Web'
 import Section from 'src/components/layout/Section'
 import Block from 'src/components/layout/Block'
 import Button from 'src/components/base/Button'
-import Landing from 'src/components/sector/Landing'
+import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
 import Databases from 'src/components/Databases'
@@ -16,19 +16,17 @@ import Newsletter from 'src/components/Newsletter'
 export default function Alimentation(props) {
   return (
     <Web title={'Alimentation'}>
-      <Landing
-        sector='alimentation'
+      <FancyLanding
+        color='alimentation'
+        title='Alimentation'
         subtitle={`Des données ouvertes pour une alimentation moins émettrice en CO2.`}
         text={`Utilisez les données d'impact de plus de 2 500 aliments dans vos produits et services. Accessibles en OpenData, les données de la base Agribalyse sont disponibles en simple consultation ou peuvent être réutilisées dans vos applications ou services !`}
         buttons={[
           {
-            label: `Découvrir Agribalyse`,
-            to: `databases/agribalyse/`,
+            label: `Voir la documentation`,
+            to: `https://datagir.gitbook.io/documentation/se-nourrir/se-nourrir-reutiliser-les-donnees`,
           },
-          {
-            label: `Voir les simulateurs`,
-            to: `alimentation#applications`,
-          },
+          { label: `Voir les simulateurs`, to: `#applications` },
         ]}
       />
       <Section>

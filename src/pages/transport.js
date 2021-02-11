@@ -6,7 +6,7 @@ import Web from 'src/components/layout/Web'
 import Section from 'src/components/layout/Section'
 import Block from 'src/components/layout/Block'
 import Button from 'src/components/base/Button'
-import Landing from 'src/components/sector/Landing'
+import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/Users'
 import Databases from 'src/components/Databases'
@@ -16,16 +16,17 @@ import Newsletter from '../components/Newsletter'
 export default function Transport(props) {
   return (
     <Web title={'Transport'}>
-      <Landing
-        sector='transport'
+      <FancyLanding
+        color='transport'
+        title='Transport'
         subtitle={`Des données ouvertes pour une mobilité moins émettrice en CO2`}
         text={`Utilisez des données ouvertes pour comparer les principaux modes de transport et encourager une mobilité moins émettrice de CO2 !`}
         buttons={[
           {
             label: `Voir la documentation`,
-            to: `https://datagir.gitbook.io/documentation/se-deplacer-quelques-cas-dusage-des-donnees`,
+            to: `hhttps://datagir.gitbook.io/documentation/se-deplacer-quelques-cas-dusage-des-donnees`,
           },
-          { label: `Voir les simulateurs`, to: `/transport#applications` },
+          { label: `Voir les simulateurs`, to: `#applications` },
         ]}
       />
       <Section>

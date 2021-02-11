@@ -44,20 +44,6 @@ export default function Header() {
             }
           }
         }
-        databases: allMdx(
-          filter: { fileAbsolutePath: { regex: "/databases/" } }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-            }
-          }
-        }
       }
     `
   )
