@@ -42,8 +42,8 @@ export default function Alimentation(props) {
             </Block.Title>
             <Block.Text>
               Que ce soit dans Yuka, Marmiton, Open Food Facts ou FoodChéri, ces
-              données sont directement mises à disposition de leurs utilisateurs
-              via par exemple l'Eco‑score.
+              données sont utilisées par exemple dans l'Eco‑score directement mis
+              à disposition de leurs utilisateurs.
             </Block.Text>
             <Block.Buttons>
               <Button
