@@ -38,6 +38,49 @@ const StyledSlider = styled(Slider)`
       }
     }
   }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    color: transparent;
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:before {
+      content: '❯';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 7rem;
+      line-height: 0.7;
+      color: ${(props) => props.theme.colors.main};
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .slick-prev {
+    right: 100%;
+
+    &:before {
+      content: '❮';
+    }
+  }
+  .slick-next {
+    left: 100%;
+
+    &:before {
+      content: '❯';
+    }
+  }
+  .slick-list {
+    z-index: 2;
+  }
   .slick-track {
     display: flex !important;
   }
@@ -98,12 +141,19 @@ export default function Users(props) {
         )}
       </Section.Title>
       <StyledSlider
-        arrows={false}
-        dots={true}
         infinite={true}
         speed={500}
         autoplay={true}
         autoplaySpeed={10000}
+        responsive={[
+          {
+            breakpoint: 1200,
+            settings: {
+              arrows: false,
+              dots: true,
+            },
+          },
+        ]}
       >
         {data.allMdx.edges
           .filter((user) => user.node.frontmatter.home)

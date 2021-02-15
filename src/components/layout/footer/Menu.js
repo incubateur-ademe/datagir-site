@@ -92,7 +92,10 @@ export default function Menu(props) {
       <Column>
         <Title to={'/#applications'}>Simulateurs</Title>
         {props.data.applications.edges.map((page) => (
-          <Item to={`/apps${page.node.fields.slug}`}>
+          <Item
+            key={page.node.fields.slug}
+            to={`/apps${page.node.fields.slug}`}
+          >
             {page.node.frontmatter.title}
           </Item>
         ))}
@@ -100,7 +103,10 @@ export default function Menu(props) {
       <Column>
         <Title to={'/#databases'}>Jeux de données</Title>
         {props.data.databases.edges.map((page) => (
-          <Item to={`/databases${page.node.fields.slug}`}>
+          <Item
+            key={page.node.fields.slug}
+            to={`/databases${page.node.fields.slug}`}
+          >
             {page.node.frontmatter.title}
           </Item>
         ))}
