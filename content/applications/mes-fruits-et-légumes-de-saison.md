@@ -11,4 +11,41 @@ buttons:
     link: https://github.com/betagouv/ecolab-calculateur-fruits-et-legumes-de-saison
 image: ../assets/mes-fruits-et-legumes-de-saison.jpg
 order: 3
+users:
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
 ---

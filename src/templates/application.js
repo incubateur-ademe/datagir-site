@@ -5,6 +5,7 @@ import Web from 'src/components/layout/Web'
 import Landing from 'src/components/page/Landing'
 import Embed from 'src/components/page/Embed'
 import Content from 'src/components/page/Content'
+import Users from 'src/components/page/Users'
 
 export default function Application(props) {
   return (
@@ -14,6 +15,7 @@ export default function Application(props) {
         <Embed embed={props.data.mdx.frontmatter.script} />
       )}
       <Content>{props.data.mdx.body}</Content>
+      <Users users={props.data.mdx.frontmatter.users} />
     </Web>
   )
 }
@@ -30,6 +32,17 @@ export const pageQuery = graphql`
         sector
         buttons {
           label
+          link
+        }
+        users {
+          title
+          image {
+            childrenImageSharp {
+              fluid(maxWidth: 684, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           link
         }
       }

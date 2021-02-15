@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 const Section = styled.section`
-  max-width: ${(props) => (props.small ? '36.5rem' : 'none')};
-  margin: 0 ${(props) => (props.small ? 'auto' : 0)} 5.5rem;
+  max-width: ${(props) =>
+    props.small ? '36.5rem' : props.medium ? '49rem' : 'none'};
+  margin: 0 auto 5.5rem;
 `
 
 Section.Title = styled.h2`

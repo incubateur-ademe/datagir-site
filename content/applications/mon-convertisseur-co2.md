@@ -11,4 +11,41 @@ buttons:
     link: https://github.com/betagouv/ecolab-calculateurco2inverse
 image: ../assets/mon-convertisseur-co2.jpg
 order: 4
+users:
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
+  - title: Open Food Facts
+    image: ../assets/openfoodfacts.png
+    link: https://fr.openfoodfacts.org/
+  - title: Yuka
+    image: ../assets/yuka.png
+    link: https://yuka.io/
 ---
