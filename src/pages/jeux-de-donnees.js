@@ -38,7 +38,7 @@ export default function Alimentation(props) {
           <Block.Content>
             <Block.Title>Agribalyse</Block.Title>
             <Block.Text>
-              AGRIBALYSE® est une base de données de référence des indicateurs
+              AGRIBALYSE® est la base de données de référence des indicateurs
               d'impacts environnementaux des produits agricoles produits en
               France et des produits alimentaires consommés en France.
             </Block.Text>
