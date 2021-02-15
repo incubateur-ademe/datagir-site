@@ -71,16 +71,24 @@ export default function Logos() {
   )
   return (
     <Wrapper>
-      <Large
-        fixed={data.repu.childImageSharp.fixed}
-        alt='République Française'
-      />
-      <Large fixed={data.ademe.childImageSharp.fixed} alt='ADEME' />
-      <Small
-        fixed={data.repusmall.childImageSharp.fixed}
-        alt='République Française'
-      />
-      <Small fixed={data.ademesmall.childImageSharp.fixed} alt='ADEME' />
+      <Link to='/'>
+        <Large
+          fixed={data.repu.childImageSharp.fixed}
+          alt='République Française'
+        />
+      </Link>
+      <Link to='/'>
+        <Large fixed={data.ademe.childImageSharp.fixed} alt='ADEME' />
+      </Link>
+      <Link to='/'>
+        <Small
+          fixed={data.repusmall.childImageSharp.fixed}
+          alt='République Française'
+        />
+      </Link>
+      <Link to='/'>
+        <Small fixed={data.ademesmall.childImageSharp.fixed} alt='ADEME' />
+      </Link>
       <StyledLink to='/'>
         <StyledLogo link />
       </StyledLink>

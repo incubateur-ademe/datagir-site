@@ -8,24 +8,25 @@ import Block from 'src/components/layout/Block'
 import Button from 'src/components/base/Button'
 import FancyLanding from 'src/components/page/FancyLanding'
 
-export default function Alimentation(props) {
+export default function Databases(props) {
   return (
-    <Web title={'Alimentation'}>
+    <Web title={'Jeux de données'}>
       <FancyLanding
         color='main'
         title='Jeux de données'
-        subtitle={`Des données ouvertes pour une alimentation moins émettrice en CO2.`}
-        text={`Utilisez les données d'impact de plus de 2 500 aliments dans vos produits et services. Accessibles en OpenData, les données de la base Agribalyse sont disponibles en simple consultation ou peuvent être réutilisées dans vos applications ou services !`}
+        subtitle={`Des données environnementales ouvertes pour agir.`}
+        text={`L’ADEME met à disposition de manière ouverte de nombreux jeux de données. Datagir vous accompagne dans la compréhension et l’intégration de ces données afin de vous aider à créer de nouvelles fonctionnalités et applications pour la transition écologique.`}
         buttons={[
           {
-            label: `Voir les jeux de données`,
-            to: `https://data.ademe.fr`,
+            label: `Découvrir les ressources Datagir`,
+            to: `https://datagir.gitbook.io/documentation/`,
           },
           {
-            label: `Voir la documentation`,
-            to: `https://datagir.gitbook.io/documentation`,
+            label: `Voir tous les jeux de données`,
+            to: `https://data.ademe.fr/datasets`,
           },
         ]}
+        verticalButtons
       />
       <Section>
         <Block>

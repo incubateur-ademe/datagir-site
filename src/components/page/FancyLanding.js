@@ -79,10 +79,20 @@ const Text = styled.p`
 `
 const ButtonWrapper = styled.div`
   display: flex;
-  margin: 0 -0.5rem;
+  ${(props) =>
+    props.vertical &&
+    `
+    flex-direction: column;
+    align-items: flex-start;
+  `}
+  margin: ${(props) => (props.vertical ? 0 : '0 -0.5rem')};
 
   > * {
-    margin: 0 0.5rem;
+    margin: ${(props) => (props.vertical ? '0 0 1rem' : '0 0.5rem')};
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   ${(props) => props.theme.mq.medium} {
@@ -92,10 +102,6 @@ const ButtonWrapper = styled.div`
 
     > * {
       margin: 0 0 1rem;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 `
@@ -111,7 +117,7 @@ export default function FancyLanding(props) {
         <Content>
           <Text>{props.text}</Text>
           {props.buttons && (
-            <ButtonWrapper>
+            <ButtonWrapper vertical={props.verticalButtons}>
               {props.buttons.map((button) => (
                 <Button
                   key={button.label}
