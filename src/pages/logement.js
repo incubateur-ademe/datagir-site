@@ -7,7 +7,7 @@ import Section from 'src/components/layout/Section'
 import Block from 'src/components/layout/Block'
 import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
-import Users from 'src/components/Users'
+import Users from 'src/components/sector/Users'
 import Contact from 'src/components/Contact'
 import Newsletter from '../components/Newsletter'
 

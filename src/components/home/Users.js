@@ -108,10 +108,7 @@ export default function Users(props) {
               title
               sector
               home
-              buttons {
-                label
-                link
-              }
+              link
               image {
                 childrenImageSharp {
                   fluid(maxWidth: 384, quality: 90) {
