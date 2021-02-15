@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 import styledNormalize from 'styled-normalize'
 
+import slick from './slick'
+
 export const themes = {
   default: {
     name: 'Défaut',
@@ -33,6 +35,8 @@ export const themes = {
 export const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
+  ${slick}
+  
   html {
     box-sizing: border-box;
     font-family: ${(props) => props.theme.fonts};

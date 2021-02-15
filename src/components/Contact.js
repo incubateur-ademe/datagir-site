@@ -7,11 +7,6 @@ import Select from 'src/components/base/Select'
 import TextArea from 'src/components/base/TextArea'
 import Button from 'src/components/base/Button'
 
-const StyledSection = styled(Section)`
-  max-width: 36.5rem;
-  margin-left: auto;
-  margin-right: auto;
-`
 const Form = styled.form``
 const Content = styled.div`
   display: flex;
@@ -32,7 +27,7 @@ export default function Contact(props) {
     message: '',
   })
   return (
-    <StyledSection id='contact'>
+    <Section id='contact' small>
       <Section.Title>Nous Contacter</Section.Title>
       <Content sector={props.sector}>
         <Form
@@ -89,6 +84,6 @@ export default function Contact(props) {
           </ButtonWrapper>
         </Form>
       </Content>
-    </StyledSection>
+    </Section>
   )
 }

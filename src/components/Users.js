@@ -1,12 +1,91 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
+import Slider from 'react-slick'
 
 import Section from 'src/components/layout/Section'
+import User from './users/User'
 
-const Wrapper = styled.div``
+const StyledSlider = styled(Slider)`
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 1rem 0.5rem;
+
+      opacity: 0.4;
+      transition: opacity 200ms;
+
+      &.slick-active {
+        opacity: 1;
+      }
+      button  {
+        width: 1rem;
+        height: 1rem;
+        color: transparent;
+        border: none;
+        border-radius: none;
+        background-color: ${(props) => props.theme.colors.main};
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .slick-track {
+    display: flex !important;
+  }
+  .slick-slide {
+    height: inherit !important;
+
+    > div {
+      height: 100%;
+    }
+  }
+`
 export default function Users(props) {
+  const data = useStaticQuery(graphql`
+    query {
+      allMdx(
+        sort: { fields: frontmatter___order }
+        filter: { fileAbsolutePath: { regex: "/users/" } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              sector
+              home
+              buttons {
+                label
+                link
+              }
+              image {
+                childrenImageSharp {
+                  fluid(maxWidth: 384, quality: 90) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              quote
+              signature
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
-    <Section id='users'>
+    <Section id='users' small>
       <Section.Title>
         Nos Réutilisateurs{' '}
         {props.sector && (
@@ -18,7 +97,20 @@ export default function Users(props) {
           </>
         )}
       </Section.Title>
-      <Wrapper>En cours de développement</Wrapper>
+      <StyledSlider
+        arrows={false}
+        dots={true}
+        infinite={true}
+        speed={500}
+        autoplay={true}
+        autoplaySpeed={10000}
+      >
+        {data.allMdx.edges
+          .filter((user) => user.node.frontmatter.home)
+          .map((user) => (
+            <User key={user.node.slug} user={user.node.frontmatter} />
+          ))}
+      </StyledSlider>
     </Section>
   )
 }

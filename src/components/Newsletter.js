@@ -11,7 +11,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 36.5rem;
   margin: 0 auto;
   padding: 1.5rem 1.5rem 1.8125rem;
   background-color: ${(props) => props.theme.colors.tile};
@@ -47,7 +46,7 @@ export default function Contact(props) {
   const [code, setCode] = useState(null)
 
   return (
-    <Section>
+    <Section small id='newsletter'>
       <Wrapper sector={props.sector}>
         <Section.Title>Notre Newsletter</Section.Title>
         <Form
