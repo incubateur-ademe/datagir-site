@@ -7,13 +7,13 @@ Faire correspondre ces enjeux globaux avec les actions à l'échelle individuell
 
 Pourtant, **de nombreux acteurs (médias, applications, entreprises, associations...) procurent quotidiennement des informations à leurs utilisateurs**, notamment lors de leurs processus de décision (faire ses courses, trouver le meilleur itinéraire et moyen de transport pour aller à un rendez-vous, choisir un logement pour les vacances, etc). Nombre de ces acteurs sont conscients que **l’impact environnemental est un critère de choix de plus en plus prégnant** pour leurs utilisateurs et souhaiteraient intégrer des données environnementales à leurs services. Ils font cependant face à plusieurs difficultés : les informations environnementales doivent être fiables, à jour, bien comprises malgré leur technicité et parlantes pour leur communauté. Se retrouvant seuls pour traiter ces éléments épineux, ces structures font trop souvent le choix de ne pas intégrer les informations environnementales à leurs fonctionnalités. Même les applications avec un prisme environnemental fort peinent à trouver des données fiables facilement accessibles et intégrables.
 
-### Datagir, un service pour apporter l’information environnementale là où les citoyens (en) sont
+## Datagir, un service pour apporter l’information environnementale là où les citoyens (en) sont
 
 Pour traiter cette problématique, l’ADEME (l’Agence de la Transition Ecologique) développe le service Datagir, selon l’approche Startup d’État depuis mars 2019, grâce à l’appui stratégique et opérationnel de la DINUM.
 
 Datagir vise à **encourager des comportements plus durables en apportant une information environnementale fiable au cœur des applications et services les plus utilisés par les citoyens** dans leurs différents processus de décisions et de consommation.
 
-### Comment
+## Comment
 
 Pour faciliter et accélérer le passage à l’acte vers de nouveaux modes de vie, Datagir propose trois offres afin de répondre au mieux aux besoins de ses interlocuteurs, sur plusieurs thématiques (particulièrement l’alimentation, le transport, le logement et l’impact carbone) :
 

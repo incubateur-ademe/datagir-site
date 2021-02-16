@@ -30,7 +30,7 @@ const Menu = styled.nav`
 `
 const Option = styled(Link)`
   display: block;
-  padding: 0 0.75em 0.75em 0;
+  padding: 0 1rem 0.75em;
   font-size: 2.66666666vw;
   color: ${(props) => props.theme.colors.background};
   text-decoration: none;
@@ -51,7 +51,7 @@ export default function Dropdown(props) {
         <Menu length={props.options.length}>
           {props.options.map((option, index) => (
             <Option key={option.to} to={option.to} index={index}>
-              {option.label.replace(/ /g, '\u00a0')}
+              {option.label}
             </Option>
           ))}
         </Menu>

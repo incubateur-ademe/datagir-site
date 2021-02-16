@@ -7,7 +7,7 @@ import Select from 'src/components/base/Select'
 import TextArea from 'src/components/base/TextArea'
 import Button from 'src/components/base/Button'
 
-import Newsletter from './Newsletter'
+import Newsletter from './contact/Newsletter'
 
 const Form = styled.form``
 const Flex = styled.div`

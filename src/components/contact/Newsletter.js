@@ -99,7 +99,7 @@ export default function Contact(props) {
           }}
         />
         <ButtonWrapper>
-          <Button color={'background'} thick hollow>
+          <Button color={'background'} thick hollow noExpand>
             M'abonner
           </Button>
         </ButtonWrapper>

@@ -47,9 +47,6 @@ Block.Date = styled.div`
 Block.Text = styled.p``
 Block.Content = styled.div`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: ${(props) => (props.top ? '36.5rem' : '30.25rem')};
   margin: ${(props) =>
     props.top ? '0 0 0 0' : props.left ? '0 -11.5rem 0 0' : '0 0 0 -11.5rem'};

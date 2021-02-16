@@ -63,6 +63,9 @@ const Subtitle = styled.div`
 `
 const Content = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 30.5rem;
   margin: 0.25em 0 0 1rem;
 
@@ -71,7 +74,7 @@ const Content = styled.div`
     margin: 0.25rem 1rem 0 1rem;
   }
   ${(props) => props.theme.mq.small} {
-    align-items: center;
+    align-items: inherit;
   }
 `
 const Text = styled.p`
@@ -89,7 +92,7 @@ const ButtonWrapper = styled.div`
 
   > * {
     margin: ${(props) => (props.vertical ? '0 0 1rem' : '0 0.5rem')};
-
+    
     &:last-child {
       margin-bottom: 0;
     }
@@ -124,6 +127,7 @@ export default function FancyLanding(props) {
                   hollow
                   color={props.color}
                   to={button.to}
+                  expand={props.verticalButtons}
                 >
                   {button.label}
                 </Button>

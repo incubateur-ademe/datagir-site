@@ -9,6 +9,7 @@ const Wrapper = styled(MagicLink)`
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  width: ${(props) => (props.expand ? '100%' : 'auto')};
   padding: 0.5em 1.5em;
   font-weight: bold;
   color: ${(props) =>
@@ -32,6 +33,10 @@ const Wrapper = styled(MagicLink)`
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   pointer-events: ${(props) => (props.disabled ? 'none' : 'inherit')};
   cursor: pointer;
+
+  ${(props) => props.theme.mq.small} {
+    width: ${(props) => (props.noExpand ? 'auto' : '100%')};
+  }
 
   &:before {
     content: '';
@@ -73,6 +78,8 @@ export default function Button(props) {
       disabled={props.disabled}
       hollow={props.hollow ? 1 : 0}
       thick={props.thick ? 1 : 0}
+      expand={props.expand ? 1 : 0}
+      noExpand={props.noExpand ? 1 : 0}
       color={props.color}
       animationSpeed={
         props.children.length * 20 > 350 ? props.children.length * 25 : 350
