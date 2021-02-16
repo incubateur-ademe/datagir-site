@@ -24,7 +24,7 @@ const Wrapper = styled(MagicLink)`
       : props.theme.colors[props.color] ||
         props.color ||
         props.theme.colors.main};
-  border: 1px solid
+  border: ${(props) => (props.thick ? '2px' : '1px')} solid
     ${(props) =>
       props.theme.colors[props.color] ||
       props.color ||
@@ -72,6 +72,7 @@ export default function Button(props) {
       onClick={props.onClick}
       disabled={props.disabled}
       hollow={props.hollow ? 1 : 0}
+      thick={props.thick ? 1 : 0}
       color={props.color}
       animationSpeed={
         props.children.length * 20 > 350 ? props.children.length * 25 : 350

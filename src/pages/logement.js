@@ -9,7 +9,6 @@ import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/sector/Users'
 import Contact from 'src/components/Contact'
-import Newsletter from '../components/Newsletter'
 
 export default function Transport(props) {
   return (
@@ -53,7 +52,6 @@ export default function Transport(props) {
       <Applications sector='logement' />
       <Users sector='logement' />
       <Contact sector='logement' />
-      <Newsletter sector='logement' />
     </Web>
   )
 }

@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   position: relative;
   margin-top: 1rem;
   padding: 1.5rem 1.5rem 1.5rem 1.8125rem;
+  color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.tile};
 
   &:before {

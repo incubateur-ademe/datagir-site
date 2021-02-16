@@ -10,7 +10,6 @@ import FancyLanding from 'src/components/page/FancyLanding'
 import Applications from 'src/components/Applications'
 import Users from 'src/components/sector/Users'
 import Contact from 'src/components/Contact'
-import Newsletter from 'src/components/Newsletter'
 
 export default function Alimentation(props) {
   return (
@@ -42,8 +41,8 @@ export default function Alimentation(props) {
             </Block.Title>
             <Block.Text>
               Que ce soit dans Yuka, Marmiton, Open Food Facts ou FoodChéri, ces
-              données sont utilisées par exemple dans l'Eco‑score directement mis
-              à disposition de leurs utilisateurs.
+              données sont utilisées par exemple dans l'Eco‑score directement
+              mis à disposition de leurs utilisateurs.
             </Block.Text>
             <Block.Buttons>
               <Button
@@ -84,7 +83,6 @@ export default function Alimentation(props) {
       <Applications sector='alimentation' />
       <Users sector='alimentation' />
       <Contact sector='alimentation' />
-      <Newsletter sector='alimentation' />
     </Web>
   )
 }
