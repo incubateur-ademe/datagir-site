@@ -10,7 +10,7 @@ import Contact from 'src/components/Contact'
 
 export default function Index() {
   return (
-    <Web title={'Accueil'}>
+    <Web title={'Datagir'}>
       <Landing />
       <Sectors />
       <Applications />

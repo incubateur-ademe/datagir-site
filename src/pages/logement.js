@@ -12,7 +12,10 @@ import Contact from 'src/components/Contact'
 
 export default function Transport(props) {
   return (
-    <Web title={'Logement'}>
+    <Web
+      title={'Logement'}
+      description='Faciliter par les données, la rénovation et la décarbonation du secteur du bâtiment'
+    >
       <FancyLanding
         color='logement'
         title='Logement'

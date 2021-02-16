@@ -13,7 +13,10 @@ import Contact from 'src/components/Contact'
 
 export default function Alimentation(props) {
   return (
-    <Web title={'Alimentation'}>
+    <Web
+      title={'Alimentation'}
+      description='Des données ouvertes pour une alimentation moins émettrice en CO2.'
+    >
       <FancyLanding
         color='alimentation'
         title='Alimentation'

@@ -23,7 +23,10 @@ const StyledLogo = styled(Logo)`
 `
 export default function Datagir(props) {
   return (
-    <Web title={'Qui Sommes Nous'}>
+    <Web
+      title={'Qui Sommes Nous'}
+      description='(Ré)Concilier défi planétaire et vie quotidienne'
+    >
       <Block top>
         <Block.Image top>
           <Img

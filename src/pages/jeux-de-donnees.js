@@ -10,7 +10,10 @@ import FancyLanding from 'src/components/page/FancyLanding'
 
 export default function Databases(props) {
   return (
-    <Web title={'Jeux de données'}>
+    <Web
+      title={'Jeux de données'}
+      description={`Des données environnementales ouvertes pour agir.`}
+    >
       <FancyLanding
         color='main'
         title='Jeux de données'
