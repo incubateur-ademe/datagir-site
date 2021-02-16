@@ -59,10 +59,7 @@ export default function Contact(props) {
             e.stopPropagation()
             let headers = new Headers()
             headers.append('Content-Type', 'application/json')
-            headers.append(
-              'api-key',
-              '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'
-            )
+            headers.append('api-key', process.env.GATSBY_SENDINBLUE_API_KEY)
             return fetch('https://api.sendinblue.com/v3/contacts', {
               method: 'POST',
               body: JSON.stringify({ email: user.email }),
