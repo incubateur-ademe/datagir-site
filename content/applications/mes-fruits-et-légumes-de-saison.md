@@ -12,40 +12,16 @@ buttons:
 image: ../assets/mes-fruits-et-legumes-de-saison.jpg
 order: 3
 users:
-  - title: Open Food Facts
-    image: ../assets/openfoodfacts.png
-    link: https://fr.openfoodfacts.org/
-  - title: Yuka
-    image: ../assets/yuka.png
-    link: https://yuka.io/
-  - title: Open Food Facts
-    image: ../assets/openfoodfacts.png
-    link: https://fr.openfoodfacts.org/
-  - title: Yuka
-    image: ../assets/yuka.png
-    link: https://yuka.io/
-  - title: Open Food Facts
-    image: ../assets/openfoodfacts.png
-    link: https://fr.openfoodfacts.org/
-  - title: Yuka
-    image: ../assets/yuka.png
-    link: https://yuka.io/
-  - title: Open Food Facts
-    image: ../assets/openfoodfacts.png
-    link: https://fr.openfoodfacts.org/
-  - title: Yuka
-    image: ../assets/yuka.png
-    link: https://yuka.io/
-  - title: Open Food Facts
-    image: ../assets/openfoodfacts.png
-    link: https://fr.openfoodfacts.org/
-  - title: Yuka
-    image: ../assets/yuka.png
-    link: https://yuka.io/
-  - title: Open Food Facts
-    image: ../assets/openfoodfacts.png
-    link: https://fr.openfoodfacts.org/
-  - title: Yuka
-    image: ../assets/yuka.png
-    link: https://yuka.io/
+  - title: ADEME
+    image: ../assets/logos/ademe.jpg
+    link: https://agirpourlatransition.ademe.fr/particuliers/conso/alimentation/limpact-alimentation-lenvironnement
+  - title: Alternativi
+    image: ../assets/alternativi.svg
+    link: https://alternativi.fr/simulateur-de-fruits-et-legumes-est-ce-bien-la-saison/711
+  - title: Cygeria
+    image: ../assets/cygeria.svg
+    link: https://cygeria.fr/catalogue/
+  - title: Pat-vendeecoeurocean
+    image: ../assets/pat-vendeecoeurocean.png
+    link: https://www.pat-vendeecoeurocean.fr/consommateur/je-consomme-de-saison/
 ---
