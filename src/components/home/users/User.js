@@ -33,8 +33,8 @@ const Wrapper = styled.div`
 `
 const Logo = styled.div`
   width: 100%;
-  max-width: 24rem;
-  margin-bottom: 2.5rem;
+  max-width: 12rem;
+  margin-bottom: 1rem;
 
   ${(props) => props.theme.mq.small} {
     width: 50vw;
@@ -42,7 +42,6 @@ const Logo = styled.div`
 `
 const Quote = styled.blockquote`
   margin: 0 1.5rem 1rem;
-  font-size: 1.125rem;
 
   &:before {
     content: '“ ';
@@ -71,7 +70,7 @@ const Buttons = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  margin: 1.5rem 0;
+  margin-top: 1rem;
 `
 export default function User(props) {
   return (

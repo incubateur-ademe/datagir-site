@@ -81,6 +81,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-smartypants`,
           },
+          { resolve: 'gatsby-remark-external-links' },
         ],
         plugins: [`gatsby-remark-images`],
       },

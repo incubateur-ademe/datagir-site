@@ -10,6 +10,10 @@ const Wrapper = styled.div`
     max-width: 100%;
   }
 
+  .gatsby-resp-image-wrapper {
+    margin: 1rem 0;
+  }
+
   blockquote {
     margin-left: 0;
     padding-left: 0.5rem;

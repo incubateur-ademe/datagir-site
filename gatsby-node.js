@@ -42,7 +42,7 @@ exports.createPages = ({ graphql, actions }) => {
         component: Application,
         context: {
           slug: page.node.fields.slug
-            .replace(/\//g, '')
+            .replace('/', '')
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ''),
         },
@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
         component: Post,
         context: {
           slug: post.node.fields.slug
-            .replace(/\//g, '')
+            .replace('/', '')
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, ''),
         },
