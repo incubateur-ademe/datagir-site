@@ -24,7 +24,7 @@ const Background = styled.rect`
 `
 export default function Twitter(props) {
   return (
-    <Wrapper to='https://twitter.com/ecolab_betagouv'>
+    <Wrapper to='https://twitter.com/_datagir'>
       <Svg viewBox='0 0 512 512'>
         <Background width='512' height='512' black={props.black} />
         <path
