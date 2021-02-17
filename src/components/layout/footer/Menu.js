@@ -101,18 +101,8 @@ export default function Menu(props) {
         ))}
       </Column>
       <Column>
-        <Title to={'/#databases'}>Jeux de données</Title>
-        {props.data.databases.edges.map((page) => (
-          <Item
-            key={page.node.fields.slug}
-            to={`/databases${page.node.fields.slug}`}
-          >
-            {page.node.frontmatter.title}
-          </Item>
-        ))}
-      </Column>
-      <Column>
         <Title to={'/'}>Datagir</Title>
+        <Item to={'/jeux-de-donnees'}>Jeux de données</Item>
         <Item to={'/qui-sommes-nous'}>Qui sommes nous</Item>
         <Item to={'/blog'}>Blog</Item>
         <Item to={'https://datagir.gitbook.io/documentation/'}>
