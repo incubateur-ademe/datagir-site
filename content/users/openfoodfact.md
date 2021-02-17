@@ -1,11 +1,11 @@
 ---
 title: Open Food Fact
 sector: alimentation
-home: true
-link: https://yuka.io/eco-score
+home: false
+link: https://fr.openfoodfacts.org/eco-score-l-impact-environnemental-des-produits-alimentaires
 image: openfoodfacts.png
-order: 2
-description: Découvrez la réalisation de l’ECO-SCORE grâce aux données d’Agribalyse pour Open Food Facts
-quote: Datagir a accompagné Yuka dans la mise en place d'un score environnemental. Leur soutien a été déterminant pour permettre à l'application d'avancer sur ces enjeux urgents et importants, en donnant accès à des méthodologies, des données, des experts, et des idées.
-signature: François MARTIN, co-fondateur
+order: 3
+description: Découvrez comment Open Food Facts a contribué à la création de l’ECO-SCORE grâce aux données d’Agribalyse
+quote: -
+signature: Stéphane Gigandet, fondateur
 ---
