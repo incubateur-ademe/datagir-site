@@ -1,3 +1,6 @@
+https://ecolab.ademe.fr                                                                 https://datagir.ademe.fr
+http://ecolab.ademe.fr                                                                  https://datagir.ademe.fr
+
 /batiment                                                                               /logement
 
 /blog/général/pourquoi-ecolab.md                                                        /qui-sommes-nous
@@ -11,4 +14,4 @@
 /apps                                                                                   /#applications
 
 /apps/transport                                                                         https://monimpacttransport.fr
-/apps/transport/iframe.js                                                                https://monimpacttransport.fr/iframe.js
+/apps/transport/iframe.js                                                               https://monimpacttransport.fr/iframe.js
