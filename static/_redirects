@@ -1,5 +1,5 @@
-https://ecolab.ademe.fr                                                                 https://datagir.ademe.fr
-http://ecolab.ademe.fr                                                                  https://datagir.ademe.fr
+https://ecolab.ademe.fr/*                                                                https://datagir.ademe.fr/:splat 301!
+http://ecolab.ademe.fr/*                                                                 https://datagir.ademe.fr/:splat 301!
 
 /batiment                                                                               /logement
 
