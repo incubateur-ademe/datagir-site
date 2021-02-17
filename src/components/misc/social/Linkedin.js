@@ -24,7 +24,7 @@ const Background = styled.rect`
 `
 export default function Linkedin(props) {
   return (
-    <Wrapper to='https://github.com/betagouv/ecolab'>
+    <Wrapper to='https://www.linkedin.com/showcase/datagir-ademe'>
       <Svg viewBox='0 0 512 512' fill='#fff'>
         <Background width='512' height='512' black={props.black} />
         <circle cx='142' cy='138' r='37' />
