@@ -2,7 +2,7 @@
 title: Mon Impact Transport
 introduction: Découvrez l'impact de vos déplacements sur le climat ! Des données ouvertes pour une mobilité moins émettrice en CO2.
 color: '#800080'
-script: https://datagir.ademe.fr/apps/transport
+script: https://monimpacttransport.fr
 sector: transport
 buttons:
   - label: Voir le code
