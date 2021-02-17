@@ -5,6 +5,8 @@ color: '#800080'
 script: https://monimpacttransport.fr
 sector: transport
 buttons:
+  - label: Voir le site
+    link: https://monimpacttransport.fr/
   - label: Voir le code
     link: https://github.com/betagouv/ecolab-transport
 image: mon-impact-transport_old.jpg
