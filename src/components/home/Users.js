@@ -124,7 +124,7 @@ export default function Users(props) {
       }
     }
   `)
-  return (
+  return data.allMdx.edges.find((user) => user.node.frontmatter.home) ? (
     <Section id='users' small>
       <Section.Title>
         Nos Réutilisateurs{' '}
@@ -159,5 +159,7 @@ export default function Users(props) {
           ))}
       </StyledSlider>
     </Section>
+  ) : (
+    ''
   )
 }
