@@ -16,6 +16,9 @@ users:
   - title: Associationbilancarbone
     image: ../../users/abc_main_logo.png
     link: https://www.associationbilancarbone.fr/le-changement-climatique/
+  - title: Agremob
+    image: ../../users/agremob.png
+    link: https://agremob.com/ecolab-le-calculateur-demissions/
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/calculer-emissions-carbone-trajets
@@ -31,6 +34,9 @@ users:
   - title: Campagnes artois
     image: ../../users/campagnes-artois.png
     link: https://campagnesartois.fr/preserver/environnement/developpement-durable/325-espace-numerique-du-developpement-durable
+  - title: Challenge mobilite
+    image: ../../users/challengemobilite.png
+    link: https://www.challengedelamobilite.com/page/64/calculateur-emissions-co2
   - title: CMA centre
     image: ../../users/crma-centre.png
     link: http://www.crma-centre.fr/article/environnement-et-developpement-durable
@@ -79,4 +85,7 @@ users:
   - title: sudrhoneenvironnement
     image: ../../users/sudrhoneenvironnement.png
     link: https://sudrhone.fr/2020/06/29/vacances-partir-sans-oublier-la-planete/
+  - title: Velotafeur
+    image: ../../users/velotafeur.webp
+    link: https://www.velotafeur.fr/blog/velotaf/pourquoi-vous-irez-au-travail-a-velo-en-2021-velotafeur.html
 ---
