@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `http://datagir.netlify.app`,
     keywords: ['datagir', 'ademe', 'agribalyse'],
     social: {
-      twitter: `ecolab_betagouv`,
+      twitter: `_datagir`,
     },
   },
   plugins: [
