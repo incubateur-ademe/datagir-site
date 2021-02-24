@@ -20,6 +20,7 @@ module.exports = {
     'gatsby-plugin-use-query-params',
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-root-import`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
