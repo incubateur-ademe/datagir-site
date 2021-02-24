@@ -1,7 +1,7 @@
 ---
 date: 2021-02-24T22:00:00.000Z
 title: Ecolab accélère et devient Datagir
-description: Ecolab entre dans sa phase d'accélération et en profite pour refaire son identité : nouveau nom et nouveau site pour vous accompagner dans l'intégration des données produites par les experts de l'ADEME.
+description: "Ecolab entre dans sa phase d'accélération et en profite pour refaire son identité : nouveau nom et nouveau site pour vous accompagner dans l'intégration des données produites par les experts de l'ADEME."
 image: datagir.jpg
 ---
 
