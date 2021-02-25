@@ -9,6 +9,14 @@ const Wrapper = styled.div`
   align-items: center;
   margin-bottom: 1.5rem;
 
+  ${(props) => props.theme.mq.medium} {
+    flex-direction: ${(props) =>
+      props.top || props.large
+        ? 'column-reverse'
+        : props.left
+        ? 'row-reverse'
+        : 'row'};
+  }
   ${(props) => props.theme.mq.small} {
     flex-direction: column-reverse;
   }
@@ -16,7 +24,7 @@ const Wrapper = styled.div`
 
 export default function Block(props) {
   return (
-    <Wrapper top={props.top} left={props.left}>
+    <Wrapper top={props.top} large={props.large} left={props.left}>
       {props.children}
     </Wrapper>
   )
@@ -27,12 +35,14 @@ Block.Image = styled.div`
   margin: ${(props) => (props.top ? '-6rem 0 0 0' : '0')};
 
   ${(props) => props.theme.mq.medium} {
-    width: ${(props) => (props.top ? '100vw' : '75%')};
+    width: ${(props) => (props.top || props.large ? '100vw' : '75%')};
+    margin: ${(props) =>
+      props.top ? '-6rem 0 0 0' : props.large ? '-65vw 0 0 0' : '0'};
   }
 
   ${(props) => props.theme.mq.small} {
     width: 100vw;
-    margin-top: -3rem;
+    margin-top: ${(props) => (props.large ? '-65vw' : '-3rem')};
   }
 `
 Block.Title = styled.h3``
@@ -47,16 +57,26 @@ Block.Date = styled.div`
 Block.Text = styled.p``
 Block.Content = styled.div`
   position: relative;
-  width: ${(props) => (props.top ? '36.5rem' : '30.25rem')};
+  width: ${(props) => (props.large || props.top ? '36.5rem' : '30.25rem')};
   margin: ${(props) =>
-    props.top ? '0 0 0 0' : props.left ? '0 -11.5rem 0 0' : '0 0 0 -11.5rem'};
+    props.top
+      ? '0 0 0 0'
+      : props.large
+      ? '0  0  0 -5.25rem'
+      : props.left
+      ? '0 -11.5rem 0 0'
+      : '0 0 0 -11.5rem'};
   padding: 1.5rem 1.5rem 1.8125rem;
   background-color: ${(props) => props.theme.colors.background};
 
   ${(props) => props.theme.mq.medium} {
-    width: ${(props) => (props.top ? '75%' : '50%')};
+    width: ${(props) => (props.top || props.large ? '75%' : '50%')};
     margin: ${(props) =>
-      props.top ? '0 0 0 0' : props.left ? '0 -25% 0 0' : '0 0 0 -25%'};
+      props.top || props.large
+        ? '0 0 0 0'
+        : props.left
+        ? '0 -25% 0 0'
+        : '0 0 0 -25%'};
   }
 
   ${(props) => props.theme.mq.small} {

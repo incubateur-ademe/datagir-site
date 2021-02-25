@@ -36,7 +36,7 @@ const Content = styled.div`
 const Top = styled.div``
 const Title = styled.h2`
   margin-bottom: 0.675em;
-  font-size: 2.5em;
+  font-size: ${(props) => (props.small ? '2em' : '2.5em')};
   color: white;
 
   ${(props) => props.theme.mq.medium} {
@@ -85,17 +85,19 @@ const StyledLink = styled(MagicLink)`
     font-size: 1.25em;
   }
 `
-export default function Sector(props) {
+export default function TileColor(props) {
   return (
     <Wrapper>
       <Content color={props.color}>
         <Top>
-          <Title>{props.title}</Title>
+          <Title small={props.small}>{props.title}</Title>
           <Subtitle>{props.subtitle}</Subtitle>
           <Text>{props.text}</Text>
         </Top>
         <LinkWrapper>
-          <StyledLink to={`/${props.slug}`}>En savoir +</StyledLink>
+          <StyledLink to={`/${props.link}`}>
+            {props.label || 'En savoir +'}
+          </StyledLink>
         </LinkWrapper>
       </Content>
     </Wrapper>
