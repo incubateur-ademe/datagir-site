@@ -21,6 +21,9 @@ users:
   - title: Cygeria
     image: ../../users/cygeria.png
     link: https://cygeria.fr/catalogue/
+  - title: Freshplaza
+    image: ../../users/freshplaza.png
+    link: https://www.freshplaza.fr/article/9294983/est-ce-bien-la-saison-une-plateforme-pour-aider-les-consommateurs/
   - title: Pat-vendeecoeurocean
     image: ../../users/pat-vendeecoeurocean.png
     link: https://www.pat-vendeecoeurocean.fr/consommateur/je-consomme-de-saison/
