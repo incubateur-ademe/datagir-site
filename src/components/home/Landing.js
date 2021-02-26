@@ -60,6 +60,7 @@ const Subtitle = styled.div`
     margin-bottom: 1rem;
     padding: 0;
     font-size: 1.25rem;
+    font-weight: 800;
     color: ${(props) => props.theme.colors.text};
     text-align: left;
   }
@@ -93,15 +94,21 @@ export default function Landing(props) {
       <Background />
       <Title mounted={mounted} />
       <Flex>
-        <Subtitle mounted={mounted}>
-          Apporter l'information environnementale au plus près des citoyens
-        </Subtitle>
+        <Subtitle
+          mounted={mounted}
+          dangerouslySetInnerHTML={{
+            __html:
+              'Apporter l’information environnementale au plus près des&nbsp;citoyens.',
+          }}
+        />
         <Content mounted={mounted}>
-          <Text>
-            Datagir vous accompagne dans la compréhension et l’intégration des
+          <Text
+            dangerouslySetInnerHTML={{
+              __html: `Datagir vous accompagne dans la compréhension et l’intégration des
             données ouvertes environnementales de l’ADEME afin de vous aider à
-            créer de nouvelles fonctionnalités et applications.
-          </Text>
+            créer de nouvelles fonctionnalités et&nbsp;applications.`,
+            }}
+          />
           <Button hollow to={'/qui-sommes-nous'}>
             En savoir +
           </Button>
