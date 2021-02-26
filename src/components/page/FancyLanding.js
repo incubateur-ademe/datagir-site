@@ -56,6 +56,7 @@ const Subtitle = styled.div`
   ${(props) => props.theme.mq.small} {
     width: auto;
     margin-bottom: 1rem;
+    padding: 0;
     font-size: 1.25rem;
     color: ${(props) => props.theme.colors.text};
     text-align: left;
@@ -75,6 +76,7 @@ const Content = styled.div`
   }
   ${(props) => props.theme.mq.small} {
     align-items: inherit;
+    margin: 0;
   }
 `
 const Text = styled.p`

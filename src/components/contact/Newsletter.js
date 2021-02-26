@@ -81,10 +81,11 @@ export default function Contact(props) {
             .then((res) => setCode(res.id ? 'success' : res.code))
         }}
       >
-        <Introduction>
-          Abonnez vous à notre newsletter pour être au courant de l'actualité de
-          Datagir :
-        </Introduction>
+        <Introduction
+          dangerouslySetInnerHTML={{
+            __html: `Abonnez vous à notre newsletter pour être au courant de l'actualité de&nbsp;Datagir&nbsp;:`,
+          }}
+        />
         <input type='hidden' value={props.sector || 'homepage'} />
         <MailInput
           type='mail'

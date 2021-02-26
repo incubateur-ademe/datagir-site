@@ -48,6 +48,10 @@ Block.Image = styled.div`
 Block.Title = styled.h3``
 Block.MainTitle = styled.h1`
   font-size: 2rem;
+
+  ${(props) => props.theme.mq.small} {
+    font-size: 1.5rem;
+  }
 `
 Block.Date = styled.div`
   margin-bottom: 1rem;

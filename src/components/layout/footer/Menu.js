@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 
   ${(props) => props.theme.mq.small} {
     flex-direction: column;
+    align-items: center;
   }
 `
 const Column = styled.div`
@@ -22,6 +23,7 @@ const Column = styled.div`
   align-items: flex-start;
 
   ${(props) => props.theme.mq.small} {
+    align-items: center;
     margin-bottom: 1rem;
   }
 `
