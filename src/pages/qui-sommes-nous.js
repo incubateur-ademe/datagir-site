@@ -124,13 +124,13 @@ export default function Datagir(props) {
           <Profile
             title='Développeur.se, Product Owner...'
             quote={`Je veux développer une nouvelle fonctionnaité dans mon application pour apporter l'info CO2 : j'ai besoin de la librairie de calcul et des données fiables`}
-            link={'jeux-de-donnees'}
+            link={'/jeux-de-donnees'}
             label={'Découvrir nos jeux de données'}
           />
           <Profile
             title='Responsable de Contenu Web, Journaliste...'
             quote={`Je veux proposer un calculateur CO2 simple et fiable aux visiteurs de mon site, mais je n'ai pas les compétences pour le développer : j'ai besoin de quelque chose de facile à intégrer.`}
-            link={'#applications'}
+            link={'/#applications'}
             label={'Découvrir nos simulateurs'}
           />
         </Tile.Wrapper>
