@@ -132,7 +132,7 @@ Une réduction de 320kg chaque année, est-ce conséquent ? Chacun a une appréc
 
 Vous l'aurez compris, ce ne sont que des exemples, il y a beaucoup d'autres chemins pour y arriver et aucun programme rigide de ce type ne sera imposé.
 
-[C'est la raison d'être d'Ecolab](https://ecolab.ademe.fr/blog/général/pourquoi-ecolab.md) : apporter cette information aux citoyens via les services ou applications que nous utilisons déjà ou que nous utiliserons bientôt.
+[C'est la raison d'être de Datagir](https://datagir.ademe.fr/qui-sommes-nous) : apporter cette information aux citoyens via les services ou applications que nous utilisons déjà ou que nous utiliserons bientôt.
 
 ### Limiter le risque, ou atteindre l'équilibre
 
