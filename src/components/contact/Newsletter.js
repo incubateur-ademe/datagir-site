@@ -46,9 +46,7 @@ const Introduction = styled.p`
   font-weight: 700;
 `
 export default function Contact(props) {
-  const [user, setUser] = useState({
-    email: '',
-  })
+  const [email, setEmail] = useState('')
 
   const [code, setCode] = useState(null)
 
@@ -68,7 +66,7 @@ export default function Contact(props) {
           headers.append('api-key', process.env.GATSBY_SENDINBLUE_API_KEY)
           return fetch('https://api.sendinblue.com/v3/contacts', {
             method: 'POST',
-            body: JSON.stringify({ email: user.email }),
+            body: JSON.stringify({ email }),
             headers,
           })
             .then((res) => {
@@ -90,13 +88,10 @@ export default function Contact(props) {
         <MailInput
           type='mail'
           name={'email'}
-          value={user.email}
+          value={email}
           placeholder={'Votre email'}
           onChange={(e) => {
-            setUser((prevUser) => ({
-              ...prevUser,
-              email: e.currentTarget.value,
-            }))
+            setEmail(e.target.value)
           }}
         />
         <ButtonWrapper>
