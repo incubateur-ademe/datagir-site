@@ -110,7 +110,7 @@ export default function Menu(props) {
         <Item to={'https://datagir.gitbook.io/documentation/'}>
           Documentation
         </Item>
-        <Item to={'/statistiques'}>Statistiques</Item>
+        <Item to={'/stats'}>Statistiques</Item>
         <Social black />
       </Column>
     </Wrapper>
