@@ -55,6 +55,7 @@ const Image = styled.div`
   justify-content: ${(props) => (props.margin ? 'center' : 'flex-start')};
   width: ${(props) => (props.margin ? '100%' : 'calc(100% + 3rem)')};
   margin: ${(props) => (props.margin ? '0 0' : '-1.5rem -1.5rem')} 1.5rem;
+  border: 2px solid ${(props) => props.theme.colors.tile};
 
   ${(props) => props.theme.mq.medium} {
     width: ${(props) => (props.margin ? '100%' : 'calc(100% + 2rem)')};

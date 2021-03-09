@@ -22,7 +22,11 @@ const Content = styled.div`
 export default function Web(props) {
   return (
     <Wrapper>
-      <SEO title={props.title} keywords={['test', 'test2']} />
+      <SEO
+        title={props.title}
+        image={props.image}
+        keywords={['test', 'test2']}
+      />
       <StyleProvider>
         <GlobalStyle />
         <Header />

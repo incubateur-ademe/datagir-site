@@ -15,6 +15,7 @@ export default function Transport(props) {
   return (
     <Web
       title={'Transport'}
+      image={props.data.metaimage.childImageSharp.resize}
       description={`Des données ouvertes pour une mobilité moins émettrice en CO2`}
     >
       <FancyLanding
@@ -101,6 +102,15 @@ export const pageQuery = graphql`
       childrenImageSharp {
         fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    metaimage: file(relativePath: { eq: "transport.jpg" }) {
+      childImageSharp {
+        resize(width: 1200) {
+          src
+          height
+          width
         }
       }
     }

@@ -12,6 +12,7 @@ export default function Databases(props) {
   return (
     <Web
       title={'Jeux de données'}
+      image={props.data.metaimage.childImageSharp.resize}
       description={`Des données environnementales ouvertes pour agir.`}
     >
       <FancyLanding
@@ -123,6 +124,15 @@ export const pageQuery = graphql`
       childrenImageSharp {
         fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    metaimage: file(relativePath: { eq: "databases.jpg" }) {
+      childImageSharp {
+        resize(width: 1200) {
+          src
+          height
+          width
         }
       }
     }

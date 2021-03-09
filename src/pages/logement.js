@@ -14,6 +14,7 @@ export default function Transport(props) {
   return (
     <Web
       title={'Logement'}
+      image={props.data.metaimage.childImageSharp.resize}
       description='Faciliter par les données, la rénovation et la décarbonation du secteur du bâtiment'
     >
       <FancyLanding
@@ -64,6 +65,15 @@ export const pageQuery = graphql`
       childrenImageSharp {
         fluid(maxWidth: 684, quality: 90) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    metaimage: file(relativePath: { eq: "logement.jpg" }) {
+      childImageSharp {
+        resize(width: 1200) {
+          src
+          height
+          width
         }
       }
     }

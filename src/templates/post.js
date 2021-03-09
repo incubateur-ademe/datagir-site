@@ -37,11 +37,14 @@ const Return = styled(Link)`
 export default function Databases(props) {
   console.log(props.data)
   return (
-    <Web title={props.data.mdx.frontmatter.title}>
+    <Web
+      title={props.data.mdx.frontmatter.title}
+      image={props.data.mdx.frontmatter.image.childImageSharp.resize}
+    >
       <Block top>
         <Block.Image top>
           <Img
-            fluid={props.data.mdx.frontmatter.image.childrenImageSharp[0].fluid}
+            fluid={props.data.mdx.frontmatter.image.childImageSharp.fluid}
             alt={props.data.mdx.frontmatter.title}
           />
         </Block.Image>
@@ -73,9 +76,14 @@ export const pageQuery = graphql`
       frontmatter {
         title
         image {
-          childrenImageSharp {
+          childImageSharp {
             fluid(maxWidth: 684, quality: 90) {
               ...GatsbyImageSharpFluid
+            }
+            resize(width: 1200) {
+              src
+              height
+              width
             }
           }
         }
