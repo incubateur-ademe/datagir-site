@@ -27,6 +27,9 @@ users:
   - title: Airbnb
     image: ../../users/airbnb.png
     link: https://www.airbnb.fr/d/tourismedurable
+  - title: Alternativi
+    image: ../../users/alternativi.png
+    link: https://alternativi.fr/calcul-de-l-impact-carbone-de-mes-deplacements-sur-le-climat/701
   - title: Atmo AURA
     image: ../../users/atmo-aura.png
     link: https://www.atmo-auvergnerhonealpes.fr/article/mes-deplacements
