@@ -13,6 +13,9 @@ buttons:
 image: nos-gestes-climat.jpg
 order: 1
 users:
+  - title: Actees
+    image: ../../users/acctees.jpg
+    link: https://www.acctees.fr/
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/testez-vos-connaissances/connaissez-empreinte-climat
@@ -34,6 +37,9 @@ users:
   - title: demarchesadministratives
     image: ../../users/demarchesadministratives.png
     link: https://demarchesadministratives.fr/demarches/comment-calculer-son-empreinte-carbone
+  - title: dkarbone
+    image: ../../users/dkarbone.png
+    link: https://www.dkarbone.com/nos_gestes_climat
   - title: france culture
     image: ../../users/franceculture.png
     link: https://www.franceculture.fr/emissions/la-transition/bilan-carbone-en-dessous-de-la-moyenne
@@ -61,12 +67,24 @@ users:
   - title: Pays Orthe
     image: ../../users/paysorthe.png
     link: https://www.pays-orthe-arrigans.fr/amenager-preserver/environnement/participer-a-la-transition-ecologique-du-territoire.html
+  - title: Petipa
+    image: ../../users/petipa.png
+    link: https://petipa.eco/
+  - title: Sami
+    image: ../../users/sami.png
+    link: https://www.sami.eco/
+  - title: SEEN
+    image: ../../users/projetseen.png
+    link: https://projetseen.fr/
   - title: save4planet
     image: ../../users/save4plan.png
     link: https://save4planet.com/bilan-carbone
   - title: smaaart
     image: ../../users/smaaart.jpg
     link: https://smaaart.fr/blog/le-gouvernement-au-service-du-zero-dechet/
+  - title: Val de Drome
+    image: ../../users/valdedrome.png
+    link: https://www.valdedrome.com/5585-le-plan-climat-air-energie-territorial.htm
   - title: Var Matin
     image: ../../users/varmatin.png
     link: https://www.varmatin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
