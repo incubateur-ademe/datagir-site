@@ -8,7 +8,7 @@ buttons:
   - label: Voir le site
     link: https://mesfruitsetlegumesdesaison.fr
   - label: Voir le code
-    link: https://github.com/betagouv/ecolab-calculateur-fruits-et-legumes-de-saison
+    link: https://github.com/datagir/mesfruitsetlegumesdesaison
 image: mes-fruits-et-legumes-de-saison.jpg
 order: 3
 users:
