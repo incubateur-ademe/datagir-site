@@ -9,7 +9,7 @@ buttons:
   - label: Voir le site
     link: https://nosgestesclimat.fr
   - label: Voir le code
-    link: https://github.com/betagouv/ecolab-climat
+    link: https://github.com/datagir/nosgestesclimat
 image: nos-gestes-climat.jpg
 order: 1
 users:
