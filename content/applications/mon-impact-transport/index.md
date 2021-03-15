@@ -33,6 +33,9 @@ users:
   - title: Atmo AURA
     image: ../../users/atmo-aura.png
     link: https://www.atmo-auvergnerhonealpes.fr/article/mes-deplacements
+  - title: Bee cycle
+    image: ../../users/beecycle.png
+    link: https://www.bee-cycle.fr/salarie/
   - title: Betterway
     image: ../../users/betterway.PNG
     link: https://www.gobetterway.fr/
@@ -51,6 +54,9 @@ users:
   - title: Dromolib
     image: ../../users/dromolib.jpg
     link: https://dromolib.fr
+  - title: Ecotoxicologie
+    image: ../../users/ecotoxicologie.png
+    link: https://ecotoxicologie.fr/empreinte-carbone-deplacements
   - title: Enviropro
     image: ../../users/enviropro.png
     link: https://www.enviropro-salon.com/fr-fr/bordeaux/hebergement
@@ -75,6 +81,9 @@ users:
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
+  - title: natureisbike
+    image: ../../users/natureisbike.png
+    link: https://natureisbike.com/infos-pratiques-nature-is-bike/
   - title: notreplaneteinfo
     image: ../../users/notreplaneteinfo.png
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
