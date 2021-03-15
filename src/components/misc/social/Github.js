@@ -24,7 +24,7 @@ const Background = styled.rect`
 `
 export default function Github(props) {
   return (
-    <Wrapper to='https://github.com/betagouv/ecolab'>
+    <Wrapper to='https://github.com/datagir'>
       <Svg viewBox='0 0 512 512'>
         <Background width='512' height='512' black={props.black} />
         <path
