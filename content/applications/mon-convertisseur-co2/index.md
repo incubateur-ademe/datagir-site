@@ -8,7 +8,7 @@ buttons:
   - label: Voir le site
     link: https://monconvertisseurco2.fr
   - label: Voir le code
-    link: https://github.com/betagouv/ecolab-calculateurco2inverse
+    link: https://github.com/datagir/monconvertisseurco2
 image: mon-convertisseur-co2.jpg
 order: 4
 ---
