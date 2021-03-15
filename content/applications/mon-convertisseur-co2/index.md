@@ -11,4 +11,11 @@ buttons:
     link: https://github.com/datagir/monconvertisseurco2
 image: mon-convertisseur-co2.jpg
 order: 4
+users:
+  - title: Acteur de la rénovation
+    image: ../../users/acteurdelareno.png
+    link: https://acteurdelarenovation.fr/
+  - title: Reflexe green
+    image: ../../users/reflexegreen.png
+    link: https://reflexe.green/ressources/2-tonnes-de-co2-ca-represente-quoi/
 ---
