@@ -55,6 +55,8 @@ export default function Contact(props) {
               <a href='mailto:datagir@ademe.fr'>datagir@ademe.fr</a> ou utiliser
               le formulaire ci&#8209;dessous :
             </Introduction>
+            <input type='hidden' name='bot-field' />
+            <input type='hidden' name='form-name' value='contact' />
             <input type='hidden' value={props.sector || 'homepage'} />
             <TextInput
               name={'name'}
