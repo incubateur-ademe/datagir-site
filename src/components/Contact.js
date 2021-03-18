@@ -39,6 +39,7 @@ export default function Contact(props) {
     subject: '',
     message: '',
   })
+
   return (
     <Section id='contact'>
       <Section.Title>Nous Contacter</Section.Title>
@@ -46,16 +47,29 @@ export default function Contact(props) {
         <Content sector={props.sector}>
           <Form
             method='post'
-            netlify-honeypot='bot-field'
             data-netlify='true'
             name='contact'
+            onSubmit={(e) => {
+              e.preventDefault()
+              fetch('/', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: JSON.stringify({
+                  'form-name': 'contact',
+                  ...user,
+                }),
+              })
+                .then(() => console.log('Success'))
+                .catch((error) => console.log(error))
+            }}
           >
             <Introduction>
               Vous pouvez nous écrire à{' '}
               <a href='mailto:datagir@ademe.fr'>datagir@ademe.fr</a> ou utiliser
               le formulaire ci&#8209;dessous :
             </Introduction>
-            <input type='hidden' name='bot-field' />
             <input type='hidden' name='form-name' value='contact' />
             <input type='hidden' value={props.sector || 'homepage'} />
             <TextInput

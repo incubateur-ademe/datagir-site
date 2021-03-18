@@ -4,7 +4,7 @@ module.exports = {
     title: `Datagir`,
     author: `Datagir`,
     description: `Vous accompagner dans la compréhension et l’intégration des données ouvertes environnementales de l’ADEME afin de créer de nouvelles fonctionnalités ou applications.`,
-    siteUrl: `http://datagir.netlify.app`,
+    siteUrl: `https://datagir.ademe.fr`,
     keywords: ['datagir', 'ademe', 'agribalyse'],
     social: {
       twitter: `_datagir`,
