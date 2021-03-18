@@ -6,6 +6,7 @@ import TextInput from 'src/components/base/TextInput'
 import Select from 'src/components/base/Select'
 import TextArea from 'src/components/base/TextArea'
 import Button from 'src/components/base/Button'
+import Alert from 'src/components/base/Alert'
 
 import Newsletter from './contact/Newsletter'
 
@@ -34,11 +35,14 @@ const Introduction = styled.p`
 `
 export default function Contact(props) {
   const [user, setUser] = useState({
-    name: '',
-    mail: '',
-    subject: '',
+    nom: '',
+    email: '',
+    objet: '',
     message: '',
   })
+
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
 
   function encode(data) {
     return Object.keys(data)
@@ -58,18 +62,24 @@ export default function Contact(props) {
             name='contact'
             onSubmit={(e) => {
               e.preventDefault()
-              fetch('/', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: encode({
-                  'form-name': 'contact',
-                  ...user,
-                }),
-              })
-                .then(() => console.log('Success'))
-                .catch((error) => console.log(error))
+              setSuccess(false)
+              setError(false)
+              if (!user.nom || !user.email || !user.message) {
+                setError(true)
+              } else {
+                fetch('/', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                  },
+                  body: encode({
+                    'form-name': 'contact',
+                    ...user,
+                  }),
+                })
+                  .then(() => setSuccess(true))
+                  .catch((error) => setSuccess(true))
+              }
             }}
           >
             <Introduction>
@@ -80,25 +90,27 @@ export default function Contact(props) {
             <input type='hidden' name='form-name' value='contact' />
             <input type='hidden' value={props.sector || 'homepage'} />
             <TextInput
-              name={'name'}
-              value={user.name}
+              name={'nom'}
+              value={user.nom}
+              error={error && !user.nom}
               label={'Votre nom'}
               onChange={({ name, value }) =>
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
               }
             />
             <TextInput
-              type='mail'
-              name={'mail'}
-              value={user.mail}
+              type='email'
+              name={'email'}
+              error={error && !user.email}
+              value={user.email}
               label={'Votre email'}
               onChange={({ name, value }) =>
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
               }
             />
             <Select
-              name={'subject'}
-              value={user.subject}
+              name={'objet'}
+              value={user.objet}
               label={'Votre sujet'}
               onChange={({ name, value }) =>
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
@@ -111,6 +123,7 @@ export default function Contact(props) {
             <TextArea
               name={'message'}
               value={user.message}
+              error={error && !user.message}
               label={'Votre message'}
               onChange={({ name, value }) =>
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
@@ -119,6 +132,10 @@ export default function Contact(props) {
             <ButtonWrapper>
               <Button submit>Envoyer mon message</Button>
             </ButtonWrapper>
+            {error && <Alert error>Merci de remplir tous les champs</Alert>}
+            {success && (
+              <Alert>Merci ! Nous avons bien reçu votre message</Alert>
+            )}
           </Form>
         </Content>
         <Newsletter sector={props.sector} />
