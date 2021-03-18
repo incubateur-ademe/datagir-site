@@ -77,7 +77,7 @@ users:
     link: https://www.greengo.voyage/post/calculer-empreinte-carbone-voyages
   - title: Grenoble
     image: ../../users/grenoble.png
-    link: https://www.grenoble.fr/2077-gestes-eco-citoyens.htm
+    link: https://www.grenoble.fr/2295-mon-impact-transport.htm
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
