@@ -40,6 +40,13 @@ export default function Contact(props) {
     message: '',
   })
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&')
+  }
   return (
     <Section id='contact'>
       <Section.Title>Nous Contacter</Section.Title>
@@ -56,7 +63,7 @@ export default function Contact(props) {
                 headers: {
                   'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: JSON.stringify({
+                body: encode({
                   'form-name': 'contact',
                   ...user,
                 }),
