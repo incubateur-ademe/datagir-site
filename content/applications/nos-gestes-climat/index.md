@@ -48,7 +48,7 @@ users:
     link: https://www.franceinter.fr/emissions/le-debat-de-midi/le-debat-de-midi-05-aout-2020
   - title: Grenoble
     image: ../../users/grenoble.png
-    link: https://www.grenoble.fr/2077-gestes-eco-citoyens.htm
+    link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
   - title: ICE App
     image: ../../users/iceapp.png
     link: https://www.iceapp.fr/solution-ice/
