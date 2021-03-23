@@ -16,7 +16,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-use-query-params',
     `gatsby-plugin-root-import`,
     `gatsby-plugin-sitemap`,
     {
