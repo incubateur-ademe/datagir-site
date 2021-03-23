@@ -44,7 +44,7 @@ const Menu = styled.nav`
   top: 100%;
   left: 0;
   padding-left: 0.3125rem;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.background};
   opacity: 0;
   pointer-events: none;
 

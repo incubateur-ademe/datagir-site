@@ -26,7 +26,7 @@ const Content = styled.div`
   justify-content: space-between;
   height: 100%;
   padding: 1.5rem;
-  color: white;
+  color: ${(props) => props.theme.colors.background};
   background-color: ${(props) => props.theme.colors[props.color]};
 
   ${(props) => props.theme.mq.medium} {
@@ -37,7 +37,7 @@ const Top = styled.div``
 const Title = styled.h2`
   margin-bottom: 0.675em;
   font-size: ${(props) => (props.small ? '2em' : '2.5em')};
-  color: white;
+  color: ${(props) => props.theme.colors.background};
 
   ${(props) => props.theme.mq.medium} {
     font-size: 1.75em;
@@ -60,7 +60,7 @@ const StyledLink = styled(MagicLink)`
   font-size: 2em;
   font-weight: 800;
   text-align: right;
-  color: white;
+  color: ${(props) => props.theme.colors.background};
   line-height: 1;
   text-decoration: none;
 

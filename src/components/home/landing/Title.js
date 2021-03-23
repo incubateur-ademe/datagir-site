@@ -41,6 +41,12 @@ const Arrow = styled.svg`
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: opacity 1000ms 1050ms;
 `
+const PathColor = styled.path`
+  fill: ${(props) => props.theme.colors.main};
+`
+const PathWhite = styled.path`
+  fill: ${(props) => props.theme.colors.background};
+`
 const Color = styled.span`
   color: ${(props) => props.theme.colors.main};
   transform: translateX(${(props) => (props.mounted ? '0' : '-100%')});
@@ -52,14 +58,15 @@ export default function Title(props) {
     <Wrapper mounted={props.mounted}>
       <White mounted={props.mounted}>dat</White>
       <Arrow
+        alt='A'
         width='78'
         height='91'
         viewBox='0 0 78 91'
         fill='none'
         mounted={props.mounted}
       >
-        <path d='M0 91L39 0L78 91H65L39 27L12 91H0Z' fill='#1FC58E' />
-        <path d='M0 91L39 0V27L12.5 91H0Z' fill='white' />
+        <PathColor d='M0 91L39 0L78 91H65L39 27L12 91H0Z' />
+        <PathWhite d='M0 91L39 0V27L12.5 91H0Z' />
       </Arrow>
       <Color mounted={props.mounted}>gir</Color>
     </Wrapper>

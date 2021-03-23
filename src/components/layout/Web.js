@@ -3,9 +3,8 @@ import styled from 'styled-components'
 
 import { GlobalStyle } from 'src/utils/styles'
 import 'src/utils/fonts.css'
-import StyleProvider from 'src/components/providers/StyleProvider'
-
 import SEO from './web/SEO'
+import ThemeToggle from 'src/components/misc/ThemeToggle'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -27,12 +26,11 @@ export default function Web(props) {
         image={props.image}
         keywords={['test', 'test2']}
       />
-      <StyleProvider>
-        <GlobalStyle />
-        <Header />
-        <Content>{props.children}</Content>
-        <Footer />
-      </StyleProvider>
+      <GlobalStyle />
+      <ThemeToggle />
+      <Header />
+      <Content>{props.children}</Content>
+      <Footer />
     </Wrapper>
   )
 }

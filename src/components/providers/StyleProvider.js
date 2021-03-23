@@ -1,15 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { useQueryParam, StringParam, withDefault } from 'use-query-params'
 
 import StyleContext from 'src/utils/StyleContext'
 import { themes } from 'src/utils/styles'
 
-export default function CO2NumberProvider(props) {
-  const [theme, setTheme] = useQueryParam(
-    'theme',
-    withDefault(StringParam, 'default')
-  )
+const StyleProvider = (props) => {
+  const [theme, setTheme] = useState('default')
 
   return (
     <StyleContext.Provider
@@ -25,3 +21,5 @@ export default function CO2NumberProvider(props) {
     </StyleContext.Provider>
   )
 }
+
+export default ({ element }) => <StyleProvider>{element}</StyleProvider>

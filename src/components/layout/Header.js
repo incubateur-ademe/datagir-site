@@ -17,7 +17,7 @@ const Wrapper = styled.header`
   max-width: 75em;
   margin: 0 auto 5.5em;
   padding: 0 0.5em;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.background};
 
   ${(props) => props.theme.mq.medium} {
     position: fixed;

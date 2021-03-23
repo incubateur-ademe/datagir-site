@@ -28,8 +28,6 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
     `
   )
 
-  console.log(metaImage)
-
   const metaDescription = description || site.siteMetadata.description
 
   const image = metaImage
@@ -37,8 +35,6 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
     : file
     ? file.childImageSharp.resize
     : null
-
-  console.log(image)
 
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 

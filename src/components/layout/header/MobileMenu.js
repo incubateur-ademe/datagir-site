@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import ThemeToggle from 'src/components/misc/ThemeToggle'
 import Dropdown from './mobileMenu/Dropdown'
 import Item from './mobileMenu/Item'
 
@@ -87,6 +88,7 @@ export default function MobileMenu(props) {
         <Item to={'https://datagir.gitbook.io/documentation/'}>
           Documentation
         </Item>
+        <ThemeToggle mobile />
       </Secondary>
     </Wrapper>
   )

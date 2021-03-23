@@ -17,7 +17,7 @@ const Wrapper = styled(MagicLink)`
       ? props.theme.colors[props.color] ||
         props.color ||
         props.theme.colors.main
-      : 'white'};
+      : props.theme.colors.background};
   text-decoration: none;
   background-color: ${(props) =>
     props.hollow

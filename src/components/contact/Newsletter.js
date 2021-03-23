@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   max-width: 36.5rem;
   padding: 1.5rem;
-  color: white;
+  color: ${(props) => props.theme.colors.background};
   background-color: ${(props) => props.theme.colors.main};
 
   ${(props) => props.theme.mq.medium} {
@@ -35,7 +35,8 @@ const MailInput = styled.input`
   border: 2px solid ${(props) => props.theme.colors.background};
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    color: ${(props) => props.theme.colors.background};
+    opacity: 0.7;
   }
 `
 const ButtonWrapper = styled.div`
