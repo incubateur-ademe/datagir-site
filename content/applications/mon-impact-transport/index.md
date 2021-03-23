@@ -81,6 +81,9 @@ users:
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
+  - title: Mobilite eco
+    image: ../../users/mobiliteeco.png
+    link: https://mobilite.eco/calculez-votre-impact-climat/
   - title: natureisbike
     image: ../../users/natureisbike.png
     link: https://natureisbike.com/infos-pratiques-nature-is-bike/
