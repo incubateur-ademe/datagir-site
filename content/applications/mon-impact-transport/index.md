@@ -93,6 +93,9 @@ users:
   - title: Reseau recto-verso
     image: ../../users/recto-verso.png
     link: http://www.reseau-rectoverso.fr/index.php/boite-outils/mobilite/2-non-categorise/68-calculateur
+  - title: Reveleo
+    image: ../../users/reveleo.png
+    link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
   - title: saintnazaire
     image: ../../users/saintnazaire.png
     link: https://www.saintnazaire.fr/demarches-et-infos-pratiques/infos-pratiques/transports
