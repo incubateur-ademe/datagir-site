@@ -70,6 +70,9 @@ users:
   - title: Petipa
     image: ../../users/petipa.png
     link: https://petipa.eco/
+  - title: Reveleo
+    image: ../../users/reveleo.png
+    link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
   - title: Sami
     image: ../../users/sami.png
     link: https://www.sami.eco/
