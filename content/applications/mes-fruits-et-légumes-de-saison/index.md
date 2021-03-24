@@ -24,6 +24,9 @@ users:
   - title: Freshplaza
     image: ../../users/freshplaza.png
     link: https://www.freshplaza.fr/article/9294983/est-ce-bien-la-saison-une-plateforme-pour-aider-les-consommateurs/
+  - title: Grenoble
+    image: ../../users/grenoble.png
+    link: https://www.grenoble.fr/2296-mes-fruits-et-legumes-de-saison.htm
   - title: Pat-vendeecoeurocean
     image: ../../users/pat-vendeecoeurocean.png
     link: https://www.pat-vendeecoeurocean.fr/consommateur/je-consomme-de-saison/
