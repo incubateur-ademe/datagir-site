@@ -15,7 +15,13 @@ users:
   - title: Acteur de la rénovation
     image: ../../users/acteurdelareno.png
     link: https://acteurdelarenovation.fr/
+  - title: Grenoble
+    image: ../../users/grenoble.png
+    link: https://www.grenoble.fr/2297-mon-convertisseur-co2.htm
   - title: Reflexe green
     image: ../../users/reflexegreen.png
     link: https://reflexe.green/ressources/2-tonnes-de-co2-ca-represente-quoi/
+  - title: Reveleo
+    image: ../../users/reveleo.png
+    link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
 ---
