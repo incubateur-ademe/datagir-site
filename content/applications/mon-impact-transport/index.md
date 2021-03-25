@@ -51,6 +51,9 @@ users:
   - title: Cybèle evasion
     image: ../../users/cybele.png
     link: https://cybele-evasion.com/l-agence/tourisme
+  - title: Defi mobilite pdl
+    image: ../../users/defimobilitepdl.png
+    link: https://www.defimobilite-paysdelaloire.fr/page/73/calculateur-emissions-co2
   - title: Dromolib
     image: ../../users/dromolib.jpg
     link: https://dromolib.fr
