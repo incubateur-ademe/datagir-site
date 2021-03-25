@@ -116,8 +116,9 @@ export default function Contact(props) {
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
               }
               options={[
-                { label: 'Nos simulateurs', value: 'applications' },
-                { label: 'Nos jeux de données', value: 'databases' },
+                { label: 'Nos simulateurs', value: 'Simulateurs' },
+                { label: 'Nos jeux de données', value: 'Jeux de donnees' },
+                { label: 'Autre Sujet', value: 'Autre' },
               ]}
             />
             <TextArea
