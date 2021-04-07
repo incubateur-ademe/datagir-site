@@ -30,7 +30,7 @@ users:
     link: https://alternativi.fr/calculer-son-impact-carbone-avec-le-simulateur-de-l-ademe/614
   - title: Avenir Climatique
     image: ../../users/logo_AC_simple_100px.png
-    link: https://avenirclimatique.org/les-outils/
+    link: https://avenirclimatique.org/calculer-empreinte-carbone/
   - title: Bon Pote
     image: ../../users/bonpote.webp
     link: https://bonpote.com/comment-calculer-son-empreinte-carbone/
