@@ -78,9 +78,15 @@ users:
   - title: GreenGo
     image: ../../users/greengo.png
     link: https://www.greengo.voyage/post/calculer-empreinte-carbone-voyages
+  - title: Green on
+    image: ../../users/greenon.png
+    link: https://green-on.fr/calculez-lempreinte-carbone-de-vos-deplacements/
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2295-mon-impact-transport.htm
+  - title: mapropraventure
+    image: ../../users/mapropraventure.png
+    link: https://mapropraventure.fr/impact-des-deplacements/
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
