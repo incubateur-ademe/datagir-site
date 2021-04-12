@@ -61,6 +61,9 @@ users:
   - title: Le Monde
     image: ../../users/lemonde.png
     link: https://www.lemonde.fr/planete/article/2020/09/14/comment-calculer-et-surtout-reduire-son-empreinte-carbone_6052039_3244.html
+  - title: L'Oreal campus CZ
+    image: ../../users/lorealcampuscz.png
+    link: https://www.loreal.com/fr/
   - title: Nice Matin
     image: ../../users/nicematin.png
     link: https://www.nicematin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
