@@ -85,6 +85,9 @@ users:
   - title: save4planet
     image: ../../users/save4plan.png
     link: https://save4planet.com/bilan-carbone
+  - title: skills4all
+    image: ../../users/skills4all.PNG
+    link: https://www.skills4all.com/engagement-responsable/
   - title: smaaart
     image: ../../users/smaaart.jpg
     link: https://smaaart.fr/blog/le-gouvernement-au-service-du-zero-dechet/
