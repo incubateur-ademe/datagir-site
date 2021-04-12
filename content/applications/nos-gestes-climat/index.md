@@ -70,6 +70,9 @@ users:
   - title: Petipa
     image: ../../users/petipa.png
     link: https://petipa.eco/
+  - title: Plaine Vallee
+    image: ../../users/aggloplainevallee.png
+    link: https://www.agglo-plainevallee.fr/lenvironnement/le-plan-climat-air-energie/calculer-son-empreinte-carbone/
   - title: Reveleo
     image: ../../users/reveleo.png
     link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
