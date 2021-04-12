@@ -91,6 +91,9 @@ users:
   - title: Val de Drome
     image: ../../users/valdedrome.png
     link: https://www.valdedrome.com/5585-le-plan-climat-air-energie-territorial.htm
+  - title: vallee sud
+    image: ../../users/valleesud.png
+    link: https://www.valleesud.fr/fr/calculez-votre-empreinte-carbone
   - title: Var Matin
     image: ../../users/varmatin.png
     link: https://www.varmatin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
