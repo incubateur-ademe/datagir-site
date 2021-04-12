@@ -108,6 +108,9 @@ users:
   - title: saintnazaire
     image: ../../users/saintnazaire.png
     link: https://www.saintnazaire.fr/demarches-et-infos-pratiques/infos-pratiques/transports
+  - title: skills4all
+    image: ../../users/skills4all.PNG
+    link: https://www.skills4all.com/engagement-responsable/
   - title: smartcity
     image: ../../users/smartcity.PNG
     link: http://www.smartcitymag.fr/article/711/le-calculateur-decolab-sensibilise-aux-transports-durables
