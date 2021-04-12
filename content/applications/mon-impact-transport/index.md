@@ -84,6 +84,9 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2295-mon-impact-transport.htm
+  - title: L'Oreal campus CZ
+    image: ../../users/lorealcampuscz.png
+    link: https://www.loreal.com/fr/
   - title: mapropraventure
     image: ../../users/mapropraventure.png
     link: https://mapropraventure.fr/impact-des-deplacements/
