@@ -89,7 +89,7 @@ users:
     image: ../../users/save4plan.png
     link: https://save4planet.com/bilan-carbone
   - title: skills4all
-    image: ../../users/skills4all.PNG
+    image: ../../users/skills4all.png
     link: https://www.skills4all.com/engagement-responsable/
   - title: smaaart
     image: ../../users/smaaart.jpg
