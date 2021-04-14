@@ -37,7 +37,7 @@ users:
     image: ../../users/beecycle.png
     link: https://www.bee-cycle.fr/salarie/
   - title: Betterway
-    image: ../../users/betterway.PNG
+    image: ../../users/betterway.png
     link: https://www.gobetterway.fr/
   - title: Campagnes artois
     image: ../../users/campagnes-artois.png
