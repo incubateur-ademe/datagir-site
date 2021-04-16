@@ -3,22 +3,18 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Marianne from 'src/components/base/Marianne'
 import Logo from 'src/components/misc/Logo'
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
 `
-const Small = styled(Img)`
-  display: none !important;
+const Ademe = styled(Link)`
+  width: 4.9375rem;
+  height: auto;
   ${(props) => props.theme.mq.small} {
-    display: block !important;
-  }
-`
-const Large = styled(Img)`
-  display: block !important;
-  ${(props) => props.theme.mq.small} {
-    display: none !important;
+    width: 2.75rem;
   }
 `
 const StyledLink = styled(Link)`
@@ -38,31 +34,10 @@ export default function Logos() {
   const data = useStaticQuery(
     graphql`
       query {
-        repusmall: file(relativePath: { eq: "logos/repufrancaise.jpg" }) {
-          childImageSharp {
-            fixed(height: 50, quality: 100) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
-          }
-        }
-        repu: file(relativePath: { eq: "logos/repufrancaise.jpg" }) {
-          childImageSharp {
-            fixed(height: 90, quality: 100) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
-          }
-        }
-        ademesmall: file(relativePath: { eq: "logos/ademe.jpg" }) {
-          childImageSharp {
-            fixed(height: 50, quality: 100) {
-              ...GatsbyImageSharpFixed_noBase64
-            }
-          }
-        }
         ademe: file(relativePath: { eq: "logos/ademe.jpg" }) {
           childImageSharp {
-            fixed(height: 90, quality: 100) {
-              ...GatsbyImageSharpFixed_noBase64
+            fluid(maxHeight: 90, quality: 100) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -72,23 +47,15 @@ export default function Logos() {
   return (
     <Wrapper>
       <Link to='/'>
-        <Large
-          fixed={data.repu.childImageSharp.fixed}
-          alt='République Française'
+        <Marianne />
+      </Link>
+      <Ademe to='/'>
+        <Img
+          fadeIn={false}
+          fluid={data.ademe.childImageSharp.fluid}
+          alt='ADEME'
         />
-      </Link>
-      <Link to='/'>
-        <Large fixed={data.ademe.childImageSharp.fixed} alt='ADEME' />
-      </Link>
-      <Link to='/'>
-        <Small
-          fixed={data.repusmall.childImageSharp.fixed}
-          alt='République Française'
-        />
-      </Link>
-      <Link to='/'>
-        <Small fixed={data.ademesmall.childImageSharp.fixed} alt='ADEME' />
-      </Link>
+      </Ademe>
       <StyledLink to='/'>
         <StyledLogo link />
       </StyledLink>

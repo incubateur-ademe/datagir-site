@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { GlobalStyle } from 'src/utils/styles'
-import 'src/utils/fonts.css'
 import SEO from './web/SEO'
 import ThemeToggle from 'src/components/misc/ThemeToggle'
 import Header from './Header'
@@ -21,11 +20,7 @@ const Content = styled.div`
 export default function Web(props) {
   return (
     <Wrapper>
-      <SEO
-        title={props.title}
-        image={props.image}
-        keywords={['test', 'test2']}
-      />
+      <SEO title={props.title} image={props.image} />
       <GlobalStyle />
       <ThemeToggle />
       <Header />

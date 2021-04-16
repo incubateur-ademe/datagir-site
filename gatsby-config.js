@@ -1,14 +1,9 @@
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `Datagir`,
     author: `Datagir`,
     description: `Vous accompagner dans la compréhension et l’intégration des données ouvertes environnementales de l’ADEME afin de créer de nouvelles fonctionnalités ou applications.`,
     siteUrl: `https://datagir.ademe.fr`,
-    keywords: ['datagir', 'ademe', 'agribalyse'],
-    social: {
-      twitter: `_datagir`,
-    },
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -18,6 +13,19 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-root-import`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['Marianne:n3,n4,n7,n8'],
+          urls: ['fonts/fonts.css'],
+        },
+        google: {
+          families: ['Josefin Sans:700'],
+          text: 'datgir',
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -102,13 +110,6 @@ module.exports = {
         theme_color: `#1FC58E`,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`josefin sans\:700&text=datgir`],
-        display: 'auto',
       },
     },
   ],
