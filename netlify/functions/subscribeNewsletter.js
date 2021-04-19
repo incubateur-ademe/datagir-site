@@ -32,9 +32,9 @@ exports.handler = async function(event, context) {
           }
         )
       }
-      console.log(res)
+      return res
     })
     .catch((error) => {
-      console.log(error)
+      return error
     })
 }
