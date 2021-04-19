@@ -34,9 +34,9 @@ exports.handler = async function(event) {
           }
         )
       }
-      return res
+      return res.data
     })
     .catch((error) => {
-      return error
+      return error.data
     })
 }
