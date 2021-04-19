@@ -62,6 +62,7 @@ export default function Contact(props) {
         onSubmit={(e) => {
           e.preventDefault()
           e.stopPropagation()
+          setCode('success')
           return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
             .then((res) => res.json())
             .then((res) => setCode(res.id ? 'success' : 'error'))
