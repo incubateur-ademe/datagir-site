@@ -34,7 +34,7 @@ exports.handler = async function(event) {
           }
         )
       }
-      return res.data
+      return { code: 'success' }
     })
     .catch((error) => {
       return error.data
