@@ -4,7 +4,7 @@ exports.handler = async function(event, context) {
   return axios
     .post(
       'https://api.sendinblue.com/v3/contacts',
-      { email: email, listIds: [10] },
+      { email: event.queryStringParameters.email, listIds: [10] },
       {
         headers: {
           'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ exports.handler = async function(event, context) {
           {
             to: [
               {
-                email: email,
+                email: event.queryStringParameters.email,
               },
             ],
             templateId: 43,
