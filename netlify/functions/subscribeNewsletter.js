@@ -4,22 +4,23 @@ exports.handler = async function(event, context) {
   return axios
     .post(
       'https://api.sendinblue.com/v3/contacts',
-      { email: event.queryStringParameters.email, listIds: [10] },
+      { email: email, listIds: [10] },
       {
         headers: {
           'Content-Type': 'application/json',
-          'api-key': process.env.SENDINBLUE_API_KEY,
+          'api-key':
+            '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',
         },
       }
     )
     .then((res) => {
-      if (res.id) {
+      if (res.data && res.data.id) {
         axios.post(
           'https://api.sendinblue.com/v3/smtp/email',
           {
             to: [
               {
-                email: event.queryStringParameters.email,
+                email: email,
               },
             ],
             templateId: 43,
@@ -27,7 +28,8 @@ exports.handler = async function(event, context) {
           {
             headers: {
               'Content-Type': 'application/json',
-              'api-key': process.env.SENDINBLUE_API_KEY,
+              'api-key':
+                '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',
             },
           }
         )

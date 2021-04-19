@@ -62,44 +62,12 @@ export default function Contact(props) {
         onSubmit={(e) => {
           e.preventDefault()
           e.stopPropagation()
-          setCode(null)
           return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
             .then((res) => res.json())
-            .then(console.log)
-            .catch(console.log)
-
-          /*
-          let headers = new Headers()
-          headers.append('Content-Type', 'application/json')
-          headers.append('api-key', process.env.GATSBY_SENDINBLUE_API_KEY)
-          return fetch('https://api.sendinblue.com/v3/contacts', {
-            method: 'POST',
-            body: JSON.stringify({ email, listIds: [10] }),
-            headers,
-          })
-            .then((res) => {
-              if (!res.ok) {
-                setCode(res.code)
-              }
-              return res
+            .then((res) => setCode(res.id ? 'success' : 'error'))
+            .catch((error) => {
+              setCode(error?.response?.data?.code)
             })
-            .then((res) => res.json())
-            .then((res) => {
-              setCode(res.id ? 'success' : res.code)
-              res.id &&
-                fetch('https://api.sendinblue.com/v3/smtp/email', {
-                  method: 'POST',
-                  body: JSON.stringify({
-                    to: [
-                      {
-                        email,
-                      },
-                    ],
-                    templateId: 43,
-                  }),
-                  headers,
-                })
-            })*/
         }}
       >
         <Introduction
