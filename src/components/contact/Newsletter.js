@@ -64,6 +64,7 @@ export default function Contact(props) {
           e.stopPropagation()
           setCode(null)
           return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
+            .then((res) => res.json())
             .then(console.log)
             .catch(console.log)
 
