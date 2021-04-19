@@ -62,6 +62,12 @@ export default function Contact(props) {
         onSubmit={(e) => {
           e.preventDefault()
           e.stopPropagation()
+          setCode(null)
+          return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
+            .then(console.log)
+            .catch(console.log)
+
+          /*
           let headers = new Headers()
           headers.append('Content-Type', 'application/json')
           headers.append('api-key', process.env.GATSBY_SENDINBLUE_API_KEY)
@@ -92,7 +98,7 @@ export default function Contact(props) {
                   }),
                   headers,
                 })
-            })
+            })*/
         }}
       >
         <Introduction
