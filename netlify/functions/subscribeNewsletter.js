@@ -7,6 +7,6 @@ exports.handler = async function(event, context) {
   return axios.post(
     'https://api.sendinblue.com/v3/contacts',
     { email, listIds: [10] },
-    { header }
+    { headers }
   )
 }
