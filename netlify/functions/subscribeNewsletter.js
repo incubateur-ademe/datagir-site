@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-exports.handler = async function(event, context) {
+exports.handler = async function(event) {
   return axios
     .post(
       'https://api.sendinblue.com/v3/contacts',
