@@ -15,7 +15,7 @@ exports.handler = async function(event, context, callback) {
     listIds: [10],
   }
 
-  apiInstance.createContact(createContact).then(
+  return apiInstance.createContact(createContact).then(
     function(data) {
       console.log('API called successfully. Returned data: ' + data)
     },
