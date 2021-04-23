@@ -34,6 +34,9 @@ users:
   - title: Bon Pote
     image: ../../users/bonpote.webp
     link: https://bonpote.com/comment-calculer-son-empreinte-carbone/
+  - title: Centrale Nantes
+    image: ../../users/cnnco2.png
+    link: https://neutralite-carbone.ec-nantes.fr/fr/outils-a-vous-de-jouer/lempreinte-carbone-de-vos-activites-a-centrale-nantes
   - title: demarchesadministratives
     image: ../../users/demarchesadministratives.png
     link: https://demarchesadministratives.fr/demarches/comment-calculer-son-empreinte-carbone
@@ -52,12 +55,18 @@ users:
   - title: ICE App
     image: ../../users/iceapp.png
     link: https://www.iceapp.fr/solution-ice/
+  - title: Inseec RSE
+    image: ../../users/inseecu.png
+    link: https://www.rse-groupeinseec.com/nos-gestes-climat/
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/environnement/developpement-durable/1-je-calcule-mon-empreinte-carbone
   - title: Koya app
     image: ../../users/koya.png
     link: https://www.koya-app.fr/
+  - title: La Rochelle ZC
+    image: ../../users/lrzerocarbone.png
+    link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/nos-gestes-climat
   - title: Le Monde
     image: ../../users/lemonde.png
     link: https://www.lemonde.fr/planete/article/2020/09/14/comment-calculer-et-surtout-reduire-son-empreinte-carbone_6052039_3244.html
