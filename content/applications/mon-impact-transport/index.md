@@ -84,9 +84,15 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2295-mon-impact-transport.htm
+  - title: Inseec RSE
+    image: ../../users/inseecu.png
+    link: https://www.rse-groupeinseec.com/mon-impact-transport/
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
+  - title: La Rochelle ZC
+    image: ../../users/lrzerocarbone.png
+    link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-impact-transport
   - title: mapropraventure
     image: ../../users/mapropraventure.png
     link: https://mapropraventure.fr/impact-des-deplacements/
