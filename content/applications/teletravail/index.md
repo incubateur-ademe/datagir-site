@@ -15,4 +15,6 @@ users:
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/bureau/deplacements/teletravail-ca-change-quoi-planete
----
+  - title: Inseec RSE
+    image: ../../users/inseecu.png
+    link: https://www.rse-groupeinseec.com/mon-impact-transport-teletravail/
