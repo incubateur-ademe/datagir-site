@@ -23,7 +23,7 @@ users:
     link: https://www.grenoble.fr/2297-mon-convertisseur-co2.htm
   - title: Inseec RSE
     image: ../../users/inseecu.png
-    https://www.rse-groupeinseec.com/mon-convertisseur-co2/
+    link: https://www.rse-groupeinseec.com/mon-convertisseur-co2/
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-convertisseur-co2
