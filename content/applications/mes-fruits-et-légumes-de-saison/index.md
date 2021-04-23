@@ -27,6 +27,9 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2296-mes-fruits-et-legumes-de-saison.htm
+  - title: La Rochelle ZC
+    image: ../../users/lrzerocarbone.png
+    link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mes-fruits-et-legumes-de-saison
   - title: Pat-vendeecoeurocean
     image: ../../users/pat-vendeecoeurocean.png
     link: https://www.pat-vendeecoeurocean.fr/consommateur/je-consomme-de-saison/
