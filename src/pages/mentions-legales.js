@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `
 export default function Blog() {
   return (
-    <Web title={'Blog'}>
+    <Web title={'Mentions Légales'}>
       <Section>
         <Section.Title>Mentions légales</Section.Title>
         <Wrapper>
