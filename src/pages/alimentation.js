@@ -27,7 +27,7 @@ export default function Alimentation(props) {
         buttons={[
           {
             label: `Voir la documentation`,
-            to: `https://datagir.gitbook.io/documentation/se-nourrir/se-nourrir-reutiliser-les-donnees`,
+            to: `https://datagir.gitbook.io/documentation/alimentation/se-nourrir-reutiliser-les-donnees`,
           },
           { label: `Voir les simulateurs`, to: `#applications` },
         ]}
