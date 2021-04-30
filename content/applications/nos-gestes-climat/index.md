@@ -76,6 +76,9 @@ users:
   - title: Nice Matin
     image: ../../users/nicematin.png
     link: https://www.nicematin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
+  - title: Oopla 
+    image: ../../users/logo-oopla (3) (1).png
+    link: https://oopla.fr/nos-gestes-climat-ademe/
   - title: Pays Orthe
     image: ../../users/paysorthe.png
     link: https://www.pays-orthe-arrigans.fr/amenager-preserver/environnement/participer-a-la-transition-ecologique-du-territoire.html
