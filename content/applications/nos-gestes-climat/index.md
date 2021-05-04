@@ -76,6 +76,9 @@ users:
   - title: Nice Matin
     image: ../../users/nicematin.png
     link: https://www.nicematin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
+  - title: Nouveaux Consos
+    image: ../../users/Logo_Fonce_1000x1000_FondBleu_VF.png
+    link: https://www.nouveaux-consos.fr/mon-empreinte-climat
   - title: Oopla 
     image: ../../users/logo-oopla (3) (1).png
     link: https://oopla.fr/nos-gestes-climat-ademe/
