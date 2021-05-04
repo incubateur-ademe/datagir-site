@@ -27,7 +27,7 @@ users:
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-convertisseur-co2
-  - title: La Rochelle ZC
+  - title: Nouveaux Consos
     image: ../../users/Logo_Fonce_1000x1000_FondBleu_VF.png
     link: https://www.nouveaux-consos.fr/convertisseur-co2
   - title: Reflexe green
