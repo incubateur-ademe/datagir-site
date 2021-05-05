@@ -70,6 +70,9 @@ users:
   - title: Le Monde
     image: ../../users/lemonde.png
     link: https://www.lemonde.fr/planete/article/2020/09/14/comment-calculer-et-surtout-reduire-son-empreinte-carbone_6052039_3244.html
+  - title: L'obs
+    image: ../../users/lobs.png
+    link: https://www.nouvelobs.com/ecologie/20210501.OBS43529/voici-les-gestes-a-adopter-des-aujourd-hui-pour-reduire-son-empreinte-carbone.html
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
@@ -118,6 +121,9 @@ users:
   - title: Var Matin
     image: ../../users/varmatin.png
     link: https://www.varmatin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
+  - title: wikipower
+    image: ../../users/wikipower.png
+    link: https://wikipower.fr/blog/2021/03/02/comment-calculer-et-reduire-son-empreinte-carbone/
   - title: Yelo
     image: ../../users/yelo.png
     link: https://yelo.eco/
