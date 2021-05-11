@@ -13,6 +13,8 @@ C’est la vocation de Datagir que de développer des outils en *open source* qu
 
 Dans le cadre de leur option-projet, les étudiants de Centrale Nantes se sont attelés à cette tâche et ont repris le simulateur pour en faire une version adaptée à leur campus et ainsi dresser le bilan carbone de l’établissement et des occupants. Une belle démonstration du potentiel de l’open source. Clément Auger, étudiant en Master 2 et membre de l’option-projet « Neutralité Carbone » nous raconte :
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rkcEP7CfYzo" title="L'Interview Datagir - Clément Auger : Comment nous avons adapté Nos Gestes Climat à Centrale Nantes" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; "></iframe>
+
 ### Peux-tu te présenter ?
 
 Je suis Clément, étudiant en dernière année d’école d’ingénieur. J’ai intégré Centrale Marseille en 2017, avant de partir en césure début 2019. Pendant cette année, j’ai eu l’opportunité d’effectuer deux stages à l’étranger : le premier dans un laboratoire d’océanologie à Hobart en Tasmanie (Australie), le deuxième dans un bureau d’études spécialisé dans la certification de bâtiments durables à Kuala Lumpur (Malaisie). Je suis ensuite parti à Taïwan pour un semestre académique avant d’intégrer en septembre 2021 l’Ecole Centrale de Nantes dans l’option-projet « Neutralité Carbone ».
