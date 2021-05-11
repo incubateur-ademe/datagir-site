@@ -13,6 +13,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-root-import`,
     `gatsby-plugin-sitemap`,
+    'gatsby-remark-attr',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
