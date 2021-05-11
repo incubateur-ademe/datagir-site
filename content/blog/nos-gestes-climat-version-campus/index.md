@@ -48,9 +48,7 @@ Concernant la [base carbone](https://www.bilans-ges.ademe.fr/) et les  méthodes
 
 Nous avons apporté notre approche académique et professionnelle au modèle du calcul du Bilan Carbone. Notre périmètre d’évaluation étant plus restreint, nous avons proposé une adaptation rendant la simulation plus précise et concise. La  solution apportée pour différencier les différents profils d’usagers d’une université est innovante. La démarche complète est détaillée dans un [article scientifique](https://www.mdpi.com/2071-1050/13/8/4315) publié en avril 2021. Cet article présente le simulateur national et l’approche mise en place pour adapter le simulateur au contexte universitaire.
 
-<!-- <div style="width: 100%; height: 100px; margin-left: auto; margin-right: auto"> -->
-![Article MDPI](big_cover-sustainability-v13-i8.png?forceResize=400,200)
-<!-- </div> -->
+![Article MDPI](big_cover-sustainability-v13-i8.png)
 
 ### Les retombées au sein de Centrale Nantes ont-elles été bonnes ? Y a-t-il eu beaucoup de simulations ? Et donc quel a été l'impact (prise de conscience, actions, etc.)
 
