@@ -110,12 +110,18 @@ users:
   - title: notreplaneteinfo
     image: ../../users/notreplaneteinfo.png
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
+  - title: Offways
+    image: ../../users/offways.png
+    link: https://www.offways.fr/
   - title: Reseau recto-verso
     image: ../../users/recto-verso.png
     link: http://www.reseau-rectoverso.fr/index.php/boite-outils/mobilite/2-non-categorise/68-calculateur
   - title: Reveleo
     image: ../../users/reveleo.png
     link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
+  - title: Ridolo
+    image: ../../users/ridolo.png
+    link: https://ridolo.com/blogs/infos/ca-fait-vraiment-une-difference-pour-la-planete-calculer-et-comparer-votre-impact-transport
   - title: saintnazaire
     image: ../../users/saintnazaire.png
     link: https://www.saintnazaire.fr/demarches-et-infos-pratiques/infos-pratiques/transports
@@ -128,6 +134,9 @@ users:
   - title: sudrhoneenvironnement
     image: ../../users/sudrhoneenvironnement.png
     link: https://sudrhone.fr/2020/06/29/vacances-partir-sans-oublier-la-planete/
+  - title: Usbeketrica
+    image: ../../users/usbeketrica.jpeg
+    link: https://usbeketrica.com/fr/article/nous-mettons-nos-donnees-et-nos-outils-a-la-disposition-de-tous
   - title: Velotafeur
     image: ../../users/velotafeur.webp
     link: https://www.velotafeur.fr/blog/velotaf/pourquoi-vous-irez-au-travail-a-velo-en-2021-velotafeur.html
