@@ -35,4 +35,7 @@ users:
   - title: Pat-vendeecoeurocean
     image: ../../users/pat-vendeecoeurocean.png
     link: https://www.pat-vendeecoeurocean.fr/consommateur/je-consomme-de-saison/
+  - title: Usbeketrica
+    image: ../../users/usbeketrica.jpeg
+    link: https://usbeketrica.com/fr/article/nous-mettons-nos-donnees-et-nos-outils-a-la-disposition-de-tous
 ---
