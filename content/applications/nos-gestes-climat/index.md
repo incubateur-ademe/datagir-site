@@ -113,6 +113,9 @@ users:
   - title: smaaart
     image: ../../users/smaaart.jpg
     link: https://smaaart.fr/blog/le-gouvernement-au-service-du-zero-dechet/
+  - title: Usbeketrica
+    image: ../../users/usbeketrica.jpeg
+    link: https://usbeketrica.com/fr/article/nous-mettons-nos-donnees-et-nos-outils-a-la-disposition-de-tous
   - title: Val de Drome
     image: ../../users/valdedrome.png
     link: https://www.valdedrome.com/5585-le-plan-climat-air-energie-territorial.htm
