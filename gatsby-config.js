@@ -19,7 +19,7 @@ module.exports = {
       options: {
         custom: {
           families: ['Marianne:n3,n4,n7,n8'],
-          urls: ['fonts/fonts.css'],
+          urls: ['/fonts/fonts.css'],
         },
         google: {
           families: ['Josefin Sans:700'],

@@ -10,7 +10,7 @@ const TileWrapper = styled.div`
   padding: 0 0.5rem;
 
   ${(props) => props.theme.mq.medium} {
-    width: 33.3333vw;
+    width: ${(props) => (props.large ? '100%' : '33.3333vw')};
     padding: 0 0.5rem;
   }
 
@@ -113,3 +113,6 @@ Tile.Wrapper = styled.div`
     margin: 0 -0.5rem;
   }
 `
+Tile.Tile = TileWrapper
+Tile.Content = Content
+Tile.Title = Title

@@ -2,6 +2,8 @@
 title: Mes Fruits et Légumes de Saison
 introduction: Découvrez quels sont les fruits et légumes de saison pour consommer des produits frais et locaux toute l'année ! En plus c'est meilleur pour votre santé et pour l'environnement !
 color: '#ffd80f'
+matomo: 154
+visitors: 1823
 script: https://mesfruitsetlegumesdesaison.fr/embed
 sector: alimentation
 buttons:

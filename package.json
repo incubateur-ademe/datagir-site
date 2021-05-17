@@ -36,8 +36,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-query": "^3.16.0",
     "react-slick": "^0.28.0",
     "react-switch": "^6.0.0",
+    "recharts": "^2.0.9",
     "sib-api-v3-sdk": "^8.2.0",
     "styled-components": "^4.2.0",
     "styled-normalize": "^8.0.7"

@@ -1,8 +1,9 @@
 ---
 title: Nos GEStes Climat
 introduction: Aider vos utilisateurs à visualiser leur impact GES (Gaz à effet de serre) et à agir pour le réduire.<br/><br/>Développé en partenariat avec l'<a href="https://www.associationbilancarbone.fr/" target="_blank">Association Bilan Carbone</a>, ce simulateur vous permet d'évaluer votre empreinte carbone individuelle, puis de choisir des actions concrètes pour la réduire. Il est basé sur le modèle MicMac des associations <a href="https://avenirclimatique.org/" target="_blank">Avenir Climatique</a> et <a href="https://www.taca.asso.fr/" target="_blank">TaCa</a>.
-
 color: '#46479f'
+matomo: 153
+visitors: 58449
 script: https://nosgestesclimat.fr
 sector: all
 buttons:
@@ -82,7 +83,7 @@ users:
   - title: Nouveaux Consos
     image: ../../users/Logo_Fonce_1000x1000_FondBleu_VF.png
     link: https://www.nouveaux-consos.fr/mon-empreinte-climat
-  - title: Oopla 
+  - title: Oopla
     image: ../../users/logo-oopla (3) (1).png
     link: https://oopla.fr/nos-gestes-climat-ademe/
   - title: Pays Orthe
