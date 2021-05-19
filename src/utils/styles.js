@@ -126,4 +126,8 @@ export const GlobalStyle = createGlobalStyle`
   input, select, textarea {
     color: ${(props) => props.theme.colors.text};
   }
+
+  option {
+    color: #010101;
+  }
 `
