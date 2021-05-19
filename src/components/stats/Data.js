@@ -47,7 +47,7 @@ export default function Data(props) {
 
   const { data: chart } = useChart({
     sites: props.sites,
-    chartDate,
+    chartDate: Number(chartDate) + 1,
     chartPeriod,
   })
   const { data: total } = useTotal({ sites: props.sites })
