@@ -64,8 +64,10 @@ export default function Evolution(props) {
         <Small>(par rapport au mois d'avant)</Small>
       </Block>
       <Block>
-        <Number color={props.color}>{props.allTime}</Number> visiteurs depuis le
-        lancement
+        <Number color={props.color}>
+          {props.allTime.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+        </Number>{' '}
+        visiteurs depuis le lancement
       </Block>
       <Block>
         <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
