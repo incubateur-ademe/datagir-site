@@ -57,7 +57,11 @@ export default function Table(props) {
               props.data.map((line) => (
                 <tr key={line.label + line.nb_visits}>
                   <td>{line.label}</td>
-                  <td>{line.nb_visits}</td>
+                  <td>
+                    {line.nb_visits
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+                  </td>
                   <td>
                     {props.total &&
                       Math.round((line.nb_visits / props.total) * 10000) / 100}

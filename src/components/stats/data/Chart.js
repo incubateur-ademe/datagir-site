@@ -10,6 +10,7 @@ import {
 } from 'recharts'
 
 import Search from './chart/Search'
+import CustomTooltip from './chart/CustomTooltip'
 
 const Wrapper = styled.div`
   width: 66.666%;
@@ -49,7 +50,7 @@ export default function AreaWeekly(props) {
           <AreaChart data={data}>
             <XAxis dataKey='date' tick={{ fontSize: 12 }} />
             <YAxis />
-            <Tooltip />
+            <Tooltip content={<CustomTooltip period={props.period} />} />
             <Area
               type='monotone'
               dataKey={'Visiteurs'}
