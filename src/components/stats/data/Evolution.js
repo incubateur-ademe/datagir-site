@@ -20,7 +20,7 @@ const Number = styled.span`
   color: ${(props) => props.color || props.theme.colors.main};
   transition: color 500ms ease-out;
 `
-const Percent = styled(Number)`
+const BigNumber = styled(Number)`
   font-size: 6rem;
 `
 const Small = styled.span`
@@ -55,19 +55,19 @@ export default function Evolution(props) {
   return (
     <Wrapper>
       <Block>
-        <Percent color={props.color}>
-          {percent > 0 && '+'}
-          {Math.round(percent * 10) / 10}%
-        </Percent>
-        de visiteurs ce mois ci
-        <br />
-        <Small>(par rapport au mois d'avant)</Small>
+        <BigNumber color={props.color}>
+          {props.allTime.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+        </BigNumber>{' '}
+        visiteurs depuis le lancement
       </Block>
       <Block>
         <Number color={props.color}>
-          {props.allTime.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-        </Number>{' '}
-        visiteurs depuis le lancement
+          {percent > 0 && '+'}
+          {Math.round(percent * 10) / 10}%
+        </Number>
+        de visiteurs ce mois ci
+        <br />
+        <Small>(par rapport au mois d'avant)</Small>
       </Block>
       <Block>
         <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
