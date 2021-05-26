@@ -22,7 +22,7 @@ import Chart from './data/Chart'
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   ${(props) => props.theme.mq.medium} {
     flex-direction: column;
