@@ -5,6 +5,7 @@ import {
   useChart,
   useTotal,
   useWebsites,
+  useOldWebsites,
   useSocials,
   useKeywords,
   usePeriod,
@@ -52,6 +53,7 @@ export default function Data(props) {
   })
   const { data: total } = useTotal({ sites: props.sites })
   const { data: websites } = useWebsites({ sites: props.sites })
+  const { data: oldWebsites } = useOldWebsites({ sites: props.sites })
   const { data: socials } = useSocials({ sites: props.sites })
   const { data: keywords } = useKeywords({ sites: props.sites })
   const { data: period } = usePeriod({ sites: props.sites })
@@ -61,6 +63,7 @@ export default function Data(props) {
 
   return total &&
     websites &&
+    oldWebsites &&
     socials &&
     keywords &&
     period &&
@@ -99,6 +102,7 @@ export default function Data(props) {
         <Sources
           total={total[current]}
           websites={websites[current]}
+          oldWebsites={oldWebsites[current]}
           socials={socials[current]}
           keywords={keywords[current]}
         />

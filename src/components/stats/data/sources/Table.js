@@ -22,7 +22,7 @@ const Wrapper = styled.table`
     border-bottom: 2px solid ${(props) => props.theme.colors.title};
   }
   th {
-    padding: 0.75rem;
+    padding: 0.75rem 0 0.75rem 0.75rem;
   }
   td {
     font-size: 0.8125rem;
@@ -42,6 +42,16 @@ const Text = styled.p`
   font-weight: 300;
   text-align: right;
 `
+const Toggle = styled.button`
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 0.65rem;
+  color: ${(props) => props.theme.colors.main};
+  background: none;
+  border: none;
+  cursor: pointer;
+`
 export default function Table(props) {
   return (
     <Tile.Tile large>
@@ -49,26 +59,43 @@ export default function Table(props) {
         <Wrapper>
           <tbody>
             <tr>
-              <th>{props.title}</th>
+              <th>
+                {props.title}{' '}
+                {props.setNewWebsites && (
+                  <Toggle
+                    onClick={() =>
+                      props.setNewWebsites(
+                        (prevNewWebsites) => !prevNewWebsites
+                      )
+                    }
+                  >
+                    ({props.newWebsites ? 'Cacher' : 'Voir'} les nouveaux)
+                  </Toggle>
+                )}
+              </th>
               <th>Visites</th>
               <th>%</th>
             </tr>
             {props.data &&
-              props.data.map((line) => (
-                <tr key={line.label + line.nb_visits}>
-                  <td>{line.label}</td>
-                  <td>
-                    {line.nb_visits
-                      .toString()
-                      .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-                  </td>
-                  <td>
-                    {props.total &&
-                      Math.round((line.nb_visits / props.total) * 10000) / 100}
-                    %
-                  </td>
-                </tr>
-              ))}
+              props.data.map(
+                (line, index) =>
+                  (!props.limit || index < props.limit) && (
+                    <tr key={line.label + line.nb_visits}>
+                      <td>{line.label}</td>
+                      <td>
+                        {line.nb_visits
+                          .toString()
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+                      </td>
+                      <td>
+                        {props.total &&
+                          Math.round((line.nb_visits / props.total) * 10000) /
+                            100}
+                        %
+                      </td>
+                    </tr>
+                  )
+              )}
           </tbody>
         </Wrapper>
         <Text>Données valables pour les 30 derniers jours</Text>

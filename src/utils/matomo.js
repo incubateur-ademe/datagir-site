@@ -25,7 +25,6 @@ const addTotalLines = (data) => {
     nb_visits: tempTotal[key],
   }))
   tempTotalArray.sort((a, b) => (a.nb_visits > b.nb_visits ? -1 : 1))
-  tempTotalArray.length = 10
   return { ...data, total: tempTotalArray }
 }
 
@@ -75,7 +74,18 @@ export const useWebsites = ({ sites }) =>
       .get(
         `https://stats.data.gouv.fr/?module=API&date=last30&period=range&format=json&idSite=${getIdSites(
           sites
-        )}&method=Referrers.getWebsites&filter_limit=10`
+        )}&method=Referrers.getWebsites`
+      )
+      .then((res) => res.data)
+      .then((data) => addTotalLines(data))
+  )
+export const useOldWebsites = ({ sites }) =>
+  useQuery('oldwebsites', () =>
+    axios
+      .get(
+        `https://stats.data.gouv.fr/?module=API&date=lastYear,last30&period=range&format=json&idSite=${getIdSites(
+          sites
+        )}&method=Referrers.getWebsites`
       )
       .then((res) => res.data)
       .then((data) => addTotalLines(data))
