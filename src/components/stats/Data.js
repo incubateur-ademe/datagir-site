@@ -34,7 +34,7 @@ export default function Data(props) {
 
   const [current, setCurrent] = useState('total')
 
-  const [chartDate, setChartDate] = useState(14)
+  const [chartDate, setChartDate] = useState(12)
   const [chartPeriod, setChartPeriod] = useState('week')
 
   const [color, setColor] = useState(themes[theme].colors.main)

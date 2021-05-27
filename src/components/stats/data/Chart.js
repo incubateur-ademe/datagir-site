@@ -18,6 +18,10 @@ const Wrapper = styled.div`
   ${(props) => props.theme.mq.medium} {
     width: 100%;
   }
+
+  svg {
+    overflow: visible;
+  }
 `
 const ChartWrapper = styled.div`
   height: 22rem;
@@ -48,7 +52,24 @@ export default function AreaWeekly(props) {
       <ChartWrapper>
         <ResponsiveContainer>
           <AreaChart data={data}>
-            <XAxis dataKey='date' tick={{ fontSize: 12 }} />
+            <XAxis
+              dataKey='date'
+              tick={{ fontSize: 12 }}
+              tickFormatter={(tick) => {
+                const date = new Date(tick.split(',')[0])
+                return props.period === 'month'
+                  ? date.toLocaleDateString('fr-fr', {
+                      month: 'long',
+                      year: 'numeric',
+                    })
+                  : date.toLocaleDateString('fr-fr', {
+                      day: '2-digit',
+                      month: '2-digit',
+                    })
+              }}
+              interval={'preserveStartEnd'}
+              minTickGap={1}
+            />
             <YAxis
               tickFormatter={(tick) =>
                 tick.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
