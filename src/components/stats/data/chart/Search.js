@@ -27,7 +27,9 @@ export default function Search(props) {
     <Wrapper>
       Nombre de visites pour les{' '}
       <Input
-        type={'text'}
+        type='text'
+        inputmode='numeric'
+        pattern='[0-9]*'
         value={props.date}
         color={props.color}
         onChange={(e) => props.setDate(e.currentTarget.value)}

@@ -49,7 +49,11 @@ export default function AreaWeekly(props) {
         <ResponsiveContainer>
           <AreaChart data={data}>
             <XAxis dataKey='date' tick={{ fontSize: 12 }} />
-            <YAxis />
+            <YAxis
+              tickFormatter={(tick) =>
+                tick.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+              }
+            />
             <Tooltip content={<CustomTooltip period={props.period} />} />
             <Area
               type='monotone'
