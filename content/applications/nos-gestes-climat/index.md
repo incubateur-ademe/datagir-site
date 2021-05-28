@@ -14,6 +14,9 @@ buttons:
 image: nos-gestes-climat.jpg
 order: 1
 users:
+  - title: 10 milliards à table !
+    image: ../../users/10milliardsàtable.jpeg.JPG
+    link: https://10milliardsatable.wixsite.com/website/nos-gestes-climat
   - title: Actees
     image: ../../users/acctees.jpg
     link: https://www.acctees.fr/
