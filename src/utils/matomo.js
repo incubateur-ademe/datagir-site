@@ -74,7 +74,7 @@ export const useWebsites = ({ sites }) =>
       .get(
         `https://stats.data.gouv.fr/?module=API&date=last30&period=range&format=json&idSite=${getIdSites(
           sites
-        )}&method=Referrers.getWebsites`
+        )}&method=Referrers.getWebsites&filter_limit=1000`
       )
       .then((res) => res.data)
       .then((data) => addTotalLines(data))
@@ -85,7 +85,7 @@ export const useOldWebsites = ({ sites }) =>
       .get(
         `https://stats.data.gouv.fr/?module=API&date=lastYear,last30&period=range&format=json&idSite=${getIdSites(
           sites
-        )}&method=Referrers.getWebsites`
+        )}&method=Referrers.getWebsites&filter_limit=1000`
       )
       .then((res) => res.data)
       .then((data) => addTotalLines(data))

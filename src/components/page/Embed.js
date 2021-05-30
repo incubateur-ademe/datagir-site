@@ -10,7 +10,6 @@ const Wrapper = styled(IframeResizer)`
   border: none;
 `
 export default function Embed(props) {
-  console.log(props.embed)
   return (
     <Wrapper
       src={props.embed}
