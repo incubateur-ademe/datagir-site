@@ -1,16 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 import { graphql } from 'gatsby'
 
 import Web from 'src/components/layout/Web'
 import Section from 'src/components/layout/Section'
 import Tile from 'src/components/layout/Tile'
 
+const Title = styled.h1`
+  font-size: 5.5rem;
+  text-align: center;
+`
 export default function Blog(props) {
   console.log(props.data)
   return (
     <Web title={'Blog'}>
       <Section>
-        <Section.Title>Blog</Section.Title>
+        <Title>Blog</Title>
         <Tile.Wrapper>
           {props.data.allMdx.edges
             .filter((post) =>
