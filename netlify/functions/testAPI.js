@@ -10,11 +10,8 @@ apiKey.apiKey = process.env.SENDINBLUE_API_KEY
 
 exports.handler = function(event) {
   var api = new SibApiV3Sdk.AccountApi()
-  return api
-    .getAccount()
-    .then((res) => res.json())
-    .then((res) => ({
-      statusCode: 200,
-      body: JSON.stringify(res),
-    }))
+  return api.getAccount().then((data) => ({
+    statusCode: 200,
+    body: JSON.stringify(data),
+  }))
 }
