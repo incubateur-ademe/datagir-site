@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 
 import Web from 'src/components/layout/Web'
 import Data from 'src/components/stats/Data'
+import Misc from 'src/components/stats/Misc'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -29,6 +30,7 @@ export default function Dashboard(props) {
         image={props.data.metaimage.childImageSharp.resize}
       >
         <Data sites={sites} />
+        <Misc />
       </Web>
     </QueryClientProvider>
   )
