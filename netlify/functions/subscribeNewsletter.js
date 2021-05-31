@@ -17,11 +17,17 @@ exports.handler = function(event) {
 
   return api
     .createContact(createContact)
-    .then((data) => ({
-      statusCode: 200,
-      body: JSON.stringify(data),
-    }))
-    .error((error) => ({
+    .then(
+      (data) => ({
+        statusCode: 200,
+        body: JSON.stringify(data),
+      }),
+      (data) => ({
+        statusCode: 500,
+        body: JSON.stringify(data),
+      })
+    )
+    .catch((error) => ({
       statusCode: 500,
       body: JSON.stringify(error),
     }))
