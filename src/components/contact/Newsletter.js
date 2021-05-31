@@ -71,7 +71,10 @@ export default function Contact(props) {
 
           return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
             .then((res) => res.json())
-            .then((res) => setCode(res.id ? 'success' : 'error'))
+            .then((res) => {
+              console.log(res)
+              setCode(res.id ? 'success' : 'error')
+            })
             .catch((error) => {
               setCode(error?.response?.data?.code)
             })
