@@ -62,9 +62,8 @@ export default function Contact(props) {
         onSubmit={(e) => {
           e.preventDefault()
           e.stopPropagation()
-          setCode('success')
 
-          fetch('/.netlify/functions/testAPI')
+          fetch('/.netlify/functions/getNumSubscribers')
             .then((res) => res.json())
             .then((res) => console.log(res))
             .catch((error) => console.log(error))
@@ -72,7 +71,6 @@ export default function Contact(props) {
           return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
             .then((res) => res.json())
             .then((res) => {
-              console.log(res)
               setCode(res.id ? 'success' : 'error')
             })
             .catch((error) => {
