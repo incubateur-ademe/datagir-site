@@ -10,7 +10,7 @@ apiKey.apiKey = process.env.SENDINBLUE_API_KEY
 
 exports.handler = function(event) {
   var api = new SibApiV3Sdk.ContactsApi()
-  return api.getList().then((data) => ({
+  return api.getList(10).then((data) => ({
     statusCode: 200,
     body: JSON.stringify(data),
   }))
