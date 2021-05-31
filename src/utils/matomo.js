@@ -56,6 +56,19 @@ export const useChart = ({ sites, chartPeriod, chartDate }) =>
       keepPreviousData: true,
     }
   )
+export const useChartAgribalyse = () =>
+  useQuery(
+    ['chartAgribalyse'],
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&date=last24&period=week&format=json&idSite=144&method=VisitsSummary.getVisits`
+        )
+        .then((res) => res.data),
+    {
+      keepPreviousData: true,
+    }
+  )
 export const useTotal = ({ sites }) =>
   useQuery('total', () =>
     axios
@@ -66,6 +79,16 @@ export const useTotal = ({ sites }) =>
       )
       .then((res) => res.data)
       .then((data) => addTotalNumbers(data))
+  )
+
+export const useDatagirAverageDailyVisits = () =>
+  useQuery('datagirAverageVisits', () =>
+    axios
+      .get(
+        `https://stats.data.gouv.fr/?module=API&date=last30&period=range&format=json&idSite=128&method=VisitsSummary.getVisits`
+      )
+      .then((res) => res.data)
+      .then((data) => data.value / 30)
   )
 
 export const useWebsites = ({ sites }) =>

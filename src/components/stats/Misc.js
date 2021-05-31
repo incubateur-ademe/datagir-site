@@ -1,19 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import Tile from 'src/components/layout/Tile'
-import Newsletter from './misc/Newsletter'
+import Section from 'src/components/layout/Section'
+import NumSubscribers from './misc/NumSubscribers'
+import NumEmbeds from './misc/NumEmbeds'
+import NumVisitors from './misc/NumVisitors'
 
-const Title = styled.h2`
-  text-align: center;
-`
 export default function Misc() {
   return (
-    <>
-      <Title>Datagir</Title>
+    <Section>
+      <Section.Title>Datagir en chiffres</Section.Title>
       <Tile.Wrapper>
-        <Newsletter />
+        <NumSubscribers />
+        <NumEmbeds />
+        <NumVisitors />
       </Tile.Wrapper>
-    </>
+    </Section>
   )
 }

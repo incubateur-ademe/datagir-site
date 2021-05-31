@@ -3,8 +3,9 @@ import { graphql } from 'gatsby'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
 import Web from 'src/components/layout/Web'
-import Data from 'src/components/stats/Data'
+import Applications from 'src/components/stats/Applications'
 import Misc from 'src/components/stats/Misc'
+import Agribalyse from 'src/components/stats/Agribalyse'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -29,8 +30,9 @@ export default function Dashboard(props) {
         title={'Statistiques'}
         image={props.data.metaimage.childImageSharp.resize}
       >
-        <Data sites={sites} />
+        <Applications sites={sites} />
         <Misc />
+        <Agribalyse />
       </Web>
     </QueryClientProvider>
   )

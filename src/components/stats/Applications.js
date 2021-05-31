@@ -15,10 +15,10 @@ import {
 } from 'src/utils/matomo'
 import StyleContext from 'src/utils/StyleContext'
 import Section from 'src/components/layout/Section'
-import Evolution from './data/Evolution'
-import Sources from './data/Sources'
-import Selector from './data/Selector'
-import Chart from './data/Chart'
+import Evolution from './applications/Evolution'
+import Sources from './applications/Sources'
+import Selector from './applications/Selector'
+import Chart from './applications/Chart'
 
 const Wrapper = styled.div`
   display: flex;
