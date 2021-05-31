@@ -15,8 +15,14 @@ exports.handler = function(event) {
     listIds: [10],
   }
 
-  return api.createContact(createContact).then((data) => ({
-    statusCode: 200,
-    body: JSON.stringify(data),
-  }))
+  return api
+    .createContact(createContact)
+    .then((data) => ({
+      statusCode: 200,
+      body: JSON.stringify(data),
+    }))
+    .error((error) => ({
+      statusCode: 500,
+      body: JSON.stringify(error),
+    }))
 }
