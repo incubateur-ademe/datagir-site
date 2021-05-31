@@ -8,7 +8,7 @@ apiKey.apiKey = process.env.SENDINBLUE_API_KEY
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKey.apiKeyPrefix['api-key'] = "Token"
 
-exports.handler = async function(event) {
+exports.handler = function(event) {
   var api = new SibApiV3Sdk.AccountApi()
   return api.getAccount()
 }
