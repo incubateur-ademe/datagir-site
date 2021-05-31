@@ -63,6 +63,11 @@ export default function Contact(props) {
           e.preventDefault()
           e.stopPropagation()
           setCode('success')
+
+          fetch('/.netlify/functions/testAPI')
+            .then((res) => console.log(res))
+            .catch((error) => console.log(error))
+
           return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
             .then((res) => res.json())
             .then((res) => setCode(res.id ? 'success' : 'error'))
