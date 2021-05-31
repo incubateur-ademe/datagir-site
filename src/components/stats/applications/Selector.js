@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 import FancySelect from 'src/components/base/FancySelect'
 
-const Wrapper = styled.h1`
+const Wrapper = styled.h2`
   margin-bottom: 3.5rem;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 
   ${(props) => props.theme.mq.medium} {
     font-size: 2rem;
@@ -19,7 +19,7 @@ const Wrapper = styled.h1`
 export default function Selector(props) {
   return (
     <Wrapper>
-      Statistiques pour{' '}
+      Visites pour{' '}
       <FancySelect
         fancy
         value={String(props.current)}
