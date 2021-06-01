@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Tile from 'src/components/layout/Tile'
 import Table from './sources/Table'
 
-const Title = styled.h2`
+const Title = styled.h3`
   text-align: center;
 `
 export default function Sources(props) {
