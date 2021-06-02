@@ -26,7 +26,7 @@ export default function Transport(props) {
         buttons={[
           {
             label: `Voir la documentation`,
-            to: `hhttps://datagir.gitbook.io/documentation/se-deplacer-quelques-cas-dusage-des-donnees`,
+            to: `https://datagir.gitbook.io/documentation/atelier-re-utilisateurs-transport`,
           },
           { label: `Voir les simulateurs`, to: `#applications` },
         ]}
@@ -73,7 +73,7 @@ export default function Transport(props) {
             </Block.Text>
             <Block.Buttons>
               <Button
-                to='https://datagir.gitbook.io/documentation/se-deplacer-quelques-cas-dusage-des-donnees'
+                to='https://datagir.gitbook.io/documentation/atelier-re-utilisateurs-transport'
                 hollow
                 color={'transport'}
               >
