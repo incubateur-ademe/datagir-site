@@ -75,7 +75,7 @@ export default function Alimentation(props) {
             </Block.Text>
             <Block.Buttons>
               <Button
-                to='https://datagir.gitbook.io/documentation/se-nourrir/se-nourrir-reutiliser-les-donnees'
+                to='https://datagir.gitbook.io/documentation/alimentation'
                 hollow
                 color={'alimentation'}
               >
