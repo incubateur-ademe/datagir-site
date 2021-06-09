@@ -19,4 +19,10 @@ users:
   - title: Inseec RSE
     image: ../../users/inseecu.png
     link: https://www.rse-groupeinseec.com/mon-impact-transport-teletravail/
+  - title: L'Oreal campus CZ
+    image: ../../users/lorealcampuscz.png
+    link: https://www.loreal.com/fr/
+  - title: RTBF
+    image: ../../users/rtbf.png
+    link: https://www.rtbf.be/tendance/green/detail_un-simulateur-calcule-combien-de-co2-vous-avez-economise-depuis-que-vous-etes-en-teletravail?id=10762017
 ---
