@@ -16,6 +16,9 @@ users:
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/bureau/deplacements/teletravail-ca-change-quoi-planete
+  - title: Geres
+    image: ../../users/Geres-logo-color-french-small.png
+    link: https://www.geres.eu/jagis/calculateur-emissions-evitees-teletravail/
   - title: Inseec RSE
     image: ../../users/inseecu.png
     link: https://www.rse-groupeinseec.com/mon-impact-transport-teletravail/
