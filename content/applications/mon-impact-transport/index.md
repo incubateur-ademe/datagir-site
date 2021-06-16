@@ -74,6 +74,9 @@ users:
   - title: Geo
     image: ../../users/geo.png
     link: https://www.geo.fr/environnement/environnement-comment-reduire-lempreinte-carbone-de-ses-voyages-202204/
+  - title: Geres 
+    image: ../../users/Geres-logo-color-french-small.png
+    link: https://www.geres.eu/jagis/calculateur-impact-transport/
   - title: Grand Paris Durable
     image: ../../users/gdparisdurable.png
     link: https://grandparisdurable.org/transport/
@@ -107,6 +110,9 @@ users:
   - title: natureisbike
     image: ../../users/natureisbike.png
     link: https://natureisbike.com/infos-pratiques-nature-is-bike/
+  - title: Normandie Tourisme
+    image: ../../users/logo normandie tourisme.png
+    link: https://www.normandie-tourisme.fr/preparer-son-sejour/informations-pratiques/venir-en-normandie/
   - title: notreplaneteinfo
     image: ../../users/notreplaneteinfo.png
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
