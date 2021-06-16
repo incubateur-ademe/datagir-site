@@ -47,6 +47,9 @@ users:
   - title: Challenge mobilite
     image: ../../users/challengemobilite.png
     link: https://www.challengedelamobilite.com/page/64/calculateur-emissions-co2
+  - title: Challenge mobilite Bourgogne
+    image: ../../users/challengedelamobilitébourgogne.jpg
+    link: https://www.challengemobilite-bfc.fr/page/64/calculateur-emissions-co2
   - title: CMA centre
     image: ../../users/crma-centre.png
     link: http://www.crma-centre.fr/article/environnement-et-developpement-durable
