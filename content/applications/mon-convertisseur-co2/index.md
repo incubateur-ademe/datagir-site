@@ -20,6 +20,9 @@ users:
   - title: Defi mobilite pdl
     image: ../../users/defimobilitepdl.png
     link: https://www.defimobilite-paysdelaloire.fr/page/86/convertisseur-emissions-co2
+  - title: Geres 
+    image: ../../users/Geres-logo-color-french-small.png
+    link: https://www.geres.eu/jagis/calculateur-impact-equivalent-co2/
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2297-mon-convertisseur-co2.htm
