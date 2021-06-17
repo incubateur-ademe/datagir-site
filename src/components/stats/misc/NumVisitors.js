@@ -26,7 +26,7 @@ export default function Newsletter() {
       <Tile.Content>
         <Number>{data && Math.round(data)}</Number>
         <Label>
-          visites quotidenne
+          visites quotidiennes
           <br />
           sur datagir.ademe.fr
         </Label>
