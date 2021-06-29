@@ -29,6 +29,9 @@ users:
   - title: Inseec RSE
     image: ../../users/inseecu.png
     link: https://www.rse-groupeinseec.com/mon-convertisseur-co2/
+  - title: Issy
+    image: ../../users/issy.png
+    link: https://www.issy.com/decouvrir-issy/agir-pour-le-climat/lutter-contre-le-changement-climatique/sobriete-carbone-10
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-convertisseur-co2
