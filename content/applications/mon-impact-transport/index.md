@@ -98,6 +98,9 @@ users:
   - title: Inseec RSE
     image: ../../users/inseecu.png
     link: https://www.rse-groupeinseec.com/mon-impact-transport/
+  - title: Issy
+    image: ../../users/issy.png
+    link: https://www.issy.com/decouvrir-issy/agir-pour-le-climat/lutter-contre-le-changement-climatique/sobriete-carbone-10
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
