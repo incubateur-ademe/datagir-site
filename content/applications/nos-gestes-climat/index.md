@@ -80,6 +80,9 @@ users:
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
+  - title: Maoboa
+    image: ../../users/maoboa.png
+    link: https://www.maoboa.co/calculateur-empreinte-carbone
   - title: Nice Matin
     image: ../../users/nicematin.png
     link: https://www.nicematin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
