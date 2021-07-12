@@ -83,6 +83,9 @@ users:
   - title: Maoboa
     image: ../../users/maoboa.png
     link: https://www.maoboa.co/calculateur-empreinte-carbone
+  - title: Ma petite planete
+    image: ../../users/mpp.png
+    link: https://mapetiteplanete.org/
   - title: Nice Matin
     image: ../../users/nicematin.png
     link: https://www.nicematin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
