@@ -41,6 +41,9 @@ users:
   - title: Centrale Nantes
     image: ../../users/cnnco2.png
     link: https://neutralite-carbone.ec-nantes.fr/fr/outils-a-vous-de-jouer/lempreinte-carbone-de-vos-activites-a-centrale-nantes
+  - title: Climates
+    image: ../../users/CliMates logo.png
+    link: https://datagir.ademe.fr/apps/nos-gestes-climat/
   - title: demarchesadministratives
     image: ../../users/demarchesadministratives.png
     link: https://demarchesadministratives.fr/demarches/comment-calculer-son-empreinte-carbone
