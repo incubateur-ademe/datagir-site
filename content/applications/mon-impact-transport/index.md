@@ -53,6 +53,9 @@ users:
   - title: Challenge mobilite HdF
     image: ../../users/challenge-hdf.png
     link: http://challenge-mobilite-hdf.fr/blog/votre-%C3%A9co-calculateur-mobilit%C3%A9
+  - title: CliMates
+    image: ../../users/CliMates logo.png
+    link: https://datagir.ademe.fr/apps/mon-impact-transport/
   - title: CMA centre
     image: ../../users/crma-centre.png
     link: http://www.crma-centre.fr/article/environnement-et-developpement-durable
