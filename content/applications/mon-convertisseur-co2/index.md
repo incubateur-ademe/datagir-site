@@ -17,6 +17,9 @@ users:
   - title: Acteur de la rénovation
     image: ../../users/acteurdelareno.png
     link: https://acteurdelarenovation.fr/
+  - title: CliMates
+    image: ../../users/CliMates logo.png
+    link: https://datagir.ademe.fr/apps/mon-convertisseur-co2/
   - title: Defi mobilite pdl
     image: ../../users/defimobilitepdl.png
     link: https://www.defimobilite-paysdelaloire.fr/page/86/convertisseur-emissions-co2
