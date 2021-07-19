@@ -20,6 +20,9 @@ users:
   - title: Alternativi
     image: ../../users/alternativi.png
     link: https://alternativi.fr/simulateur-de-fruits-et-legumes-est-ce-bien-la-saison/711
+  - title: CliMates
+    image: ../../users/CliMates logo.png
+    link: https://datagir.ademe.fr/apps/mes-fruits-et-l%C3%A9gumes-de-saison/
   - title: Cygeria
     image: ../../users/cygeria.png
     link: https://cygeria.fr/catalogue/
