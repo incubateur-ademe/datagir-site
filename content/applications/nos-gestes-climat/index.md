@@ -32,6 +32,9 @@ users:
   - title: alternativi
     image: ../../users/alternativi.png
     link: https://alternativi.fr/calculer-son-impact-carbone-avec-le-simulateur-de-l-ademe/614
+  - title: Aristot
+    image: ../../users/Logo Aristot.PNG
+    link: https://aristot.fr/actualites/
   - title: Avenir Climatique
     image: ../../users/logo_AC_simple_100px.png
     link: https://avenirclimatique.org/calculer-empreinte-carbone/
