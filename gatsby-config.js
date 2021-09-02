@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-root-import`,
     `gatsby-plugin-sitemap`,
     'gatsby-remark-attr',
+    'gatsby-plugin-remove-serviceworker',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
