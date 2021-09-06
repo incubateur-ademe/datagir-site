@@ -110,6 +110,9 @@ users:
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-impact-transport
+   - title: Le Mans Métropole 
+    image: ../../users/le-mans-metropole.jpg
+    link: https://le-mans-preview.webflow.io/
   - title: mapropraventure
     image: ../../users/mapropraventure.png
     link: https://mapropraventure.fr/impact-des-deplacements/
@@ -119,6 +122,9 @@ users:
   - title: Mobilite eco
     image: ../../users/mobiliteeco.png
     link: https://mobilite.eco/calculez-votre-impact-climat/
+  - title: Montpellier Toursime 
+    image: ../../users/montpelliertourisme.jpg
+    link: https://www.montpellier-tourisme.fr/Preparer-Reserver/Acces-et-Transport/Se-deplacer-a-Montpellier/En-bus
   - title: natureisbike
     image: ../../users/natureisbike.png
     link: https://natureisbike.com/infos-pratiques-nature-is-bike/
