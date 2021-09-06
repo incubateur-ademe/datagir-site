@@ -122,7 +122,7 @@ users:
   - title: Mobilite eco
     image: ../../users/mobiliteeco.png
     link: https://mobilite.eco/calculez-votre-impact-climat/
-  - title: Montpellier Toursime 
+  - title: Montpellier Tourisme 
     image: ../../users/montpelliertourisme.jpg
     link: https://www.montpellier-tourisme.fr/Preparer-Reserver/Acces-et-Transport/Se-deplacer-a-Montpellier/En-bus
   - title: natureisbike
@@ -146,9 +146,6 @@ users:
   - title: Ridolo
     image: ../../users/ridolo.png
     link: https://ridolo.com/blogs/infos/ca-fait-vraiment-une-difference-pour-la-planete-calculer-et-comparer-votre-impact-transport
-  - title: saintnazaire
-    image: ../../users/saintnazaire.png
-    link: https://www.saintnazaire.fr/demarches-et-infos-pratiques/infos-pratiques/transports
   - title: skills4all
     image: ../../users/skills4all.png
     link: https://www.skills4all.com/engagement-responsable/
