@@ -10,7 +10,7 @@ image: datagir.jpg
 ### Un laboratoire pour tester de nouvelles modalités afin d'accélérer la transition écologie
 
 *Apporter une information environnementale fiable au cœur des applications et services les plus utilisés par les citoyens* : voilà l'objectif du service créé début 2019 par l'[ADEME](https://www.ademe.fr) en partenariat avec [beta.gouv](https://beta.gouv.fr).
-Pour commencer par tester cette idée, le choix était fait d'un nom rapporchant l'univers de l'expérimentation, le laboratoire, de celui de l'écologie : Ecolab s'imposait ainsi naturellement.
+Pour commencer par tester cette idée, le choix était fait d'un nom rapprochant l'univers de l'expérimentation, le laboratoire, de celui de l'écologie : Ecolab s'imposait ainsi naturellement.
 Deux ans plus tard, le service a fait ses preuves : désormais, ce sont des millions d'utilisateurs et utilisatrices qui ont accès à des informations environnementales simples directement dans certaines de leurs applications et sites web préférés, grâce à l'accompagnement de l'équipe et au développement de simulateurs ludiques facilement intégrables sur tout site.
 L'occasion de clarifier son offre, mais aussi de se démarquer du [Laboratoire d'innovation par les données du CGDD (Ministère de la Transition écologique)](https://lannuaire.service-public.fr/gouvernement/administration-centrale-ou-ministere_182773) et d'un acteur mondial de solutions en hygiène - Ecolab Inc.
 
