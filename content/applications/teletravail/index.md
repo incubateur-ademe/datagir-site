@@ -19,6 +19,12 @@ users:
   - title: CliMates 
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/teletravail/
+  - title: Centre Val de Loire
+    image: ../../users/logo RCVL.png
+    link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
+  - title: Cop Centre-Val de Loire
+    image: ../../users/logo cop.jpg
+    link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
   - title: Geres
     image: ../../users/Geres-logo-color-french-small.png
     link: https://www.geres.eu/jagis/calculateur-emissions-evitees-teletravail/
