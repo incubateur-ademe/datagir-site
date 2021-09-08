@@ -59,6 +59,9 @@ users:
   - title: france inter
     image: ../../users/franceinter.png
     link: https://www.franceinter.fr/emissions/le-debat-de-midi/le-debat-de-midi-05-aout-2020
+  - title: Grand Albigeois
+    image: ../../users/grandalbigeois.png
+    link: https://grand-albigeois.climatlocal.fr/donations/
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
