@@ -44,7 +44,13 @@ users:
   - title: Centrale Nantes
     image: ../../users/cnnco2.png
     link: https://neutralite-carbone.ec-nantes.fr/fr/outils-a-vous-de-jouer/lempreinte-carbone-de-vos-activites-a-centrale-nantes
-  - title: Climates
+  - title: Centre-Val de Loire
+    image: ../../users/logo RCVL.png
+    link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
+ - title: Cop Centre-Val de Loire
+    image: ../../users/logo cop.jpg
+    link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
+    - title: Climates
     image: ../../users/CliMates logo.png
     link: https://www.weareclimates.org/
   - title: demarchesadministratives
