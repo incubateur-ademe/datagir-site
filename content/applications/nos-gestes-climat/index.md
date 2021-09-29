@@ -47,10 +47,10 @@ users:
   - title: Centre-Val de Loire
     image: ../../users/logo RCVL.png
     link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
- - title: Cop Centre-Val de Loire
+  - title: Cop Centre-Val de Loire
     image: ../../users/logo cop.jpg
     link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
-    - title: Climates
+  - title: Climates
     image: ../../users/CliMates logo.png
     link: https://www.weareclimates.org/
   - title: demarchesadministratives
