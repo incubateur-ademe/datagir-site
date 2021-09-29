@@ -29,7 +29,7 @@ export default function NumSubscribers() {
         <Number>{data ? data.totalSubscribers : 1587}</Number>
         <Label>
           personnes inscrites
-          <br />à la newsletter
+          <br />à l'infolettre
         </Label>
       </Tile.Content>
     </Tile.Tile>
