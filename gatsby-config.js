@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://datagir.ademe.fr`,
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

@@ -22,4 +22,8 @@ const StyleProvider = (props) => {
   )
 }
 
-export default ({ element }) => <StyleProvider>{element}</StyleProvider>
+const StyleProviderFunction = ({ element }) => (
+  <StyleProvider>{element}</StyleProvider>
+)
+
+export default StyleProviderFunction

@@ -1,4 +1,4 @@
-export default `
+const slickStyle = `
 .slick-slider {
     position: relative;
     display: block;
@@ -97,3 +97,5 @@ export default `
 .slick-arrow.slick-hidden {
     display: none;
 }`
+
+export default slickStyle
