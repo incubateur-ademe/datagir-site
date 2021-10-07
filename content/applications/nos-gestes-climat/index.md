@@ -53,6 +53,9 @@ users:
   - title: Climates
     image: ../../users/CliMates logo.png
     link: https://www.weareclimates.org/
+  - title: communaute-paysbasque
+    image: ../../users/communaute-paysbasque.png
+    link: https://www.climataction-paysbasque.fr/public/page/evaluez-votre-empreinte-carbone,14.html
   - title: demarchesadministratives
     image: ../../users/demarchesadministratives.png
     link: https://demarchesadministratives.fr/demarches/comment-calculer-son-empreinte-carbone
