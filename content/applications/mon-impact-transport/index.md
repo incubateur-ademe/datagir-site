@@ -93,7 +93,7 @@ users:
     image: ../../users/gdparisdurable.png
     link: https://grandparisdurable.org/transport/
   - title: Grand Paris Seine Ouest 
-    image: ../../users/Logo_Grand_Paris_Seine_Ouest.png
+    image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-impact-transport
   - title: GreenGo
     image: ../../users/greengo.png
