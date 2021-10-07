@@ -92,6 +92,9 @@ users:
   - title: Grand Paris Durable
     image: ../../users/gdparisdurable.png
     link: https://grandparisdurable.org/transport/
+  - title: Grand Paris Seine Ouest 
+    image: ../../users/Logo_Grand_Paris_Seine_Ouest.png
+    link: https://www.seineouest.fr/mon-impact-transport
   - title: GreenGo
     image: ../../users/greengo.png
     link: https://www.greengo.voyage/post/calculer-empreinte-carbone-voyages
