@@ -70,7 +70,9 @@ users:
     link: https://www.franceinter.fr/emissions/le-debat-de-midi/le-debat-de-midi-05-aout-2020
   - title: Grand Albigeois
     image: ../../users/grandalbigeois.png
-    link: https://grand-albigeois.climatlocal.fr/donations/
+  - title: Grand Paris Seine Ouest 
+    image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
+    link: https://www.seineouest.fr/nos-gestes-climat
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
