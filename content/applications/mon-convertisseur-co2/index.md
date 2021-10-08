@@ -35,7 +35,7 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2297-mon-convertisseur-co2.htm
- - title: Grand Paris Seine Ouest 
+  - title: Grand Paris Seine Ouest 
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-convertisseur-co2
   - title: Inseec RSE
