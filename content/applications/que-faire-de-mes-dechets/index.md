@@ -16,7 +16,11 @@ users:
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/maison/dechets/que-faire-de-mes-dechets
+  - title: MTE
+    image: ../../users/mte.png
+    link: https://www.ecologie.gouv.fr/je-veux-savoir-faire-mes-autres-dechets
   - title: SERD
     image: ../../users/serd.jpg
     link: https://www.serd.ademe.fr/que-faire-de-mes-dechets
+    
 ---
