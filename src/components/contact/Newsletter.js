@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
+import useSubscribeEmail from 'hooks/useSubscribeEmail'
 import Button from 'src/components/base/Button'
 import Alert from 'src/components/base/Alert'
 import Section from 'src/components/layout/Section'
@@ -49,8 +50,8 @@ const Introduction = styled.p`
 export default function Contact(props) {
   const [email, setEmail] = useState('')
 
-  const [code, setCode] = useState(null)
-
+  const mutation = useSubscribeEmail()
+  console.log(mutation)
   return (
     <Wrapper>
       <StyledTitle>Notre Newsletter</StyledTitle>
@@ -63,17 +64,7 @@ export default function Contact(props) {
           e.preventDefault()
           e.stopPropagation()
 
-          return fetch(
-            'https://datagir.ademe.fr/.netlify/functions/subscribeNewsletter?email=' +
-              email
-          )
-            .then((res) => res.json())
-            .then((res) => {
-              setCode('success')
-            })
-            .catch((error) => {
-              setCode(error?.code)
-            })
+          mutation.mutate(email)
         }}
       >
         <Introduction
@@ -96,17 +87,15 @@ export default function Contact(props) {
             M'abonner
           </Button>
         </ButtonWrapper>
-        {code && (
-          <Alert error={code !== 'success'}>
-            {code === 'success'
-              ? `Merci ! Votre inscription est confirmée :)`
-              : code === 'duplicate_parameter'
-              ? `Vous êtes déjà inscrit !`
-              : code === 'invalid_parameter'
-              ? `Votre adresse email n'est pas correcte`
-              : `Une erreur est survenue :(`}
+        {mutation.isError && (
+          <Alert error>
+            {mutation?.error?.response?.data?.message ===
+            'Contact already in list and/or does not exist'
+              ? `Vous êtes déjà inscrit à notre newsletter`
+              : `Une erreur est survenue`}
           </Alert>
         )}
+        {mutation.isSuccess && <Alert>Vous êtes maintenant inscrit !</Alert>}
       </Form>
     </Wrapper>
   )
