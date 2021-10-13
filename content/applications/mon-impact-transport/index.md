@@ -53,6 +53,9 @@ users:
   - title: Challenge mobilite HdF
     image: ../../users/challenge-hdf.png
     link: http://challenge-mobilite-hdf.fr/blog/votre-%C3%A9co-calculateur-mobilit%C3%A9
+  - title: Challenge mobilite Sophia-Antipolis
+    image: ../../users/logo challenge mobilité sophia-antipolis.png
+    link: https://www.challenge-mobilite-sophia.fr/actualites/preparez-votre-challenge-et-votre-argumentaire-avec-les-simulateurs-mobilite.19.html
   - title: CliMates
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/mon-impact-transport/
@@ -89,6 +92,9 @@ users:
   - title: Grand Paris Durable
     image: ../../users/gdparisdurable.png
     link: https://grandparisdurable.org/transport/
+  - title: Grand Paris Seine Ouest 
+    image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
+    link: https://www.seineouest.fr/mon-impact-transport
   - title: GreenGo
     image: ../../users/greengo.png
     link: https://www.greengo.voyage/post/calculer-empreinte-carbone-voyages
@@ -134,6 +140,9 @@ users:
   - title: notreplaneteinfo
     image: ../../users/notreplaneteinfo.png
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
+  - title: Occi Mobility 
+    image: ../../users/Logo occi mobility.jpg
+    link: https://occimobility.fr/mobilite-durable-pour-lentreprise/
   - title: Offways
     image: ../../users/offways.png
     link: https://www.offways.fr/

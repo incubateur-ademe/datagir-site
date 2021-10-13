@@ -53,6 +53,9 @@ users:
   - title: Climates
     image: ../../users/CliMates logo.png
     link: https://www.weareclimates.org/
+  - title: communaute-paysbasque
+    image: ../../users/communaute-paysbasque.png
+    link: https://www.climataction-paysbasque.fr/public/page/evaluez-votre-empreinte-carbone,14.html
   - title: demarchesadministratives
     image: ../../users/demarchesadministratives.png
     link: https://demarchesadministratives.fr/demarches/comment-calculer-son-empreinte-carbone
@@ -67,7 +70,9 @@ users:
     link: https://www.franceinter.fr/emissions/le-debat-de-midi/le-debat-de-midi-05-aout-2020
   - title: Grand Albigeois
     image: ../../users/grandalbigeois.png
-    link: https://grand-albigeois.climatlocal.fr/donations/
+  - title: Grand Paris Seine Ouest 
+    image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
+    link: https://www.seineouest.fr/nos-gestes-climat
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
@@ -140,6 +145,9 @@ users:
   - title: smaaart
     image: ../../users/smaaart.jpg
     link: https://smaaart.fr/blog/le-gouvernement-au-service-du-zero-dechet/
+  - title: Time for the planet 
+    image: ../../users/Logo-time-planet-HD-2.png
+    link: https://ngc.time-planet.com/
   - title: Usbeketrica
     image: ../../users/usbeketrica.jpeg
     link: https://usbeketrica.com/fr/article/nous-mettons-nos-donnees-et-nos-outils-a-la-disposition-de-tous

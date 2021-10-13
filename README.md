@@ -1,8 +1,8 @@
 # Site Datagir
 
-Site vitrine de la startup d'état Datagir
+Site vitrine de la startup d'État Datagir développé avec le framework [Gatsby](https://www.gatsbyjs.com).
 
-https://datagir.ademe.fr/
+https://datagir.ademe.fr
 
 ## Développement
 

@@ -28,6 +28,9 @@ users:
   - title: Geres
     image: ../../users/Geres-logo-color-french-small.png
     link: https://www.geres.eu/jagis/calculateur-emissions-evitees-teletravail/
+  - title: Grand Paris Seine Ouest
+    image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
+    link: https://www.seineouest.fr/mon-impact-transport  
   - title: Inseec RSE
     image: ../../users/inseecu.png
     link: https://www.rse-groupeinseec.com/mon-impact-transport-teletravail/
