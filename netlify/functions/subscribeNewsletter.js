@@ -5,30 +5,47 @@ var defaultClient = SibApiV3Sdk.ApiClient.instance
 var apiKey = defaultClient.authentications['api-key']
 apiKey.apiKey = process.env.SENDINBLUE_API_KEY
 
-exports.handler = function(event) {
-  var api = new SibApiV3Sdk.ContactsApi()
+exports.handler = function (event) {
+  let listId = 10
 
-  var createContact = new SibApiV3Sdk.CreateContact()
+  let api = new SibApiV3Sdk.ContactsApi()
 
+  let createContact = new SibApiV3Sdk.CreateContact()
   createContact = {
     email: event.queryStringParameters.email,
-    listIds: [10],
+    listIds: [listId],
   }
 
-  return api
-    .createContact(createContact)
-    .then(
-      (data) => ({
-        statusCode: 200,
-        body: JSON.stringify(data),
-      }),
-      (data) => ({
-        statusCode: 500,
-        body: JSON.stringify(data),
-      })
-    )
-    .catch((error) => ({
-      statusCode: 500,
-      body: JSON.stringify(error),
-    }))
+  return api.createContact(createContact).then(
+    (data) => ({
+      statusCode: 200,
+      headers: data.headers,
+      body: JSON.stringify(data),
+    }),
+    (data) => {
+      if (data.response.text) {
+        let contactEmails = new SibApiV3Sdk.AddContactToList()
+        contactEmails.emails = [event.queryStringParameters.email]
+
+        return api.addContactToList(listId, contactEmails).then(
+          (data) => ({
+            statusCode: 200,
+            headers: data.headers,
+            body: JSON.stringify(data),
+          }),
+          (data) => ({
+            statusCode: data.status,
+            headers: data.headers,
+            body: data.response.text,
+          })
+        )
+      } else {
+        return {
+          statusCode: data.status,
+          headers: data.headers,
+          body: data.response.text,
+        }
+      }
+    }
+  )
 }
