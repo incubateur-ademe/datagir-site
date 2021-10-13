@@ -63,7 +63,10 @@ export default function Contact(props) {
           e.preventDefault()
           e.stopPropagation()
 
-          return fetch('/.netlify/functions/subscribeNewsletter?email=' + email)
+          return fetch(
+            'https://datagir.ademe.fr/.netlify/functions/subscribeNewsletter?email=' +
+              email
+          )
             .then((res) => res.json())
             .then((res) => {
               setCode('success')

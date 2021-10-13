@@ -19,7 +19,11 @@ exports.handler = function (event) {
   return api.createContact(createContact).then(
     (data) => ({
       statusCode: 200,
-      headers: data.headers,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTION',
+      },
       body: JSON.stringify(data),
     }),
     (data) => {
@@ -30,19 +34,31 @@ exports.handler = function (event) {
         return api.addContactToList(listId, contactEmails).then(
           (data) => ({
             statusCode: 200,
-            headers: data.headers,
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Headers': 'Content-Type',
+              'Access-Control-Allow-Methods': 'GET, POST, OPTION',
+            },
             body: JSON.stringify(data),
           }),
           (data) => ({
             statusCode: data.status,
-            headers: data.headers,
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Headers': 'Content-Type',
+              'Access-Control-Allow-Methods': 'GET, POST, OPTION',
+            },
             body: data.response.text,
           })
         )
       } else {
         return {
           statusCode: data.status,
-          headers: data.headers,
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'GET, POST, OPTION',
+          },
           body: data.response.text,
         }
       }
