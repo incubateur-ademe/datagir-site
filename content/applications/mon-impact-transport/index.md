@@ -142,7 +142,7 @@ users:
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
   - title: Occi Mobility 
     image: ../../users/Logo occi mobility.jpg
-    link: https://occimobility.fr/mobilite-durable-pour-lentreprise/
+    link: https://occimobility.fr/ecomobilite-durable-pour-lentreprise/
   - title: Offways
     image: ../../users/offways.png
     link: https://www.offways.fr/
