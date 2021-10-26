@@ -65,6 +65,9 @@ users:
   - title: france culture
     image: ../../users/franceculture.png
     link: https://www.franceculture.fr/emissions/la-transition/bilan-carbone-en-dessous-de-la-moyenne
+  - title: france info
+    image: ../../users/franceinfo.png
+    link: https://www.francetvinfo.fr/meteo/climat/lutte-contre-le-rechauffement-climatique-comment-calculer-et-reduire-son-empreinte-carbone_4301617.html
   - title: france inter
     image: ../../users/franceinter.png
     link: https://www.franceinter.fr/emissions/le-debat-de-midi/le-debat-de-midi-05-aout-2020
