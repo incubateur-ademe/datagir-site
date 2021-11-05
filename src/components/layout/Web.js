@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 import { GlobalStyle } from 'src/utils/styles'
 import Seo from './web/SEO'
 import ThemeToggle from 'src/components/misc/ThemeToggle'
 import Header from './Header'
 import Footer from './Footer'
+
+const queryClient = new QueryClient()
 
 const Wrapper = styled.div``
 const Content = styled.div`
@@ -19,13 +22,15 @@ const Content = styled.div`
 `
 export default function Web(props) {
   return (
-    <Wrapper>
-      <Seo title={props.title} image={props.image} />
-      <GlobalStyle />
-      <ThemeToggle />
-      <Header />
-      <Content>{props.children}</Content>
-      <Footer />
-    </Wrapper>
+    <QueryClientProvider client={queryClient}>
+      <Wrapper>
+        <Seo title={props.title} image={props.image} />
+        <GlobalStyle />
+        <ThemeToggle />
+        <Header />
+        <Content>{props.children}</Content>
+        <Footer />
+      </Wrapper>
+    </QueryClientProvider>
   )
 }
