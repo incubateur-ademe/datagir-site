@@ -79,11 +79,11 @@ users:
     link: https://www.francetelevisions.fr/et-vous/notre-tele/on-sengage/cop-26-lhumanite-a-rendez-vous-avec-son-futur-8451
   - title: Grand Albigeois
     image: ../../users/grandalbigeois.png
-  - title: Grand Paris Seine Ouest 
+  - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/nos-gestes-climat
-  - title: Grand Poitier 
-    image: ../../users/grand-poitier.jgp
+  - title: Grand Poitier
+    image: ../../users/grand-poitier.jpg
     link: https://www.grandpoitiers.fr/grands-projets/actions-pour-le-climat/plan-climat
   - title: Grenoble
     image: ../../users/grenoble.png
@@ -157,7 +157,7 @@ users:
   - title: smaaart
     image: ../../users/smaaart.jpg
     link: https://smaaart.fr/blog/le-gouvernement-au-service-du-zero-dechet/
-  - title: Time for the planet 
+  - title: Time for the planet
     image: ../../users/Logo-time-planet-HD-2.png
     link: https://ngc.time-planet.com/
   - title: Usbeketrica
