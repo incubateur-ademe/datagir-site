@@ -20,6 +20,9 @@ users:
   - title: Actees
     image: ../../users/acctees.jpg
     link: https://www.acctees.fr/
+  - title: Actu
+    image: ../../users/actu.png
+    link: https://actu.fr/societe/transport-alimentation-logement-calculez-combien-de-tonnes-de-co2-vous-rejetez-tous-les-ans_46218365.html
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/testez-vos-connaissances/connaissez-empreinte-climat
@@ -79,6 +82,9 @@ users:
   - title: Grand Paris Seine Ouest 
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/nos-gestes-climat
+  - title: Grand Poitier 
+    image: ../../users/grand-poitier.jgp
+    link: https://www.grandpoitiers.fr/grands-projets/actions-pour-le-climat/plan-climat
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
