@@ -41,6 +41,9 @@ users:
   - title: Pat-vendeecoeurocean
     image: ../../users/pat-vendeecoeurocean.png
     link: https://www.pat-vendeecoeurocean.fr/consommateur/je-consomme-de-saison/
+  - title: Prowd
+    image: ../../users/logo + prowd HQ.png
+    link: https://www.beprowd.com/
   - title: Silver fourchette
     image: ../../users/silverfourchette.png
     link: https://www.silverfourchette.org/blog/est-ce-bien-la-saison/
