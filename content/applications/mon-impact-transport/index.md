@@ -83,6 +83,9 @@ users:
   - title: Paris l'été
     image: ../../users/parislete.png
     link: https://www.parislete.fr/fr/le-festival/un_festival_responsable_et_solidaire
+  - title: Prowd
+    image: ../../users/logo + prowd HQ.png
+    link: https://www.beprowd.com/
   - title: Geo
     image: ../../users/geo.png
     link: https://www.geo.fr/environnement/environnement-comment-reduire-lempreinte-carbone-de-ses-voyages-202204/
