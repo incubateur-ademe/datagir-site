@@ -25,6 +25,9 @@ users:
   - title: MTE
     image: ../../users/mte.png
     link: https://www.ecologie.gouv.fr/je-veux-savoir-faire-mes-autres-dechets
+  - title: Prowd
+    image: ../../users/logo + prowd HQ.png
+    link: https://www.beprowd.com/
   - title: SERD
     image: ../../users/serd.jpg
     link: https://www.serd.ademe.fr/que-faire-de-mes-dechets
