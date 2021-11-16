@@ -29,13 +29,13 @@ users:
   - title: Defi mobilite pdl
     image: ../../users/defimobilitepdl.png
     link: https://www.defimobilite-paysdelaloire.fr/page/86/convertisseur-emissions-co2
-  - title: Geres 
+  - title: Geres
     image: ../../users/Geres-logo-color-french-small.png
     link: https://www.geres.eu/jagis/calculateur-impact-equivalent-co2/
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2297-mon-convertisseur-co2.htm
-  - title: Grand Paris Seine Ouest 
+  - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-convertisseur-co2
   - title: Inseec RSE
@@ -47,12 +47,12 @@ users:
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-convertisseur-co2
-  - title: Le Mans Métropole 
+  - title: Le Mans Métropole
     image: ../../users/le-mans-metropole.jpg
     link: https://www.defimobilite-lemans.fr/
   - title: Moom
     image: ../../users/moom.png
-    link:https://questiondebonsens.moom.app/convertisseur-co2/
+    link: https://questiondebonsens.moom.app/convertisseur-co2/
   - title: Nouveaux Consos
     image: ../../users/Logo_Fonce_1000x1000_FondBleu_VF.png
     link: https://www.nouveaux-consos.fr/convertisseur-co2
