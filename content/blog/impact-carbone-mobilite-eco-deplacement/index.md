@@ -38,7 +38,7 @@ Passer d'un mode unique à plusieurs modes de transport (voiture et TER ou RER, 
 
 ![Mon Impact Transport](MIT.gif)
 
-> Démo de Mon Impac Transport
+> Démonstration de Mon Impact Transport
 
 ## Oui, mais 1 kg de CO2 ça représente quoi ? Et pourquoi les compter ?
 
