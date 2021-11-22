@@ -38,9 +38,7 @@ Début 2017, l’outil _MicMac_ est accessible en ligne sur le site web d’Aven
 ## Et en 2020 ? Proposer un calculateur simple, ouvert, réutilisable
 
 Si le Coach Carbone a cessé son activité, _MicMac_ est lui [toujours en service](https://avenirclimatique.org/micmac). Reste qu'il en existe bien d'autres, parfois spécialisés sur un secteur en particulier, parfois avec un penchant pour une expérience utilisateur plus simple, ou souvent encore avec l'objectif final de "compenser" ses émissions.
-Partant de ce constat, l'[Association Bilan Carbone (ABC)](https://www.associationbilancarbone.fr/) a fait un travail de recensement et d'évaluation des calculateurs disponibles en ligne. Leur comparatif précis des nombreux calculateurs existants montre que _MicMac_ est une excellente base pour continuer de sensibiliser sur les gaz à effet de serre de nos actions du quotidien.
-
-> Tableau récapitulatif du benchmark ABC (à venir)
+Partant de ce constat, l'[Association Bilan Carbone (ABC)](https://www.associationbilancarbone.fr/) a fait un [travail de recensement et d'évaluation des calculateurs disponibles en ligne](https://www.associationbilancarbone.fr/wp-content/uploads/2020/12/analyse-des-calculateurs-dempreinte-carbone-individuelle-a-lorigine-de-nos-gestes-climat-vf-.pdf). Leur comparatif précis des nombreux calculateurs existants montre que _MicMac_ est une excellente base pour continuer de sensibiliser sur les gaz à effet de serre de nos actions du quotidien.
 
 A la fois le plus complet et ouvert, les équipes de l'ABC et de Datagir ont ainsi fait le choix de s'appuyer sur ce calculateur pour proposer un calculateur tout aussi performant et dans un format facilement intégrable sur différents sites, comme le [Mon Impact Transport](https://monimpacttransport.fr/).
 Surtout nous souhaitons en faire une base autour de laquelle créer et animer une communauté pour :
