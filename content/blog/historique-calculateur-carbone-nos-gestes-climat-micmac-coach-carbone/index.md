@@ -10,7 +10,7 @@ Près de 10 années plus tard, comme nous le détaillons dans [cet autre article
 
 Si le Coach Carbone a depuis cessé son activité, d'autres calculateurs ont repris le flambeau. Et pas toujours facile de savoir auquel se fier. Nous avons ainsi souhaité avec l'[Association Bilan Carbone (ABC)](https://www.associationbilancarbone.fr/) développer un outil simple et ouvert. Surtout, un outil qui ne soit pas seulement la balance de notre poids en CO<sub>2</sub>e. Nous avons aussi besoin d'être guidé pour savoir par où commencer son "régime", que faire concrètement dans notre quotidien.
 
-Alors revenons sur la génèse de [Nos Gestes Climat](https://ecolab.ademe.fr/impactcarbone) fruit d'un long travail de nombreux acteurs que nous souhaitons citer et grandement remercier !
+Alors revenons sur la génèse de [Nos Gestes Climat](https://nosgestesclimat.fr/) fruit d'un long travail de nombreux acteurs que nous souhaitons citer et grandement remercier !
 
 ## Le "Coach carbone" : une initiative de l'ADEME et de la FNH dès 2010
 
@@ -42,7 +42,7 @@ Partant de ce constat, l'[Association Bilan Carbone (ABC)](https://www.associati
 
 > Tableau récapitulatif du benchmark ABC (à venir)
 
-A la fois le plus complet et ouvert, les équipes de l'ABC et Ecolab ont ainsi fait le choix de s'appuyer sur ce calculateur pour proposer un calculateur tout aussi performant et dans un format facilement intégrable sur différents sites, comme le [calculateur transport](https://ecolab.ademe.fr/transport).
+A la fois le plus complet et ouvert, les équipes de l'ABC et de Datagir ont ainsi fait le choix de s'appuyer sur ce calculateur pour proposer un calculateur tout aussi performant et dans un format facilement intégrable sur différents sites, comme le [Mon Impact Transport](https://monimpacttransport.fr/).
 Surtout nous souhaitons en faire une base autour de laquelle créer et animer une communauté pour :
 
 - mutualiser les efforts dans le comptage CO<sub>2</sub>e (regrouper les facteurs d'émissions dans des librairies réutilisables par des développeurs et responsables produits, documenter, challenger, faire des retours, recevoir des contributions, etc.)
@@ -52,12 +52,12 @@ Surtout nous souhaitons en faire une base autour de laquelle créer et animer un
 - oeuvrer à rendre compréhensible la comptabilité carbone pour que ca devienne aussi simple que les euros
 
 Rappelons-le : l'objectif premier du calculateur est de donner des ordres de grandeurs, simplement et rapidement, sans poser un trop grand nombre de questions, surtout quand on doit diviser par 6 et plus nos émissions.<br/>
-Parmi les [nombreux retours](https://github.com/betagouv/ecolab-data/issues) déjà reçus, certains soulignent qu'il serait intéressant de pouvoir préciser si son [fournisseur d'électricité est vert](https://github.com/betagouv/ecolab-data/issues/4), le [type de carburant utilisé](https://github.com/betagouv/ecolab-data/issues/416), etc. Tous les calculateurs sont perfectibles puisque ce sont des modèles et ils simplifient la réalité pour la rendre appréhendable. Il reste que la perspective d'un bilan au gramme de CO<sub>2</sub> près est tentante, mais illusoire et contre productive face à l'échéance à laquelle nous devons réduire nos émissions de GES. Bien connaître les grands ordres de grandeurs, comparer les catégories d'émissions entre elles, etc. apporte déjà la compréhension nécessaire pour opérer des changements dans nos vies à la hauteur de l'enjeu.<br/>
+Parmi les [nombreux retours](https://github.com/datagir/nosgestesclimat/issues) déjà reçus, certains soulignent qu'il serait intéressant de pouvoir préciser si son [fournisseur d'électricité est vert](https://github.com/datagir/nosgestesclimat/issues/4), le [type de carburant utilisé](https://github.com/datagir/nosgestesclimat/issues/416), etc. Tous les calculateurs sont perfectibles puisque ce sont des modèles et ils simplifient la réalité pour la rendre appréhendable. Il reste que la perspective d'un bilan au gramme de CO<sub>2</sub> près est tentante, mais illusoire et contre productive face à l'échéance à laquelle nous devons réduire nos émissions de GES. Bien connaître les grands ordres de grandeurs, comparer les catégories d'émissions entre elles, etc. apporte déjà la compréhension nécessaire pour opérer des changements dans nos vies à la hauteur de l'enjeu.<br/>
 Dans 10 ans quand notre empreinte moyenne sera de 3,5 tonnes de CO<sub>2</sub>e, nous pourrons creuser plus finement comment atterrir sous les 2 tonnes ou discuter du poids de tel ou tel produit.
 
 ## Un bilan, c'est bien, des pistes concrètes pour le faire diminuer c'est encore mieux
 
-Qu'on se le dise tout de suite : même quand on se sent déjà assez exemplaire, le résultat qui tombe est souvent difficile à comprendre, voire violent face à l'écart de nos engagements. Oui, la marche [vers la neutralité carbone](/blog/budget-empreinte-carbone-c-est-quoi/) est très haute et les efforts à fournir individuellement et collectivement sont un véritable défi pour nos sociétés. Mais ce qui compte, avant tout, passé la prise de conscience, c'est d'entrainer les citoyennes et citoyens vers des pistes d'amélioration progressives partant de leur situation actuelle.
+Qu'on se le dise tout de suite : même quand on se sent déjà assez exemplaire, le résultat qui tombe est souvent difficile à comprendre, voire violent face à l'écart de nos engagements. Oui, la marche [vers la neutralité carbone](https://datagir.ademe.fr/blog/budget-empreinte-carbone-c-est-quoi/) est très haute et les efforts à fournir individuellement et collectivement sont un véritable défi pour nos sociétés. Mais ce qui compte, avant tout, passé la prise de conscience, c'est d'entrainer les citoyennes et citoyens vers des pistes d'amélioration progressives partant de leur situation actuelle.
 
 Alors pour dépasser cette situation et accompagner le passage à l'action, notre calculateur propose des actions concrètes, adaptées à chacun. Mieux, vous pourrez identifier l'impact de chaque action proposée par rapport à votre situation personnelle et ainsi voir comment perdre vos premiers kilos ou viser la première tonne de CO<sub>2</sub>e perdue.
 Si l'objectif est de guider chacun vers des actions qui ont un fort impact, nous savons bien que la plupart prennent du temps à être prise. Attention à ne pas trop "charger la barque" d'un coup, mais d'identifier des actions concrêtes et de tenir dans la durée les changements.
@@ -79,4 +79,4 @@ Compenser ce n'est pas juste garder les forêts actuelles en vie, si on souhaite
 
 La logique à retenir en priorité si l'on veut agir contre le changement climatique c'est donc le tryptique _ERC_, _E_ pour éviter puis _R_ pour réduire avant _C_ pour compenser. Cette dernière étape n'aura pas lieu si j'ai déjà évité les émissions en question, ou n'aura lieu que pour un volume bien moindre de GES puisque je l'aurais déjà réduit avant.
 
-Alors, c'est parti, commençons à perdre nos kilos et tonnes de CO<sub>2</sub> en trop dès maintenant grâce à [Nos Gestes Climat](/impactcarbone) !
+Alors, c'est parti, commençons à perdre nos kilos et tonnes de CO<sub>2</sub> en trop dès maintenant grâce à [Nos Gestes Climat](https://nosgestesclimat.fr/) !
