@@ -172,6 +172,9 @@ users:
   - title: Var Matin
     image: ../../users/varmatin.png
     link: https://www.varmatin.com/environnement/combien-je-pese-en-equivalent-carbone-et-comment-faire-pour-perdre-un-peu-de-poids-578029
+  - title: Vendredi
+    image: ../../users/Logo Vendredi copie 2.png
+    link: https://www.vendredi.cc/
   - title: wedemain
     image: ../../users/wedemain.jpg
     link: https://www.wedemain.fr/ralentir/j-ai-calcule-mon-empreinte-carbone-viande-avion-telephone-banque/
