@@ -106,6 +106,9 @@ users:
   - title: Le Monde
     image: ../../users/lemonde.png
     link: https://www.lemonde.fr/planete/article/2020/09/14/comment-calculer-et-surtout-reduire-son-empreinte-carbone_6052039_3244.html
+  - title: Le Parisien
+    image: ../../users/logo le parisien.jpg
+    link: https://www.leparisien.fr/environnement/calculez-votre-empreinte-carbone-avec-ces-simulateurs-10-11-2021-WYJKMVY5ZFGR3FZJDXXELNIL4M.php
   - title: L'info durable
     image: ../../users/linfodurable.png
     link: https://www.linfodurable.fr/educationcitoyennete/calculez-votre-empreinte-carbone-avec-ce-simulateur-gratuit-27120
