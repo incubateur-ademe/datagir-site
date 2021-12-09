@@ -41,6 +41,9 @@ users:
   - title: Avenir Climatique
     image: ../../users/logo_AC_simple_100px.png
     link: https://avenirclimatique.org/calculer-empreinte-carbone/
+  - title: BFMTV
+    image: ../../users/Logo_BFM_TV_(2019).png
+    link: https://www.bfmtv.com/environnement/cop26-comment-calculer-son-propre-bilan-carbone_AN-202111010158.html
   - title: Bon Pote
     image: ../../users/bonpote.webp
     link: https://bonpote.com/comment-calculer-son-empreinte-carbone/
