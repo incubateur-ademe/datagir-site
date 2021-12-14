@@ -107,9 +107,6 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2295-mon-impact-transport.htm
-  - title: Inseec RSE
-    image: ../../users/inseecu.png
-    link: https://www.rse-groupeinseec.com/mon-impact-transport/
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/agir-pour-le-climat/lutter-contre-le-changement-climatique/sobriete-carbone-10
@@ -149,6 +146,9 @@ users:
   - title: Offways
     image: ../../users/offways.png
     link: https://www.offways.fr/
+  - title: OMNES (ex INSEEC)
+    image: ../../users/logo omnes.png
+    link: https://www.rse-groupeinseec.com/mon-impact-transport/
   - title: Reseau recto-verso
     image: ../../users/recto-verso.png
     link: http://www.reseau-rectoverso.fr/index.php/boite-outils/mobilite/2-non-categorise/68-calculateur
