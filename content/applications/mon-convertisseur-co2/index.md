@@ -38,9 +38,6 @@ users:
   - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-convertisseur-co2
-  - title: Inseec RSE
-    image: ../../users/inseecu.png
-    link: https://www.rse-groupeinseec.com/mon-convertisseur-co2/
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/agir-pour-le-climat/lutter-contre-le-changement-climatique/sobriete-carbone-10
@@ -56,6 +53,9 @@ users:
   - title: Nouveaux Consos
     image: ../../users/Logo_Fonce_1000x1000_FondBleu_VF.png
     link: https://www.nouveaux-consos.fr/convertisseur-co2
+  - title: OMNES (ex INSEEC)
+    image: ../../users/logo omnes.png
+    link: https://www.rse-groupeinseec.com/mon-convertisseur-co2/
   - title: Reflexe green
     image: ../../users/reflexegreen.png
     link: https://reflexe.green/ressources/2-tonnes-de-co2-ca-represente-quoi/
