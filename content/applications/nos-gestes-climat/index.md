@@ -94,9 +94,6 @@ users:
   - title: ICE App
     image: ../../users/iceapp.png
     link: https://www.iceapp.fr/solution-ice/
-  - title: Inseec RSE
-    image: ../../users/inseecu.png
-    link: https://www.rse-groupeinseec.com/nos-gestes-climat/
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/environnement/developpement-durable/1-je-calcule-mon-empreinte-carbone
@@ -133,6 +130,9 @@ users:
   - title: Nouveaux Consos
     image: ../../users/Logo_Fonce_1000x1000_FondBleu_VF.png
     link: https://www.nouveaux-consos.fr/mon-empreinte-climat
+  - title: OMNES (ex INSEEC)
+    image: ../../users/logo omnes.png
+    link: https://www.rse-groupeinseec.com/nos-gestes-climat/
   - title: Oopla
     image: ../../users/logo-oopla (3) (1).png
     link: https://oopla.fr/nos-gestes-climat-ademe/
