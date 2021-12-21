@@ -158,6 +158,9 @@ users:
   - title: Ridolo
     image: ../../users/ridolo.png
     link: https://ridolo.com/blogs/infos/ca-fait-vraiment-une-difference-pour-la-planete-calculer-et-comparer-votre-impact-transport
+  - title: RoadMate
+    image: ../../users/RM-Carré.png
+    link: https://www.roadmate.io/
   - title: skills4all
     image: ../../users/skills4all.png
     link: https://www.skills4all.com/engagement-responsable/
