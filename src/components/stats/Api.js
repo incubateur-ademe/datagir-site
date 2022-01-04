@@ -50,7 +50,7 @@ export default function Api() {
       setData(
         dates.map((date) => {
           let points = { date }
-          points['Visiteurs'] = chart[date].reduce(
+          points['Appels'] = chart[date].reduce(
             (acc, cur) => (acc += cur.nb_hits),
             0
           )
@@ -92,10 +92,12 @@ export default function Api() {
                     tick.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
                   }
                 />
-                <Tooltip content={<CustomTooltip period={'week'} />} />
+                <Tooltip
+                  content={<CustomTooltip period={'week'} naming='Appels' />}
+                />
                 <Area
                   type='monotone'
-                  dataKey={'Visiteurs'}
+                  dataKey={'Appels'}
                   stroke={'#EF0D50'}
                   fill={'#EF0D50'}
                   fillOpacity={1}
