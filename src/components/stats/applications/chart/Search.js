@@ -12,16 +12,6 @@ const Wrapper = styled.div`
     text-align: center;
   }
 `
-const Input = styled.input`
-  width: 2rem;
-  padding: 0;
-  color: ${(props) => props.color || props.theme.colors.main};
-  background-color: transparent;
-  box-shadow: 0px 0.1em 0px 0px
-    ${(props) => props.color || props.theme.colors.main};
-  border: none;
-  border-radius: 0.25rem 0.25rem 0 0;
-`
 export default function Search(props) {
   return (
     <Wrapper>
