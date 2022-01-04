@@ -17,11 +17,14 @@ users:
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/maison/dechets/que-faire-de-mes-dechets
   - title: CCV Communauté
-    image: ../../users/ccvcommunaute.png
+    image: ../../users/ccv.png
     link: https://www.ccvcommunaute.fr/environnement/ordures-menageres/
   - title: femina
     image: ../../users/femina.png
     link: https://www.femina.fr/article/ou-jeter-les-dechets-insolites-ce-site-repond-a-toutes-les-interrogations-meme-les-plus-etranges
+  - title: Ville Hazebrouck
+    image: ../../users/hazebrouck.png
+    link: https://www.ville-hazebrouck.fr/vie-pratique/collecte-des-dechets-et-encombrants/
   - title: MTE
     image: ../../users/mte.png
     link: https://www.ecologie.gouv.fr/je-veux-savoir-faire-mes-autres-dechets
