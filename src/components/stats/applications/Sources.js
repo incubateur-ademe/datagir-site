@@ -15,7 +15,7 @@ export default function Sources(props) {
       <Tile.Wrapper>
         {newWebsites ? (
           <Table
-            title='Nouveaux'
+            title='Sites Web'
             data={props.websites.filter(
               (website) =>
                 !props.oldWebsites.find(

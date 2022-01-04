@@ -106,7 +106,7 @@ export const useOldWebsites = ({ sites }) =>
   useQuery('oldwebsites', () =>
     axios
       .get(
-        `https://stats.data.gouv.fr/?module=API&date=lastYear,last30&period=range&format=json&idSite=${getIdSites(
+        `https://stats.data.gouv.fr/?module=API&date=lastYear,lastMonth&period=range&format=json&idSite=${getIdSites(
           sites
         )}&method=Referrers.getWebsites&filter_limit=1000`
       )

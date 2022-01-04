@@ -17,12 +17,10 @@ const Wrapper = styled.table`
   }
 
   th {
+    padding: 0.75rem 0 0.75rem 0.75rem;
     font-size: 0.875rem;
     text-align: left;
     border-bottom: 2px solid ${(props) => props.theme.colors.title};
-  }
-  th {
-    padding: 0.75rem 0 0.75rem 0.75rem;
   }
   td {
     font-size: 0.8125rem;
@@ -69,7 +67,7 @@ export default function Table(props) {
                       )
                     }
                   >
-                    ({props.newWebsites ? 'Cacher' : 'Voir'} les nouveaux)
+                    ({props.newWebsites ? 'Voir tous' : 'Voir les nouveaux'})
                   </Toggle>
                 )}
               </th>

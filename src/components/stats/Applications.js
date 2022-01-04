@@ -19,6 +19,7 @@ import Evolution from './applications/Evolution'
 import Sources from './applications/Sources'
 import Selector from './applications/Selector'
 import Chart from './applications/Chart'
+import Loader from './applications/Loader'
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,7 +35,7 @@ export default function Data(props) {
 
   const [current, setCurrent] = useState('total')
 
-  const [chartDate, setChartDate] = useState(12)
+  const [chartDate, setChartDate] = useState('12')
   const [chartPeriod, setChartPeriod] = useState('week')
 
   const [color, setColor] = useState(themes[theme].colors.main)
@@ -108,5 +109,7 @@ export default function Data(props) {
         />
       </Section>
     </>
-  ) : null
+  ) : (
+    <Loader />
+  )
 }

@@ -58,7 +58,6 @@ export default function Evolution(props) {
     }
   }, [props.pages])
 
-  console.log('api', api)
   return (
     <Wrapper>
       <Block>

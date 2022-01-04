@@ -26,13 +26,25 @@ export default function Search(props) {
   return (
     <Wrapper>
       Nombre de visites pour les{' '}
-      <Input
-        type='text'
-        inputmode='numeric'
-        pattern='[0-9]*'
+      <FancySelect
+        fancy
         value={props.date}
+        onChange={(e) => {
+          console.log(e)
+          props.setDate(e)
+        }}
+        options={[
+          { value: '4', label: '4' },
+          { value: '5', label: '5' },
+          { value: '6', label: '6' },
+          { value: '7', label: '7' },
+          { value: '8', label: '8' },
+          { value: '9', label: '9' },
+          { value: '10', label: '10' },
+          { value: '11', label: '11' },
+          { value: '12', label: '12' },
+        ]}
         color={props.color}
-        onChange={(e) => props.setDate(e.currentTarget.value)}
       />{' '}
       derni
       {props.period === 'week' ? 'ère' : 'er'}s{' '}
