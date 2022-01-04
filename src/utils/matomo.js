@@ -69,6 +69,33 @@ export const useChartAgribalyse = () =>
       keepPreviousData: true,
     }
   )
+export const useApiMit = () =>
+  useQuery(
+    ['apiMIT'],
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&method=Actions.getPageUrls&idSite=155&date=last13&period=week&format=JSON&segment=pageUrl%3D@https%25253A%25252F%25252Fapi.monimpacttransport.fr`
+        )
+        .then((res) => res.data),
+    {
+      keepPreviousData: true,
+    }
+  )
+export const useApiMitTotal = () =>
+  useQuery(
+    'apiMITAllTime',
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&method=Actions.getPageUrls&idSite=155&date=last6000&period=range&format=JSON&segment=pageUrl%3D@https%25253A%25252F%25252Fapi.monimpacttransport.fr`
+        )
+        .then((res) => res.data.reduce((acc, cur) => (acc += cur.nb_hits), 0)),
+    {
+      keepPreviousData: true,
+    }
+  )
+
 export const useTotal = ({ sites }) =>
   useQuery('total', () =>
     axios

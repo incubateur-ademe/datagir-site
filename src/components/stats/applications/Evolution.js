@@ -10,18 +10,18 @@ const Wrapper = styled.div`
   }
 `
 const Block = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 `
 const Number = styled.span`
   display: block;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
   line-height: 1;
   color: ${(props) => props.color || props.theme.colors.main};
   transition: color 500ms ease-out;
 `
 const BigNumber = styled(Number)`
-  font-size: 4.5rem;
+  font-size: 5rem;
 `
 const Small = styled.span`
   font-size: 0.75rem;
@@ -35,7 +35,6 @@ export default function Evolution(props) {
   }, [props.period, props.reference])
 
   const [iframe, setIframe] = useState(0)
-  const [api, setApi] = useState(0)
   useEffect(() => {
     if (props.pages) {
       const iframePages = props.pages.filter(
@@ -45,16 +44,11 @@ export default function Evolution(props) {
         (acc, cur) => acc + cur.nb_visits,
         0
       )
-
-      const apiPages = props.pages.filter((page) => page.label.includes('beta'))
-      const totalApi = apiPages.reduce((acc, cur) => acc + cur.nb_visits, 0)
-
       const totalPages = props.pages.reduce(
         (acc, cur) => acc + cur.nb_visits,
         0
       )
       setIframe((totalIframe / totalPages) * 100)
-      setApi((totalApi / totalPages) * 100)
     }
   }, [props.pages])
 
@@ -78,10 +72,6 @@ export default function Evolution(props) {
       <Block>
         <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
         d'affichage en iframe
-      </Block>
-      <Block>
-        <Number color={props.color}>{Math.round(api * 10) / 10}%</Number>{' '}
-        d'utilisation via API
       </Block>
     </Wrapper>
   )
