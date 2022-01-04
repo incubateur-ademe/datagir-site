@@ -86,13 +86,13 @@ users:
   - title: Geo
     image: ../../users/geo.png
     link: https://www.geo.fr/environnement/environnement-comment-reduire-lempreinte-carbone-de-ses-voyages-202204/
-  - title: Geres 
+  - title: Geres
     image: ../../users/Geres-logo-color-french-small.png
     link: https://www.geres.eu/jagis/calculateur-impact-transport/
   - title: Grand Paris Durable
     image: ../../users/gdparisdurable.png
     link: https://grandparisdurable.org/transport/
-  - title: Grand Paris Seine Ouest 
+  - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-impact-transport
   - title: GreenGo
@@ -113,7 +113,7 @@ users:
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-impact-transport
-  - title: Le Mans Métropole 
+  - title: Le Mans Métropole
     image: ../../users/le-mans-metropole.jpg
     link: https://www.defimobilite-lemans.fr/
   - title: mapropraventure
@@ -125,7 +125,7 @@ users:
   - title: Mobilite eco
     image: ../../users/mobiliteeco.png
     link: https://mobilite.eco/calculez-votre-impact-climat/
-  - title: Montpellier Tourisme 
+  - title: Montpellier Tourisme
     image: ../../users/montpelliertourisme.jpg
     link: https://www.montpellier-tourisme.fr/Preparer-Reserver/Acces-et-Transport/Se-deplacer-a-Montpellier/En-bus
   - title: natureisbike
@@ -137,7 +137,7 @@ users:
   - title: notreplaneteinfo
     image: ../../users/notreplaneteinfo.png
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
-  - title: Occi Mobility 
+  - title: Occi Mobility
     image: ../../users/Logo occi mobility.jpg
     link: https://occimobility.fr/ecomobilite-durable-pour-lentreprise/
   - title: Offways
@@ -159,7 +159,7 @@ users:
     image: ../../users/ridolo.png
     link: https://ridolo.com/blogs/infos/ca-fait-vraiment-une-difference-pour-la-planete-calculer-et-comparer-votre-impact-transport
   - title: RoadMate
-    image: ../../users/RM-Carré.png
+    image: ../../users/RM-Carre.png
     link: https://www.roadmate.io/
   - title: skills4all
     image: ../../users/skills4all.png
