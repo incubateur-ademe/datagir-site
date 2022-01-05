@@ -69,6 +69,21 @@ export const useChartAgribalyse = () =>
       keepPreviousData: true,
     }
   )
+export const useTotalNgcSimulations = () =>
+  useQuery(
+    ['totalNgcSimulations'],
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&method=Events.getAction&idSite=153&period=range&date=last6000&format=JSON`
+        )
+        .then((res) =>
+          res.data.find((action) => action.label === 'A terminé la simulation')
+        ),
+    {
+      keepPreviousData: true,
+    }
+  )
 export const useApiMit = () =>
   useQuery(
     ['apiMIT'],

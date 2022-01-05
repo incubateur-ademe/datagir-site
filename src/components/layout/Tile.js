@@ -35,7 +35,9 @@ const Content = styled.div`
     right: 0;
     height: 0.3125rem;
     background-color: ${(props) =>
-      props.theme.colors[props.color] || props.theme.colors.main};
+      props.theme.colors[props.color] ||
+      props.color ||
+      props.theme.colors.main};
   }
 
   ${(props) => props.theme.mq.medium} {

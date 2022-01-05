@@ -6,7 +6,8 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import Web from 'src/components/layout/Web'
 import Applications from 'src/components/stats/Applications'
 import Api from 'src/components/stats/Api'
-import Misc from 'src/components/stats/Misc'
+import NosGestesClimat from 'src/components/stats/NosGestesClimat'
+import Datagir from 'src/components/stats/Datagir'
 import Agribalyse from 'src/components/stats/Agribalyse'
 
 const queryClient = new QueryClient({
@@ -39,7 +40,8 @@ export default function Dashboard(props) {
         <Title>Statistiques</Title>
         <Applications sites={sites} />
         <Api />
-        <Misc />
+        <NosGestesClimat />
+        <Datagir />
         <Agribalyse />
       </Web>
     </QueryClientProvider>
