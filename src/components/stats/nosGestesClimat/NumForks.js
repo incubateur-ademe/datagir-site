@@ -22,7 +22,7 @@ export default function NumForks() {
     <Tile.Tile>
       <Tile.Content color='#46479f'>
         <Number color='#46479f'>30</Number>
-        <Label>forks du code</Label>
+        <Label>reprises du code</Label>
       </Tile.Content>
     </Tile.Tile>
   )
