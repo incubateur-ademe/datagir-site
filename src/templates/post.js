@@ -35,7 +35,6 @@ const Return = styled(Link)`
   }
 `
 export default function Databases(props) {
-  console.log(props.data)
   return (
     <Web
       title={props.data.mdx.frontmatter.title}

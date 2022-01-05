@@ -34,5 +34,4 @@ users:
   - title: SERD
     image: ../../users/serd.jpg
     link: https://www.serd.ademe.fr/que-faire-de-mes-dechets
-    
 ---

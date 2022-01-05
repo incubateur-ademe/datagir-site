@@ -16,6 +16,7 @@ export default function Application(props) {
       )}
       <Content>{props.data.mdx.body}</Content>
       <Users users={props.data.mdx.frontmatter.users} />
+      <Users users={props.data.mdx.frontmatter.forks} forks />
     </Web>
   )
 }
@@ -35,6 +36,17 @@ export const pageQuery = graphql`
           link
         }
         users {
+          title
+          image {
+            childrenImageSharp {
+              fluid(maxWidth: 84, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          link
+        }
+        forks {
           title
           image {
             childrenImageSharp {

@@ -16,9 +16,12 @@ const User = styled(MagicLink)`
   margin: 0.5rem;
 `
 export default function Users(props) {
+  console.log(props)
   return props.users ? (
     <Section id='users' medium>
-      <Section.Title>Ses Réutilisateurs</Section.Title>
+      <Section.Title>
+        Ses {props.forks ? 'Déclinaisons' : 'Réutilisateurs'}
+      </Section.Title>
       <Wrapper>
         {props.users.map((user) => (
           <User to={user.link}>

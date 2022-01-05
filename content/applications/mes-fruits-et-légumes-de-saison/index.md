@@ -32,7 +32,7 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2296-mes-fruits-et-legumes-de-saison.htm
-  - title: Grand Paris Seine Ouest 
+  - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/fruits-et-legumes-de-saison
   - title: La Rochelle ZC

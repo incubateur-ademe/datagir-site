@@ -16,7 +16,7 @@ users:
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/bureau/deplacements/teletravail-ca-change-quoi-planete
-  - title: CliMates 
+  - title: CliMates
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/teletravail/
   - title: Centre Val de Loire
@@ -30,7 +30,7 @@ users:
     link: https://www.geres.eu/jagis/calculateur-emissions-evitees-teletravail/
   - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
-    link: https://www.seineouest.fr/mon-impact-transport  
+    link: https://www.seineouest.fr/mon-impact-transport
   - title: Inseec RSE
     image: ../../users/inseecu.png
     link: https://www.rse-groupeinseec.com/mon-impact-transport-teletravail/
