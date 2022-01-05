@@ -22,7 +22,7 @@ users:
     link: https://www.associationbilancarbone.fr/le-changement-climatique/
   - title: Agremob
     image: ../../users/agremob.png
-    link: https://agremob.com/ecolab-le-calculateur-demissions/
+    link: https://agremob.com/le-calculateur-demissions/
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/calculer-emissions-carbone-trajets
