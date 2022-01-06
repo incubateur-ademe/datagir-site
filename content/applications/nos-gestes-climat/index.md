@@ -80,6 +80,9 @@ users:
   - title: france tv
     image: ../../users/francetvetvous.png
     link: https://www.francetelevisions.fr/et-vous/notre-tele/on-sengage/cop-26-lhumanite-a-rendez-vous-avec-son-futur-8451
+  - title: fresque du climat
+    image: ../../users/fresqueduclimat.jpg
+    link: https://fresqueduclimat.org/
   - title: Grand Albigeois
     image: ../../users/grandalbigeois.png
   - title: Grand Paris Seine Ouest
@@ -118,6 +121,9 @@ users:
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
+  - title: Lorient agglo
+    image: ../../users/lorient-agglo.png
+    link: https://www.lorient-agglo.bzh/en-actions/transition-energetique/plan-climat-air-energie/
   - title: Maoboa
     image: ../../users/maoboa.png
     link: https://www.maoboa.co/calculateur-empreinte-carbone
@@ -148,6 +154,9 @@ users:
   - title: Reveleo
     image: ../../users/reveleo.png
     link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
+  - title: Roissy pays de France
+    image: ../../users/roissypaysdefrance.png
+    link: https://www.roissypaysdefrance.fr/lagglo/nos-missions/les-statuts-et-competences/competences-obligatoires/politique-de-la-ville/mieux-comprendre-le-pcaet
   - title: Sami
     image: ../../users/sami.png
     link: https://www.sami.eco/
