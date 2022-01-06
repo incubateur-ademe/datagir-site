@@ -62,4 +62,7 @@ users:
   - title: Reveleo
     image: ../../users/reveleo.png
     link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
+  - title: Shine
+    image: ../../users/shine.jpg
+    link: https://blog.shine.fr/connaissez-vous-lempreinte-carbone-des-affiches-de-pub-be47495c92ce
 ---
