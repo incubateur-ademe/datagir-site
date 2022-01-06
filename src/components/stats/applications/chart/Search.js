@@ -20,7 +20,6 @@ export default function Search(props) {
         fancy
         value={props.date}
         onChange={(e) => {
-          console.log(e)
           props.setDate(e)
         }}
         options={[
