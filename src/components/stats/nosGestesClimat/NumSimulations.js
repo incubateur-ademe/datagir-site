@@ -35,7 +35,7 @@ export default function NumSubscribers() {
             .toString()
             .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
         </Number>
-        <Label>simulations terminées</Label>
+        <Label>simulations terminées depuis le lancement</Label>
       </Tile.Content>
     </StyledTile>
   )
