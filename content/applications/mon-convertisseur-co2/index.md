@@ -23,9 +23,6 @@ users:
   - title: CliMates
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/mon-convertisseur-co2/
-  - title: Centre Val de Loire
-    image: ../../users/logo RCVL.png
-    link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
   - title: Cop Centre-Val de Loire
     image: ../../users/logo cop.jpg
     link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
