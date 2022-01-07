@@ -17,6 +17,9 @@ users:
   - title: Acteur de la rénovation
     image: ../../users/acteurdelareno.png
     link: https://acteurdelarenovation.fr/
+  - title: Circlely
+    image: ../../users/circlely.jpg
+    link: https://www.circlely.green/rse/
   - title: CliMates
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/mon-convertisseur-co2/
