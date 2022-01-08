@@ -39,13 +39,15 @@ export default function Agribalyse() {
   }, [chart])
 
   return (
-    <Section>
-      <Section.Title>
-        Évolution des visites sur{' '}
-        <StyledLink to='https://agribalyse.ademe.fr/app'>Agribalyse</StyledLink>
-      </Section.Title>
-      <ChartWrapper>
-        {data && (
+    data && (
+      <Section>
+        <Section.Title>
+          Évolution des visites sur{' '}
+          <StyledLink to='https://agribalyse.ademe.fr/app'>
+            Agribalyse
+          </StyledLink>
+        </Section.Title>
+        <ChartWrapper>
           <ResponsiveContainer>
             <AreaChart data={data}>
               <XAxis
@@ -76,8 +78,8 @@ export default function Agribalyse() {
               />
             </AreaChart>
           </ResponsiveContainer>
-        )}
-      </ChartWrapper>
-    </Section>
+        </ChartWrapper>
+      </Section>
+    )
   )
 }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
+import { useTotalNgcSimulations } from 'utils/matomo'
+
 const Wrapper = styled.div`
   width: 33.333%;
   text-align: center;
@@ -52,6 +54,11 @@ export default function Evolution(props) {
     }
   }, [props.pages])
 
+  // We didn't track this stat at the beginning so we're guessing based on todays average completion
+  const baseSimulations = 32015
+  const { data: simulations } = useTotalNgcSimulations()
+
+  console.log(props.id[0] === '153')
   return (
     <Wrapper>
       <Block>
@@ -69,10 +76,21 @@ export default function Evolution(props) {
         <br />
         <Small>(par rapport au mois d'avant)</Small>
       </Block>
-      <Block>
-        <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
-        d'affichage en iframe
-      </Block>
+      {props.id[0] === '153' ? (
+        <Block>
+          <Number color={props.color}>
+            {(simulations?.nb_visits + baseSimulations)
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          </Number>{' '}
+          simulations terminées depuis le lancement
+        </Block>
+      ) : (
+        <Block>
+          <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
+          d'affichage en iframe
+        </Block>
+      )}
     </Wrapper>
   )
 }

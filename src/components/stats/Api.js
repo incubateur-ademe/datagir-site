@@ -61,17 +61,17 @@ export default function Api() {
   }, [chart])
 
   return (
-    <Section>
-      <Section.Title>
-        Appels à l'
-        <StyledLink to='https://github.com/datagir/monimpacttransport'>
-          API Mon Impact Transport
-        </StyledLink>
-      </Section.Title>
-      <Wrapper>
-        <Evolution data={data} color='#ef0d50' />
-        <ChartWrapper>
-          {data && (
+    data && (
+      <Section>
+        <Section.Title>
+          Appels à l'
+          <StyledLink to='https://github.com/datagir/monimpacttransport'>
+            API Mon Impact Transport
+          </StyledLink>
+        </Section.Title>
+        <Wrapper>
+          <Evolution data={data} color='#ef0d50' />
+          <ChartWrapper>
             <ResponsiveContainer>
               <AreaChart data={data}>
                 <XAxis
@@ -104,9 +104,9 @@ export default function Api() {
                 />
               </AreaChart>
             </ResponsiveContainer>
-          )}
-        </ChartWrapper>
-      </Wrapper>
-    </Section>
+          </ChartWrapper>
+        </Wrapper>
+      </Section>
+    )
   )
 }
