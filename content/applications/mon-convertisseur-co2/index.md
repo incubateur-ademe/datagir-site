@@ -17,12 +17,12 @@ users:
   - title: Acteur de la rénovation
     image: ../../users/acteurdelareno.png
     link: https://acteurdelarenovation.fr/
+  - title: Circlely
+    image: ../../users/circlely.jpg
+    link: https://www.circlely.green/rse/
   - title: CliMates
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/mon-convertisseur-co2/
-  - title: Centre Val de Loire
-    image: ../../users/logo RCVL.png
-    link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
   - title: Cop Centre-Val de Loire
     image: ../../users/logo cop.jpg
     link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
@@ -62,4 +62,7 @@ users:
   - title: Reveleo
     image: ../../users/reveleo.png
     link: https://reveleo.io/index.php/2021/03/19/datagir-petits-calculateurs-grands-effets/
+  - title: Shine
+    image: ../../users/shine.jpg
+    link: https://blog.shine.fr/connaissez-vous-lempreinte-carbone-des-affiches-de-pub-be47495c92ce
 ---

@@ -68,6 +68,9 @@ users:
   - title: dkarbone
     image: ../../users/dkarbone.png
     link: https://www.dkarbone.com/nos_gestes_climat
+  - title: fashion that cares
+    image: ../../users/fashionthatcares.png
+    link: https://fashionthatcares.fr/services/impact-carbone/
   - title: france culture
     image: ../../users/franceculture.png
     link: https://www.franceculture.fr/emissions/la-transition/bilan-carbone-en-dessous-de-la-moyenne
