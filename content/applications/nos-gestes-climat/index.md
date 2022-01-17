@@ -193,6 +193,9 @@ users:
   - title: Vendredi
     image: ../../users/Logo Vendredi copie 2.png
     link: https://www.vendredi.cc/
+  - title: vert le media
+    image: ../../users/vertmedia.png
+    link: https://vert.eco/articles/les-francais%C2%B7es-emettent-encore-10-tonnes-de-co2-par-an-cinq-fois-trop-pour-le-climat
   - title: wedemain
     image: ../../users/wedemain.jpg
     link: https://www.wedemain.fr/ralentir/j-ai-calcule-mon-empreinte-carbone-viande-avion-telephone-banque/
