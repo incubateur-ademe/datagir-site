@@ -86,6 +86,9 @@ users:
   - title: fresque du climat
     image: ../../users/fresqueduclimat.jpg
     link: https://fresqueduclimat.org/
+  - title: Programme CEE Enie- Génération Energie 
+    image: ../../users/generation-energie.png
+    link: https://www.generation-energie.fr/
   - title: Grand Albigeois
     image: ../../users/grandalbigeois.png
   - title: Grand Paris Seine Ouest
