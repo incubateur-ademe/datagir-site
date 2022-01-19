@@ -95,6 +95,9 @@ users:
   - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-impact-transport
+  - title: Programme CEE Enie- Génération Energie 
+    image: ../../users/generation-energie.png
+    link: https://www.generation-energie.fr/
   - title: GreenGo
     image: ../../users/greengo.png
     link: https://www.greengo.voyage/post/calculer-empreinte-carbone-voyages
