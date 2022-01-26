@@ -25,7 +25,7 @@ users:
     link: https://agremob.com/le-calculateur-demissions/
   - title: ADEME
     image: ../../users/ademe.jpg
-    link: https://agirpourlatransition.ademe.fr/particuliers/calculer-emissions-carbone-trajets
+    link: https://agirpourlatransition.ademe.fr/particuliers/bureau/calculer-emissions-carbone-trajets
   - title: Airbnb
     image: ../../users/airbnb.png
     link: https://www.airbnb.fr/d/tourismedurable
@@ -34,7 +34,7 @@ users:
     link: https://alternativi.fr/calcul-de-l-impact-carbone-de-mes-deplacements-sur-le-climat/701
   - title: Atmo AURA
     image: ../../users/atmo-aura.png
-    link: https://www.atmo-auvergnerhonealpes.fr/article/mes-deplacements
+    link: https://www.atmo-auvergnerhonealpes.fr/article/mes-deplacements-0
   - title: Bee cycle
     image: ../../users/beecycle.png
     link: https://www.bee-cycle.fr/salarie/
@@ -95,9 +95,12 @@ users:
   - title: Grand Paris Seine Ouest
     image: ../../users/260px-Logo_EPT_Grand_Paris_Seine_Ouest_2016.svg.png
     link: https://www.seineouest.fr/mon-impact-transport
+  - title: Programme CEE Enie- Génération Energie 
+    image: ../../users/generation-energie.png
+    link: https://www.generation-energie.fr/
   - title: GreenGo
     image: ../../users/greengo.png
-    link: https://www.greengo.voyage/post/calculer-empreinte-carbone-voyages
+    link: https://www.greengo.voyage/blog/post/calculer-empreinte-carbone-voyages
   - title: Green on
     image: ../../users/greenon.png
     link: https://green-on.fr/calculez-lempreinte-carbone-de-vos-deplacements/
@@ -122,9 +125,6 @@ users:
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
-  - title: Mobilite eco
-    image: ../../users/mobiliteeco.png
-    link: https://mobilite.eco/calculez-votre-impact-climat/
   - title: Montpellier Tourisme
     image: ../../users/montpelliertourisme.jpg
     link: https://www.montpellier-tourisme.fr/Preparer-Reserver/Acces-et-Transport/Se-deplacer-a-Montpellier/En-bus
@@ -139,7 +139,7 @@ users:
     link: https://www.notre-planete.info/ecologie/eco-citoyen/eco_transports.php
   - title: Occi Mobility
     image: ../../users/Logo occi mobility.jpg
-    link: https://occimobility.fr/ecomobilite-durable-pour-lentreprise/
+    link: https://occimobility.fr/
   - title: Offways
     image: ../../users/offways.png
     link: https://www.offways.fr/

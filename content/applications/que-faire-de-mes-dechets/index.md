@@ -25,6 +25,9 @@ users:
   - title: Ville Hazebrouck
     image: ../../users/hazebrouck.png
     link: https://www.ville-hazebrouck.fr/vie-pratique/collecte-des-dechets-et-encombrants/
+  - title: Longue vie aux objets
+    image: ../../users/longuevie.png
+    link: https://longuevieauxobjets.gouv.fr/trier-recycler
   - title: MTE
     image: ../../users/mte.png
     link: https://www.ecologie.gouv.fr/je-veux-savoir-faire-mes-autres-dechets
