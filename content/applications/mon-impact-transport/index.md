@@ -4,7 +4,7 @@ introduction: Découvrez l'impact de vos déplacements sur le climat ! Des donn�
 color: '#EF0D50'
 matomo: 155
 visitors: 51474
-script: https://monimpacttransport.fr/embed
+script: https://monimpacttransport.fr?iframe=1&noheader=1
 sector: transport
 buttons:
   - label: Voir le site
