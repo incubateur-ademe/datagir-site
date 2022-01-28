@@ -97,6 +97,9 @@ users:
   - title: Grand Poitier
     image: ../../users/grand-poitier.jpg
     link: https://www.grandpoitiers.fr/grands-projets/actions-pour-le-climat/plan-climat
+  - title: Green Grenoble
+    image: ../../users/greengrenoble.png
+    link: https://greengrenoble2022.eu/nos-gestes-climat/126-nos-gestes-climat.htm
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
@@ -118,6 +121,9 @@ users:
   - title: Le Parisien
     image: ../../users/logo le parisien.jpg
     link: https://www.leparisien.fr/environnement/calculez-votre-empreinte-carbone-avec-ces-simulateurs-10-11-2021-WYJKMVY5ZFGR3FZJDXXELNIL4M.php
+  - title: Les eclaireurs canal
+    image: ../../users/leseclaireurscanal.gif
+    link: https://leseclaireurs.canalplus.com/articles/agir/evaluez-votre-impact-sur-le-climat-avec-ce-simulateur-de-l-ademe
   - title: L'info durable
     image: ../../users/linfodurable.png
     link: https://www.linfodurable.fr/educationcitoyennete/calculez-votre-empreinte-carbone-avec-ce-simulateur-gratuit-27120
