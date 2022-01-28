@@ -20,6 +20,9 @@ users:
   - title: Associationbilancarbone
     image: ../../users/abc_main_logo.png
     link: https://www.associationbilancarbone.fr/le-changement-climatique/
+  - title: agenceduclimat-strasbourg
+    image: ../../users/agenceduclimat-strasbourg.png
+    link: https://agenceduclimat-strasbourg.eu/particuliers/reduire-usage-voiture-individuelle/
   - title: Agremob
     image: ../../users/agremob.png
     link: https://agremob.com/le-calculateur-demissions/
@@ -68,6 +71,9 @@ users:
   - title: Defi mobilite pdl
     image: ../../users/defimobilitepdl.png
     link: https://www.defimobilite-paysdelaloire.fr/page/73/calculateur-emissions-co2
+  - title: Defi planet
+    image: ../../users/defiplanet.png
+    link: https://www.defiplanet.com/infos/simgco2e/
   - title: Dromolib
     image: ../../users/dromolib.jpg
     link: https://dromolib.fr
@@ -122,6 +128,9 @@ users:
   - title: mapropraventure
     image: ../../users/mapropraventure.png
     link: https://mapropraventure.fr/impact-des-deplacements/
+  - title: Mende
+    image: ../../users/mende.png
+    link: https://www.mende-coeur-lozere.fr/organiser-ses-vacances/pratique/comment-venir-a-mende/
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
@@ -158,6 +167,9 @@ users:
   - title: RoadMate
     image: ../../users/RM-Carre.png
     link: https://www.roadmate.io/
+  - title: Salon sett
+    image: ../../users/sett.png
+    link: https://www.salonsett.com/fr/infos-pratiques/dates-et-acces
   - title: skills4all
     image: ../../users/skills4all.png
     link: https://www.skills4all.com/engagement-responsable/
