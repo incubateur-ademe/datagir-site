@@ -47,9 +47,6 @@ users:
   - title: Bon Pote
     image: ../../users/bonpote.webp
     link: https://bonpote.com/comment-calculer-son-empreinte-carbone/
-  - title: Centrale Nantes
-    image: ../../users/cnnco2.png
-    link: https://neutralite-carbone.ec-nantes.fr/fr/outils-a-vous-de-jouer/lempreinte-carbone-de-vos-activites-a-centrale-nantes
   - title: Centre-Val de Loire
     image: ../../users/logo RCVL.png
     link: https://cop.centre-valdeloire.fr/calculer-et-reduire-mon-empreinte-carbone/
@@ -122,7 +119,7 @@ users:
     image: ../../users/logo le parisien.jpg
     link: https://www.leparisien.fr/environnement/calculez-votre-empreinte-carbone-avec-ces-simulateurs-10-11-2021-WYJKMVY5ZFGR3FZJDXXELNIL4M.php
   - title: Les eclaireurs canal
-    image: ../../users/leseclaireurscanal.gif
+    image: ../../users/leseclaireurscanal.png
     link: https://leseclaireurs.canalplus.com/articles/agir/evaluez-votre-impact-sur-le-climat-avec-ce-simulateur-de-l-ademe
   - title: L'info durable
     image: ../../users/linfodurable.png
@@ -215,6 +212,12 @@ users:
     image: ../../users/yelo.png
     link: https://yelo.eco/
 forks:
+  - title: Centrale Nantes
+    image: ../../users/cnnco2.png
+    link: https://neutralite-carbone.ec-nantes.fr/fr/outils-a-vous-de-jouer/lempreinte-carbone-de-vos-activites-a-centrale-nantes
+  - title: Mon empreinte carbone pro
+    image: ../../users/monempreintepro.png
+    link: http://www.wecount.io/mesurer-mon-empreinte-carbone-pro
   - title: Mon Match Carbone
     image: ../../users/mmc_inline.png
     link: https://www.monmatchcarbone.fr/
