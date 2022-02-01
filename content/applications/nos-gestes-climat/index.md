@@ -94,6 +94,9 @@ users:
   - title: Grand Poitier
     image: ../../users/grand-poitier.jpg
     link: https://www.grandpoitiers.fr/grands-projets/actions-pour-le-climat/plan-climat
+  - title: Grand Reims
+    image: ../../users/grand-reims.png
+    link: https://bas-carbone.grandreims.fr/contexte-enjeux/
   - title: Green Grenoble
     image: ../../users/greengrenoble.png
     link: https://greengrenoble2022.eu/nos-gestes-climat/126-nos-gestes-climat.htm
