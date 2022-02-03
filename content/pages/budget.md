@@ -1,9 +1,11 @@
 # Budget Datagir
 
-## Considerat quidem sacra gelidis
+Datagir est un service public numérique, c’est pourquoi nous sommes transparents sur les ressources allouées et la manière dont elles sont employées.
+Il est construit en suivant le [manifeste beta.gouv](https://beta.gouv.fr/approche/manifeste).
 
-Lorem markdownum ex contra ortas alite esset inquit, inroravit struxerit [it
-illa](http://pyramusde.io/opem.html). Frenis tenet oscula, quem sibi velatus
+## Budget consommé
+
+ Frenis tenet oscula, quem sibi velatus
 crura lignoque porrigit formicas tollere vulnere! Honorem secum; et quo _qua sub
 ad_ aliudve nomen et quas, furens novata. Telum Cycni tetenderat, resumptis,
 requieque totoque **divitibusque** lacrimas etiamnum egredere, defrenato.
