@@ -133,6 +133,9 @@ users:
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
+  - title: La Poste 
+    image: ../../users/La poste groupe.jpg
+    link: https://www.laposte.fr/entreprise-collectivites/politique-rse
   - title: Lorient agglo
     image: ../../users/lorient-agglo.png
     link: https://www.lorient-agglo.bzh/en-actions/transition-energetique/plan-climat-air-energie/
@@ -151,6 +154,9 @@ users:
   - title: OMNES (ex INSEEC)
     image: ../../users/logo omnes.png
     link: https://www.rse-groupeinseec.com/nos-gestes-climat/
+  - title: Oney
+    image: ../../users/ONEY_rvb.png
+    link: https://www.oney.com/les-communiques/oney-sengage-pour-un-monde-plus-juste-plus-humain-et-plus-durable/
   - title: Oopla
     image: ../../users/logo-oopla (3) (1).png
     link: https://oopla.fr/nos-gestes-climat-ademe/
