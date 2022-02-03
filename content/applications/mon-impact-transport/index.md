@@ -119,6 +119,9 @@ users:
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
+  - title: La Poste 
+    image: ../../users/La poste groupe.jpg
+    link: https://www.laposte.fr/entreprise-collectivites/politique-rse
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-impact-transport
