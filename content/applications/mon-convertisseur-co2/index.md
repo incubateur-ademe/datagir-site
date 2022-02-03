@@ -41,6 +41,9 @@ users:
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/agir-pour-le-climat/lutter-contre-le-changement-climatique/sobriete-carbone-10
+  - title: La Poste 
+    image: ../../users/La poste groupe.jpg
+    link: https://www.laposte.fr/entreprise-collectivites/politique-rse
   - title: La Rochelle ZC
     image: ../../users/lrzerocarbone.png
     link: https://www.larochelle-zerocarbone.fr/s-engager/la-boite-a-outils-du-zero-carbone/mon-convertisseur-co2
