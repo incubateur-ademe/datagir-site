@@ -13,6 +13,8 @@ http://ecolab.ademe.fr/*                                                        
 
 /apps                                                                                   /#applications
 
+/apps/teletravail                                                                       /apps/mon-impact-transport
+
 /apps/transport                                                                         https://monimpacttransport.fr
 /apps/transport/iframe.js                                                               https://monimpacttransport.fr/iframe.js
 
