@@ -113,6 +113,9 @@ users:
   - title: Grenoble
     image: ../../users/grenoble.png
     link: https://www.grenoble.fr/2295-mon-impact-transport.htm
+  - title: Kozy Visit 
+    image: ../../users/Kozyvert 3.png
+    link: https://kozyvisit.com/
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/agir-pour-le-climat/lutter-contre-le-changement-climatique/sobriete-carbone-10
