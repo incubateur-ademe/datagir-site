@@ -89,6 +89,9 @@ users:
   - title: Festival Paris l'été
     image: ../../users/parislete.png
     link: https://www.parislete.fr/fr/le-festival/un_festival_responsable_et_solidaire
+  - title: Fnac Darty
+    image: ../../users/logo fnac darty.png
+    link: https://www.fnac.com/livraison-eclairee
   - title: Geo
     image: ../../users/geo.png
     link: https://www.geo.fr/environnement/environnement-comment-reduire-lempreinte-carbone-de-ses-voyages-202204/
