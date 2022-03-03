@@ -193,6 +193,9 @@ users:
   - title: Time for the planet
     image: ../../users/Logo-time-planet-HD-2.png
     link: https://ngc.time-planet.com/
+  - title: trajectoires media
+    image: ../../users/trajectoires.png
+    link: https://www.trajectoires.media/calcul-empreinte-carbone
   - title: Usbeketrica
     image: ../../users/usbeketrica.jpeg
     link: https://usbeketrica.com/fr/article/nous-mettons-nos-donnees-et-nos-outils-a-la-disposition-de-tous
