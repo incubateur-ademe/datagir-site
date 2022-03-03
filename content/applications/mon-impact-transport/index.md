@@ -191,10 +191,16 @@ users:
   - title: sudrhoneenvironnement
     image: ../../users/sudrhoneenvironnement.png
     link: https://sudrhone.fr/2020/06/29/vacances-partir-sans-oublier-la-planete/
+  - title: trajectoires media
+    image: ../../users/trajectoires.png
+    link: https://www.trajectoires.media/empreinte-carbone-transport
   - title: Usbeketrica
     image: ../../users/usbeketrica.jpeg
     link: https://usbeketrica.com/fr/article/nous-mettons-nos-donnees-et-nos-outils-a-la-disposition-de-tous
   - title: Velotafeur
     image: ../../users/velotafeur.webp
     link: https://www.velotafeur.fr/blog/velotaf/pourquoi-vous-irez-au-travail-a-velo-en-2021-velotafeur.html
+  - title: yuwway
+    image: ../../users/yumaway.png
+    link: https://www.yuwway.com/fr/
 ---
