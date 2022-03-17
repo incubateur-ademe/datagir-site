@@ -92,6 +92,9 @@ users:
   - title: Fnac Darty
     image: ../../users/logo fnac darty.png
     link: https://www.fnac.com/livraison-eclairee
+  - title: france info
+    image: ../../users/franceinfo.png
+    link: https://www.francetvinfo.fr/monde/environnement/crise-climatique/empreinte-carbone/transports/presidentielle-pourquoi-franceinfo-se-focalise-sur-l-empreinte-carbone-des-transports_4929091.html
   - title: Geo
     image: ../../users/geo.png
     link: https://www.geo.fr/environnement/environnement-comment-reduire-lempreinte-carbone-de-ses-voyages-202204/
