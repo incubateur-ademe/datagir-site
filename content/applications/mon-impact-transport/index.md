@@ -50,6 +50,9 @@ users:
   - title: Challenge mobilite
     image: ../../users/challengemobilite.png
     link: https://www.challengedelamobilite.com/page/64/calculateur-emissions-co2
+  - title: Challenge mobilite Aura
+    image: ../../users/challenge_aura.png
+    link: https://challengemobilite.auvergnerhonealpes.fr/page/simulateur.html
   - title: Challenge mobilite Bourgogne
     image: ../../users/challengedelamobilitébourgogne.jpg
     link: https://www.challengemobilite-bfc.fr/page/64/calculateur-emissions-co2
