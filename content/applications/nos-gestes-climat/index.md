@@ -214,6 +214,9 @@ users:
   - title: vert le media
     image: ../../users/vertmedia.png
     link: https://vert.eco/articles/les-francais%C2%B7es-emettent-encore-10-tonnes-de-co2-par-an-cinq-fois-trop-pour-le-climat
+  - title: wag
+    image: ../../users/wag-wwf.jpg
+    link: https://weactforgood.com/nos-gestes-climat-calcul-impact-planete/
   - title: wedemain
     image: ../../users/wedemain.jpg
     link: https://www.wedemain.fr/ralentir/j-ai-calcule-mon-empreinte-carbone-viande-avion-telephone-banque/
