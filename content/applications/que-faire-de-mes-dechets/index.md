@@ -37,4 +37,7 @@ users:
   - title: SERD
     image: ../../users/serd.jpg
     link: https://www.serd.ademe.fr/que-faire-de-mes-dechets
+  - title: Silt media
+    image: ../../users/silt.png
+    link: https://siltmedia.com/comment-reduire-dechets/
 ---
