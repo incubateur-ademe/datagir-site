@@ -38,6 +38,9 @@ users:
   - title: Atmo AURA
     image: ../../users/atmo-aura.png
     link: https://www.atmo-auvergnerhonealpes.fr/article/mes-deplacements-0
+  - title: Avenir Climatique
+    image: ../../users/logo_AC_simple_100px.png
+    link: https://avenirclimatique.org/calculer-empreinte-carbone-trajet/
   - title: Bee cycle
     image: ../../users/beecycle.png
     link: https://www.bee-cycle.fr/salarie/
@@ -143,6 +146,9 @@ users:
   - title: Le Mans Métropole
     image: ../../users/le-mans-metropole.jpg
     link: https://www.defimobilite-lemans.fr/
+  - title: Mai a velo
+    image: ../../users/maiavelo.png
+    link: https://maiavelo.fr/
   - title: mapropraventure
     image: ../../users/mapropraventure.png
     link: https://mapropraventure.fr/impact-des-deplacements/
@@ -199,7 +205,7 @@ users:
     link: https://sudrhone.fr/2020/06/29/vacances-partir-sans-oublier-la-planete/
   - title: TicTac Trip
     image: ../../users/logo tictactrip.png
-    link: https://www.tictactrip.eu/results?origin=Paris&originId=628&nfs=&nft=&destination=Lyon&destinationId=485&outboundDate=2022-03-30T00%3A00%3A00Z&outboundTime=0&returnDate=2022-03-30T00%3A00%3A00Z&returnTime=0&passengers=%5B%22%7B%5C%22id%5C%22%3A0%2C%5C%22age%5C%22%3A35%2C%5C%22category%5C%22%3A%5C%22adults%5C%22%2C%5C%22discountCards%5C%22%3A%5B%5D%7D%22%5D
+    link: https://www.tictactrip.eu/
   - title: trajectoires media
     image: ../../users/trajectoires.png
     link: https://www.trajectoires.media/empreinte-carbone-transport
