@@ -68,4 +68,7 @@ users:
   - title: Shine
     image: ../../users/shine.jpg
     link: https://blog.shine.fr/connaissez-vous-lempreinte-carbone-des-affiches-de-pub-be47495c92ce
+  - title: Silt media
+    image: ../../users/silt.png
+    link: https://siltmedia.com/equivalent-co2/
 ---
