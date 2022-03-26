@@ -44,6 +44,9 @@ users:
   - title: Prowd
     image: ../../users/logo + prowd HQ.png
     link: https://www.beprowd.com/
+  - title: Silt media
+    image: ../../users/silt.png
+    link: https://siltmedia.com/fruits-legumes-saison/
   - title: Silver fourchette
     image: ../../users/silverfourchette.png
     link: https://www.silverfourchette.org/blog/est-ce-bien-la-saison/
