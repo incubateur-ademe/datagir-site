@@ -203,6 +203,9 @@ users:
   - title: sudrhoneenvironnement
     image: ../../users/sudrhoneenvironnement.png
     link: https://sudrhone.fr/2020/06/29/vacances-partir-sans-oublier-la-planete/
+  - title: Silt media
+    image: ../../users/silt.png
+    link: https://siltmedia.com/calculer-emission-co2-trajet/
   - title: TicTac Trip
     image: ../../users/logo tictactrip.png
     link: https://www.tictactrip.eu/
