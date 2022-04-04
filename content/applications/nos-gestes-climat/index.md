@@ -80,6 +80,9 @@ users:
   - title: france tv
     image: ../../users/francetvetvous.png
     link: https://www.francetelevisions.fr/et-vous/notre-tele/on-sengage/cop-26-lhumanite-a-rendez-vous-avec-son-futur-8451
+  - title: france ville durable
+    image: ../../users/francevilledurable.png
+    link: https://francevilledurable.fr/outils/datagir/
   - title: fresque du climat
     image: ../../users/fresqueduclimat.jpg
     link: https://fresqueduclimat.org/
