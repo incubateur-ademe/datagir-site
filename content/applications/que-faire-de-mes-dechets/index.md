@@ -19,6 +19,9 @@ users:
   - title: CCV Communauté
     image: ../../users/ccv.png
     link: https://www.ccvcommunaute.fr/environnement/ordures-menageres/
+  - title: Ethi'Kdo 
+    image: ../../users/Ethi'Kdo PNG.PNG
+    link: https://www.ethikdo.co/blog/actions-ecologiques-entreprise/
   - title: femina
     image: ../../users/femina.png
     link: https://www.femina.fr/article/ou-jeter-les-dechets-insolites-ce-site-repond-a-toutes-les-interrogations-meme-les-plus-etranges
