@@ -26,6 +26,9 @@ users:
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/testez-vos-connaissances/connaissez-empreinte-climat
+  - title: Agence France Electricité 
+    image: ../../users/Agence France Électricité.png
+    link: https://www.agence-france-electricite.fr/energie/verte/empreinte-carbone/
   - title: APC paris
     image: ../../users/APC.jpg
     link: https://www.apc-paris.com/actualite/nos-gestes-climat-outil-pour-permettre-a-chacune-calculer-son-empreinte-carbone
@@ -65,6 +68,9 @@ users:
   - title: dkarbone
     image: ../../users/dkarbone.png
     link: https://www.dkarbone.com/nos_gestes_climat
+  - title: Ethi'Kdo 
+    image: ../../users/Ethi'Kdo PNG.PNG
+    link: https://www.ethikdo.co/blog/actions-ecologiques-entreprise/
   - title: fashion that cares
     image: ../../users/fashionthatcares.png
     link: https://fashionthatcares.fr/services/impact-carbone/
