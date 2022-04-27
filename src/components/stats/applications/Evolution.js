@@ -65,14 +65,14 @@ export default function Evolution(props) {
         <BigNumber color={props.color}>
           {props.allTime.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
         </BigNumber>{' '}
-        visiteurs depuis le lancement
+        visites depuis le lancement
       </Block>
       <Block>
         <Number color={props.color}>
           {percent > 0 && '+'}
           {Math.round(percent * 10) / 10}%
         </Number>
-        de visiteurs ce mois ci
+        de visites ce mois ci
         <br />
         <Small>(par rapport au mois d'avant)</Small>
       </Block>
