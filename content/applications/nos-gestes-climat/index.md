@@ -44,6 +44,9 @@ users:
   - title: Avenir Climatique
     image: ../../users/logo_AC_simple_100px.png
     link: https://avenirclimatique.org/calculer-empreinte-carbone/
+  - title: Banque de la TE
+    image: ../../users/BanqueTE.jpg
+    link: https://banquetransitionenergetique.fr/calculez-votre-empreinte-carbone-avec-nos-gestes-climat/
   - title: BFMTV
     image: ../../users/Logo_BFM_TV_(2019).png
     link: https://www.bfmtv.com/environnement/cop26-comment-calculer-son-propre-bilan-carbone_AN-202111010158.html
