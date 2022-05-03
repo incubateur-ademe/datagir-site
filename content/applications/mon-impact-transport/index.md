@@ -155,6 +155,9 @@ users:
   - title: Mende
     image: ../../users/mende.png
     link: https://www.mende-coeur-lozere.fr/organiser-ses-vacances/pratique/comment-venir-a-mende/
+  - title: Minitère de la TE
+    image: ../../users/mte.png
+    link: https://www.ecologie.gouv.fr/mai-velo-mois-adopter-velo-vie
   - title: Mobicoop
     image: ../../users/mobicoop.png
     link: https://pro.mobicoop.fr/calculez-limpact-de-vos-deplacements/
