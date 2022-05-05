@@ -151,6 +151,9 @@ users:
   - title: Lorient agglo
     image: ../../users/lorient-agglo.png
     link: https://www.lorient-agglo.bzh/en-actions/transition-energetique/plan-climat-air-energie/
+  - title: Make Sense
+    image: ../../users/ms_logo (1).jpg
+    link: https://france.makesense.org/citoyens/s-engager/reaction/climat/
   - title: Maoboa
     image: ../../users/maoboa.png
     link: https://www.maoboa.co/calculateur-empreinte-carbone
