@@ -27,7 +27,7 @@ Pourquoi se soucie-t-on de ces gaz ? Plus nous en rejetons, plus ils s'accumulen
 
 En épluchant les nombreuses études scientifiques très peu réjouissantes sur les conséquences du réchauffement, les États du monde ont tranché fin 2015 lors de l'[accord de Paris](https://fr.wikipedia.org/wiki/Accord_de_Paris_sur_le_climat) : il faut tout faire pour limiter la hausse **nettement en-dessous de 2°**, et faire au mieux pour **la limiter à 1,5°**.
 
-## Nous marchons vers la catastrophe
+## Nous marchons vers la catastrophe mondiale
 
 Manifestement, nous n'avons pas pris cette direction. Les Nations Unies [ont sondé](https://www.carbonbrief.org/unep-1-5c-climate-target-slipping-out-of-reach) les ambitions de chaque pays : ce plan de route que nous les terriens empruntons, et que l'on impose au reste du vivant, **nous dirige vers 3,2°** de réchauffement, en supposant que chaque État tienne ses engagements.
 
