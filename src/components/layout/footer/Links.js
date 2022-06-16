@@ -37,9 +37,7 @@ export default function Links() {
   return (
     <Wrapper>
       <ItemWrapper>
-        <Item to='/mentions-legales'>
-          accessibilité : partiellement conforme
-        </Item>
+        <Item to='/accessibilite'>Accessibilité : partiellement conforme</Item>
         <Item to='/mentions-legales'>mentions légales</Item>
         <Item to='/cookies'>données personnelles</Item>
         <Item to='/cookies'>gestion des cookies</Item>
