@@ -95,6 +95,9 @@ users:
   - title: fresque du climat
     image: ../../users/fresqueduclimat.jpg
     link: https://fresqueduclimat.org/
+  - title: fruitandfood
+    image: ../../users/fruitandfood.png
+    link: https://blog.fruitandfood.fr/nos-gestes-climat/
   - title: Programme CEE Enie- Génération Energie 
     image: ../../users/generation-energie.png
     link: https://www.generation-energie.fr/
