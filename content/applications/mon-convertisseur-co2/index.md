@@ -11,7 +11,7 @@ buttons:
     link: https://monconvertisseurco2.fr
   - label: Voir le code
     link: https://github.com/datagir/monconvertisseurco2
-image: mon-convertisseur-co2.jpg
+image: mon-convertisseur-co2.png
 order: 4
 users:
   - title: Acteur de la rénovation
