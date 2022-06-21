@@ -199,7 +199,7 @@ export default function accessibilite() {
           ;
         </li>
         <li>
-          <MagicLink to='www.defenseurdesdroits.fr/office/'>
+          <MagicLink to='https://www.defenseurdesdroits.fr/office/'>
             la liste du ou des délégués de votre région
           </MagicLink>{' '}
           avec leurs informations de contact direct ;
