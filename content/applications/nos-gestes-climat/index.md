@@ -254,4 +254,7 @@ forks:
   - title: Mon Match Carbone
     image: ../../users/mmc_inline.png
     link: https://www.monmatchcarbone.fr/
+  - title: Mon Foot Carbone
+    image: ../../users/monfootcarbone.png
+    link: https://www.monfootcarbone.fr/
 ---
