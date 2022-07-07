@@ -26,7 +26,7 @@ users:
   - title: ADEME
     image: ../../users/ademe.jpg
     link: https://agirpourlatransition.ademe.fr/particuliers/testez-vos-connaissances/connaissez-empreinte-climat
-  - title: Agence France Electricité 
+  - title: Agence France Electricité
     image: ../../users/Agence France Électricité.png
     link: https://www.agence-france-electricite.fr/energie/verte/empreinte-carbone/
   - title: APC paris
@@ -71,7 +71,7 @@ users:
   - title: dkarbone
     image: ../../users/dkarbone.png
     link: https://www.dkarbone.com/nos_gestes_climat
-  - title: Ethi'Kdo 
+  - title: Ethi'Kdo
     image: ../../users/Ethi'Kdo PNG.PNG
     link: https://www.ethikdo.co/blog/actions-ecologiques-entreprise/
   - title: fashion that cares
@@ -98,7 +98,7 @@ users:
   - title: fruitandfood
     image: ../../users/fruitandfood.png
     link: https://blog.fruitandfood.fr/nos-gestes-climat/
-  - title: Programme CEE Enie- Génération Energie 
+  - title: Programme CEE Enie- Génération Energie
     image: ../../users/generation-energie.png
     link: https://www.generation-energie.fr/
   - title: Grand Albigeois
@@ -148,7 +148,7 @@ users:
   - title: L'Oreal campus CZ
     image: ../../users/lorealcampuscz.png
     link: https://www.loreal.com/fr/
-  - title: La Poste 
+  - title: La Poste
     image: ../../users/La poste groupe.jpg
     link: https://www.laposte.fr/entreprise-collectivites/politique-rse
   - title: Lorient agglo
@@ -255,6 +255,6 @@ forks:
     image: ../../users/mmc_inline.png
     link: https://www.monmatchcarbone.fr/
   - title: Mon Foot Carbone
-    image: ../../users/monfootcarbone.png
+    image: ../../users/mmc_inline.png
     link: https://www.monfootcarbone.fr/
 ---
