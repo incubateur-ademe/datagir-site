@@ -8,12 +8,12 @@ import Section from "src/components/layout/Section";
 const arraySum = (arr) => arr.reduce((a, b) => a + b, 0);
 
 export default function SelectYear() {
-  const years = ["2019", "2020", "2021", "2022"];
-  const quarters = ["T1", "T2", "T3", "T4"];
+  const years = ["2020", "2021", "2022"];
+  const products = ["Nos Gestes Climat", "Autres produits"];
   const [selectedYear, setSelectedYear] = useState(years[years.length - 1]);
   const categories = [
     ...new Set(
-      quarters
+      products
         .map((q) => Object.keys(budget[selectedYear]?.[q] ?? {}))
         .reduce((acc, curr) => [...acc, ...curr], [])
     ),
@@ -41,7 +41,7 @@ export default function SelectYear() {
           <thead>
             <tr>
               <td>{selectedYear}</td>
-              {quarters.map((q) => (
+              {products.map((q) => (
                 <td key={q}>{q}</td>
               ))}
               <td>Total</td>
@@ -51,13 +51,13 @@ export default function SelectYear() {
             {categories.map((label) => (
               <tr key={label}>
                 <td>{label}</td>
-                {quarters.map((q) => {
+                {products.map((q) => {
                   const value = budget[selectedYear]?.[q]?.[label];
                   return <td key={q}>{value ? value : "-"}</td>;
                 })}
                 <td>
                   {arraySum(
-                    quarters.map((q) => budget[selectedYear]?.[q]?.[label] ?? 0)
+                    products.map((q) => budget[selectedYear]?.[q]?.[label] ?? 0)
                   )}
                 </td>
               </tr>
@@ -66,7 +66,7 @@ export default function SelectYear() {
           <tfoot>
             <tr>
               <td>Total HT</td>
-              {quarters.map((q) => {
+              {products.map((q) => {
                 const value = arraySum(
                   Object.values(budget[selectedYear]?.[q] ?? {})
                 );
@@ -75,7 +75,7 @@ export default function SelectYear() {
               })}
               <td>
                 {arraySum(
-                  quarters.map((q) =>
+                  products.map((q) =>
                     arraySum(Object.values(budget[selectedYear]?.[q] ?? {}))
                   )
                 )}
@@ -83,7 +83,7 @@ export default function SelectYear() {
             </tr>
             <tr>
               <td>Total TTC</td>
-              {quarters.map((q) => {
+              {products.map((q) => {
                 const value = Math.round(
                   arraySum(Object.values(budget[selectedYear]?.[q] ?? {})) * 1.2
                 );
@@ -93,7 +93,7 @@ export default function SelectYear() {
               <td>
                 {Math.round(
                   arraySum(
-                    quarters.map(
+                    products.map(
                       (q) =>
                         arraySum(
                           Object.values(budget[selectedYear]?.[q] ?? {})
@@ -116,10 +116,10 @@ const RessourcesAllocationTable = styled.table`
   text-align: left;
   td {
     padding: 6px;
+    width: 100px;
   }
 
   td:not(:first-child) {
-    width: 100px;
     text-align: right;
   }
 

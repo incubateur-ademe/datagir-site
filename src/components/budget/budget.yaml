@@ -1,51 +1,45 @@
-# La partie « marge du porteur » est amortie par trimestre en prenant 13,31% du
-# total du trimestre.
-# markup : 11,75% (montant HT - markup = montant dispo)
-# markup inverse : (1 / (1 - markup)) - 1 = 13,31% (pour passer du dispo au HT)
+# A ajoute en HT
+# markup : 10% (montant HT - markup = montant dispo)
+# markup inverse : (1 / (1 - markup)) - 1 = 11,1% (pour passer du dispo au HT)
 
 2020:
   description: |
     Ceci est une descrption pour le budget 2020.
-  T1:
-    Développement: 73500
-    Logiciels et hébergement: 456
-    Déplacements: 742
-    Marge du porteur: 10337
-  T2:
-    Développement: 56100
-    Logiciels et hébergement: 338
-    Marge du porteur: 7514
-  T3:
-    Développement: 22350
-    Logiciels et hébergement: 294
-    Marge du porteur: 3014
-  T4:
-    Développement: 72150
-    Logiciels et hébergement: 782
-    Marge du porteur: 9631
+  Nos Gestes Climat:
+    Développement: 0
+    Déploiement: 0
+    # Logiciels et hébergement: 0
+    Marge du porteur: 0
+  Autres produits:
+    Développement: 0
+    Déploiement: 0
+    # Logiciels et hébergement: 0
+    Marge du porteur: 0
+
 2021:
   description: |
     Ceci est une descrption pour le budget 2021.
-  T1:
-    Développement: 44850
-    Logiciels et hébergement: 454
-    Déplacements: 114
-    Marge du porteur: 6045
-  T2:
-    Développement: 57750
-    Logiciels et hébergement: 212
-    Marge du porteur: 7715
-  T3:
-    Développement: 35100
-    Logiciels et hébergement: 342
-    Marge du porteur: 4717
-  T4:
-    Développement: 59400
-    Logiciels et hébergement: 578
-    Marge du porteur: 7983
+  Nos Gestes Climat:
+    Développement: 0
+    Déploiement: 0
+    # Logiciels et hébergement: 0
+    Marge du porteur: 0
+  Autres produits:
+    Développement: 0
+    Déploiement: 0
+    # Logiciels et hébergement: 0
+    Marge du porteur: 0
+
 2022:
   description: |
     Ceci est une descrption pour le budget 2022.
-  T1:
-    Développement: 72450
-    Marge du porteur: 9643
+  Nos Gestes Climat:
+    Développement: 0
+    Déploiement: 0
+    # Logiciels et hébergement: 0
+    Marge du porteur: 0
+  Autres produits:
+    Développement: 0
+    Déploiement: 0
+    # Logiciels et hébergement: 0
+    Marge du porteur: 0
