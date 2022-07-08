@@ -16,7 +16,7 @@ const StyledSelect = styled(Select)`
   margin-bottom: 0;
 `
 export default function SelectYear() {
-  const years = ['2020', '2021', '2022']
+  const years = Object.keys(budget)
   const products = ['Nos Gestes Climat', 'Autres produits']
   const [selectedYear, setSelectedYear] = useState(years[years.length - 1])
   const categories = [

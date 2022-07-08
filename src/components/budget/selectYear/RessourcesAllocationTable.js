@@ -34,13 +34,16 @@ const Table = styled.table`
 const arraySum = (arr) => arr.reduce((a, b) => a + b, 0)
 
 export default function RessourcesAllocationTable(props) {
+  const products = Object.keys(props.budget[props.selectedYear]).filter(
+    (elt) => elt !== 'description'
+  )
   return (
     <Wrapper>
       <Table>
         <thead>
           <tr>
             <td>{props.selectedYear}</td>
-            {props.products.map((q) => (
+            {products.map((q) => (
               <td key={q}>{q}</td>
             ))}
             <td>Total</td>
@@ -50,7 +53,7 @@ export default function RessourcesAllocationTable(props) {
           {props.categories.map((label) => (
             <tr key={label}>
               <td>{label}</td>
-              {props.products.map((q) => {
+              {products.map((q) => {
                 const value = props.budget[props.selectedYear]?.[q]?.[label]
                 return <td key={q}>{value ? value : '-'}</td>
               })}
@@ -67,7 +70,7 @@ export default function RessourcesAllocationTable(props) {
         <tfoot>
           <tr>
             <td>Total HT</td>
-            {props.products.map((q) => {
+            {products.map((q) => {
               const value = arraySum(
                 Object.values(props.budget[props.selectedYear]?.[q] ?? {})
               )
@@ -86,7 +89,7 @@ export default function RessourcesAllocationTable(props) {
           </tr>
           <tr>
             <td>Total TTC</td>
-            {props.products.map((q) => {
+            {products.map((q) => {
               const value = Math.round(
                 arraySum(
                   Object.values(props.budget[props.selectedYear]?.[q] ?? {})
