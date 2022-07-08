@@ -94,6 +94,7 @@ export default function Contact(props) {
               value={user.nom}
               error={error && !user.nom}
               label={'Votre nom'}
+              autocomplete='name'
               onChange={({ name, value }) =>
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
               }
@@ -104,6 +105,7 @@ export default function Contact(props) {
               error={error && !user.email}
               value={user.email}
               label={'Votre email'}
+              autocomplete='email'
               onChange={({ name, value }) =>
                 setUser((prevUser) => ({ ...prevUser, [name]: value }))
               }
