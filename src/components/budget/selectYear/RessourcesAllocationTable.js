@@ -31,7 +31,10 @@ const Table = styled.table`
     color: ${(props) => props.theme.colors.main};
   }
 `
-const arraySum = (arr) => arr.reduce((a, b) => a + b, 0)
+const arraySum = (arr) => arr.reduce((a, b) => (!isNaN(b) ? a + b : a), 0)
+
+const formatValue = (value) =>
+  !isNaN(value) ? value.toLocaleString('fr-FR') : '-'
 
 export default function RessourcesAllocationTable(props) {
   const products = Object.keys(props.budget[props.selectedYear]).filter(
@@ -55,12 +58,14 @@ export default function RessourcesAllocationTable(props) {
               <td>{label}</td>
               {products.map((q) => {
                 const value = props.budget[props.selectedYear]?.[q]?.[label]
-                return <td key={q}>{value ? value : '-'}</td>
+                return <td key={q}>{value ? formatValue(value) : '-'}</td>
               })}
               <td>
-                {arraySum(
-                  props.products.map(
-                    (q) => props.budget[props.selectedYear]?.[q]?.[label] ?? 0
+                {formatValue(
+                  arraySum(
+                    products.map(
+                      (q) => props.budget[props.selectedYear]?.[q]?.[label] ?? 0
+                    )
                   )
                 )}
               </td>
@@ -75,13 +80,15 @@ export default function RessourcesAllocationTable(props) {
                 Object.values(props.budget[props.selectedYear]?.[q] ?? {})
               )
 
-              return <td key={q}>{value ? value : '-'}</td>
+              return <td key={q}>{value ? formatValue(value) : '-'}</td>
             })}
             <td>
-              {arraySum(
-                props.products.map((q) =>
-                  arraySum(
-                    Object.values(props.budget[props.selectedYear]?.[q] ?? {})
+              {formatValue(
+                arraySum(
+                  products.map((q) =>
+                    arraySum(
+                      Object.values(props.budget[props.selectedYear]?.[q] ?? {})
+                    )
                   )
                 )
               )}
@@ -96,18 +103,20 @@ export default function RessourcesAllocationTable(props) {
                 ) * 1.2
               )
 
-              return <td key={q}>{value ? value : '-'}</td>
+              return <td key={q}>{value ? formatValue(value) : '-'}</td>
             })}
             <td>
-              {Math.round(
-                arraySum(
-                  props.products.map(
-                    (q) =>
-                      arraySum(
-                        Object.values(
-                          props.budget[props.selectedYear]?.[q] ?? {}
-                        )
-                      ) * 1.2
+              {formatValue(
+                Math.round(
+                  arraySum(
+                    products.map(
+                      (q) =>
+                        arraySum(
+                          Object.values(
+                            props.budget[props.selectedYear]?.[q] ?? {}
+                          )
+                        ) * 1.2
+                    )
                   )
                 )
               )}
