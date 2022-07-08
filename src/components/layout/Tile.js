@@ -83,10 +83,7 @@ export default function Tile(props) {
         <Top>
           {props.image && (
             <Image margin={props.margin}>
-              <Img
-                fluid={props.image.childrenImageSharp[0].fluid}
-                alt={props.title}
-              />
+              <Img fluid={props.image.childrenImageSharp[0].fluid} alt='' />
             </Image>
           )}
           {props.title && <Title margin={props.margin}>{props.title}</Title>}
