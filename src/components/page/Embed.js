@@ -16,6 +16,7 @@ export default function Embed(props) {
       allowfullscreen={true}
       webkitallowfullscreen={true}
       mozallowfullscreen={true}
+      title='simulateur'
     />
   )
 }
