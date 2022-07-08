@@ -88,14 +88,16 @@ export default function Contact(props) {
           </Button>
         </ButtonWrapper>
         {mutation.isError && (
-          <Alert error>
+          <Alert role='alert' error>
             {mutation?.error?.response?.data?.message ===
             'Contact already in list and/or does not exist'
               ? `Vous êtes déjà inscrit à notre newsletter`
               : `Une erreur est survenue`}
           </Alert>
         )}
-        {mutation.isSuccess && <Alert>Vous êtes maintenant inscrit !</Alert>}
+        {mutation.isSuccess && (
+          <Alert role='status'>Vous êtes maintenant inscrit !</Alert>
+        )}
       </Form>
     </Wrapper>
   )

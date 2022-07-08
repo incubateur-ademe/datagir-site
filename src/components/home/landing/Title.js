@@ -64,6 +64,8 @@ export default function Title(props) {
         viewBox='0 0 78 91'
         fill='none'
         mounted={props.mounted}
+        role='img'
+        aria-label='A'
       >
         <PathColor d='M0 91L39 0L78 91H65L39 27L12 91H0Z' />
         <PathWhite d='M0 91L39 0V27L12.5 91H0Z' />
