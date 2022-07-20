@@ -23,7 +23,7 @@ export default function accessibilite() {
       <h2>Résultats des tests</h2>
       <p>
         L’audit de conformité réalisé le 15/02/2022 par la société Access42
-        révèle que le site est conforme à 51,47 % au RGAA version 4.1.
+        révèle que le site est conforme à 52,24 % au RGAA version 4.1.
       </p>
       <h3>Contenus inaccessibles</h3>
       <p>
@@ -45,7 +45,6 @@ export default function accessibilite() {
           Des images possèdent des légendes qui ne sont pas correctement
           reliées ;
         </li>
-        <li> Un cadre (iframe) n'a pas de titre pertinent ;</li>
         <li> Une information est véhiculée uniquement par la couleur ;</li>
         <li>
           Des textes et des composants d’interfaces ont des contrastes
@@ -71,11 +70,6 @@ export default function accessibilite() {
           Des changements de contexte se déclenchent sans que l’utilisateur en
           soit informé ;
         </li>
-        <li>
-          Des messages de statut ne sont pas restitués par les technologies
-          d’assistance ;
-        </li>
-        <li> L’indication de langue par défaut n’est pas pertinente ;</li>
         <li>
           Des pages font usage de balises à des fins de présentation (par
           exemple des textes non structurés dans des balises de paragraphes) ;
@@ -116,10 +110,16 @@ export default function accessibilite() {
           Des pages présentent des problèmes dans le parcours de tabulation en
           raison d’éléments masqués ;
         </li>
+      </ul>
+      <h3>Contenus non soumis à l’obligation d’accessibilité</h3>
+      <ul>
         <li> Des documents PDF ne possèdent pas d’alternative accessible.</li>
       </ul>
       <h2>Établissement de cette déclaration d’accessibilité</h2>
-      <p>Cette déclaration a été établie le 12/05/2022.</p>
+      <p>
+        Cette déclaration a été établie le 12/05/2022. Elle a été mise à jour le
+        13/07/2022.
+      </p>
       <h3>Technologies utilisées pour la réalisation du site</h3>
       <ul>
         <li>HTML5</li>
