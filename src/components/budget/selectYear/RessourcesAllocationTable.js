@@ -6,8 +6,13 @@ const Wrapper = styled.div`
 `
 const Table = styled.table`
   margin-bottom: 2rem;
-  width: 100%;
+  width: 70%;
   text-align: left;
+
+  ${(props) => props.theme.mq.small} {
+    width: 100%;
+  }
+
   td {
     padding: 0.375rem;
     width: 6.25rem;
@@ -37,18 +42,12 @@ const formatValue = (value) =>
   !isNaN(value) ? value.toLocaleString('fr-FR') : '-'
 
 export default function RessourcesAllocationTable(props) {
-  const products = Object.keys(props.budget[props.selectedYear]).filter(
-    (elt) => elt !== 'description'
-  )
   return (
     <Wrapper>
       <Table>
         <thead>
           <tr>
             <td>{props.selectedYear}</td>
-            {products.map((q) => (
-              <td key={q}>{q}</td>
-            ))}
             <td>Total</td>
           </tr>
         </thead>
@@ -56,14 +55,10 @@ export default function RessourcesAllocationTable(props) {
           {props.categories.map((label) => (
             <tr key={label}>
               <td>{label}</td>
-              {products.map((q) => {
-                const value = props.budget[props.selectedYear]?.[q]?.[label]
-                return <td key={q}>{value ? formatValue(value) : '-'}</td>
-              })}
               <td>
                 {formatValue(
                   arraySum(
-                    products.map(
+                    props.products.map(
                       (q) => props.budget[props.selectedYear]?.[q]?.[label] ?? 0
                     )
                   )
@@ -75,17 +70,11 @@ export default function RessourcesAllocationTable(props) {
         <tfoot>
           <tr>
             <td>Total HT</td>
-            {products.map((q) => {
-              const value = arraySum(
-                Object.values(props.budget[props.selectedYear]?.[q] ?? {})
-              )
-
-              return <td key={q}>{value ? formatValue(value) : '-'}</td>
-            })}
+            <td>Total TTC</td>
             <td>
               {formatValue(
                 arraySum(
-                  products.map((q) =>
+                  props.products.map((q) =>
                     arraySum(
                       Object.values(props.budget[props.selectedYear]?.[q] ?? {})
                     )

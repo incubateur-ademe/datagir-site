@@ -17,8 +17,10 @@ const StyledSelect = styled(Select)`
 `
 export default function SelectYear() {
   const years = Object.keys(budget)
-  const products = ['Nos Gestes Climat', 'Autres produits']
   const [selectedYear, setSelectedYear] = useState(years[years.length - 1])
+  const products = Object.keys(budget[selectedYear]).filter(
+    (elt) => elt !== 'description'
+  )
   const categories = [
     ...new Set(
       products
@@ -26,6 +28,7 @@ export default function SelectYear() {
         .reduce((acc, curr) => [...acc, ...curr], [])
     ),
   ]
+  console.log(categories)
   return (
     <>
       <SelectWrapper>
