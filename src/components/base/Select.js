@@ -25,7 +25,7 @@ const Input = styled.select`
 const Option = styled.option``
 export default function Select(props) {
   return (
-    <Wrapper>
+    <Wrapper className={props.className}>
       {props.label && <Label htmlFor={props.name}>{props.label}</Label>}
       <Input
         id={props.name}
