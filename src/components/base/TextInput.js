@@ -18,8 +18,9 @@ const Input = styled.input`
   border-radius: 0.25rem 0.25rem 0 0;
 `
 export default function TextInput(props) {
+  console.log(props.autocomplete)
   return (
-    <Wrapper>
+    <Wrapper className={props.className}>
       {props.label && (
         <Label htmlFor={props.name} error={props.error}>
           {props.label}
@@ -31,6 +32,7 @@ export default function TextInput(props) {
         name={props.name}
         value={props.value}
         error={props.error}
+        autoComplete={props.autocomplete}
         onChange={(e) => {
           props.onChange({ value: e.currentTarget.value, name: props.name })
         }}
