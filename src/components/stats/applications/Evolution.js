@@ -38,16 +38,17 @@ export default function Evolution(props) {
 
   const [iframe, setIframe] = useState(0)
   useEffect(() => {
+    console.log(props.pages)
     if (props.pages) {
       const iframePages = props.pages.filter(
         (page) => page.label.includes('embed') || page.label.includes('iframe')
       )
       const totalIframe = iframePages.reduce(
-        (acc, cur) => acc + cur.nb_visits,
+        (acc, cur) => acc + cur.entry_nb_visits,
         0
       )
       const totalPages = props.pages.reduce(
-        (acc, cur) => acc + cur.nb_visits,
+        (acc, cur) => acc + cur.entry_nb_visits,
         0
       )
       setIframe((totalIframe / totalPages) * 100)
@@ -58,7 +59,7 @@ export default function Evolution(props) {
   const baseSimulations = 32015
   const { data: simulations } = useTotalNgcSimulations()
 
-  console.log(props.id[0] === '153')
+  console.log(props.id)
   return (
     <Wrapper>
       <Block>
@@ -85,12 +86,12 @@ export default function Evolution(props) {
           </Number>{' '}
           simulations terminées depuis le lancement
         </Block>
-      ) : (
+      ) : props.id[0] !== 'total' ? (
         <Block>
           <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
           d'affichage en iframe
         </Block>
-      )}
+      ) : null}
     </Wrapper>
   )
 }
