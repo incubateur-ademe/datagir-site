@@ -59,7 +59,6 @@ export default function Evolution(props) {
   const baseSimulations = 32015
   const { data: simulations } = useTotalNgcSimulations()
 
-  console.log(props.id)
   return (
     <Wrapper>
       <Block>
