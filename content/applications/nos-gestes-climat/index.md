@@ -29,6 +29,9 @@ users:
   - title: Agence France Electricité
     image: ../../users/Agence France Électricité.png
     link: https://www.agence-france-electricite.fr/energie/verte/empreinte-carbone/
+  - title: Aktio
+    image: ../../users/aktio.png
+    link: https://www.aktio.cc/lexique/empreinte-carbone-individuelle
   - title: APC paris
     image: ../../users/APC.jpg
     link: https://www.apc-paris.com/actualite/nos-gestes-climat-outil-pour-permettre-a-chacune-calculer-son-empreinte-carbone
