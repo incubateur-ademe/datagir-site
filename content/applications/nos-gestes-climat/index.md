@@ -123,7 +123,7 @@ users:
     link: https://www.grenoble.fr/2294-nos-gestes-climat.htm
   - title: ICE App
     image: ../../users/iceapp.png
-    link: https://www.iceapp.fr/solution-ice/
+    link: https://www.iceapp.fr/
   - title: Issy
     image: ../../users/issy.png
     link: https://www.issy.com/decouvrir-issy/environnement/developpement-durable/1-je-calcule-mon-empreinte-carbone
