@@ -3,11 +3,11 @@ title: Que Faire de mes Déchets
 introduction: Découvrez les solutions pour tous vos déchets et nos conseils pour en produire moins.
 color: '#E01B0C'
 matomo: 199
-script: https://quefairedemesdechets.fr?iframe=1&noheader=1
+script: https://quefairedemesdechets.ademe.fr?iframe=1&noheader=1
 sector: all
 buttons:
   - label: Voir le site
-    link: https://quefairedemesdechets.fr
+    link: https://quefairedemesdechets.ademe.fr
   - label: Voir le code
     link: https://github.com/datagir/quefairedemesdechets
 image: que-faire-de-mes-dechets.png
@@ -19,7 +19,7 @@ users:
   - title: CCV Communauté
     image: ../../users/ccv.png
     link: https://www.ccvcommunaute.fr/environnement/ordures-menageres/
-  - title: Ethi'Kdo 
+  - title: Ethi'Kdo
     image: ../../users/Ethi'Kdo PNG.PNG
     link: https://www.ethikdo.co/blog/actions-ecologiques-entreprise/
   - title: femina
