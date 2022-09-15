@@ -65,6 +65,9 @@ users:
   - title: Challenge mobilite Sophia-Antipolis
     image: ../../users/logo challenge mobilité sophia-antipolis.png
     link: https://www.challenge-mobilite-sophia.fr/actualites/preparez-votre-challenge-et-votre-argumentaire-avec-les-simulateurs-mobilite.19.html
+  - title: CityGo 
+    image: ../../users/logo citygo.png
+    link: https://www.citygo.io/devenez-conducteur/
   - title: CliMates
     image: ../../users/CliMates logo.png
     link: https://datagir.ademe.fr/apps/mon-impact-transport/
