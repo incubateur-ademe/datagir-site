@@ -12,21 +12,14 @@ import {
 import Search from './chart/Search'
 import CustomTooltip from './chart/CustomTooltip'
 
-const Wrapper = styled.div`
-  width: 66.666%;
-
-  ${(props) => props.theme.mq.medium} {
-    width: 100%;
-  }
-
-  svg {
-    overflow: visible;
-  }
+const Title = styled.h3`
+  text-align: center;
 `
 const ChartWrapper = styled.div`
   height: 22rem;
+  margin-bottom: 3rem;
 `
-export default function AreaWeekly(props) {
+export default function Chart(props) {
   const [data, setData] = useState(null)
   useEffect(() => {
     let dates = Object.keys(props.chart)
@@ -35,13 +28,18 @@ export default function AreaWeekly(props) {
       dates.map((date) => {
         let points = { date }
         points['Visiteurs'] = props.chart[date]
+        points['Visiteurs Actifs'] = props.chartInteractions
+          ? props.chartInteractions[date].find((event) =>
+              ['Click', 'click', 'Clic CTA accueil'].includes(event.label)
+            )?.nb_visits
+          : 0
         return points
       })
     )
-  }, [props.chart, props.sites])
+  }, [props.chart, props.chartInteractions])
 
   return data ? (
-    <Wrapper>
+    <>
       <Search
         period={props.period}
         date={props.date}
@@ -49,6 +47,7 @@ export default function AreaWeekly(props) {
         setDate={props.setDate}
         color={props.color}
       />
+      <Title>Nombre de visite</Title>
       <ChartWrapper>
         <ResponsiveContainer>
           <AreaChart data={data}>
@@ -81,11 +80,18 @@ export default function AreaWeekly(props) {
               dataKey={'Visiteurs'}
               stroke={props.color}
               fill={props.color}
+              fillOpacity={data[data.length - 1]['Visiteurs Actifs'] ? 0.5 : 1}
+            />
+            <Area
+              type='monotone'
+              dataKey={'Visiteurs Actifs'}
+              stroke={props.color}
+              fill={props.color}
               fillOpacity={1}
             />
           </AreaChart>
         </ResponsiveContainer>
       </ChartWrapper>
-    </Wrapper>
+    </>
   ) : null
 }

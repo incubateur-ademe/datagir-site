@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import {
   useChart,
+  useChartInteractions,
+  useVisitsDuration,
   useTotal,
   useWebsites,
   useOldWebsites,
@@ -19,17 +21,10 @@ import Evolution from './applications/Evolution'
 import Sources from './applications/Sources'
 import Selector from './applications/Selector'
 import Chart from './applications/Chart'
+import VisitsDuration from './applications/VisitsDuration'
 import Loader from './applications/Loader'
 
-const Wrapper = styled.div`
-  display: flex;
-  width: 100%;
-  margin-bottom: 2rem;
-
-  ${(props) => props.theme.mq.medium} {
-    flex-direction: column;
-  }
-`
+const Wrapper = styled.div``
 export default function Data(props) {
   const { themes, theme } = useContext(StyleContext)
 
@@ -48,6 +43,16 @@ export default function Data(props) {
   }, [props.sites, current, themes, theme])
 
   const { data: chart } = useChart({
+    sites: props.sites,
+    chartDate: Number(chartDate) + 1,
+    chartPeriod,
+  })
+  const { data: chartInteractions } = useChartInteractions({
+    sites: props.sites,
+    chartDate: Number(chartDate) + 1,
+    chartPeriod,
+  })
+  const { data: visitsDuration } = useVisitsDuration({
     sites: props.sites,
     chartDate: Number(chartDate) + 1,
     chartPeriod,
@@ -89,9 +94,10 @@ export default function Data(props) {
             id={[current]}
             color={color}
           />
-          {chart && (
+          {chart && chartInteractions && (
             <Chart
               chart={chart[current]}
+              chartInteractions={chartInteractions[current]}
               color={color}
               period={chartPeriod}
               date={chartDate}
@@ -100,6 +106,15 @@ export default function Data(props) {
             />
           )}
         </Wrapper>
+        {visitsDuration && current !== 'total' && (
+          <VisitsDuration
+            chart={chart[current]}
+            visitsDuration={visitsDuration[current]}
+            color={color}
+            period={chartPeriod}
+            date={chartDate}
+          />
+        )}
         <Sources
           total={total[current]}
           websites={websites[current]}

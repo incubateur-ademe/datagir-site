@@ -19,10 +19,6 @@ const queryClient = new QueryClient({
   },
 })
 
-const Title = styled.h1`
-  font-size: 5.5rem;
-  text-align: center;
-`
 export default function Dashboard(props) {
   let sites = [...props.data.allMdx.edges]
 
@@ -36,7 +32,6 @@ export default function Dashboard(props) {
         title={'Statistiques'}
         image={props.data.metaimage.childImageSharp.resize}
       >
-        <Title>Statistiques</Title>
         <Applications sites={sites} />
         <Api />
         <Datagir />

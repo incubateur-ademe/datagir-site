@@ -53,9 +53,40 @@ export const useChart = ({ sites, chartPeriod, chartDate }) =>
           return { ...data, total }
         }),
     {
-      keepPreviousData: true,
+      keepPreviousData: false,
     }
   )
+export const useChartInteractions = ({ sites, chartPeriod, chartDate }) =>
+  useQuery(
+    ['chartInteractions', chartPeriod, chartDate],
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&method=Events.getAction&idSite=${getIdSites(
+            sites
+          )}&date=last${chartDate}&period=${chartPeriod}&format=JSON`
+        )
+        .then((res) => res.data),
+    {
+      keepPreviousData: false,
+    }
+  )
+export const useVisitsDuration = ({ sites, chartPeriod, chartDate }) =>
+  useQuery(
+    ['visitDuration', chartPeriod, chartDate],
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&method=VisitorInterest.getNumberOfVisitsPerVisitDuration&idSite=${getIdSites(
+            sites
+          )}&date=last${chartDate}&period=${chartPeriod}&format=JSON`
+        )
+        .then((res) => res.data),
+    {
+      keepPreviousData: false,
+    }
+  )
+
 export const useChartAgribalyse = () =>
   useQuery(
     ['chartAgribalyse'],
@@ -66,7 +97,7 @@ export const useChartAgribalyse = () =>
         )
         .then((res) => res.data),
     {
-      keepPreviousData: true,
+      keepPreviousData: false,
     }
   )
 export const useTotalNgcSimulations = () =>
@@ -81,7 +112,7 @@ export const useTotalNgcSimulations = () =>
           res.data.find((action) => action.label === 'A terminé la simulation')
         ),
     {
-      keepPreviousData: true,
+      keepPreviousData: false,
     }
   )
 export const useApiMit = () =>
@@ -94,7 +125,7 @@ export const useApiMit = () =>
         )
         .then((res) => res.data),
     {
-      keepPreviousData: true,
+      keepPreviousData: false,
     }
   )
 export const useApiMitTotal = () =>
@@ -107,7 +138,7 @@ export const useApiMitTotal = () =>
         )
         .then((res) => res.data.reduce((acc, cur) => (acc += cur.nb_hits), 0)),
     {
-      keepPreviousData: true,
+      keepPreviousData: false,
     }
   )
 

@@ -2,28 +2,21 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 import { useTotalNgcSimulations } from 'utils/matomo'
+import Tile from 'src/components/layout/Tile'
 
-const Wrapper = styled.div`
-  width: 33.333%;
-  text-align: center;
-
-  ${(props) => props.theme.mq.medium} {
-    width: 100%;
-  }
-`
-const Block = styled.div`
-  margin-bottom: 2rem;
-`
 const Number = styled.span`
   display: block;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 1;
+  text-align: center;
   color: ${(props) => props.color || props.theme.colors.main};
   transition: color 500ms ease-out;
 `
-const BigNumber = styled(Number)`
-  font-size: 5rem;
+const Label = styled.span`
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
 `
 const Small = styled.span`
   font-size: 0.75rem;
@@ -38,7 +31,6 @@ export default function Evolution(props) {
 
   const [iframe, setIframe] = useState(0)
   useEffect(() => {
-    console.log(props.pages)
     if (props.pages) {
       const iframePages = props.pages.filter(
         (page) => page.label.includes('embed') || page.label.includes('iframe')
@@ -60,37 +52,36 @@ export default function Evolution(props) {
   const { data: simulations } = useTotalNgcSimulations()
 
   return (
-    <Wrapper>
-      <Block>
-        <BigNumber color={props.color}>
-          {props.allTime.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-        </BigNumber>{' '}
-        visites depuis le lancement
-      </Block>
-      <Block>
-        <Number color={props.color}>
-          {percent > 0 && '+'}
-          {Math.round(percent * 10) / 10}%
-        </Number>
-        de visites ce mois ci
-        <br />
-        <Small>(par rapport au mois d'avant)</Small>
-      </Block>
-      {props.id[0] === '153' ? (
-        <Block>
+    <Tile.Wrapper large>
+      <Tile.Tile>
+        <Tile.Content>
           <Number color={props.color}>
-            {(simulations?.nb_visits + baseSimulations)
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+            {props.allTime.toLocaleString('fr-fr')}
           </Number>{' '}
-          simulations terminées depuis le lancement
-        </Block>
-      ) : props.id[0] !== 'total' ? (
-        <Block>
-          <Number color={props.color}>{Math.round(iframe * 10) / 10}%</Number>{' '}
-          d'affichage en iframe
-        </Block>
-      ) : null}
-    </Wrapper>
+          <Label>visites depuis le lancement</Label>
+        </Tile.Content>
+      </Tile.Tile>
+      {props.id[0] !== 'total' && (
+        <Tile.Tile>
+          <Tile.Content>
+            <Number color={props.color}>{Math.round(iframe)} %</Number>{' '}
+            <Label>d'affichage en iframe</Label>
+          </Tile.Content>
+        </Tile.Tile>
+      )}
+
+      {props.id[0] === '153' && (
+        <Tile.Tile>
+          <Tile.Content>
+            <Number color={props.color}>
+              {(simulations?.nb_visits + baseSimulations).toLocaleString(
+                'fr-fr'
+              )}
+            </Number>{' '}
+            <Label>simulations terminées depuis le lancement</Label>
+          </Tile.Content>
+        </Tile.Tile>
+      )}
+    </Tile.Wrapper>
   )
 }

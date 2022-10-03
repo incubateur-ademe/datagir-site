@@ -51,12 +51,25 @@ export default function CustomTooltip(props) {
           })}
         </Label>
       )}
-      <Number>
-        {props.payload[0].value
-          .toString()
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}{' '}
-      </Number>
-      {props.naming || 'visiteurs'}
+      {props.percent
+        ? props.payload
+            .map((value) => (
+              <>
+                <Number>
+                  {value.value.toLocaleString('fr-fr', { style: 'percent' })}
+                </Number>{' '}
+                {value.name}
+                <br />
+              </>
+            ))
+            .reverse()
+        : props.payload.map((value) => (
+            <>
+              <Number>{value.value.toLocaleString('fr-fr')}</Number>{' '}
+              {value.name}
+              <br />
+            </>
+          ))}
     </Wrapper>
   ) : null
 }

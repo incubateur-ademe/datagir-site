@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import FancySelect from 'src/components/base/FancySelect'
 
 const Wrapper = styled.div`
-  margin-bottom: 1.5rem;
-  text-align: right;
+  margin: 3rem 0 1.5rem;
+  text-align: center;
 
   ${(props) => props.theme.mq.small} {
     font-size: 0.75rem;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 export default function Search(props) {
   return (
     <Wrapper>
-      Nombre de visites pour les{' '}
+      Affichage des{' '}
       <FancySelect
         fancy
         value={props.date}

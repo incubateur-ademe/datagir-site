@@ -19,7 +19,7 @@ const Wrapper = styled.h2`
 export default function Selector(props) {
   return (
     <Wrapper>
-      Visites pour{' '}
+      Statistiques pour{' '}
       <FancySelect
         fancy
         value={String(props.current)}
