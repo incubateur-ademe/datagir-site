@@ -27,7 +27,7 @@ export default function VisitsDuration(props) {
       dates.map((date) => {
         let points = { date }
         let total = props.visitsDuration[date].reduce(
-          (acc, cur) => acc + cur.nb_visits,
+          (acc, cur) => acc + Number(cur.nb_visits),
           0
         )
         for (let duration of props.visitsDuration[date]) {
