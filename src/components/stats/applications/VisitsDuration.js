@@ -31,7 +31,7 @@ export default function VisitsDuration(props) {
           0
         )
         for (let duration of props.visitsDuration[date]) {
-          points[duration.label] = duration.nb_visits / total
+          points[duration.label] = Number(duration.nb_visits) / total
         }
         return points
       })
