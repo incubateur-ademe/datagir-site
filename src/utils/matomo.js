@@ -56,6 +56,21 @@ export const useChart = ({ sites, chartPeriod, chartDate }) =>
       keepPreviousData: false,
     }
   )
+export const useChartFromDatagir = ({ sites, chartPeriod, chartDate }) =>
+  useQuery(
+    ['chartFromDatagir', chartPeriod, chartDate],
+    () =>
+      axios
+        .get(
+          `https://stats.data.gouv.fr/?module=API&date=last${chartDate}&period=${chartPeriod}&format=json&idSite=${getIdSites(
+            sites
+          )}&method=Referrers.getWebsites`
+        )
+        .then((res) => res.data),
+    {
+      keepPreviousData: false,
+    }
+  )
 export const useChartInteractions = ({ sites, chartPeriod, chartDate }) =>
   useQuery(
     ['chartInteractions', chartPeriod, chartDate],

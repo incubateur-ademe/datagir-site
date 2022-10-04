@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import {
   useChart,
+  useChartFromDatagir,
   useChartInteractions,
   useVisitsDuration,
   useTotal,
@@ -43,6 +44,11 @@ export default function Data(props) {
   }, [props.sites, current, themes, theme])
 
   const { data: chart } = useChart({
+    sites: props.sites,
+    chartDate: Number(chartDate) + 1,
+    chartPeriod,
+  })
+  const { data: chartFromDatagir } = useChartFromDatagir({
     sites: props.sites,
     chartDate: Number(chartDate) + 1,
     chartPeriod,
@@ -94,9 +100,10 @@ export default function Data(props) {
             id={[current]}
             color={color}
           />
-          {chart && chartInteractions && (
+          {chart && chartFromDatagir && chartInteractions && (
             <Chart
               chart={chart[current]}
+              chartFromDatagir={chartFromDatagir[current]}
               chartInteractions={chartInteractions[current]}
               color={color}
               period={chartPeriod}

@@ -15,7 +15,7 @@ export default function Misc() {
     <Section>
       <Section.Title>
         <StyledLink to='http://nosgestesclimat.fr/'>
-          Nos GEStes Climat
+          Nos Gestes Climat
         </StyledLink>{' '}
         en chiffres
       </Section.Title>

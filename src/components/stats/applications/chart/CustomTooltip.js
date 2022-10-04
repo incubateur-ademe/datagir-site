@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -54,21 +54,21 @@ export default function CustomTooltip(props) {
       {props.percent
         ? props.payload
             .map((value) => (
-              <>
+              <Fragment key={value.name}>
                 <Number>
                   {value.value.toLocaleString('fr-fr', { style: 'percent' })}
                 </Number>{' '}
                 {value.name}
                 <br />
-              </>
+              </Fragment>
             ))
             .reverse()
         : props.payload.map((value) => (
-            <>
+            <Fragment key={value.name}>
               <Number>{value.value.toLocaleString('fr-fr')}</Number>{' '}
               {value.name}
               <br />
-            </>
+            </Fragment>
           ))}
     </Wrapper>
   ) : null
