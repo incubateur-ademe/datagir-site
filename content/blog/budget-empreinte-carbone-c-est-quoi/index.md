@@ -98,7 +98,7 @@ Ca tombe bien : nous sommes à peu près 7 milliards d'humains. Mon budget carbo
 
 Est-ce beaucoup ?
 
-D'après le ministère de l'environnement, un français a émis en moyenne [8 tonnes de CO₂](https://www.statistiques.developpement-durable.gouv.fr/sites/default/files/2020-01/datalab-essentiel-204-l-empreinte-carbone-des-francais-reste-%20stable-janvier2020.pdf) en 2018.
+D'après le ministère de l'environnement, un Français a émis en moyenne [8 tonnes de CO₂](https://www.statistiques.developpement-durable.gouv.fr/sites/default/files/2020-01/datalab-essentiel-204-l-empreinte-carbone-des-francais-reste-%20stable-janvier2020.pdf) en 2018.
 
 > Rappelez-vous : les budgets carbone du GIEC sont donnés en CO₂ uniquement, donc nous mettons de côté les 3,2 tonnes de méthane et autres gaz à effet de serre émis.
 
