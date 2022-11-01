@@ -1,6 +1,6 @@
 ---
 title: Mon Impact Transport
-introduction: Découvrez l'impact de vos déplacements sur le climat ! Des données ouvertes pour une mobilité moins émettrice en CO2.
+introduction: <strong>Mon Impact Transport rejoint Impact CO2 !</strong><br/>En plus des fonctionnalités que vous connaissiez sur le transport, découvrez d'autres catégories et l'impact d'autres gestes & objets du quotidien
 color: '#EF0D50'
 matomo: 155
 visitors: 66091
