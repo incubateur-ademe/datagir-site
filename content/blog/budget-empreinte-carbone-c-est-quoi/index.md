@@ -122,7 +122,7 @@ Et si nous ne faisons rien pendant 5 ans (ce que nous avons fait jusqu'à prése
 
 Une réduction de 320kg chaque année, est-ce conséquent ? Chacun a une appréciation différente de cet effort, mais il est intéressant de l'illustrer par des choses concrètes de notre vie quotidienne. Voici un exemple de scénario qui correspond à peu près à cette réduction annuelle :
 
-- _à partir de 2020, je fais 1 000 km de moins en voiture (ou covoiture 5km par jour)_
+- _à partir de 2020, je fais 2 000 km de moins en voiture (ou covoiture 20 km par jour)_
 - _à partir de 2021, je renonce à mon vol annuel vers la Croatie (mais pas à mes vacances : il est possible d'y aller en train via Paris-Venise de nuit)_
 - _en 2022, j'enlève définitivement de ma liste de courses 2 steaks de bœuf par semaine, si c'était toujours le cas_
 - _à partir de 2023, je baisse la température de chez moi de 1° (et j'achète un magnifique pull en laine qui va durer 10 ans ou plus)_
