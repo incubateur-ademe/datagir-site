@@ -36,12 +36,14 @@
     Déploiement: 42702
     Coaching: 13567
 
-2022 (en cours):
+2022:
   description: |
     En 2022, Datagir termine la phase de transfert et de consolidation : le service est pérennisé au sein de l'ADEME.
     L’amélioration continue et le déploiement des simulateurs existants se poursuit. 
     L’équipe développe également d’autres outils à destination des collectivités et professionnels.
+    En fin d’année, 9 personnes travaillent dans le service (tout ou partie de leur temps).
   total:
-    Développement: 221790
-    Déploiement: 45624
-    Coaching: 5803
+    Développement: 457477
+    Déploiement: 60577
+    Produit: 60159
+    Coaching: 26783
