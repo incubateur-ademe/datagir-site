@@ -63,11 +63,7 @@ export default function Agribalyse() {
                 interval={'preserveStartEnd'}
                 minTickGap={1}
               />
-              <YAxis
-                tickFormatter={(tick) =>
-                  tick.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-                }
-              />
+              <YAxis tickFormatter={(tick) => tick.toLocaleString('fr-fr')} />
               <Tooltip content={<CustomTooltip period={'week'} />} />
               <Area
                 type='monotone'

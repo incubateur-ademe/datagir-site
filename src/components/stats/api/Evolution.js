@@ -32,7 +32,7 @@ export default function Evolution(props) {
     <Wrapper>
       <Block>
         <BigNumber color={props.color}>
-          {data?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          {data?.toLocaleString('fr-fr')}
         </BigNumber>{' '}
         appels depuis le lancement
       </Block>

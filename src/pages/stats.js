@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
@@ -22,10 +21,12 @@ const queryClient = new QueryClient({
 export default function Dashboard(props) {
   let sites = [...props.data.allMdx.edges]
 
-  sites.sort((a, b) =>
-    a.node.frontmatter.order > b.node.frontmatter.order ? 1 : -1
-  )
-
+  sites = sites
+    .filter((site) => site.node.frontmatter.matomo !== 153)
+    .sort((a, b) =>
+      a.node.frontmatter.order > b.node.frontmatter.order ? 1 : -1
+    )
+  console.log(sites)
   return (
     <QueryClientProvider client={queryClient}>
       <Web

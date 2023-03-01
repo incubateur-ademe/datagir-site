@@ -31,9 +31,7 @@ export default function NumSubscribers() {
     <StyledTile>
       <Tile.Content color='#46479f'>
         <Number color='#46479f'>
-          {(data?.nb_visits + base)
-            .toString()
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          {(data?.nb_visits + base).toLocaleString('fr-fr'}
         </Number>
         <Label>simulations terminées depuis le lancement</Label>
       </Tile.Content>
