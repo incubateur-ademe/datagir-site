@@ -8,6 +8,7 @@ const Wrapper = styled(IframeResizer)`
   max-width: 49rem;
   margin: 0 auto 5.5rem;
   border: none;
+  height: 100vh;
 `
 export default function Embed(props) {
   return (
