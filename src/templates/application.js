@@ -12,7 +12,10 @@ export default function Application(props) {
     <Web title={props.data.mdx.frontmatter.title}>
       <Landing {...props.data.mdx} />
       {props.data.mdx.frontmatter.script && (
-        <Embed embed={props.data.mdx.frontmatter.script} />
+        <Embed
+          embed={props.data.mdx.frontmatter.script}
+          scroll={props.data.mdx.frontmatter.title === 'Nos Gestes Climat'}
+        />
       )}
       <Content>{props.data.mdx.body}</Content>
       <Users users={props.data.mdx.frontmatter.users} />
