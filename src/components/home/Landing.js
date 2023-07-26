@@ -98,7 +98,7 @@ export default function Landing(props) {
         <Content mounted={mounted}>
           <Text
             dangerouslySetInnerHTML={{
-              __html: `À la suite de la création de l’incubateur de l’ADEME (Accélérateur de la Transition Écologique), la marque Datagir disparaît pour laisser grandir ses deux projets phares, Nos Gestes Climat et Impact CO2.`,
+              __html: `À la suite de la création de l’incubateur de l’ADEME (<strong>Accélérateur de la Transition Écologique</strong>), la marque Datagir disparaît pour laisser grandir ses deux projets phares, <strong>Nos Gestes Climat</strong> et <strong>Impact CO2</strong>.`,
             }}
           />
         </Content>
