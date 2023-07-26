@@ -6,7 +6,6 @@ import { GlobalStyle } from 'src/utils/styles'
 import Seo from './web/SEO'
 import ThemeToggle from 'src/components/misc/ThemeToggle'
 import Header from './Header'
-import Footer from './Footer'
 
 const queryClient = new QueryClient()
 
@@ -29,7 +28,6 @@ export default function Web(props) {
         <ThemeToggle />
         <Header />
         <Content>{props.children}</Content>
-        <Footer />
       </Wrapper>
     </QueryClientProvider>
   )

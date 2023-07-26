@@ -25,6 +25,9 @@ export default function Applications(props) {
                     }
                   }
                 }
+                buttons {
+                  link
+                }
                 sector
                 title
               }
@@ -37,25 +40,12 @@ export default function Applications(props) {
 
   return (
     <Section id='applications'>
-      <Section.Title>
-        Nos Simulateurs{' '}
-        {props.sector && (
-          <>
-            liés {props.sector === 'alimentation' ? "à l'" : 'au '}
-            <Section.Sector color={props.sector}>
-              {props.sector.charAt(0).toUpperCase() + props.sector.slice(1)}
-            </Section.Sector>
-          </>
-        )}
-      </Section.Title>
       <Tile.Wrapper>
         {data.allMdx.edges
           .filter((application) =>
-            !props.sector
-              ? true
-              : ['all', props.sector].includes(
-                  application.node.frontmatter.sector
-                )
+            ['Nos Gestes Climat', 'Impact CO2'].includes(
+              application.node.frontmatter.title
+            )
           )
           .sort((a) =>
             !props.sector
@@ -69,12 +59,13 @@ export default function Applications(props) {
               key={application.node.fields.slug}
               title={application.node.frontmatter.title}
               image={application.node.frontmatter.image}
-              link={`/apps${application.node.fields.slug}`}
+              link={`${application.node.frontmatter.buttons[0].link}`}
               color={
                 application.node.frontmatter.sector !== 'all'
                   ? application.node.frontmatter.sector
                   : null
               }
+              linkLabel='Découvrir'
             />
           ))}
       </Tile.Wrapper>
