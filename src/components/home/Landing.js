@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import useMounted from 'src/hooks/useMounted'
 
-import Button from 'src/components/base/Button'
 import Title from './landing/Title'
 
 const Wrapper = styled.div`
@@ -70,7 +69,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 30.5rem;
+  max-width: 34rem;
   margin: 0.25em 0 0 1rem;
   opacity: ${(props) => (props.mounted ? 1 : 0)};
   transition: opacity 1400ms 1650ms;
@@ -85,6 +84,7 @@ const Content = styled.div`
   }
 `
 const Text = styled.p`
+  font-size: 1.25rem;
   font-weight: 300;
 `
 export default function Landing(props) {
@@ -94,24 +94,13 @@ export default function Landing(props) {
       <Background />
       <Title mounted={mounted} />
       <Flex>
-        <Subtitle
-          mounted={mounted}
-          dangerouslySetInnerHTML={{
-            __html:
-              'Apporter l’information environnementale au plus près des&nbsp;citoyens.',
-          }}
-        />
+        <Subtitle mounted={mounted} />
         <Content mounted={mounted}>
           <Text
             dangerouslySetInnerHTML={{
-              __html: `Datagir vous accompagne dans la compréhension et l’intégration des
-            données ouvertes environnementales de l’ADEME afin de vous aider à
-            créer de nouvelles fonctionnalités et&nbsp;applications.`,
+              __html: `À la suite de la création de l’incubateur de l’ADEME (<strong>Accélérateur de la Transition Écologique</strong>), la marque Datagir disparaît pour laisser grandir ses deux projets phares, <strong>Nos Gestes Climat</strong> et <strong>Impact CO2</strong>.`,
             }}
           />
-          <Button hollow to={'/qui-sommes-nous'}>
-            En savoir +
-          </Button>
         </Content>
       </Flex>
     </Wrapper>

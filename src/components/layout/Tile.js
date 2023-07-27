@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import Button from 'src/components/base/Button'
 
 const TileWrapper = styled.div`
-  width: 25rem;
+  width: 50%;
   margin-bottom: 1rem;
   padding: 0 0.5rem;
 

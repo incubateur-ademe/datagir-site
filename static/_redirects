@@ -15,13 +15,15 @@ http://ecolab.ademe.fr/*                                                        
 
 /apps/teletravail                                                                       /apps/mon-impact-transport
 
-/apps/mon-convertisseur-co2                                                             /apps/impact-co2/
+/apps/mon-convertisseur-co2                                                             https://impactco2.fr
+/apps/impact-co2                                                                        https://impactco2.fr
 
 /apps/transport                                                                         https://monimpacttransport.fr
 /apps/transport/iframe.js                                                               https://monimpacttransport.fr/iframe.js
 
 /apps/climat                                                                            https://nosgestesclimat.fr
 /impactcarbone                                                                          https://nosgestesclimat.fr
+/apps/nos-gestes-climat                                                                 https://nosgestesclimat.fr
 
 /agribalyse                                                                             https://agribalyse.ademe.fr
 

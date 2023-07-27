@@ -1,21 +1,29 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Web from 'src/components/layout/Web'
 
 import Landing from 'src/components/home/Landing'
-import Sectors from 'src/components/home/Sectors'
 import Applications from 'src/components/Applications'
-import Users from 'src/components/home/Users'
-import Contact from 'src/components/Contact'
 
+const Text = styled.p`
+  font-size: 1.25rem;
+`
 export default function Index() {
   return (
     <Web title={'Datagir'}>
       <Landing />
-      <Sectors />
       <Applications />
-      <Users />
-      <Contact />
+      <Text>
+        Découvrez également{' '}
+        <a
+          href='https://beta.gouv.fr/startups/?incubateur=ademe'
+          target='_blank'
+        >
+          toutes les réalisations de l'incubateur
+        </a>
+        .
+      </Text>
     </Web>
   )
 }
