@@ -1,6 +1,6 @@
 ---
 title: Impact CO2
-introduction: On parle de plus en plus de CO2, mais concrètement quelles sont les émissions pour fabriquer et consommer les objets qui nous entourent ?
+introduction: La bibliothèque de ressources ludiques sur l'impact carbone.
 color: '#26827C'
 matomo: 156
 visitors: 0
@@ -11,6 +11,7 @@ buttons:
     link: https://impactco2.fr
   - label: Voir le code
     link: https://github.com/datagir/impactco2
+mailto: 'mailto:impactco2@ademe.fr?subject=J%E2%80%99ai%20une%20question%20sur%20Impact%20CO2'
 image: mon-convertisseur-co2.png
 order: 4
 users:

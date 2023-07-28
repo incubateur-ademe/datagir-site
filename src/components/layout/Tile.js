@@ -71,6 +71,7 @@ const Text = styled.p``
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 
   ${(props) => props.theme.mq.small} {
     font-size: 0.875em;
@@ -92,6 +93,11 @@ export default function Tile(props) {
         <Bottom>
           {props.link && (
             <ButtonWrapper>
+              {props.link2 && (
+                <Button to={props.link2} color={props.color} hollow>
+                  {props.linkLabel2 || 'En savoir +'}
+                </Button>
+              )}
               <Button to={props.link} color={props.color}>
                 {props.linkLabel || 'En savoir +'}
               </Button>

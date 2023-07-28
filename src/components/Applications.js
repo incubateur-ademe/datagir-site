@@ -30,6 +30,9 @@ export default function Applications(props) {
                 }
                 sector
                 title
+                introduction
+                color
+                mailto
               }
             }
           }
@@ -58,14 +61,13 @@ export default function Applications(props) {
             <Tile
               key={application.node.fields.slug}
               title={application.node.frontmatter.title}
+              text={application.node.frontmatter.introduction}
               image={application.node.frontmatter.image}
+              color={application.node.frontmatter.color}
               link={`${application.node.frontmatter.buttons[0].link}`}
-              color={
-                application.node.frontmatter.sector !== 'all'
-                  ? application.node.frontmatter.sector
-                  : null
-              }
               linkLabel='Découvrir'
+              link2={application.node.frontmatter.mailto}
+              linkLabel2={`Contacter l'équipe`}
             />
           ))}
       </Tile.Wrapper>
