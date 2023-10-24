@@ -20,7 +20,7 @@ http://ecolab.ademe.fr/*                                                        
 /apps/mon-convertisseur-co2/*                                                           https://impactco2.fr/:splat 301!
 /apps/impact-co2/*                                                                      https://impactco2.fr/:splat 301!
 /apps/mon-impact-transport/*                                                            https://impactco2.fr/transport/:splat 301!
-/apps/mes-fruits-et-légumes-de-saison/*                                                 https://impactco2.fr/fruitsetlegumes/:splat 301!
+/apps/mes-fruits-et-l%C3%A9gumes-de-saison/*                                            https://impactco2.fr/fruitsetlegumes/:splat 301!
 
 /apps/transport                                                                         https://monimpacttransport.fr:splat 301!
 /apps/transport/iframe.js                                                               https://monimpacttransport.fr/iframe.js:splat 301!
