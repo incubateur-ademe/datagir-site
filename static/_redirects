@@ -5,8 +5,10 @@ http://ecolab.ademe.fr/*                                                        
 
 /blog/g%C3%A9n%C3%A9ral/pourquoi-ecolab.md                                              /qui-sommes-nous
 /blog/transport/impact-carbone-mobilite-eco-deplacement.md                              /blog/impact-carbone-mobilite-eco-deplacement
-/blog/g%C3%A9n%C3%A9ral/budget-empreinte-carbone-c-est-quoi.md                          /blog/budget-empreinte-carbone-c-est-quoi
-/blog/transport/affichage-ges-ticket-de-transport.md                                    /blog/affichage-ges-ticket-de-transport
+/blog/g%C3%A9n%C3%A9ral/budget-empreinte-carbone-c-est-quoi.md                          https://nosgestesclimat.fr/blog/budget/:splat 301!
+/blog/budget-empreinte-carbone-c-est-quoi                                               https://nosgestesclimat.fr/blog/budget/:splat 301!
+/blog/transport/affichage-ges-ticket-de-transport.md                                    https://nosgestesclimat.fr/blog/affichage-ges-transport/:splat 301!
+/blog/affichage-ges-ticket-de-transport                                                 https://nosgestesclimat.fr/blog/affichage-ges-transport/:splat 301!
 /blog/carbone/historique-calculateur-carbone-nos-gestes-climat-micmac-coach-carbone.md  /blog/historique-calculateur-carbone-nos-gestes-climat-micmac-coach-carbone
 
 /nouscontacter                                                                          /#contact
@@ -15,15 +17,18 @@ http://ecolab.ademe.fr/*                                                        
 
 /apps/teletravail                                                                       /apps/mon-impact-transport
 
-/apps/mon-convertisseur-co2                                                             https://impactco2.fr
-/apps/impact-co2                                                                        https://impactco2.fr
+/apps/mon-convertisseur-co2/*                                                           https://impactco2.fr/:splat 301!
+/apps/impact-co2/*                                                                      https://impactco2.fr/:splat 301!
+/apps/mon-impact-transport/*                                                            https://impactco2.fr/transport/:splat 301!
+/apps/mes-fruits-et-légumes-de-saison/*                                                 https://impactco2.fr/fruitsetlegumes/:splat 301!
 
-/apps/transport                                                                         https://monimpacttransport.fr
-/apps/transport/iframe.js                                                               https://monimpacttransport.fr/iframe.js
+/apps/transport                                                                         https://monimpacttransport.fr:splat 301!
+/apps/transport/iframe.js                                                               https://monimpacttransport.fr/iframe.js:splat 301!
 
-/apps/climat                                                                            https://nosgestesclimat.fr
-/impactcarbone                                                                          https://nosgestesclimat.fr
-/apps/nos-gestes-climat                                                                 https://nosgestesclimat.fr
+/apps/climat/*                                                                          https://nosgestesclimat.fr/:splat 301!
+/impactcarbone/*                                                                        https://nosgestesclimat.fr/:splat 301!
+/apps/nos-gestes-climat/*                                                               https://nosgestesclimat.fr/:splat 301!
 
 /agribalyse                                                                             https://agribalyse.ademe.fr
+
 
