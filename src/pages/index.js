@@ -19,6 +19,7 @@ export default function Index() {
         <a
           href='https://beta.gouv.fr/startups/?incubateur=ademe'
           target='_blank'
+          rel="noreferrer"
         >
           toutes les réalisations de l'incubateur
         </a>

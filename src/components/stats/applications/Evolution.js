@@ -18,11 +18,9 @@ const Label = styled.span`
   font-size: 1.25rem;
   font-weight: 700;
 `
-const Small = styled.span`
-  font-size: 0.75rem;
-`
+
 export default function Evolution(props) {
-  const [percent, setPercent] = useState(0)
+  const [, setPercent] = useState(0)
   useEffect(() => {
     const lastPeriod = props.reference - props.period
     const difference = props.period - lastPeriod

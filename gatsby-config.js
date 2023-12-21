@@ -94,14 +94,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-matomo',
-      options: {
-        siteId: '128',
-        matomoUrl: 'https://stats.data.gouv.fr',
-        siteUrl: 'https://datagir.ademe.fr',
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Datagir`,
